@@ -5,4 +5,4 @@ ECSDILab 2015
 
 Crear un fichero *APIKeys.py* dentro del directorio *AgentUtil* que contenga una linea como la siguiente:
 
-`GOOGLEAPI_KEY = <tu google api key para google places>`
+`GOOGLEAPI_KEY = '<tu google api key para google places>'`
