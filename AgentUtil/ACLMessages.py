@@ -17,7 +17,7 @@ from rdflib.namespace import RDF
 from AgentUtil.OntoNamespaces import ACL
 
 
-def build_message(gmess, perf, sender=None, receiver=None,  content=None, msgcnt= 0):
+def build_message(gmess, perf, sender=None, receiver=None,  content=None, msgcnt= 0, body=None):
     """
     Construye un mensaje como una performativa FIPA acl
     Asume que en el grafo que se recibe esta ya el contenido y esta ligado al
@@ -38,10 +38,14 @@ def build_message(gmess, perf, sender=None, receiver=None,  content=None, msgcnt
     gmess.add((ms, RDF.type, ACL.FipaAclMessage))
     gmess.add((ms, ACL.performative, perf))
     gmess.add((ms, ACL.sender, sender))
+
     if receiver is not None:
         gmess.add((ms, ACL.receiver, receiver))
     if content is not None:
         gmess.add((ms, ACL.content, content))
+    #if body is not None:
+        #gmess.add((ms, ACL.content, body))  
+    
     return gmess
 
 
