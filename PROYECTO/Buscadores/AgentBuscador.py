@@ -72,8 +72,8 @@ agn = Namespace("http://www.agentes.org#")
 mss_cnt = 0
 
 # Datos del Agente
-InfoAgent = Agent('AgentBuscador',
-                  agn.AgenteInfo,
+AgentBuscador = Agent('AgentBuscador',
+                  agn.AgentBuscador,
                   'http://%s:%d/comm' % (hostname, port),
                   'http://%s:%d/Stop' % (hostname, port))
 
@@ -90,43 +90,43 @@ dsgraph = Graph()
 cola1 = Queue()
 
 
-def register_message():
-    """
-    Envia un mensaje de registro al servicio de registro
-    usando una performativa Request y una accion Register del
-    servicio de directorio
+# def register_message():
+#     """
+#     Envia un mensaje de registro al servicio de registro
+#     usando una performativa Request y una accion Register del
+#     servicio de directorio
 
-    :param gmess:
-    :return:
-    """
+#     :param gmess:
+#     :return:
+#     """
 
-    logger.info('Nos registramos')
+#     logger.info('Nos registramos')
 
-    global mss_cnt
+#     global mss_cnt
 
-    gmess = Graph()
+#     gmess = Graph()
 
-    # Construimos el mensaje de registro
-    gmess.bind('foaf', FOAF)
-    gmess.bind('dso', DSO)
-    reg_obj = agn[InfoAgent.name + '-Register']
-    gmess.add((reg_obj, RDF.type, DSO.Register))
-    gmess.add((reg_obj, DSO.Uri, InfoAgent.uri))
-    gmess.add((reg_obj, FOAF.Name, Literal(InfoAgent.name)))
-    gmess.add((reg_obj, DSO.Address, Literal(InfoAgent.address)))
-    gmess.add((reg_obj, DSO.AgentType, DSO.HotelsAgent))
+#     # Construimos el mensaje de registro
+#     gmess.bind('foaf', FOAF)
+#     gmess.bind('dso', DSO)
+#     reg_obj = agn[InfoAgent.name + '-Register']
+#     gmess.add((reg_obj, RDF.type, DSO.Register))
+#     gmess.add((reg_obj, DSO.Uri, InfoAgent.uri))
+#     gmess.add((reg_obj, FOAF.Name, Literal(InfoAgent.name)))
+#     gmess.add((reg_obj, DSO.Address, Literal(InfoAgent.address)))
+#     gmess.add((reg_obj, DSO.AgentType, DSO.HotelsAgent))
 
-    # Lo metemos en un envoltorio FIPA-ACL y lo enviamos
-    gr = send_message(
-        build_message(gmess, perf=ACL.request,
-                      sender=InfoAgent.uri,
-                      receiver=DirectoryAgent.uri,
-                      content=reg_obj,
-                      msgcnt=mss_cnt),
-        DirectoryAgent.address)
-    mss_cnt += 1
+#     # Lo metemos en un envoltorio FIPA-ACL y lo enviamos
+#     gr = send_message(
+#         build_message(gmess, perf=ACL.request,
+#                       sender=InfoAgent.uri,
+#                       receiver=DirectoryAgent.uri,
+#                       content=reg_obj,
+#                       msgcnt=mss_cnt),
+#         DirectoryAgent.address)
+#     mss_cnt += 1
 
-    return gr
+#     return gr
 
 
 @app.route("/iface", methods=['GET', 'POST'])
@@ -307,7 +307,9 @@ def buscar_transportes():
     g = Graph()
 
     # Carga el grafo RDF desde el fichero
-    ontofile = gzip.open('../../TransportData/TransportRoutes.ttl.gz') #Cambiar por RDF transportes
+    # Cambiar por RDF transportes
+    # El fichero actual no esta en el mismo formato y no lo lee
+    ontofile = gzip.open('../../TransportData/TransportRoutes.ttl.gz')
     g.parse(ontofile, format='turtle')
 
     # Consulta al grafo los aeropuertos dentro de la caja definida por las coordenadas
@@ -398,7 +400,7 @@ if __name__ == '__main__':
 
     #Llamadas a la API de Google Places para las diferentes actividades
 
-    buscar_actividades('museum', 300) # museum, zoo, night_club, amusement_park
+    #buscar_actividades('museum', 300) # museum, zoo, night_club, amusement_park
     #buscar_actividades('zoo', 5000) 
     #buscar_actividades('night_club', 300) 
     #buscar_actividades('amusement_park', 600) 
@@ -408,8 +410,8 @@ if __name__ == '__main__':
     #ab1.start()
 
     # Ponemos en marcha el servidor
-    #app.run(host=hostname, port=port)
+    app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
     #ab1.join()
-    #logger.info('The End')
+    logger.info('The End')
