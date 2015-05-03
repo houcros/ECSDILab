@@ -158,50 +158,50 @@ def comunicacion():
     Las acciones se mandan siempre con un Request
     Prodriamos resolver las busquedas usando una performativa de Query-ref
     """
-    global dsgraph
-    global mss_cnt
+    #global dsgraph
+    #global mss_cnt
 
-    logger.info('Peticion de informacion recibida')
+    #logger.info('Peticion de informacion recibida')
 
-    # Extraemos el mensaje y creamos un grafo con el
-    message = request.args['content']
-    gm = Graph()
-    gm.parse(data=message)
+    ## Extraemos el mensaje y creamos un grafo con el
+    #message = request.args['content']
+    #gm = Graph()
+    #gm.parse(data=message)
 
-    msgdic = get_message_properties(gm)
+    #msgdic = get_message_properties(gm)
 
-    # Comprobamos que sea un mensaje FIPA ACL
-    if msgdic is None:
-        # Si no es, respondemos que no hemos entendido el mensaje
-        gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
-    else:
-        # Obtenemos la performativa
-        perf = msgdic['performative']
+    ## Comprobamos que sea un mensaje FIPA ACL
+    #if msgdic is None:
+        ## Si no es, respondemos que no hemos entendido el mensaje
+        #gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
+    #else:
+        ## Obtenemos la performativa
+        #perf = msgdic['performative']
 
-        if perf != ACL.request:
-            # Si no es un request, respondemos que no hemos entendido el mensaje
-            gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
-        else:
-            # Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
-            # de registro
+        #if perf != ACL.request:
+            ## Si no es un request, respondemos que no hemos entendido el mensaje
+            #gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
+        #else:
+            ## Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
+            ## de registro
 
-            # Averiguamos el tipo de la accion
-            if 'content' in msgdic:
-                content = msgdic['content']
-                accion = gm.value(subject=content, predicate=RDF.type)
+            ## Averiguamos el tipo de la accion
+            #if 'content' in msgdic:
+                #content = msgdic['content']
+                #accion = gm.value(subject=content, predicate=RDF.type)
 
-            # Aqui realizariamos lo que pide la accion
-            # Por ahora simplemente retornamos un Inform-done
-            gr = build_message(Graph(),
-                ACL['inform-done'],
-                sender=InfoAgent.uri,
-                msgcnt=mss_cnt,
-                receiver=msgdic['sender'], )
-    mss_cnt += 1
+            ## Aqui realizariamos lo que pide la accion
+            ## Por ahora simplemente retornamos un Inform-done
+            #gr = build_message(Graph(),
+                #ACL['inform-done'],
+                #sender=InfoAgent.uri,
+                #msgcnt=mss_cnt,
+                #receiver=msgdic['sender'], )
+    #mss_cnt += 1
 
-    logger.info('Respondemos a la peticion')
-
-    return gr.serialize(format='xml')
+    #logger.info('Respondemos a la peticion')
+	
+    return ("hola")
 
 
 def tidyup():
@@ -215,12 +215,12 @@ def tidyup():
 
 def agentbehavior1(cola):
     """
-    Un comportamiento del agente
+    Un comportamiento del agente    port = 9001
 
     :return:
     """
     # Registramos el agente
-    gr = register_message()
+    # gr = register_message()
 
     # Escuchando la cola hasta que llegue un 0
     fin = False
