@@ -357,12 +357,18 @@ def buscar_transportes():
     for row in qres.result:
         print row    
 
-def buscar_actividades():
+def buscar_actividades(nombreActividad, radio):
+    print nombreActividad
+
     google_places = GooglePlaces(GOOGLEAPI_KEY)
 
     query_result = google_places.nearby_search(
-        location=u'Barcelona, España', keyword='Basilica, Galeria', #Podemos poner nombres de museos para filtrar mas la busqueda, etc..
-        radius=300, types=['museum']) #Tipos de lugares, vease listado de types en https://developers.google.com/places/documentation/supported_types?hl=es
+        location=u'Barcelona, España', keyword='', #Podemos poner nombres de museos para filtrar mas la busqueda, etc.. (ej: Basilica Galeria)
+        radius=radio, types=[nombreActividad]) #Tipos de lugares, vease listado de types en https://developers.google.com/places/documentation/supported_types?hl=es
+
+    #query_result_night_club = google_places.nearby_search(
+       # location=u'Barcelona, España', keyword='', 
+        #radius=300, types=['night_club']) 
 
     # Imprimimos informacion de los resultados
     print query_result
@@ -385,7 +391,14 @@ def buscar_actividades():
 if __name__ == '__main__':
     #buscar_vuelos() #Funciona
     #buscar_transportes() #Funciona pero con vuelos, con transportes peta
-    buscar_actividades()
+
+    #Llamadas a la API de Google Places para las diferentes actividades
+
+    buscar_actividades('museum', 300) # museum, zoo, night_club, amusement_park
+    #buscar_actividades('zoo', 5000) 
+    #buscar_actividades('night_club', 300) 
+    #buscar_actividades('amusement_park', 600) 
+
     # Ponemos en marcha los behaviors
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
