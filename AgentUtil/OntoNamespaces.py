@@ -45,3 +45,7 @@ GEO = Namespace('http://www.w3.org/2003/01/geo/wgs84_pos#')
 
 DSO = Namespace('http://www.semanticweb.org/directory-service-ontology#')
 
+# Custom agent messaging ontology
+
+AMO = Namespace('http://www.semanticweb.org/houcros/ontologies/2015/4/agentsMessages')
+
