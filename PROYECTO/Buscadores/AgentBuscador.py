@@ -213,10 +213,15 @@ def comunicacion():
     #     AgenteBuscador.address)
 
     cont = buscar_actividades('museum', 300)
-    print "#########################################"
-    print cont
-    print "#########################################"
-    gr = build_message(Graph(), ACL['not-understood'], sender=AgentBuscador.uri, msgcnt=mss_cnt)
+    res_obj= agn['Buscador-responde']
+    gr = Graph()
+    gr.add((res_obj, DSO.AddressList,  Literal(cont)))
+    gr = build_message(gr, 
+					   ACL.inform, 
+					   sender=AgentBuscador.uri, 
+					   content=res_obj,
+					   msgcnt=mss_cnt 
+					   )
     resp = gr.serialize(format='xml')
     return resp
 
@@ -386,22 +391,22 @@ def buscar_actividades(nombreActividad, radio):
         #radius=300, types=['night_club']) 
 
     # Imprimimos informacion de los resultados
-    print query_result
-    if query_result.has_attributions:
-        print query_result.html_attributions
+    #print query_result
+    #if query_result.has_attributions:
+        #print query_result.html_attributions
 
-    for place in query_result.places:
-        # Returned places from a query are place summaries.
-        print place.name
-        print place.geo_location
-        print place.reference
+    #for place in query_result.places:
+        ## Returned places from a query are place summaries.
+        #print place.name
+        #print place.geo_location
+        #print place.reference
 
-        # The following method has to make a further API call.
-        place.get_details()
-        # Referencing any of the attributes below, prior to making a call to
-        # get_details() will raise a googleplaces.GooglePlacesAttributeError.
-        pprint.pprint(place.details)  # A dict matching the JSON response from Google.
-        print place.local_phone_number
+        ## The following method has to make a further API call.
+        #place.get_details()
+        ## Referencing any of the attributes below, prior to making a call to
+        ## get_details() will raise a googleplaces.GooglePlacesAttributeError.
+        #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
+        #print place.local_phone_number
 
     return query_result.places
 
@@ -419,7 +424,7 @@ if __name__ == '__main__':
     # Ponemos en marcha los behaviors
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
-
+    
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
 
