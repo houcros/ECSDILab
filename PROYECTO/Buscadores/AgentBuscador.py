@@ -23,6 +23,9 @@ from AgentUtil.ACLMessages import build_message, send_message, get_message_prope
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 
+import pprint
+from googleplaces import GooglePlaces
+from AgentUtil.APIKeys import GOOGLEAPI_KEY
 
 # Definimos los parametros de la linea de comandos
 parser = argparse.ArgumentParser()
@@ -354,12 +357,35 @@ def buscar_transportes():
     for row in qres.result:
         print row    
 
+def buscar_actividades():
+    google_places = GooglePlaces(GOOGLEAPI_KEY)
 
+    query_result = google_places.nearby_search(
+        location=u'Barcelona, España', keyword='Basilica, Galeria', #Podemos poner nombres de museos para filtrar mas la busqueda, etc..
+        radius=300, types=['museum']) #Tipos de lugares, vease listado de types en https://developers.google.com/places/documentation/supported_types?hl=es
+
+    # Imprimimos informacion de los resultados
+    print query_result
+    if query_result.has_attributions:
+        print query_result.html_attributions
+
+    for place in query_result.places:
+        # Returned places from a query are place summaries.
+        print place.name
+        print place.geo_location
+        print place.reference
+
+        # The following method has to make a further API call.
+        place.get_details()
+        # Referencing any of the attributes below, prior to making a call to
+        # get_details() will raise a googleplaces.GooglePlacesAttributeError.
+        pprint.pprint(place.details)  # A dict matching the JSON response from Google.
+        print place.local_phone_number
 
 if __name__ == '__main__':
     #buscar_vuelos() #Funciona
     #buscar_transportes() #Funciona pero con vuelos, con transportes peta
-
+    buscar_actividades()
     # Ponemos en marcha los behaviors
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
