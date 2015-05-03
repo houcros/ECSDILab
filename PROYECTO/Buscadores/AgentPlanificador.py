@@ -138,7 +138,9 @@ if __name__ == '__main__':
     #   ab1.join()
 
     gr = message_buscador()
-    print gr
+
+    for a, b, c in gr:
+      print c
 
     print 'The End'
 
