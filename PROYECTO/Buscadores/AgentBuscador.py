@@ -204,8 +204,12 @@ def comunicacion():
     #mss_cnt += 1
 
     #logger.info('Respondemos a la peticion')
-	
-    return ("hola")
+    gr = build_message(Graph(), ACL['not-understood'], sender=AgentBuscador.uri)
+    # resp = gr.serialize(format='xml')
+    # print "####################"
+    # print resp
+    # print "####################"
+    return resp
 
 
 def tidyup():
