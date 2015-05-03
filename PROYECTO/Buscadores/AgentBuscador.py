@@ -204,11 +204,20 @@ def comunicacion():
     #mss_cnt += 1
 
     #logger.info('Respondemos a la peticion')
-    gr = build_message(Graph(), ACL['not-understood'], sender=AgentBuscador.uri)
-    # resp = gr.serialize(format='xml')
-    # print "####################"
-    # print resp
-    # print "####################"
+
+    # gr = build_message(gmess, perf=ACL.request,
+    #                   sender=AgentePlanificador.uri,
+    #                   receiver=AgenteBuscador.uri,
+    #                   content=bus_obj,
+    #                   msgcnt=mss_cnt),
+    #     AgenteBuscador.address)
+
+    cont = buscar_actividades('museum', 300)
+    print "#########################################"
+    print cont
+    print "#########################################"
+    gr = build_message(Graph(), ACL['not-understood'], sender=AgentBuscador.uri, msgcnt=mss_cnt)
+    resp = gr.serialize(format='xml')
     return resp
 
 
@@ -393,6 +402,8 @@ def buscar_actividades(nombreActividad, radio):
         # get_details() will raise a googleplaces.GooglePlacesAttributeError.
         pprint.pprint(place.details)  # A dict matching the JSON response from Google.
         print place.local_phone_number
+
+    return query_result.places
 
 if __name__ == '__main__':
     #buscar_vuelos() #Funciona
