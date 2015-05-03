@@ -10,13 +10,14 @@ __author__ = 'javier'
 
 from multiprocessing import Process, Queue
 import socket
+import gzip
 import argparse
 
 from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
 
-from AgentUtil.OntoNamespaces import ACL, DSO
+from AgentUtil.OntoNamespaces import ACL, DSO , TIO
 from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.Agent import Agent
@@ -236,15 +237,136 @@ def agentbehavior1(cola):
             # Selfdestruct
             # requests.get(InfoAgent.stop)
 
+def buscar_vuelos():
+
+    g = Graph()
+
+    # Carga el grafo RDF desde el fichero
+    ontofile = gzip.open('../../FlightData/FlightRoutes.ttl.gz')
+    g.parse(ontofile, format='turtle')
+
+    # Consulta al grafo los aeropuertos dentro de la caja definida por las coordenadas
+    qres = g.query(
+        """
+        prefix tio:<http://purl.org/tio/ns#>
+        prefix geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+        prefix dbp:<http://dbpedia.org/ontology/>
+
+        Select ?f
+        where {
+            ?f rdf:type dbp:Airport .
+            ?f geo:lat ?lat .
+            ?f geo:long ?lon .
+            Filter ( ?lat < "41.7"^^xsd:float &&
+                     ?lat > "41.0"^^xsd:float &&
+                     ?lon < "2.3"^^xsd:float &&
+                     ?lon > "2.0"^^xsd:float)
+            }
+        LIMIT 30
+        """,
+        initNs=dict(tio=TIO))
+
+    # Recorre los resultados y se queda con el ultimo
+    for r in qres:
+        ap = r['f']
+
+    print 'Aeropuerto:', ap
+    print
+
+
+    # Consulta todos los vuelos que conectan con ese aeropuerto
+    airquery = """
+        prefix tio:<http://purl.org/tio/ns#>
+        Select *
+        where {
+            ?f rdf:type tio:Flight.
+            ?f tio:to <%s>.
+            ?f tio:from ?t.
+            ?f tio:operatedBy ?o.
+            }
+        """ % ap
+
+    qres = g.query(airquery, initNs=dict(tio=TIO))
+
+    print 'Num Vuelos:', len(qres.result)
+    print
+
+
+    # Imprime los resultados
+    for row in qres.result:
+        print row
+
+def buscar_transportes():
+    g = Graph()
+
+    # Carga el grafo RDF desde el fichero
+    ontofile = gzip.open('../../TransportData/TransportRoutes.ttl.gz') #Cambiar por RDF transportes
+    g.parse(ontofile, format='turtle')
+
+    # Consulta al grafo los aeropuertos dentro de la caja definida por las coordenadas
+    qres = g.query(
+        """
+        prefix tio:<http://purl.org/tio/ns#>
+        prefix geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+        prefix dbp:<http://dbpedia.org/ontology/>
+
+        Select ?f
+        where {
+            ?f rdf:type dbp:Airport .
+            ?f geo:lat ?lat .
+            ?f geo:long ?lon .
+            Filter ( ?lat < "41.7"^^xsd:float &&
+                     ?lat > "41.0"^^xsd:float &&
+                     ?lon < "2.3"^^xsd:float &&
+                     ?lon > "2.0"^^xsd:float)
+            }
+        LIMIT 30
+        """,
+        initNs=dict(tio=TIO))
+
+    # Recorre los resultados y se queda con el ultimo
+    for r in qres:
+        ap = r['f']
+
+    print 'Aeropuerto:', ap
+    print
+
+
+    # Consulta todos los vuelos que conectan con ese aeropuerto
+    airquery = """
+        prefix tio:<http://purl.org/tio/ns#>
+        Select *
+        where {
+            ?f rdf:type tio:Flight.
+            ?f tio:to <%s>.
+            ?f tio:from ?t.
+            ?f tio:operatedBy ?o.
+            }
+        """ % ap
+
+    qres = g.query(airquery, initNs=dict(tio=TIO))
+
+    print 'Num Vuelos:', len(qres.result)
+    print
+
+
+    # Imprime los resultados
+    for row in qres.result:
+        print row    
+
+
 
 if __name__ == '__main__':
+    #buscar_vuelos() #Funciona
+    #buscar_transportes() #Funciona pero con vuelos, con transportes peta
+
     # Ponemos en marcha los behaviors
-    ab1 = Process(target=agentbehavior1, args=(cola1,))
-    ab1.start()
+    #ab1 = Process(target=agentbehavior1, args=(cola1,))
+    #ab1.start()
 
     # Ponemos en marcha el servidor
-    app.run(host=hostname, port=port)
+    #app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
-    ab1.join()
-    logger.info('The End')
+    #ab1.join()
+    #logger.info('The End')
