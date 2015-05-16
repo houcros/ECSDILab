@@ -140,7 +140,7 @@ if __name__ == '__main__':
     gr = message_buscador()
 
     for a, b, c in gr:
-      print c
+      print a, c
 
     print 'The End'
 

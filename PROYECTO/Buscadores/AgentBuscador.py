@@ -395,11 +395,17 @@ def buscar_actividades(nombreActividad, radio):
     #if query_result.has_attributions:
         #print query_result.html_attributions
 
-    #for place in query_result.places:
-        ## Returned places from a query are place summaries.
-        #print place.name
-        #print place.geo_location
-        #print place.reference
+    gr = Graph()
+    nm = Namespace("http://www.agentes.org/actividades/")
+    #####################################################
+    # REPASAR ONTOLOGIAS
+    #####################################################
+    for place in query_result.places:
+        plc = nm.place
+        # Returned places from a query are place summaries.
+        gr.add((plc, FOAF.name, Literal(place.name)))
+        gr.add((plc, FOAF.lives, Literal(place.geo_location)))
+        gr.add((plc, FOAF.has, Literal(place.reference)))
 
         ## The following method has to make a further API call.
         #place.get_details()
@@ -408,7 +414,7 @@ def buscar_actividades(nombreActividad, radio):
         #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
         #print place.local_phone_number
 
-    return query_result.places
+    return gr
 
 if __name__ == '__main__':
     #buscar_vuelos() #Funciona
@@ -425,6 +431,20 @@ if __name__ == '__main__':
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
     
+    gr = buscar_actividades('museum', 300)
+    res_obj= agn['Buscador-responde']
+    #gr = Graph()
+    #gr.add((res_obj, DSO.AddressList,  Literal(cont)))
+    gr = build_message(gr, 
+                       ACL.inform, 
+                       sender=AgentBuscador.uri, 
+                       content=res_obj,
+                       msgcnt=mss_cnt 
+                       )
+    resp = gr.serialize(format='xml')
+    print resp
+    print "######################"
+
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
 
