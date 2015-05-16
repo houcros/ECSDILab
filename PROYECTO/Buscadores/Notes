@@ -1,0 +1,16 @@
+buscador
+	-ciudad destino
+	-dist de centro
+	-fechas
+	-max-min stars / max-min rate
+	-numero de adultos
+	-numero de niños
+	-categoria
+	-num habitaciones
+	-hotelRating
+	-amenityMask
+	-proximityDistance
+	-precio en RateInfo.ChargeableRateInfo
+	-elegir/ordenar por precio, proximidad, estrellas (quality), tripAdvisorRating
+
+	-guardar:coordenadas del centro de N ciudades
