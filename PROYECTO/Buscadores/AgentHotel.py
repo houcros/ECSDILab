@@ -18,28 +18,43 @@ acceso a EAN (EANCID, EANKEY)
 __author__ = 'javier'
 
 import requests
-from AgentUtil.APIKeys import EANCID, EANKEY
+import urllib2
+import md5
+import time
+from AgentUtil.APIKeys import EAN_DEV_CID, EAN_KEY, EAN_SECRET
 
 
-EAN_END_POINT = 'http://dev.api.ean.com/ean-services/rs/hotel/v3/list'
+service = 'http://api.ean.com/ean-services/rs/hotel/'
+version = 'v3/'
+method = 'list'
+EAN_END_POINT = service + version + method
 
-# Hacemos la peticion GET a la entrada del servicio REST
-# Horteles en coordenadas de Barcelona en un radio de 2Km a la redonda
-# 10 resultados con fecha de llegada 1 de febrero y salida 5 de febrero
-# La fecha esta en formato ingles MM/DD/YYYY
-# No se pueden hacer consultas con mas de un mes de antelacion
+hash = md5.new()
+# seconds since GMT Epoch
+timestamp = str(int(time.time()))
+# print timestamp
+sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
+# print "Sig has ", sig.__len__(), " charachters"
+
+
+
 r = requests.get(EAN_END_POINT,
-                 params={'apiKey': EANKEY, 'cid': EANCID, 'numberOfResults': 10,
-                         'latitude': '041.40000', 'longitude': '002.16000',
+                 params={'cid': EAN_DEV_CID, 'minorRev': 29, 'apiKey': EAN_KEY, 'sig': sig,
+                 		'locale': 'es_ES', 'currencyCode': 'EUR', 'numberOfResults': 10,            'latitude': '041.40000', 'longitude': '002.16000',
                          'searchRadius': 2, 'searchRadiusUnit': 'KM',
-                         'arrivalDate': '02/01/2015', 'departureDate': '02/05/2015'
-                         })
+                         'arrivalDate': '06/02/2015', 'departureDate': '06/08/2015'
+                       })
 
-# Generamos un diccionario python de la respuesta en JSON
-print r.text
+#print r.text
 dic = r.json()
 
+if 'EanWsError' in dic['HotelListResponse']:
+	print 'Error de tipo ' + dic['HotelListResponse']['EanWsError']['category'] + ' => ' + dic['HotelListResponse']['EanWsError']['verboseMessage']
+else:
+	for hot in dic['HotelListResponse']['HotelList']['HotelSummary']:
+		print hot['name']
 
-# Imprimimos la informacion del nombre de los hores de los resultados
-for hot in dic['HotelListResponse']['HotelList']['HotelSummary']:
-    print hot['name']
+
+
+
+
