@@ -22,14 +22,17 @@ import requests
 import urllib2
 import md5
 import time
+from geopy.geocoders import Nominatim
 from AgentUtil.APIKeys import EAN_DEV_CID, EAN_KEY, EAN_SECRET
 
-
+# COMMON QUERY PARAMS
 service = 'http://api.ean.com/ean-services/rs/hotel/'
 version = 'v3/'
 method = 'list'
 EAN_END_POINT = service + version + method
+minorRev = 29
 
+# GENERATE SECRET FOR QUERY
 hash = md5.new()
 # seconds since GMT Epoch
 timestamp = str(int(time.time()))
@@ -37,14 +40,41 @@ timestamp = str(int(time.time()))
 sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 # print "Sig has ", sig.__len__(), " charachters"
 
+# SPECIFIC PARAMS FOR QUERY
+destinationCity = "Barcelona"
+destinationCountry = "Spain"
+searchRadius = 2
+searchRadiusUnit = "KM"
+arrivalDate = "06/02/2015"
+departureDate = "06/08/2015"
+numberOfAdults = 2
+numberOfChildren = 0
+propertyCategory = 1
+#Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
 
+# COORDINATES OF THE DESTINATION
+geolocator = Nominatim()
+location = geolocator.geocode(destinationCity + ", " + destinationCountry)
+print ((location.latitude, location.longitude))
+print
 
 r = requests.get(EAN_END_POINT,
-                 params={'cid': EAN_DEV_CID, 'minorRev': 29, 'apiKey': EAN_KEY, 'sig': sig,
-                 		'locale': 'es_ES', 'currencyCode': 'EUR', 'numberOfResults': 2,
-                 		'latitude': '041.40000', 'longitude': '002.16000',
-                        'searchRadius': 2, 'searchRadiusUnit': 'KM',
-                        'arrivalDate': '06/02/2015', 'departureDate': '06/08/2015'
+                 params={'cid': EAN_DEV_CID,
+                 		'minorRev': minorRev,
+                 		'apiKey': EAN_KEY,
+                 		'sig': sig,
+                 		'locale': 'es_ES',
+                 		'currencyCode': 'EUR',
+                 		'numberOfResults': 10,
+                 		'latitude': location.latitude,
+                 		'longitude': location.longitude,
+                        'searchRadius': searchRadius,
+                        'searchRadiusUnit': searchRadiusUnit,
+                        'arrivalDate': arrivalDate,
+                        'departureDate': departureDate,
+                        'numberOfAdults': numberOfAdults,
+                        'numberOfChildren': numberOfChildren,
+                        'propertyCategory': propertyCategory
                     	})
 
 #print r.text
@@ -65,7 +95,7 @@ else:
 			' tripAdvisorReviewCount: ' + '{:.0f}'.format(hot['tripAdvisorReviewCount'])
 			)
 		print
-		
+
 
 
 
