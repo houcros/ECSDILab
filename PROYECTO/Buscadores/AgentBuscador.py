@@ -12,6 +12,7 @@ from multiprocessing import Process, Queue
 import socket
 import gzip
 import argparse
+import json
 
 from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
@@ -24,7 +25,7 @@ from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 
 import pprint
-from googleplaces import GooglePlaces
+from googleplaces import GooglePlaces, types, lang
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
 
 # Definimos los parametros de la linea de comandos
@@ -377,40 +378,42 @@ def buscar_transportes():
     for row in qres.result:
         print row    
 
-def buscar_actividades(nombreActividad, radio):
-    print nombreActividad
+def buscar_actividades(location, keyword, radius, types):
 
     google_places = GooglePlaces(GOOGLEAPI_KEY)
 
-    query_result = google_places.nearby_search(
-        location=u'Barcelona, España', keyword='', #Podemos poner nombres de museos para filtrar mas la busqueda, etc.. (ej: Basilica Galeria)
-        radius=radio, types=[nombreActividad]) #Tipos de lugares, vease listado de types en https://developers.google.com/places/documentation/supported_types?hl=es
+    #query_result = google_places.nearby_search(
+    #    location=u'Barcelona, España', keyword='', #Podemos poner nombres de museos para filtrar mas la busqueda, etc.. (ej: Basilica Galeria)
+    #    radius=radio, types=[nombreActividad]) #Tipos de lugares, vease listado de types en https://developers.google.com/places/documentation/supported_types?hl=es
 
     #query_result_night_club = google_places.nearby_search(
        # location=u'Barcelona, España', keyword='', 
         #radius=300, types=['night_club']) 
 
-    # Imprimimos informacion de los resultados
-    #print query_result
-    #if query_result.has_attributions:
-        #print query_result.html_attributions
+    # You may prefer to use the text_search API, instead.
+    query_result = google_places.nearby_search(
+        location=location, keyword=keyword,
+        radius=radius, types=types)
+
+    if query_result.has_attributions:
+        print query_result.html_attributions
 
     gr = Graph()
     nm = Namespace("http://www.agentes.org/actividades/")
     #####################################################
     # REPASAR ONTOLOGIAS
     #####################################################
+    myns = Namespace("http://my.namespace.org/lugares/")
     for place in query_result.places:
         plc = nm.place
         # Returned places from a query are place summaries.
-        gr.add((plc, FOAF.name, Literal(place.name)))
-        gr.add((plc, FOAF.lives, Literal(place.geo_location)))
-        gr.add((plc, FOAF.has, Literal(place.reference)))
-
-        ## The following method has to make a further API call.
-        #place.get_details()
-        ## Referencing any of the attributes below, prior to making a call to
-        ## get_details() will raise a googleplaces.GooglePlacesAttributeError.
+        gr.add((plc, myns.nombre, Literal(place.name)))
+        gr.add((plc, myns.localizacion, Literal(place.geo_location)))
+        place.get_details()
+        gr.add((plc, myns.rating, Literal(place.rating)))
+        gr.add((plc, myns.direccion, Literal(place.formatted_address)))
+        gr.add((plc, myns.tel_int, Literal(place.international_phone_number)))
+        
         #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
         #print place.local_phone_number
 
@@ -431,7 +434,7 @@ if __name__ == '__main__':
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
     
-    gr = buscar_actividades('museum', 300)
+    gr = buscar_actividades('Barcelona, Spain', 'movie', 20000, [types.TYPE_MOVIE_THEATER])
     res_obj= agn['Buscador-responde']
     #gr = Graph()
     #gr.add((res_obj, DSO.AddressList,  Literal(cont)))
@@ -441,7 +444,7 @@ if __name__ == '__main__':
                        content=res_obj,
                        msgcnt=mss_cnt 
                        )
-    resp = gr.serialize(format='xml')
+    resp = gr.serialize(format='pretty-xml')
     print resp
     print "######################"
 
