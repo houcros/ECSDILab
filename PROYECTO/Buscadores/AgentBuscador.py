@@ -18,7 +18,7 @@ from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
 
-from AgentUtil.OntoNamespaces import ACL, DSO , TIO
+from AgentUtil.OntoNamespaces import ACL, DSO, TIO, AMO
 from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.Agent import Agent
@@ -83,6 +83,12 @@ DirectoryAgent = Agent('DirectoryAgent',
                        agn.Directory,
                        'http://%s:%d/Register' % (dhostname, dport),
                        'http://%s:%d/Stop' % (dhostname, dport))
+
+# Datos del Agente
+AgentePlanificador = Agent('AgentePlanificador',
+                       agn.AgentePlanificador,
+                       'http://%s:%d/comm' % (hostname, 9010),
+                       'http://%s:%d/Stop' % (hostname, 9010))
 
 # Global dsgraph triplestore
 dsgraph = Graph()
@@ -400,9 +406,6 @@ def buscar_actividades(location, keyword, radius, types):
 
     gr = Graph()
     nm = Namespace("http://www.agentes.org/actividades/")
-    #####################################################
-    # REPASAR ONTOLOGIAS
-    #####################################################
     myns = Namespace("http://my.namespace.org/lugares/")
     for place in query_result.places:
         plc = nm.place
@@ -423,28 +426,43 @@ if __name__ == '__main__':
     #buscar_vuelos() #Funciona
     #buscar_transportes() #Funciona pero con vuelos, con transportes peta
 
-    #Llamadas a la API de Google Places para las diferentes actividades
-
-    #buscar_actividades('museum', 300) # museum, zoo, night_club, amusement_park
-    #buscar_actividades('zoo', 5000) 
-    #buscar_actividades('night_club', 300) 
-    #buscar_actividades('amusement_park', 600) 
-
     # Ponemos en marcha los behaviors
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
     
-    gr = buscar_actividades('Barcelona, Spain', 'movie', 20000, [types.TYPE_MOVIE_THEATER])
+    ###########################################################################
+    #                           BUSCAR ACTIVIDADES
+    ###########################################################################
+    # Params
+    location = 'Barcelona, Spain'
+    activity = 'movie'
+    radius = 20000
+    types = [types.TYPE_MOVIE_THEATER]
+
+    # Llamamos al buscador
+    gmess = Graph()
+    gmess.bind('amo', AMO)
+    gmess.bind('foaf', FOAF)
+    gmess.bind('dso', DSO)
+    myns = Namespace("http://my.namespace.org/lugares/")
+    gmess.bind('myns', myns)
+
+    print "Will look for activities...\n"
+    #gmess = buscar_actividades(location, activity, radius, types)
+    print "Done looking for actvities\n"
     res_obj= agn['Buscador-responde']
-    #gr = Graph()
-    #gr.add((res_obj, DSO.AddressList,  Literal(cont)))
-    gr = build_message(gr, 
+    gmess.add((res_obj, DSO.AddressList,  Literal(2)))
+    gr = send_message(
+        build_message(gmess, 
                        ACL.inform, 
                        sender=AgentBuscador.uri, 
                        content=res_obj,
                        msgcnt=mss_cnt 
-                       )
+                       ),
+        AgentePlanificador.address)
+    print "Sent message\n"
     resp = gr.serialize(format='pretty-xml')
+    print "Response was\n"
     print resp
     print "######################"
 

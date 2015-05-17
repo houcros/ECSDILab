@@ -26,6 +26,7 @@ from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.Agent import Agent
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.OntoNamespaces import AMO, ACL
+from AgentUtil.Logging import config_logger
 
 # Configuration stuff
 hostname = socket.gethostname()
@@ -72,7 +73,51 @@ def comunicacion():
     """
     global dsgraph
     global mss_cnt
-    pass
+
+    print 'Peticion de informacion recibida\n'
+
+    # Extraemos el mensaje y creamos un grafo con el
+    message = request.args['content']
+    print "Mensaje extraído\n"
+    gm = Graph()
+    gm.parse(data=message)
+    print 'Grafo creado con el mensaje'
+
+    msgdic = get_message_properties(gm)
+    
+    # Comprobamos que sea un mensaje FIPA ACL
+    if msgdic is None:
+        # Si no es, respondemos que no hemos entendido el mensaje
+        gr = build_message(Graph(), ACL['not-understood'], sender=AgentePlanificador.uri, msgcnt=mss_cnt)
+        print 'El mensaje no era un FIPA ACL'
+    else:
+        # Obtenemos la performativa
+        perf = msgdic['performative']
+
+        if perf != ACL.request:
+            # Si no es un request, respondemos que no hemos entendido el mensaje
+            gr = build_message(Graph(), ACL['not-understood'], sender=AgentePlanificador.uri, msgcnt=mss_cnt)
+        else:
+            # Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
+            # de registro
+
+            # Averiguamos el tipo de la accion
+            if 'content' in msgdic:
+                content = msgdic['content']
+                accion = gm.value(subject=content, predicate=RDF.type)
+
+            # Aqui realizariamos lo que pide la accion
+            # Por ahora simplemente retornamos un Inform-done
+            gr = build_message(Graph(),
+                ACL['inform-done'],
+                sender=AgentePlanificador.uri,
+                msgcnt=mss_cnt,
+                receiver=msgdic['sender'], )
+    mss_cnt += 1
+
+    print 'Respondemos a la peticion\n'
+
+    return gr.serialize(format='xml')
 
 
 @app.route("/Stop")
@@ -128,19 +173,18 @@ def message_buscador():
 
 if __name__ == '__main__':
     # Ponemos en marcha los behaviors
-    #   ab1 = Process(target=agentbehavior1, args=(cola1,))
-    #   ab1.start()
+    ab1 = Process(target=agentbehavior1, args=(cola1,))
+    ab1.start()
 
     # Ponemos en marcha el servidor
-    #   app.run(host=hostname, port=port)
+    app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
     #   ab1.join()
 
-    gr = message_buscador()
-
-    for a, b, c in gr:
-      print a, c
+    #gr = message_buscador()
+    #for a, b, c in gr:
+    #  print a, c
 
     print 'The End'
 
