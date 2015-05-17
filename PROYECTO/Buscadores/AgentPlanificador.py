@@ -25,8 +25,10 @@ from flask import Flask, request
 from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.Agent import Agent
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
-from AgentUtil.OntoNamespaces import AMO, ACL
+from AgentUtil.OntoNamespaces import AMO, ACL, DSO
+from rdflib.namespace import FOAF
 from AgentUtil.Logging import config_logger
+import json
 
 # Configuration stuff
 hostname = socket.gethostname()
@@ -175,6 +177,34 @@ if __name__ == '__main__':
     # Ponemos en marcha los behaviors
     ab1 = Process(target=agentbehavior1, args=(cola1,))
     ab1.start()
+
+    # Peticion de actividades a AgentBuscador
+    # Hacen falta todos estos binds? Comprobarlo
+    gmess = Graph()
+    gmess.bind('amo', AMO)
+    gmess.bind('foaf', FOAF)
+    gmess.bind('dso', DSO)
+    myns = Namespace("http://my.namespace.org/lugares/")
+    gmess.bind('myns', myns)
+
+    res_obj= agn['Planificador-pide-actividades']
+    # TESTING gmess. Cambiar por los parametros de busqueda
+    gmess.add((res_obj, DSO.AddressList,  Literal(10)))
+    
+    gr = send_message(build_message(gmess, 
+                       perf=ACL.request, 
+                       sender=AgentePlanificador.uri, 
+                       receiver=AgenteBuscador.uri,
+                       content=res_obj,
+                       msgcnt=mss_cnt 
+                       ),
+        AgenteBuscador.address)
+
+    print "Sent request to AgenteBuscador\n"
+    print "Response: \n"
+    for s, p, o in gr:
+        print s, p, o
+    #print json.dumps(gr.json(), indent=4, sort_keys=True)
 
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
