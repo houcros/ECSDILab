@@ -23,6 +23,7 @@ from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
+import logging
 
 import pprint
 from googleplaces import GooglePlaces, types, lang
@@ -38,6 +39,7 @@ parser.add_argument('--dport', type=int, help="Puerto de comunicacion del agente
 
 # Logging
 logger = config_logger(level=1)
+#logging.basicConfig()
 
 # parsing de los parametros de la linea de comandos
 args = parser.parse_args()
@@ -183,26 +185,27 @@ def comunicacion():
     # Extraemos el mensaje y creamos un grafo con el
     message = request.args['content']
     print "Mensaje extraído\n"
-    print message
+    #print message
     print '\n\n'
 
     nm = Namespace("http://www.agentes.org/actividades/")
+    myns = Namespace("http://my.namespace.org/lugares/")
     gm = Graph()
     gm.parse(data=message)
     print "Request Graph:"
     #gm.triples((nm.place, None, None))
     for p, o in gm[nm.place]:
-        print 'p: ' + p
-        print 'o: ' + o
-        print '\n'
-        if p == 'http://my.namespace.org/lugares/lugar':
+        #print 'p: ' + p
+        #print 'o: ' + o
+        #print '\n'
+        if p == myns.lugar:
             location = o
             print "Location assigned!"
-        elif p == 'http://my.namespace.org/lugares/actividad':
+        elif p == myns.actividad:
             activity = o
             print "Activity assigned!"
-        elif p == 'http://my.namespace.org/lugares/radio':
-            radius == o
+        elif p == myns.radio:
+            radius = o
             print "Radius assigned!"
 
 

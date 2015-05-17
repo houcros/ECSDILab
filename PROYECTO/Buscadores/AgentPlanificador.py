@@ -30,6 +30,7 @@ from rdflib.namespace import FOAF
 from AgentUtil.Logging import config_logger
 from googleplaces import types
 import json
+import logging
 
 # Configuration stuff
 hostname = socket.gethostname()
@@ -59,6 +60,8 @@ DirectoryAgent = Agent('DirectoryAgent',
                        'http://%s:9000/Register' % hostname,
                        'http://%s:9000/Stop' % hostname)
 
+
+#logging.basicConfig()
 
 # Global triplestore graph
 dsgraph = Graph()
