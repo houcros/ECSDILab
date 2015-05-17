@@ -28,6 +28,7 @@ from AgentUtil.ACLMessages import build_message, send_message, get_message_prope
 from AgentUtil.OntoNamespaces import AMO, ACL, DSO
 from rdflib.namespace import FOAF
 from AgentUtil.Logging import config_logger
+from googleplaces import types
 import json
 
 # Configuration stuff
@@ -184,13 +185,25 @@ if __name__ == '__main__':
     gmess.bind('amo', AMO)
     gmess.bind('foaf', FOAF)
     gmess.bind('dso', DSO)
+    nm = Namespace("http://www.agentes.org/actividades/")
     myns = Namespace("http://my.namespace.org/lugares/")
     gmess.bind('myns', myns)
 
     res_obj= agn['Planificador-pide-actividades']
     # TESTING gmess. Cambiar por los parametros de busqueda
-    gmess.add((res_obj, DSO.AddressList,  Literal(10)))
-    
+
+    location = 'Barcelona, Spain'
+    activity = 'movie'
+    radius = 20000
+    #types = [types.TYPE_MOVIE_THEATER]
+    #types = list()
+
+    plc = nm.place
+    gmess.add((plc, myns.lugar, Literal(location)))
+    gmess.add((plc, myns.actividad, Literal(activity)))
+    gmess.add((plc, myns.radio, Literal(radius)))
+    gmess.add((plc, myns.tipos, Literal(types)))
+
     gr = send_message(build_message(gmess, 
                        perf=ACL.request, 
                        sender=AgentePlanificador.uri, 
@@ -203,7 +216,10 @@ if __name__ == '__main__':
     print "Sent request to AgenteBuscador\n"
     print "Response: \n"
     for s, p, o in gr:
-        print s, p, o
+        print 's: ' + s
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
     #print json.dumps(gr.json(), indent=4, sort_keys=True)
 
     # Ponemos en marcha el servidor

@@ -172,18 +172,62 @@ def comunicacion():
     global dsgraph
     global mss_cnt
 
+    global location
+    global activity
+    global radius
+    #global types
+
     #logger.info('Peticion de informacion recibida')
     print 'Peticion de informacion recibida\n'
 
     # Extraemos el mensaje y creamos un grafo con el
     message = request.args['content']
     print "Mensaje extraído\n"
+    print message
+    print '\n\n'
+
+    nm = Namespace("http://www.agentes.org/actividades/")
     gm = Graph()
     gm.parse(data=message)
-    print 'Grafo creado con el mensaje\n'
+    print "Request Graph:"
+    #gm.triples((nm.place, None, None))
+    for p, o in gm[nm.place]:
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
+        if p == 'http://my.namespace.org/lugares/lugar':
+            location = o
+            print "Location assigned!"
+        elif p == 'http://my.namespace.org/lugares/actividad':
+            activity = o
+            print "Activity assigned!"
+        elif p == 'http://my.namespace.org/lugares/radio':
+            radius == o
+            print "Radius assigned!"
+
+
 
     msgdic = get_message_properties(gm)
     print msgdic
+    print '\n\n'
+
+
+    print "Puedo definir las variables de busqueda?"
+    #location = 'Barcelona, Spain'
+    #activity = 'movie'
+    #radius = 20000
+    types = list()
+    #types.append('movie_theather')
+    print "Sí!"
+
+    print "Puedo llamar a buscar_actividades?"
+    gresult = buscar_actividades(location, activity, radius, types)
+    print "Sí!"
+    for s, p, o in gresult:
+        print 's: ' + s
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
 
     #res_obj= agn['Buscador-responde']
     # Comprobamos que sea un mensaje FIPA ACL
@@ -197,7 +241,7 @@ def comunicacion():
 
         if perf != ACL.request:
             # Si no es un request, respondemos que no hemos entendido el mensaje
-            print "Es una request FIPA ACL\n"
+            print "No es una request FIPA ACL\n"
             gr = build_message(Graph(), ACL['not-understood'], sender=AgenteBuscador.uri, msgcnt=mss_cnt)
         else:
             # Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
@@ -210,7 +254,7 @@ def comunicacion():
 
             # Aqui realizariamos lo que pide la accion
             # Por ahora simplemente retornamos un Inform-done
-            gr = build_message(Graph(),
+            gr = build_message(gresult,
                 ACL['inform-done'],
                 sender=AgenteBuscador.uri,
                 msgcnt=mss_cnt,
@@ -218,51 +262,9 @@ def comunicacion():
                 #content=res_obj,
         mss_cnt += 1
 
-    print 'Respondemos a la peticion'
+    #print 'Respondemos a la peticion'
     return gr.serialize(format='xml')
 
-    # gr = send_message(
-    #     build_message(gmess, perf=ACL.request,
-    #                   sender=AgenteBuscador.uri,
-    #                   receiver=AgentePlanificador.uri,
-    #                   content=bus_obj,
-    #                   msgcnt=mss_cnt),
-    #     AgentePlanificador.address)
-
-
-    # print "Got a request!\n"
-    # # Respondemos al planificador
-    # # Hacen falta todos estos binds? Comprobarlo
-    # gmess = Graph()
-    # gmess.bind('amo', AMO)
-    # gmess.bind('foaf', FOAF)
-    # gmess.bind('dso', DSO)
-    # myns = Namespace("http://my.namespace.org/lugares/")
-    # gmess.bind('myns', myns)
-
-    # print "Looking for activities...\n"
-    # #gmess = buscar_actividades(location, activity, radius, types)
-    # print "Done looking for actvities\n"
-
-    # res_obj= agn['Buscador-responde']
-    # # TESTING gmess. Cambiar por el del resultado de la busqueda (arriba)
-    # gmess.add((res_obj, DSO.AddressList,  Literal(2)))
-
-    # gr = send_message(
-    #     build_message(gmess, 
-    #                    perf=ACL.inform, 
-    #                    sender=AgentBuscador.uri, 
-    #                    receiver=AgentePlanificador.uri,
-    #                    content=res_obj,
-    #                    msgcnt=mss_cnt 
-    #                    ),
-    #     AgentePlanificador.address)
-    # print "Sent response to AgentePlanificador\n"
-    # #resp = gr.serialize(format='pretty-xml')
-    # #print "Response was\n"
-    # #print resp
-    # #print "######################"
-    # #return resp
 
 def tidyup():
     """
@@ -415,16 +417,13 @@ def buscar_transportes():
     for row in qres.result:
         print row    
 
-def buscar_actividades(location, keyword, radius, types):
+def buscar_actividades(location, keyword, radius, types=[]):
 
+    print "Recibo peticion de actividades.\n"
     google_places = GooglePlaces(GOOGLEAPI_KEY)
 
     # De momento params de testing
     # Tomar los de la request en comm mas adelante
-    location = 'Barcelona, Spain'
-    activity = 'movie'
-    radius = 20000
-    types = [types.TYPE_MOVIE_THEATER]
 
     # You may prefer to use the text_search API, instead.
     query_result = google_places.nearby_search(
@@ -440,7 +439,10 @@ def buscar_actividades(location, keyword, radius, types):
     for place in query_result.places:
         plc = nm.place
         # Returned places from a query are place summaries.
+        #print "NAME: " + place.name
         gr.add((plc, myns.nombre, Literal(place.name)))
+        #print "LOCATION: "
+        #print place.geo_location
         gr.add((plc, myns.localizacion, Literal(place.geo_location)))
         place.get_details()
         gr.add((plc, myns.rating, Literal(place.rating)))
