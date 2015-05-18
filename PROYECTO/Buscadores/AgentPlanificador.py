@@ -38,6 +38,9 @@ port = 9010
 bport = 9001
 
 agn = Namespace("http://www.agentes.org#")
+myns = Namespace("http://my.namespace.org/")
+myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_atr = Namespace("http://my.namespace.org/atributos/")
 
 # Contador de mensajes
 mss_cnt = 0
@@ -188,9 +191,9 @@ if __name__ == '__main__':
     gmess.bind('amo', AMO)
     gmess.bind('foaf', FOAF)
     gmess.bind('dso', DSO)
-    nm = Namespace("http://www.agentes.org/actividades/")
-    myns = Namespace("http://my.namespace.org/lugares/")
     gmess.bind('myns', myns)
+    gmess.bind('myns_pet', myns_pet)
+    gmess.bind('myns_atr', myns_atr)
 
     res_obj= agn['Planificador-pide-actividades']
     # TESTING gmess. Cambiar por los parametros de busqueda
@@ -198,17 +201,13 @@ if __name__ == '__main__':
     location = 'Barcelona, Spain'
     activity = 'movie'
     radius = 20000
-    # NOTA 2: como le paso la lista como parametro? (Peta)
-    #types = [types.TYPE_MOVIE_THEATER]
-    #types = list()
-    tipo = types.TYPE_MOVIE_THEATER
-    # tipos = ['movie_theater']
+    tipo = types.TYPE_MOVIE_THEATER # tipo = ['movie_theater']
 
-    plc = nm.place
-    gmess.add((plc, myns.lugar, Literal(location)))
-    gmess.add((plc, myns.actividad, Literal(activity)))
-    gmess.add((plc, myns.radio, Literal(radius)))
-    gmess.add((plc, myns.tipo, Literal(tipo)))
+    actv = myns_pet.actividad
+    gmess.add((actv, myns_atr.lugar, Literal(location)))
+    gmess.add((actv, myns_atr.actividad, Literal(activity)))
+    gmess.add((actv, myns_atr.radio, Literal(radius)))
+    gmess.add((actv, myns_atr.tipo, Literal(tipo)))
 
     gr = send_message(build_message(gmess, 
                        perf=ACL.request, 

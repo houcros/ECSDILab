@@ -70,6 +70,12 @@ app = Flask(__name__)
 
 # Configuration constants and variables
 agn = Namespace("http://www.agentes.org#")
+nm = Namespace("http://www.agentes.org/actividades/")
+myns = Namespace("http://my.namespace.org/")
+myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_atr = Namespace("http://my.namespace.org/atributos/")
+myns_act = Namespace("http://my.namespace.org/actividades/")
+myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 # Contador de mensajes
 mss_cnt = 0
@@ -186,29 +192,27 @@ def comunicacion():
     # Extraemos el mensaje y creamos un grafo con el
     message = request.args['content']
     print "Mensaje extraído\n"
-    #print message
+    print message
     print '\n\n'
 
-    nm = Namespace("http://www.agentes.org/actividades/")
-    myns = Namespace("http://my.namespace.org/lugares/")
     gm = Graph()
     gm.parse(data=message)
     print "Request Graph:"
     #gm.triples((nm.place, None, None))
-    for p, o in gm[nm.place]:
+    for p, o in gm[myns_pet.actividad]:
         #print 'p: ' + p
         #print 'o: ' + o
         #print '\n'
-        if p == myns.lugar:
+        if p == myns_atr.lugar:
             location = o
             print "Location assigned!"
-        elif p == myns.actividad:
+        elif p == myns_atr.actividad:
             activity = o
             print "Activity assigned!"
-        elif p == myns.radio:
+        elif p == myns_atr.radio:
             radius = o
             print "Radius assigned!"
-        elif p == myns.tipo:
+        elif p == myns_atr.tipo:
             tipo = o
             print tipo
             print "Types assigned!"
@@ -441,20 +445,23 @@ def buscar_actividades(location, keyword, radius, types=[]):
         print query_result.html_attributions
 
     gr = Graph()
-    nm = Namespace("http://www.agentes.org/actividades/")
-    myns = Namespace("http://my.namespace.org/lugares/")
+    gr.bind('myns_pet', myns_pet)
+    gr.bind('myns_atr', myns_atr)
+    gr.bind('myns_act', myns_act)
+
+    #ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
     for place in query_result.places:
-        plc_obj = nm[place.name + '-Found']
+        plc_obj = myns_act[place.name + '-Found']
         # Returned places from a query are place summaries.
         #print "NAME: " + place.name
-        gr.add((plc_obj, myns.nombre, Literal(place.name)))
+        gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
         #print "LOCATION: "
         #print place.geo_location
-        gr.add((plc_obj, myns.localizacion, Literal(place.geo_location)))
+        gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
         place.get_details()
-        gr.add((plc_obj, myns.rating, Literal(place.rating)))
-        gr.add((plc_obj, myns.direccion, Literal(place.formatted_address)))
-        gr.add((plc_obj, myns.tel_int, Literal(place.international_phone_number)))
+        gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
+        gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
+        gr.add((plc_obj, myns_atr.tel_int, Literal(place.international_phone_number)))
         
         #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
         #print place.local_phone_number
