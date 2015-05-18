@@ -177,7 +177,8 @@ def comunicacion():
     global location
     global activity
     global radius
-    #global types
+    global tipo
+    #tipo = types.TYPE_MOVIE_THEATER
 
     #logger.info('Peticion de informacion recibida')
     print 'Peticion de informacion recibida\n'
@@ -207,6 +208,10 @@ def comunicacion():
         elif p == myns.radio:
             radius = o
             print "Radius assigned!"
+        elif p == myns.tipo:
+            tipo = o
+            print tipo
+            print "Types assigned!"
 
 
 
@@ -216,15 +221,14 @@ def comunicacion():
 
 
     print "Puedo definir las variables de busqueda?"
-    #location = 'Barcelona, Spain'
-    #activity = 'movie'
-    #radius = 20000
-    types = list()
-    #types.append('movie_theather')
+    lista = list()
+    lista.append(str(tipo))
+    print "Lista append:"
+    print lista
     print "Sí!"
 
     print "Puedo llamar a buscar_actividades?"
-    gresult = buscar_actividades(location, activity, radius, types)
+    gresult = buscar_actividades(location, activity, radius, lista)
     print "Sí!"
     for s, p, o in gresult:
         print 's: ' + s

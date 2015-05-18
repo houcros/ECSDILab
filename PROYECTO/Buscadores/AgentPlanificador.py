@@ -201,12 +201,14 @@ if __name__ == '__main__':
     # NOTA 2: como le paso la lista como parametro? (Peta)
     #types = [types.TYPE_MOVIE_THEATER]
     #types = list()
+    tipo = types.TYPE_MOVIE_THEATER
+    # tipos = ['movie_theater']
 
     plc = nm.place
     gmess.add((plc, myns.lugar, Literal(location)))
     gmess.add((plc, myns.actividad, Literal(activity)))
     gmess.add((plc, myns.radio, Literal(radius)))
-    gmess.add((plc, myns.tipos, Literal(types)))
+    gmess.add((plc, myns.tipo, Literal(tipo)))
 
     gr = send_message(build_message(gmess, 
                        perf=ACL.request, 
