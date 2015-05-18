@@ -440,17 +440,17 @@ def buscar_actividades(location, keyword, radius, types=[]):
     nm = Namespace("http://www.agentes.org/actividades/")
     myns = Namespace("http://my.namespace.org/lugares/")
     for place in query_result.places:
-        plc = nm.place
+        plc_obj = nm[place.name + '-Found']
         # Returned places from a query are place summaries.
         #print "NAME: " + place.name
-        gr.add((plc, myns.nombre, Literal(place.name)))
+        gr.add((plc_obj, myns.nombre, Literal(place.name)))
         #print "LOCATION: "
         #print place.geo_location
-        gr.add((plc, myns.localizacion, Literal(place.geo_location)))
+        gr.add((plc_obj, myns.localizacion, Literal(place.geo_location)))
         place.get_details()
-        gr.add((plc, myns.rating, Literal(place.rating)))
-        gr.add((plc, myns.direccion, Literal(place.formatted_address)))
-        gr.add((plc, myns.tel_int, Literal(place.international_phone_number)))
+        gr.add((plc_obj, myns.rating, Literal(place.rating)))
+        gr.add((plc_obj, myns.direccion, Literal(place.formatted_address)))
+        gr.add((plc_obj, myns.tel_int, Literal(place.international_phone_number)))
         
         #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
         #print place.local_phone_number

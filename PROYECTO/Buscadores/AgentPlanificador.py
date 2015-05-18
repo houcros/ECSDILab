@@ -198,6 +198,7 @@ if __name__ == '__main__':
     location = 'Barcelona, Spain'
     activity = 'movie'
     radius = 20000
+    # NOTA 2: como le paso la lista como parametro? (Peta)
     #types = [types.TYPE_MOVIE_THEATER]
     #types = list()
 
@@ -218,6 +219,7 @@ if __name__ == '__main__':
 
     print "Sent request to AgenteBuscador\n"
     print "Response: \n"
+    # NOTA 1: cómo recorro esto fijando el primer elemento?
     for s, p, o in gr:
         print 's: ' + s
         print 'p: ' + p
