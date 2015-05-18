@@ -25,7 +25,7 @@ from flask import Flask, request
 from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.Agent import Agent
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
-from AgentUtil.OntoNamespaces import AMO, ACL, DSO
+from AgentUtil.OntoNamespaces import ACL, DSO
 from rdflib.namespace import FOAF
 from AgentUtil.Logging import config_logger
 from googleplaces import types
@@ -157,27 +157,27 @@ def agentbehavior1(cola):
     """
     pass
 
-def message_buscador():
-    """
-
-    """
-    gmess = Graph()
-
+#def message_buscador():
+#    """
+#
+#    """
+#    gmess = Graph()
+#
     # Construimos el mensaje de registro
-    gmess.bind('amo', AMO)
-    bus_obj = agn[AgentePlanificador.name + '-Request']
-    gmess.add((bus_obj, AMO.requestType, Literal('Actividad')))
+#    gmess.bind('amo', AMO)
+#    bus_obj = agn[AgentePlanificador.name + '-Request']
+#    gmess.add((bus_obj, AMO.requestType, Literal('Actividad')))
 
     # Lo metemos en un envoltorio FIPA-ACL y lo enviamos
-    gr = send_message(
-        build_message(gmess, perf=ACL.request,
-                      sender=AgentePlanificador.uri,
-                      receiver=AgenteBuscador.uri,
-                      content=bus_obj,
-                      msgcnt=mss_cnt),
-        AgenteBuscador.address)
+#    gr = send_message(
+#        build_message(gmess, perf=ACL.request,
+#                      sender=AgentePlanificador.uri,
+#                      receiver=AgenteBuscador.uri,
+#                      content=bus_obj,
+#                      msgcnt=mss_cnt),
+#        AgenteBuscador.address)
 
-    return gr
+#    return gr
 
 
 if __name__ == '__main__':
