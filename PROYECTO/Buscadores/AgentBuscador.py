@@ -23,6 +23,7 @@ from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
+from AgentActividades import buscar_actividades
 import logging
 
 import pprint
@@ -180,79 +181,95 @@ def comunicacion():
     global dsgraph
     global mss_cnt
 
+    # Variables globales con los parametros de busqueda de actividades
+    # Realmente creo que podrian ser locales...
     global location
     global activity
     global radius
     global tipo
-    #tipo = types.TYPE_MOVIE_THEATER
 
     #logger.info('Peticion de informacion recibida')
-    print 'Peticion de informacion recibida\n'
+    print 'INFO AgentBuscador=> Peticion de informacion recibida\n'
 
     # Extraemos el mensaje y creamos un grafo con el
     message = request.args['content']
-    print "Mensaje extraído\n"
-    print message
-    print '\n\n'
+    print "INFO AgentBuscador => Mensaje extraído\n"
+    # VERBOSE
+    #print message
+    #print '\n\n'
 
+    # Grafo en el que volcamos el contenido de la request
     gm = Graph()
     gm.parse(data=message)
-    print "Request Graph:"
-    #gm.triples((nm.place, None, None))
+
+    # Damos por supuesto que el sujeto es una peticion de actividad
+    # En general habra que comprobar de que tipo es la peticion y hacer casos,
+    # aunque creo que podemos poner todas las peticiones en un mosmo grafo
+    # con diferentes sujetos (peticiones)
     for p, o in gm[myns_pet.actividad]:
+        # VERBOSE
         #print 'p: ' + p
         #print 'o: ' + o
         #print '\n'
+
+        # Asignamos a las variables de busqueda los valores que nos pasan
+        # en el grafo de la request
         if p == myns_atr.lugar:
             location = o
-            print "Location assigned!"
+            #print "Location assigned!"
         elif p == myns_atr.actividad:
             activity = o
-            print "Activity assigned!"
+            #print "Activity assigned!"
         elif p == myns_atr.radio:
             radius = o
-            print "Radius assigned!"
+            #print "Radius assigned!"
         elif p == myns_atr.tipo:
             tipo = o
-            print tipo
-            print "Types assigned!"
+            #print tipo
+            #print "Types assigned!"
 
 
-
+    # Propiedades del mensaje
     msgdic = get_message_properties(gm)
-    print msgdic
-    print '\n\n'
+    # VERBOSE
+    #print msgdic
+    #print '\n\n'
 
-
-    print "Puedo definir las variables de busqueda?"
+    # Creo la lista de tipos con UN SOLO tipo
+    # Habra que generalizar esto para mas de un tipo (o no)
+    # Si lo hacemos, el planificador me tendra que pasar una list como parametro
     lista = list()
     lista.append(str(tipo))
-    print "Lista append:"
-    print lista
-    print "Sí!"
+    # VERBOSE
+    #print "Lista append:"
+    #print lista
 
-    print "Puedo llamar a buscar_actividades?"
+    # Buscamos actividades en el metodo de AgentActividades
+    print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
     gresult = buscar_actividades(location, activity, radius, lista)
-    print "Sí!"
+    print "INFO AgentBuscador => Activities found: "
+    # VERBOSE
+    # Imprimimos el grafo de resultados para ver que pinta tiene
+    # Realmente solo queremos devolverlo al planificador
     for s, p, o in gresult:
         print 's: ' + s
         print 'p: ' + p
         print 'o: ' + o
         print '\n'
 
-    #res_obj= agn['Buscador-responde']
+    res_obj= agn['Buscador-responde']
     # Comprobamos que sea un mensaje FIPA ACL
     if msgdic is None:
         # Si no es, respondemos que no hemos entendido el mensaje
         gr = build_message(Graph(), ACL['not-understood'], sender=AgenteBuscador.uri, msgcnt=mss_cnt)
-        print 'El mensaje no era un FIPA ACL'
+        print 'INFO AgentBuscador => El mensaje no era un FIPA ACL'
     else:
         # Obtenemos la performativa
         perf = msgdic['performative']
 
         if perf != ACL.request:
             # Si no es un request, respondemos que no hemos entendido el mensaje
-            print "No es una request FIPA ACL\n"
+            print "INFO AgentBuscador => No es una request FIPA ACL\n"
             gr = build_message(Graph(), ACL['not-understood'], sender=AgenteBuscador.uri, msgcnt=mss_cnt)
         else:
             # Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
@@ -264,16 +281,18 @@ def comunicacion():
                 accion = gm.value(subject=content, predicate=RDF.type)
 
             # Aqui realizariamos lo que pide la accion
-            # Por ahora simplemente retornamos un Inform-done
+            # Retornamos un Inform-done con el grafo del resultado de la busqueda (gresult)
             gr = build_message(gresult,
                 ACL['inform-done'],
                 sender=AgenteBuscador.uri,
                 msgcnt=mss_cnt,
-                receiver=msgdic['sender'], )
-                #content=res_obj,
+                receiver=msgdic['sender'], 
+                content=res_obj
+                )
+
         mss_cnt += 1
 
-    #print 'Respondemos a la peticion'
+    print 'INFO AgentBuscador => Respondemos a la peticion de busqueda'
     return gr.serialize(format='xml')
 
 
@@ -427,46 +446,6 @@ def buscar_transportes():
     # Imprime los resultados
     for row in qres.result:
         print row    
-
-def buscar_actividades(location, keyword, radius, types=[]):
-
-    print "Recibo peticion de actividades.\n"
-    google_places = GooglePlaces(GOOGLEAPI_KEY)
-
-    # De momento params de testing
-    # Tomar los de la request en comm mas adelante
-
-    # You may prefer to use the text_search API, instead.
-    query_result = google_places.nearby_search(
-        location=location, keyword=keyword,
-        radius=radius, types=types)
-
-    if query_result.has_attributions:
-        print query_result.html_attributions
-
-    gr = Graph()
-    gr.bind('myns_pet', myns_pet)
-    gr.bind('myns_atr', myns_atr)
-    gr.bind('myns_act', myns_act)
-
-    #ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
-    for place in query_result.places:
-        plc_obj = myns_act[place.name + '-Found']
-        # Returned places from a query are place summaries.
-        #print "NAME: " + place.name
-        gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
-        #print "LOCATION: "
-        #print place.geo_location
-        gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
-        place.get_details()
-        gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
-        gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
-        gr.add((plc_obj, myns_atr.tel_int, Literal(place.international_phone_number)))
-        
-        #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
-        #print place.local_phone_number
-
-    return gr
 
 if __name__ == '__main__':
     #buscar_vuelos() #Funciona

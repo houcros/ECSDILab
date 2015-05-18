@@ -181,34 +181,48 @@ def message_buscador():
 
 
 if __name__ == '__main__':
+
     # Ponemos en marcha los behaviors
     ab1 = Process(target=agentbehavior1, args=(cola1,))
     ab1.start()
 
-    # Peticion de actividades a AgentBuscador
-    # Hacen falta todos estos binds? Comprobarlo
+    ###################################################
+    # Inicio de peticion de ACTIVIDADES a AgentBuscador
+    ###################################################
+
+    # Creo el grafo sobre el que mando los parametros de busqueda
     gmess = Graph()
-    gmess.bind('amo', AMO)
-    gmess.bind('foaf', FOAF)
-    gmess.bind('dso', DSO)
-    gmess.bind('myns', myns)
+    # Hago bind de las ontologias que voy a usar en el grafo
+    # Estas ontologias estan definidas arriba (abajo de los imports)
+    # Son las de peticiones y atributos (para los predicados de la tripleta)
     gmess.bind('myns_pet', myns_pet)
     gmess.bind('myns_atr', myns_atr)
 
-    res_obj= agn['Planificador-pide-actividades']
-    # TESTING gmess. Cambiar por los parametros de busqueda
-
+    # Parametros de la peticion de actividades
+    # Luego habra que sustituirlos por los que obtengo del planificador
     location = 'Barcelona, Spain'
     activity = 'movie'
     radius = 20000
-    tipo = types.TYPE_MOVIE_THEATER # tipo = ['movie_theater']
+    # De momento solo permitimos pasar un tipo. Ampliar a mas de uno luego quizas
+    tipo = types.TYPE_MOVIE_THEATER # Equivalente a: tipo = ['movie_theater']
 
+    # Sujeto de la tripleta: http://my.namespace.org/peticiones/actividad
+    # O sea, el mensaje sera una peticion de actividad
+    # El buscador tendra que ver que tipo de peticion es
     actv = myns_pet.actividad
+
+    # Paso los parametros de busqueda de actividad en el grafo
     gmess.add((actv, myns_atr.lugar, Literal(location)))
     gmess.add((actv, myns_atr.actividad, Literal(activity)))
     gmess.add((actv, myns_atr.radio, Literal(radius)))
     gmess.add((actv, myns_atr.tipo, Literal(tipo)))
 
+    # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
+    res_obj= agn['Planificador-pide-actividades']
+
+    # Construyo el grafo y lo mando (ver los metodos send_message y build_message
+    # en ACLMessages para entender mejor los parametros)
+    print "INFO AgentePlanificador=> Sending request to AgenteBuscador\n"
     gr = send_message(build_message(gmess, 
                        perf=ACL.request, 
                        sender=AgentePlanificador.uri, 
@@ -218,14 +232,29 @@ if __name__ == '__main__':
                        ),
         AgenteBuscador.address)
 
-    print "Sent request to AgenteBuscador\n"
-    print "Response: \n"
-    # NOTA 1: cómo recorro esto fijando el primer elemento?
+    # Ahora en gr tengo la respuesta de la busqueda con las actividades
+
+    # VERBOSE
+    # Con esto podemos coger todos los nombres de lasa actividades del grafo
+    # para poder coger los atributos de cada actividad
+    nombres = list()
+    for s, p, o in gr:
+        if p == myns_atr.nombre:
+            nombres.append(s)
+    print nombres
+
+    # VERBOSE
+    # Imprimo la respuesta por pantalla para ver lo que devuelve
+    # Luego en verdad esto se pasa al algoritmo del planificador
+    print "INFO AgentePlanificador => Response: \n"
     for s, p, o in gr:
         print 's: ' + s
         print 'p: ' + p
         print 'o: ' + o
         print '\n'
+
+    # VERBOSE
+    # Descomentar para un print "pretty" del grafo de respuesta
     #print json.dumps(gr.json(), indent=4, sort_keys=True)
 
     # Ponemos en marcha el servidor
@@ -234,10 +263,6 @@ if __name__ == '__main__':
     # Esperamos a que acaben los behaviors
     #   ab1.join()
 
-    #gr = message_buscador()
-    #for a, b, c in gr:
-    #  print a, c
-
-    print 'The End'
+    print 'INFO AgentePlanificador => The End'
 
 

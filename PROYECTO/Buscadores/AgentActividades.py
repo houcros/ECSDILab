@@ -17,29 +17,55 @@ __author__ = 'javier'
 
 import pprint
 from googleplaces import GooglePlaces
+from flask import Flask, request
+from rdflib import Graph, Namespace, Literal
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
 
+# Nuestros namespaces que usaremos luego
+myns = Namespace("http://my.namespace.org/")
+myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_atr = Namespace("http://my.namespace.org/atributos/")
+myns_act = Namespace("http://my.namespace.org/actividades/")
+myns_lug = Namespace("http://my.namespace.org/lugares/")
 
-google_places = GooglePlaces(GOOGLEAPI_KEY)
+def buscar_actividades(location, keyword, radius, types=[]):
 
-query_result = google_places.nearby_search(
-    location=u'Barcelona, España', keyword='restaurante',
-    radius=1000, types=['establishment'])
+    print "INFO AgenteActividades => Recibo peticion de actividades.\n"
+    google_places = GooglePlaces(GOOGLEAPI_KEY)
 
-# Imprimimos informacion de los resultados
-print query_result
-if query_result.has_attributions:
-    print query_result.html_attributions
+    # You may prefer to use the text_search API, instead.
+    query_result = google_places.nearby_search(
+        location=location, keyword=keyword,
+        radius=radius, types=types)
 
-for place in query_result.places:
-    # Returned places from a query are place summaries.
-    print place.name
-    print place.geo_location
+    if query_result.has_attributions:
+        print query_result.html_attributions
 
-    # The following method has to make a further API call.
-    place.get_details()
-    # Referencing any of the attributes below, prior to making a call to
-    # get_details() will raise a googleplaces.GooglePlacesAttributeError.
-#pprint.pprint(place.details)  # A dict matching the JSON response from Google.
-    print place.local_phone_number
+    # Grafo donde retornaremos el resultado
+    gr = Graph()
+    # Hago bind de las ontologias que usaremos en el grafo
+    gr.bind('myns_pet', myns_pet)
+    gr.bind('myns_atr', myns_atr)
+    gr.bind('myns_act', myns_act)
+
+    # TODO: ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
+    for place in query_result.places:
+        # Identificador unico para cada actividad
+        # Lo de -Found no se si hace falta en verdad...
+        plc_obj = myns_act[place.name + '-Found']
+        # Ponemos el nombre y localizacion de la actividad
+        gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
+        gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
+        # Otra llamada a la API para los otros datos
+        place.get_details()
+        gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
+        gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
+        gr.add((plc_obj, myns_atr.tel_int, Literal(place.international_phone_number)))
+        
+        # VERBOSE
+        # Por si queremos mas detalles en el futuro
+        #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
+        #print place.local_phone_number
+
+    return gr
 

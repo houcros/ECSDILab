@@ -53,8 +53,8 @@ def send_message(gmess, address):
     un grafo RDF
     """
     msg = gmess.serialize(format='xml')
-    print "DEBUG: gmess after serializing to xml:\n"
-    print msg
+    #print "DEBUG: gmess after serializing to xml:\n"
+    #print msg
     r = requests.get(address, params={'content': msg})
 
     #####
