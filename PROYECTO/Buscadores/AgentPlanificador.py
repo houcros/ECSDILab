@@ -129,17 +129,12 @@ def comunicacion():
             gmess.bind('myns_pet', myns_pet)
             gmess.bind('myns_atr', myns_atr)
 
-            location = gm.objects(subject= peticion, predicate= myns_atr.destination)
-            
-            for aux in location:
-                print aux
-                gmess.add((actv, myns_atr.lugar, aux))
+            location = gm.value(subject= peticion, predicate= myns_atr.destination)
+            gmess.add((actv, myns_atr.lugar, location))
 
 
-            activity= gm.objects(subject= peticion, predicate= myns_atr.activities)
-            for aux in activity:
-                print aux
-                gmess.add((actv, myns_atr.actividad, aux))
+            activity= gm.value(subject= peticion, predicate= myns_atr.activities)
+            gmess.add((actv, myns_atr.actividad, activity))
 
             ########################################################### 
             # Mejorar preferencia de busqueda
@@ -202,6 +197,11 @@ def comunicacion():
             print "Calcular paquete"
             #############################################################   
 
+            grep = Graph()
+            departureDate = gm.value(peticion, myns_atr.departureDate)
+            returnDate = gm.value(peticion, myns_atr.returnDate)
+
+            print departureDate
 
             ########################################################### 
             # Construir mensage de repuesta
@@ -211,8 +211,11 @@ def comunicacion():
     mss_cnt += 1
 
     print 'Respondemos a la peticion\n'
-
-    return gr.serialize(format='xml')
+    ########################################################### 
+    # Construir mensage de repuesta
+    print "Retornar repuesta"
+    #############################################################
+    return grep.serialize(format='xml')
 
 
 @app.route("/Stop")
