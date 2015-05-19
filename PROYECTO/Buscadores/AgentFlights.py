@@ -73,5 +73,5 @@ print
 
 
 # Imprime los resultados
-for row in qres.result:
+for row in qres.result[1]:
     print row

@@ -61,10 +61,15 @@ agn = Namespace("http://www.agentes.org#")
 mss_cnt = 0
 
 # Datos del Agente
-AgentDialog = Agent('AgentDialog',
+AgenteDialog = Agent('AgentDialog',
                   agn.AgentDialog,
                   'http://%s:%d/comm' % (hostname, port),
                   'http://%s:%d/Stop' % (hostname, port))
+
+AgentePlanificador = Agent('AgentePlanificador',
+                       agn.AgentePlanificador,
+                       'http://%s:%d/comm' % (hostname, 9010),
+                       'http://%s:%d/Stop' % (hostname, 9010))
 
 # Directory agent address
 DirectoryAgent = Agent('DirectoryAgent',
@@ -78,6 +83,13 @@ dsgraph = Graph()
 # Cola de comunicacion entre procesos
 cola1 = Queue()
 
+agn = Namespace("http://www.agentes.org#")
+nm = Namespace("http://www.agentes.org/actividades/")
+myns = Namespace("http://my.namespace.org/")
+myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_atr = Namespace("http://my.namespace.org/atributos/")
+myns_act = Namespace("http://my.namespace.org/actividades/")
+myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 @app.route("/iface", methods=['GET', 'POST'])
 def browser_iface():
@@ -211,21 +223,51 @@ def message_dialogador():
     print ('Welcome to Bestrip! The best trip search engine in the world!' + '\n')
     print ('Please, answer these questions to find your trip!' + '\n')
 
-    city = raw_input ('Where do you want to go?' + '\n')
-    departureDate = raw_input ('When do you want to go? (Format : dd/mm/yyyy)' + '\n' )
-    returnDate = raw_input ('When do you want to return? (Format : dd/mm/yyyy)' + '\n' )
-    maxPrice = raw_input('Which is the maximum price that a trip must have?' + '\n')
-    numberOfStars = raw_input ('How many stars the hotel must have ?' + '\n')
-    activities = raw_input ('Tell us about the kind of activities you like! (Format:separate using commas for each preference)' + '\n')
-    transport = raw_input ('Would you like to use public transport during your trip? (Yes / No)' + '\n')
+    # cityDestination = raw_input ('Where do you want to go?' + '\n')
+    # cityOrigin = raw_input ('Where are you?' + '\n')
+    # departureDate = raw_input ('When do you want to go? (Format : dd/mm/yyyy)' + '\n' )
+    # returnDate = raw_input ('When do you want to return? (Format : dd/mm/yyyy)' + '\n' )
+    # maxPrice = raw_input('Which is the maximum price that a trip must have?' + '\n')
+    # numberOfStars = raw_input ('How many stars the hotel must have ?' + '\n')
+    # activities = raw_input ('Tell us about the kind of activities you like! (Format:separate using commas for each preference)' + '\n')
+    # transport = raw_input ('Would you like to use public transport during your trip? (Yes / No)' + '\n')
+
+    ###############################################################
+    cityDestination = "Madrid"
+    cityOrigin = "Barcelona"
+    departureDate = "08/09/2003"
+    returnDate = "20/09/2003"
+    maxPrice = "500"
+    numberOfStars = "3"
+    activities = "Cinema, Teatro, Museo"
+    transport = "True"
+    ##############################################################################
 
     print ('Thank you very much, finding the best trip according to your preferences ... ' + '\n')
 
-    cont = city + "#" + departureDate + "#" + returnDate + "#" + maxPrice + "#" + numberOfStars + "#" + activities + "#" + transport 
+    #cont = city + "#" + departureDate + "#" + returnDate + "#" + maxPrice + "#" + numberOfStars + "#" + activities + "#" + transport 
 
     gmess = Graph()
+    gmess.bind('myns_pet', myns_pet)
+    gmess.bind('myns_atr', myns_atr)
 
-    # Construimos el mensaje de registro
+    peticion = myns_pet["PeticionOfPackage"]
+
+    gmess.add((peticion, myns_atr.origin, Literal(cityOrigin)))
+    gmess.add((peticion, myns_atr.destination, Literal(cityDestination)))
+    gmess.add((peticion, myns_atr.departureDate, Literal(departureDate)))
+    gmess.add((peticion, myns_atr.returnDate, Literal(returnDate)))
+    gmess.add((peticion, myns_atr.maxPrice, Literal(maxPrice)))
+    gmess.add((peticion, myns_atr.numberOfStars, Literal(numberOfStars)))
+    #for a in activities
+    gmess.add((peticion, myns_atr.activities, Literal(activities)))
+    gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
+
+    
+
+
+
+    # # Construimos el mensaje de registro
     gmess.bind('amo', AMO)
     bus_obj = agn[AgenteDialog.name + '-Request']
     gmess.add((bus_obj, AMO.requestType, Literal('Actividad')))
