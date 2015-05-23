@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>PAQUETALIA</title>
+		<title>BeStrip</title>
 	</head>
 	<body>
 	<div id="page">
@@ -14,16 +14,16 @@
 				<ul>
 			</div>
 			<div id="body">
-				<form action="/submit" method="post">
+				<form action="/submit" method="post" name="main">
 					{{ form.cityOrigin.label }} {{ form.cityOrigin(size=20)}}
 					<br>
 					{{ form.cityDestination.label }} {{ form.cityDestination(size=20)}}
 					<br>
 					{{ form.departureDate.label }} 
-					<input class="datepicker" id="departure" name="dt" type="date" value="">
+					<input class="datepicker" format="dd/mm/yyyy" id="departureDate" name="departureDate" type="text" value="">
 					<br>
 					{{ form.returnDate.label }} 
-					<input class="datepicker" id="departure" name="dt" type="date" value="">
+					<input class="datepicker" format="dd/mm/yyyy" id="returnDate" name="returnDate" type="text" value="">
 					<br>
 					{{ form.maxPrice.label }} {{ form.maxPrice(size=20)}}
 					<br>

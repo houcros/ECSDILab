@@ -57,7 +57,7 @@ plan_port = 9002
 if args.open is None:
     hostname = '0.0.0.0'
 else:
-    hostname = socket.gethostname()
+    hostname = '127.0.0.1'
 
 if args.dport is None:
     dport = 9000
