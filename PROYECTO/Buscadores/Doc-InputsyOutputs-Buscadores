@@ -27,6 +27,16 @@ BUSC HOTELES
 ---------------------
 IN
 
+destinationCity = "Barcelona"
+destinationCountry = "Spain"
+searchRadius = 2
+arrivalDate = "06/02/2015"
+departureDate = "06/08/2015"
+numberOfAdults = 2
+numberOfChildren = 0
+propertyCategory = 1
+#Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
+
 OUT
 
 ---------------------

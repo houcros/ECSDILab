@@ -25,6 +25,7 @@ from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
 from AgentFlightsGoogle import buscar_vuelos
+from AgentHotel import buscar_hoteles
 import logging
 
 import pprint
@@ -57,7 +58,8 @@ plan_port = 9002
 if args.open is None:
     hostname = '0.0.0.0'
 else:
-    hostname = socket.gethostname()
+    #hostname = socket.gethostname()
+    hostname = "localhost"
 
 if args.dport is None:
     dport = 9000
@@ -472,6 +474,36 @@ if __name__ == '__main__':
     #     print 'p: ' + p
     #     print 'o: ' + o
     #     print '\n'
+    ###########################################################################
+
+    ###########################################################################
+    #                           TEST BUSCAR HOTELES
+    ###########################################################################
+    # print "Busco hoteles"
+    
+    # gr = buscar_hoteles()
+    
+    # print "GRAFO DE RESPUESTA"
+    # for s, p, o in gr:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o
+    #     print '\n'
+    ###########################################################################
+
+    ###########################################################################
+    #                           TEST BUSCAR ACTIVIDADES
+    ###########################################################################
+    print "Busco actividades"
+    
+    gr = buscar_actividades()
+    
+    print "GRAFO DE RESPUESTA"
+    for s, p, o in gr:
+        print 's: ' + s
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
     ###########################################################################
 
     # Ponemos en marcha el servidor

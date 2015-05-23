@@ -319,6 +319,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
   gresp.bind('myns_pet', myns_pet)
   gresp.bind('myns_atr', myns_atr)
   gresp.bind('myns_rndtrp', myns_rndtrp)
+  gresp.bind('myns_vlo', myns_vlo)
 
   # TODO: ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
   for trip in dic['trips']['tripOption']:
