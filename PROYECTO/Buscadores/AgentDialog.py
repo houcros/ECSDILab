@@ -2,7 +2,7 @@ from multiprocessing import Process, Queue
 import socket
 import gzip
 import argparse
-
+import datetime
 from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
@@ -237,8 +237,8 @@ def message_dialogador():
     ###############################################################
     cityOrigin = "Barcelona, Spain"
     cityDestination = "Madrid, Spain"
-    departureDate = "08/09/2015"
-    returnDate = "20/09/2015"
+    departureDate = datetime.date(2015, 9, 8)
+    returnDate = datetime.date(2015, 9, 20)
     maxPrice = 500
     numberOfStars = 3
     #activities = "Cinema, Teatro, Museo"
@@ -267,8 +267,6 @@ def message_dialogador():
     gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
 
     
-
-
 
     # # Construimos el mensaje de registro
     gmess.bind('amo', AMO)

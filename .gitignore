@@ -6,3 +6,4 @@
 
 # Ignore local Google API Key
 /AgentUtil/APIKeys.py
+*.pyc
