@@ -25,8 +25,8 @@ class MyForm (Form):
     cityDestination = StringField ('City of Destination', validators=[DataRequired()])
     cityOrigin = StringField ('City of Origin', validators=[DataRequired()])
 
-    departureDate = DateField ('Departure date', format='%y - %m - %d', validators=[DataRequired()])
-    returnDate = DateField ('Return date', format='%y - %m - %d', validators=[DataRequired()])
+    departureDate = DateField ('Departure date', format='%d/%m/%y', validators=(validators.Optional(),))
+    returnDate = DateField ('Return date', format='%d/%m/%y', validators=(validators.Optional(),))
 
     maxPrice = IntegerField ('Max. Price',validators=[DataRequired()])
     numberOfStars = IntegerField ('Number of Stars', validators=[DataRequired()])
@@ -112,21 +112,34 @@ myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 myns_lug = Namespace("http://my.namespace.org/lugares/")
 
-@app.route('/submit', methods=['GET', 'POST'])
+form = MyForm()
+
+
+@app.route('/submit', methods=['POST'])
 def submit():
-    return render_template('submit.html')
-
-
-@app.route("/main", methods=['GET', 'POST'])
-def main():
-    if request.method == 'POST':
-        return redirect('/submit')
+    if form.validate():
+        cityDestinationField = request.form['cityDestination']
+        cityOriginField = request.form['cityOrigin']
+        returnDateField = str(request.form['returnDate'])
+        departureDateField = str(request.form['departureDate'])
+        maxPriceField = request.form['maxPrice']
+        numberOfStarsField = request.form['numberOfStars']
+        activitiesField = request.form['activities']
+        #returnDateField = request.form['returnDate'] 
+        return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
-        if request.args:
-            return "Argsss"
-        else:
-            form = MyForm()
-            return render_template('main.html', form=form)
+        return "ERROR , pon bien los campos inutil"
+    #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
+    #message_dialogador(cityDestinationField, cityOriginField, departureDateField, returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
+    
+
+
+@app.route("/main", methods=['GET'])
+def main():
+    if request.args:
+       return "Argsss"
+    else:
+        return render_template('main.html', form=form)
 
 
 @app.route("/Stop")
@@ -247,7 +260,15 @@ def agentbehavior1(cola):
             print v
 
 
-def message_dialogador():
+
+def message_dialogador(cityOrigin = "Barcelona, Spain", 
+    cityDestination = "Madrid, Spain",
+    departureDate = datetime.date(2015, 9, 8),
+    returnDate = datetime.date(2015, 9, 20),
+    maxPrice = 500,
+    numberOfStars = 3,
+    activities = "Movie",
+    ):
     #Preguntamos al usuario sus preferencias 
     print ('Welcome to Bestrip! The best trip search engine in the world!' + '\n')
     print ('Please, answer these questions to find your trip!' + '\n')
@@ -261,17 +282,7 @@ def message_dialogador():
     # activities = raw_input ('Tell us about the kind of activities you like! (Format:separate using commas for each preference)' + '\n')
     # transport = raw_input ('Would you like to use public transport during your trip? (Yes / No)' + '\n')
 
-    ###############################################################
-    cityOrigin = "Barcelona, Spain"
-    cityDestination = "Madrid, Spain"
-    departureDate = datetime.date(2015, 9, 8)
-    returnDate = datetime.date(2015, 9, 20)
-    maxPrice = 500
-    numberOfStars = 3
-    #activities = "Cinema, Teatro, Museo"
-    activities = "Movie"
-    transport = "True"
-    ##############################################################################
+
 
     print ('Thank you very much, finding the best trip according to your preferences ... ' + '\n')
 
@@ -291,7 +302,7 @@ def message_dialogador():
     gmess.add((peticion, myns_atr.numberOfStars, Literal(numberOfStars)))
     #for a in activities
     gmess.add((peticion, myns_atr.activities, Literal(activities)))
-    gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
+    #gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
 
     
 
@@ -316,7 +327,7 @@ if __name__ == '__main__':
     # Ponemos en marcha los behaviors
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
-    cont = message_dialogador();
+    #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
