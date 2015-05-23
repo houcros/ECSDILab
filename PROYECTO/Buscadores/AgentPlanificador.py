@@ -33,7 +33,7 @@ import json
 import logging
 
 # Configuration stuff
-hostname = '127.0.0.1'
+hostname = socket.gethostname()
 port = 9002
 bus_port = 9003
 

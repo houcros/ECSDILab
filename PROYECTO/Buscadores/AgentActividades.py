@@ -31,7 +31,7 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 LOG_TAG = "DEBUG => AgenteActividades "
 
 
-def buscar_actividades(location, keyword, radius, types=[]):
+def buscar_actividades(location="Barcelona, Spain", keyword="movie", radius=20000, types=[]):
 
     print "INFO AgenteActividades => Recibo peticion de actividades.\n"
     google_places = GooglePlaces(GOOGLEAPI_KEY)
@@ -59,7 +59,7 @@ def buscar_actividades(location, keyword, radius, types=[]):
     for place in query_result.places:
         # Identificador unico para cada actividad
         # Lo de -Found no se si hace falta en verdad...
-        plc_obj = myns_act[place.name + '-Found']
+        plc_obj = myns_act[place.place_id]
         # Ponemos el nombre y localizacion de la actividad
         gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
         gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
