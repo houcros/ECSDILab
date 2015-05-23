@@ -4,6 +4,10 @@ import gzip
 import argparse
 import datetime
 from flask import Flask, request
+
+
+from flask import Flask, request , redirect
+from flask import render_template
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
 
@@ -12,6 +16,21 @@ from AgentUtil.FlaskServer import shutdown_server
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
+
+from flask.ext.wtf import Form
+from wtforms import Form, BooleanField, TextField, PasswordField, StringField, DateField, IntegerField, validators
+from wtforms.validators import DataRequired
+
+class MyForm (Form):
+    cityDestination = StringField ('City of Destination', validators=[DataRequired()])
+    cityOrigin = StringField ('City of Origin', validators=[DataRequired()])
+
+    departureDate = DateField ('Departure date', format='%y - %m - %d', validators=[DataRequired()])
+    returnDate = DateField ('Return date', format='%y - %m - %d', validators=[DataRequired()])
+
+    maxPrice = IntegerField ('Max. Price',validators=[DataRequired()])
+    numberOfStars = IntegerField ('Number of Stars', validators=[DataRequired()])
+    activities = StringField ('activities', validators=[DataRequired()])
 
 #He tenido que copiar esta variable global porque sino me petaba
 AMO = Namespace('http://www.semanticweb.org/houcros/ontologies/2015/4/agentsMessages')
@@ -93,13 +112,21 @@ myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 myns_lug = Namespace("http://my.namespace.org/lugares/")
 
-@app.route("/iface", methods=['GET', 'POST'])
-def browser_iface():
-    """
-    Permite la comunicacion con el agente via un navegador
-    via un formulario
-    """
-    return 'Nothing to see here'
+@app.route('/submit', methods=['GET', 'POST'])
+def submit():
+    return render_template('submit.html')
+
+
+@app.route("/main", methods=['GET', 'POST'])
+def main():
+    if request.method == 'POST':
+        return redirect('/submit')
+    else:
+        if request.args:
+            return "Argsss"
+        else:
+            form = MyForm()
+            return render_template('main.html', form=form)
 
 
 @app.route("/Stop")

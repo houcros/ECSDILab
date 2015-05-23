@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PAQUETALIA</title>
+	</head>
+	<body>
+	<div id="page">
+		<br /> <br /> <br />
+		<div ALIGN=center id="wrapper">
+			<div id="menu">
+				<div>DATOS DEL PAQUETE</div>
+					<hr style="color:red; background-color:red; width:50%;" />
+				<ul>
+			</div>
+			<div id="body">
+				<form action="/submit" method="post">
+					{{ form.cityOrigin.label }} {{ form.cityOrigin(size=20)}}
+					<br>
+					{{ form.cityDestination.label }} {{ form.cityDestination(size=20)}}
+					<br>
+					{{ form.departureDate.label }} 
+					<input class="datepicker" id="departure" name="dt" type="date" value="">
+					<br>
+					{{ form.returnDate.label }} 
+					<input class="datepicker" id="departure" name="dt" type="date" value="">
+					<br>
+					{{ form.maxPrice.label }} {{ form.maxPrice(size=20)}}
+					<br>
+					{{ form.numberOfStars.label }} {{ form.numberOfStars(size=20)}}
+					<br>
+					{{ form.activities.label }} {{ form.activities(size=20)}}
+					<br> <br> <br>
+					<input type="submit" value="Search Packet">
+				</form>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
