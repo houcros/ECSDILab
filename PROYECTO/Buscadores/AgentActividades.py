@@ -28,6 +28,9 @@ myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 myns_lug = Namespace("http://my.namespace.org/lugares/")
 
+LOG_TAG = "DEBUG => AgenteActividades "
+
+
 def buscar_actividades(location, keyword, radius, types=[]):
 
     print "INFO AgenteActividades => Recibo peticion de actividades.\n"
@@ -38,8 +41,12 @@ def buscar_actividades(location, keyword, radius, types=[]):
         location=location, keyword=keyword,
         radius=radius, types=types)
 
+    print LOG_TAG + " => built query"
+
     if query_result.has_attributions:
         print query_result.html_attributions
+
+    print LOG_TAG + " => about to build response Graph"
 
     # Grafo donde retornaremos el resultado
     gr = Graph()

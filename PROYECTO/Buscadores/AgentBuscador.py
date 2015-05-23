@@ -24,6 +24,7 @@ from AgentUtil.ACLMessages import build_message, send_message, get_message_prope
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
+from AgentFlightsGoogle import buscar_vuelos
 import logging
 
 import pprint
@@ -197,8 +198,8 @@ def comunicacion():
     message = request.args['content']
     print "INFO AgentBuscador => Mensaje extraído\n"
     # VERBOSE
-    #print message
-    #print '\n\n'
+    print message
+    print '\n\n'
 
     # Grafo en el que volcamos el contenido de la request
     gm = Graph()
@@ -330,7 +331,8 @@ def agentbehavior1(cola):
             # Selfdestruct
             # requests.get(InfoAgent.stop)
 
-def buscar_vuelos():
+#def buscar_vuelos():
+def buscar_vuelos_ORIGINAL():
 
     g = Graph()
 
@@ -458,7 +460,18 @@ if __name__ == '__main__':
     #ab1.start()
     
     ###########################################################################
-    #                           BUSCAR ACTIVIDADES
+    #                           TEST BUSCAR VUELOS
+    ###########################################################################
+    # print "Busco vuelos"
+    
+    # gr = buscar_vuelos()
+    
+    # print "GRAFO DE RESPUESTA"
+    # for s, p, o in gr:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o
+    #     print '\n'
     ###########################################################################
 
     # Ponemos en marcha el servidor

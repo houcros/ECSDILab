@@ -206,7 +206,7 @@ def comunicacion():
             gmess.add((actv, myns_atr.tipo, Literal(tipo)))
 
             # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
-            res_obj= agn['Planificador-pide-actividades']
+            res_obj= agn['Planificador-pide-datos']
 
             # Construyo el grafo y lo mando (ver los metodos send_message y build_message
             # en ACLMessages para entender mejor los parametros)
