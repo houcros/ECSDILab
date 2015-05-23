@@ -36,6 +36,8 @@ if args.port is None:
 else:
     port = args.port
 
+plan_port = 9002
+
 if args.open is None:
     hostname = '0.0.0.0'
 else:
@@ -68,8 +70,8 @@ AgenteDialog = Agent('AgentDialog',
 
 AgentePlanificador = Agent('AgentePlanificador',
                        agn.AgentePlanificador,
-                       'http://%s:%d/comm' % (hostname, 9010),
-                       'http://%s:%d/Stop' % (hostname, 9010))
+                       'http://%s:%d/comm' % (hostname, plan_port),
+                       'http://%s:%d/Stop' % (hostname, plan_port))
 
 # Directory agent address
 DirectoryAgent = Agent('DirectoryAgent',
@@ -233,13 +235,14 @@ def message_dialogador():
     # transport = raw_input ('Would you like to use public transport during your trip? (Yes / No)' + '\n')
 
     ###############################################################
-    cityDestination = "Madrid"
-    cityOrigin = "Barcelona"
-    departureDate = "08/09/2003"
-    returnDate = "20/09/2003"
-    maxPrice = "500"
-    numberOfStars = "3"
-    activities = "Cinema, Teatro, Museo"
+    cityOrigin = "Barcelona, Spain"
+    cityDestination = "Madrid, Spain"
+    departureDate = "08/09/2015"
+    returnDate = "20/09/2015"
+    maxPrice = 500
+    numberOfStars = 3
+    #activities = "Cinema, Teatro, Museo"
+    activities = "Movie"
     transport = "True"
     ##############################################################################
 

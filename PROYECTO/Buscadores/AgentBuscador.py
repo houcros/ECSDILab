@@ -47,9 +47,11 @@ args = parser.parse_args()
 
 # Configuration stuff
 if args.port is None:
-    port = 9001
+    port = 9003
 else:
     port = args.port
+
+plan_port = 9002
 
 if args.open is None:
     hostname = '0.0.0.0'
@@ -96,8 +98,8 @@ DirectoryAgent = Agent('DirectoryAgent',
 # Datos del Agente
 AgentePlanificador = Agent('AgentePlanificador',
                        agn.AgentePlanificador,
-                       'http://%s:%d/comm' % (hostname, 9010),
-                       'http://%s:%d/Stop' % (hostname, 9010))
+                       'http://%s:%d/comm' % (hostname, plan_port),
+                       'http://%s:%d/Stop' % (hostname, plan_port))
 
 # Global dsgraph triplestore
 dsgraph = Graph()

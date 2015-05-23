@@ -34,8 +34,8 @@ import logging
 
 # Configuration stuff
 hostname = socket.gethostname()
-port = 9010
-bport = 9001
+port = 9002
+bus_port = 9003
 
 agn = Namespace("http://www.agentes.org#")
 myns = Namespace("http://my.namespace.org/")
@@ -54,8 +54,8 @@ AgentePlanificador = Agent('AgentePlanificador',
 # Datos del AgenteBuscador
 AgenteBuscador = Agent('AgenteBuscador',
                        agn.AgenteBuscador,
-                       'http://%s:%d/comm' % (hostname, bport),
-                       'http://%s:%d/Stop' % (hostname, bport))
+                       'http://%s:%d/comm' % (hostname, bus_port),
+                       'http://%s:%d/Stop' % (hostname, bus_port))
 
 # Directory agent address
 DirectoryAgent = Agent('DirectoryAgent',
@@ -88,6 +88,9 @@ def comunicacion():
     # Extraemos el mensaje y creamos un grafo con el
     message = request.args['content']
     print "Mensaje extraído\n"
+    # VERBOSE
+    print message
+    print "\n\n"
     gm = Graph()
     gm.parse(data=message)
     print 'Grafo creado con el mensaje'
@@ -121,6 +124,9 @@ def comunicacion():
             #############################################################
             peticion = myns_pet["PeticionOfPackage"]
             parametros = gm.triples((peticion, None, None))
+            # VERBOSE
+            print "Parametros: "
+            print parametros
             
             actv = myns_pet.actividad
 
@@ -129,12 +135,51 @@ def comunicacion():
             gmess.bind('myns_pet', myns_pet)
             gmess.bind('myns_atr', myns_atr)
 
-            location = gm.value(subject= peticion, predicate= myns_atr.destination)
-            gmess.add((actv, myns_atr.lugar, location))
+            destination = gm.value(subject= peticion, predicate= myns_atr.destination)
+            gmess.add((actv, myns_atr.lugar, destination))
+            # VERBOSE
+            print "destination: "
+            print destination
 
+            origin = gm.value(subject= peticion, predicate= myns_atr.origin)
+            #gmess.add((actv, myns_atr.lugar, origin))
+            # VERBOSE
+            print "origin: "
+            print origin
+
+            departureDate = gm.value(subject= peticion, predicate= myns_atr.departureDate)
+            #gmess.add((actv, myns_atr.lugar, departureDate))
+            # VERBOSE
+            print "departureDate: "
+            print departureDate
+
+            returnDate = gm.value(subject= peticion, predicate= myns_atr.returnDate)
+            #gmess.add((actv, myns_atr.lugar, returnDate))
+            # VERBOSE
+            print "returnDate: "
+            print returnDate
+
+            maxPrice = gm.value(subject= peticion, predicate= myns_atr.maxPrice)
+            #gmess.add((actv, myns_atr.lugar, maxPrice))
+            # VERBOSE
+            print "maxPrice: "
+            print maxPrice
+
+            numberOfStars = gm.value(subject= peticion, predicate= myns_atr.numberOfStars)
+            #gmess.add((actv, myns_atr.lugar, numberOfStars))
+            # VERBOSE
+            print "numberOfStars: "
+            print numberOfStars
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
             gmess.add((actv, myns_atr.actividad, activity))
+            # VERBOSE
+            print "activity: "
+            print activity
+
+            radius = 20000
+            # De momento solo permitimos pasar un tipo. Ampliar a mas de uno luego quizas
+            tipo = types.TYPE_MOVIE_THEATER # Equivalente a: tipo = ['movie_theater']
 
             ########################################################### 
             # Mejorar preferencia de busqueda
@@ -149,23 +194,13 @@ def comunicacion():
             # Hago bind de las ontologias que voy a usar en el grafo
             # Estas ontologias estan definidas arriba (abajo de los imports)
             # Son las de peticiones y atributos (para los predicados de la tripleta)
-            
-
-            # Parametros de la peticion de actividades
-            # Luego habra que sustituirlos por los que obtengo del planificador
-            location = 'Barcelona, Spain'
-            activity = 'movie'
-            radius = 20000
-            # De momento solo permitimos pasar un tipo. Ampliar a mas de uno luego quizas
-            tipo = types.TYPE_MOVIE_THEATER # Equivalente a: tipo = ['movie_theater']
 
             # Sujeto de la tripleta: http://my.namespace.org/peticiones/actividad
             # O sea, el mensaje sera una peticion de actividad
             # El buscador tendra que ver que tipo de peticion es
-            
 
             # Paso los parametros de busqueda de actividad en el grafo
-            gmess.add((actv, myns_atr.lugar, Literal(location)))
+            gmess.add((actv, myns_atr.lugar, Literal(destination)))
             gmess.add((actv, myns_atr.actividad, Literal(activity)))
             gmess.add((actv, myns_atr.radio, Literal(radius)))
             gmess.add((actv, myns_atr.tipo, Literal(tipo)))
@@ -198,8 +233,6 @@ def comunicacion():
             #############################################################   
 
             grep = Graph()
-            departureDate = gm.value(peticion, myns_atr.departureDate)
-            returnDate = gm.value(peticion, myns_atr.returnDate)
 
             print departureDate
 
