@@ -122,7 +122,7 @@ def comunicacion():
             # Parsear los parametros de Dialog
             print "Parsear los parametros de Dialog"
             #############################################################
-            peticion = myns_pet["PeticionOfPackage"]
+            peticion = myns_pet["Dialogador-pide-paquete"]
             parametros = gm.triples((peticion, None, None))
             # VERBOSE
             print "Parametros: "

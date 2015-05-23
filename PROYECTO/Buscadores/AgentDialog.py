@@ -254,7 +254,7 @@ def message_dialogador():
     gmess.bind('myns_pet', myns_pet)
     gmess.bind('myns_atr', myns_atr)
 
-    peticion = myns_pet["PeticionOfPackage"]
+    peticion = myns_pet["Dialogador-pide-paquete"]
 
     gmess.add((peticion, myns_atr.origin, Literal(cityOrigin)))
     gmess.add((peticion, myns_atr.destination, Literal(cityDestination)))
