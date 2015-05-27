@@ -250,16 +250,25 @@ def comunicacion():
 
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-    gresult = buscar_actividades(location, activity, radius, lista)
+    gactividades = buscar_actividades(location, activity, radius, lista)
     print "INFO AgentBuscador => Activities found: "
     # VERBOSE
     # Imprimimos el grafo de resultados para ver que pinta tiene
     # Realmente solo queremos devolverlo al planificador
-    for s, p, o in gresult:
-        print 's: ' + s
-        print 'p: ' + p
-        print 'o: ' + o
-        print '\n'
+    # for s, p, o in gactividades:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o
+    #     print '\n'
+
+    # Buscamos hoteles
+    ghoteles = buscar_hoteles()
+    # Buscamos vuelos
+    gvuelos = buscar_vuelos()
+
+    # Juntamos los tres grafos en una respuesta
+    grespuesta = Graph()
+    grespuesta = gvuelos + ghoteles + gactividades
 
     res_obj= agn['Buscador-responde']
     # Comprobamos que sea un mensaje FIPA ACL
@@ -285,8 +294,8 @@ def comunicacion():
                 accion = gm.value(subject=content, predicate=RDF.type)
 
             # Aqui realizariamos lo que pide la accion
-            # Retornamos un Inform-done con el grafo del resultado de la busqueda (gresult)
-            gr = build_message(gresult,
+            # Retornamos un Inform-done con el grafo del resultado de la busqueda (grespuesta)
+            gr = build_message(grespuesta,
                 ACL['inform-done'],
                 sender=AgenteBuscador.uri,
                 msgcnt=mss_cnt,
@@ -465,10 +474,10 @@ if __name__ == '__main__':
     ###########################################################################
     # print "Busco vuelos"
     
-    # gr = buscar_vuelos()
+    # gvuelos = buscar_vuelos()
     
     # print "GRAFO DE RESPUESTA"
-    # for s, p, o in gr:
+    # for s, p, o in gvuelos:
     #     print 's: ' + s
     #     print 'p: ' + p
     #     print 'o: ' + o
@@ -480,10 +489,10 @@ if __name__ == '__main__':
     ###########################################################################
     # print "Busco hoteles"
     
-    # gr = buscar_hoteles()
+    # ghoteles = buscar_hoteles()
     
     # print "GRAFO DE RESPUESTA"
-    # for s, p, o in gr:
+    # for s, p, o in ghoteles:
     #     print 's: ' + s
     #     print 'p: ' + p
     #     print 'o: ' + o
@@ -492,17 +501,33 @@ if __name__ == '__main__':
 
     ###########################################################################
     #                           TEST BUSCAR ACTIVIDADES
+    # ###########################################################################
+    # print "Busco actividades"
+    
+    # gactividades = buscar_actividades()
+    
+    # print "GRAFO DE RESPUESTA"
+    # for s, p, o in gactividades:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o
+    #     print '\n'
     ###########################################################################
-    print "Busco actividades"
+
+    ###########################################################################
+    #                           TEST RESPUESTA
+    ###########################################################################
+    # print "Genero grafo de respuesta"
     
-    gr = buscar_actividades()
+    # grespuesta = Graph()
+    # grespuesta = gvuelos + ghoteles + gactividades
     
-    print "GRAFO DE RESPUESTA"
-    for s, p, o in gr:
-        print 's: ' + s
-        print 'p: ' + p
-        print 'o: ' + o
-        print '\n'
+    # print "GRAFO DE RESPUESTA"
+    # for s, p, o in grespuesta:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o
+    #     print '\n'
     ###########################################################################
 
     # Ponemos en marcha el servidor

@@ -28,6 +28,7 @@ myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 myns_lug = Namespace("http://my.namespace.org/lugares/")
 
+LOG_TAG = "DEBUG: AgenteActividades => "
 
 def buscar_actividades(location="Barcelona, Spain", keyword="movie", radius=20000, types=[]):
     #gr = Graph()
