@@ -266,17 +266,21 @@ def comunicacion():
     
     # Buscamos vuelos
     vuelo = myns_pet.vuelo
-    originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
-    destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo)
-    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
-    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
-    maxPric=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
-    gvuelos = Graph()
+    originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo),
+    destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo),
+    departureDate=gm.value(subject= vuelo, predicate= myns_atr.departureDate),
+    returnDate=gm.value(subject= vuelo, predicate= myns_atr.returnDate),
+    maxPrice=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
+    print  originVuelo
+    print  destinationVuelo.toPython
+    print  departureDate.toPython
+    print  returnDate.toPython()
+    print  maxPrice
     gvuelos = buscar_vuelos(origin=originVuelo, 
                             destination=destinationVuelo,
-                            departureDate= departureDat, 
-                            returnDate=returnDat,
-                            maxPrice=maxPric)
+                            departureDate= departureDate, 
+                            returnDate=returnDate,
+                            maxPrice=maxPrice)
 
     # Juntamos los tres grafos en una respuesta
     grespuesta = Graph()

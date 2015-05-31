@@ -243,9 +243,19 @@ response = {
 }
 
 def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
-  departureDate="2015-06-02", returnDate="2015-06-08", solutions=2,
+  departureDate="2015-06-02", returnDate="2015-06-08", solutions=20,
   maxPrice="EUR500", earliestDepartureTime="06:00", latestDepartureTime="23:00",
   earliestReturnTime="06:00", latestReturnTime="23:00"):
+  print origin
+  print  destination
+  print  departureDate
+  print  returnDate
+  print  maxPrice
+  # originVuelo="BCN"
+  # destinationVuelo="PRG"
+  # departureDate="2015-06-02"
+  # returnDate="2015-06-08"
+  # maxPrice='EUR500'
 
   payload = {
     "request": {

@@ -134,10 +134,10 @@ def comunicacion():
             
             actv = myns_pet.actividad
 
-            # Graph para buscador
-            gmess = Graph()
-            gmess.bind('myns_pet', myns_pet)
-            gmess.bind('myns_atr', myns_atr)
+            ########################################################### 
+            # Comunicar con buscador
+            print "Los parametros de actividad"
+            #############################################################
 
             destination = gm.value(subject= peticion, predicate= myns_atr.destination)
             gmess.add((actv, myns_atr.lugar, destination))
@@ -186,142 +186,20 @@ def comunicacion():
             tipo = types.TYPE_MOVIE_THEATER # Equivalente a: tipo = ['movie_theater']
 
             ########################################################### 
-            # Mejorar preferencia de busqueda
-            print "Mejorar preferencia de busqueda"
-            #############################################################
-
-            ########################################################### 
             # Comunicar con buscador
-            print "Comunicar con buscador"
+            print "Los parametros de vuelo"
             #############################################################
-            
-            # Hago bind de las ontologias que voy a usar en el grafo
-            # Estas ontologias estan definidas arriba (abajo de los imports)
-            # Son las de peticiones y atributos (para los predicados de la tripleta)
+            originVuelo=gm.value(subject= peticion, predicate= myns_atr.originVuelo)
 
-            # Sujeto de la tripleta: http://my.namespace.org/peticiones/actividad
-            # O sea, el mensaje sera una peticion de actividad
-            # El buscador tendra que ver que tipo de peticion es
+            destinationVuelo=gm.value(subject= peticion, predicate= myns_atr.destinationVuelo)
 
-            # Paso los parametros de busqueda de actividad en el grafo
-            gmess.add((actv, myns_atr.lugar, Literal(destination)))
-            gmess.add((actv, myns_atr.actividad, Literal(activity)))
-            gmess.add((actv, myns_atr.radio, Literal(radius)))
-            gmess.add((actv, myns_atr.tipo, Literal(tipo)))
+            departureDate=gm.value(subject= peticion, predicate= myns_atr.departureDate)
 
-            # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
-            res_obj= agn['Planificador-pide-datos']
+            returnDate=gm.value(subject= peticion, predicate= myns_atr.returnDate)
 
-            # Construyo el grafo y lo mando (ver los metodos send_message y build_message
-            # en ACLMessages para entender mejor los parametros)
-            print "INFO AgentePlanificador=> Sending request to AgenteBuscador\n"
-            gr = send_message(build_message(gmess, 
-                               perf=ACL.request, 
-                               sender=AgentePlanificador.uri, 
-                               receiver=AgenteBuscador.uri,
-                               content=res_obj,
-                               msgcnt=mss_cnt 
-                               ),
-                AgenteBuscador.address)
-            print "Respuesta de busqueda recibida\n"
-            
-            
+            maxPrice=gm.value(subject= peticion, predicate= myns_atr.maxPrice)
 
-            
-            for s, p, o in gr:
-                print 's: ' + s
-                print 'p: ' + p
-                print 'o: ' + o
-                print '\n'
-
-            ########################################################### 
-            # Calcular paquete
-            print "Calcular paquete"
-            #############################################################   
-
-            grep = Graph()
-            #Actividades 
-            
-
-            gact = gr.query("""
-                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                        SELECT DISTINCT ?a ?ratin
-                        WHERE{
-                            ?a myns_atr:rating ?ratin .
-                            FILTER(str(?ratin) != "")
-                        }
-                        ORDER BY DESC(?ratin)
-                """)
-
-            Acs = []
-            for s, s1 in gact:
-                Acs.append(s)
-
-            ########################################################### 
-            # Escoger Actividades
-            print "Escoger Actividades"
-            #############################################################   
-            day = departureDate
-            contadorActividad = 0
-            while day <= returnDate:
-               # cada dia
-            grfdata = myns_data.day
-            
-            if contadorActividad > (len(Acs)-3) :
-                contadorActividad = 0
-            ########################################################### 
-            # Escoger Actividades
-            print "Escoger Actividades1" 
-            print Acs[contadorActividad]
-            #############################################################
-            # manana
-            grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
-            ########################################################### 
-            # Escoger Actividades
-            print "Actividades1 Anadido"
-            #############################################################                
-            grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.manana))
-
-            grep += gr.triples((Acs[contadorActividad], None, None))
-            
-            ########################################################### 
-            # Escoger Actividades
-            print "Actividades1 por manana"
-            #############################################################
-            contadorActividad += 1;
-            ########################################################### 
-            # Escoger Actividades
-            print "Escoger Actividades2"
-            #############################################################
-            # tarde
-            grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-            grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.tarde))
-            grep += gr.triples((Acs[contadorActividad], None, None))
-            contadorActividad += 1;
-            ########################################################### 
-            # Escoger Actividades
-            print "Escoger Actividades3"
-            #############################################################
-            # noche
-            grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-            grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.noche))
-            grep += gr.triples((Acs[contadorActividad], None, None))
-            contadorActividad += 1;
-
-            day = day + datetime.timedelta(days=1)
-
-            print departureDate
-
-            ########################################################### 
-            # Construir mensage de repuesta
-            print "Construir mensage de repuesta"
-            #############################################################
-            for s, p, o in grep:
-                print 's: ' + s
-                print 'p: ' + p
-                print 'o: ' + o
-                print '\n'
-                mss_cnt += 1
+            grep = comu()
 
     print 'Respondemos a la peticion\n'
     ########################################################### 
@@ -381,13 +259,220 @@ def agentbehavior1(cola):
 
 #    return gr
 
+def comu():
+
+    global mss_cnt 
+    # Graph para buscador
+    gmess = Graph()
+    gmess.bind('myns_pet', myns_pet)
+    gmess.bind('myns_atr', myns_atr)
+
+    ########################################################### 
+    # Comunicar con buscador
+    print "Los parametros hardcoreado"
+    #############################################################
+
+    
+    destination = "Madrid, Spain"
+    activity="Movie"
+    radius = 20000
+    departureDate = datetime.date(2015, 9, 8)
+    returnDate = datetime.date(2015, 9, 20)
+    tipo = types.TYPE_MOVIE_THEATER 
+
+    originVuelo="BCN"
+    destinationVuelo="PRG"
+    departureDate="2015-06-02"
+    returnDate="2015-06-08"
+    maxPrice='EUR500'
+    ########################################################### 
+    # Mejorar preferencia de busqueda
+    print "Mejorar preferencia de busqueda"
+    #############################################################
+
+    ########################################################### 
+    # Comunicar con buscador
+    print "Iniciar la comunicaion con buscador"
+    #############################################################
+    
+    # Hago bind de las ontologias que voy a usar en el grafo
+    # Estas ontologias estan definidas arriba (abajo de los imports)
+    # Son las de peticiones y atributos (para los predicados de la tripleta)
+
+    # Sujeto de la tripleta: http://my.namespace.org/peticiones/actividad
+    # O sea, el mensaje sera una peticion de actividad
+    # El buscador tendra que ver que tipo de peticion es
+    ########################################################### 
+    # Comunicar con buscador
+    print "Añadir parametros de actividad"
+    #############################################################
+    # Paso los parametros de busqueda de actividad en el grafo
+    actv = myns_pet.actividad
+    gmess.add((actv, myns_atr.lugar, Literal(destination)))
+    gmess.add((actv, myns_atr.actividad, Literal(activity)))
+    gmess.add((actv, myns_atr.radio, Literal(radius)))
+    gmess.add((actv, myns_atr.tipo, Literal(tipo)))
+    
+    ########################################################### 
+    # Comunicar con buscador
+    print "Añadir parametros de actividad"
+    #############################################################
+    vuelo = myns_pet.vuelo
+    gmess.add((vuelo, myns_atr.originVuelo, Literal(originVuelo)))
+    gmess.add((vuelo, myns_atr.destinationVuelo, Literal(destinationVuelo)))
+    gmess.add((vuelo, myns_atr.departureDate, Literal(departureDate)))
+    gmess.add((vuelo, myns_atr.returnDate, Literal(returnDate)))          
+    gmess.add((vuelo, myns_atr.maxPrice, Literal(maxPrice))) 
+
+
+
+    # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
+    res_obj= agn['Planificador-pide-datos']
+
+    # Construyo el grafo y lo mando (ver los metodos send_message y build_message
+    # en ACLMessages para entender mejor los parametros)
+    print "INFO AgentePlanificador=> Sending request to AgenteBuscador\n"
+    gr = send_message(build_message(gmess, 
+                       perf=ACL.request, 
+                       sender=AgentePlanificador.uri, 
+                       receiver=AgenteBuscador.uri,
+                       content=res_obj,
+                       msgcnt=mss_cnt 
+                       ),
+        AgenteBuscador.address)
+    print "Respuesta de busqueda recibida\n"
+    
+    
+    
+    for s, p, o in gr:
+        print 's: ' + s
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
+
+    ########################################################### 
+    # Calcular paquete
+    print "Calcular paquete"
+    #############################################################   
+
+    grep = Graph()
+
+    ########################################################### 
+    # Calcular paquete
+    print "Calcular Vuelos"
+    #############################################################    
+
+    gvueloid = gr.query("""
+                PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                SELECT DISTINCT ?a ?cuesta
+                WHERE{
+                    ?a myns_atr:cuesta ?cuesta .
+                    FILTER(str(?cuesta) != "")
+                }
+                ORDER BY (?cuesta)
+                LIMIT 1
+        """)
+    Aid = []
+    for s in gvueloid
+        Aid.append(s)
+
+    grep += gr.triples((Aid[0], None, None))
+
+
+    #Actividades 
+    ########################################################### 
+    # Calcular paquete
+    print "Calcular Actividades"
+    #############################################################           
+
+    gact = gr.query("""
+                PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                SELECT DISTINCT ?a ?ratin
+                WHERE{
+                    ?a myns_atr:rating ?ratin .
+                    FILTER(str(?ratin) != "")
+                }
+                ORDER BY DESC(?ratin)
+        """)
+
+    Acs = []
+    for s, s1 in gact:
+        Acs.append(s)
+
+    ########################################################### 
+    # Escoger Actividades
+    print "Escoger Actividades"
+    #############################################################   
+    day = departureDate
+    contadorActividad = 0
+    while day <= returnDate:
+       # cada dia
+        grfdata = myns_data.day
+    
+    if contadorActividad > (len(Acs)-3) :
+        contadorActividad = 0
+    ########################################################### 
+    # Escoger Actividades
+    print "Escoger Actividades1" 
+    print Acs[contadorActividad]
+    #############################################################
+    # manana
+    grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
+    ########################################################### 
+    # Escoger Actividades
+    print "Actividades1 Anadido"
+    #############################################################                
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.manana))
+
+    grep += gr.triples((Acs[contadorActividad], None, None))
+    
+    ########################################################### 
+    # Escoger Actividades
+    print "Actividades1 por manana"
+    #############################################################
+    contadorActividad += 1;
+    ########################################################### 
+    # Escoger Actividades
+    print "Escoger Actividades2"
+    #############################################################
+    # tarde
+    grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.tarde))
+    grep += gr.triples((Acs[contadorActividad], None, None))
+    contadorActividad += 1;
+    ########################################################### 
+    # Escoger Actividades
+    print "Escoger Actividades3"
+    #############################################################
+    # noche
+    grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.noche))
+    grep += gr.triples((Acs[contadorActividad], None, None))
+    contadorActividad += 1;
+
+    day = day + datetime.timedelta(days=1)
+
+    print departureDate
+
+    ########################################################### 
+    # Construir mensage de repuesta
+    print "Construir mensage de repuesta"
+    #############################################################
+    for s, p, o in grep:
+        print 's: ' + s
+        print 'p: ' + p
+        print 'o: ' + o
+        print '\n'
+        mss_cnt += 1
+
+    return grep
+
 
 if __name__ == '__main__':
 
     # Ponemos en marcha los behaviors
     ab1 = Process(target=agentbehavior1, args=(cola1,))
     ab1.start()
-
     ###################################################
     # Inicio de peticion de ACTIVIDADES a AgentBuscador
     ###################################################
@@ -458,141 +543,7 @@ if __name__ == '__main__':
     # VERBOSE
     # Descomentar para un print "pretty" del grafo de respuesta
     # print json.dumps(gr.json(), indent=4, sort_keys=True)
-    actv = myns_pet.actividad
-    destination = "Madrid, Spain"
-    activity="Movie"
-    radius = 20000
-    departureDate = datetime.date(2015, 9, 8)
-    returnDate = datetime.date(2015, 9, 20)
-    tipo = types.TYPE_MOVIE_THEATER 
-    gmess = Graph()
-    gmess.add((actv, myns_atr.lugar, Literal(destination)))
-    gmess.add((actv, myns_atr.actividad, Literal(activity)))
-    gmess.add((actv, myns_atr.radio, Literal(radius)))
-    gmess.add((actv, myns_atr.tipo, Literal(tipo)))
-
-    # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
-    res_obj= agn['Planificador-pide-actividades']
-
-    # Construyo el grafo y lo mando (ver los metodos send_message y build_message
-    # en ACLMessages para entender mejor los parametros)
-    print "INFO AgentePlanificador=> Sending request to AgenteBuscador\n"
-    gr = send_message(build_message(gmess, 
-                       perf=ACL.request, 
-                       sender=AgentePlanificador.uri, 
-                       receiver=AgenteBuscador.uri,
-                       content=res_obj,
-                       msgcnt=mss_cnt 
-                       ),
-        AgenteBuscador.address)
-    print "Respuesta de busqueda recibida\n"
-    
-    
-
-    
-    for s, p, o in gr:
-        print 's: ' + s
-        print 'p: ' + p
-        print 'o: ' + o
-        print '\n'
-
-    ########################################################### 
-    # Calcular paquete
-    print "Calcular paquete"
-    #############################################################   
-
-    grep = Graph()
-    grep.bind('myns', myns)
-    gr.bind('myns_atr', myns_atr)
-    gr.bind('myns_act', myns_act)
-    #Actividades 
-    
-
-    gact = gr.query("""
-                PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a ?ratin
-                WHERE{
-                    ?a myns_atr:rating ?ratin .
-                    FILTER(str(?ratin) != "")
-                }
-                ORDER BY DESC(?ratin)
-        """)
-
-    Acs = []
-    for s, s1 in gact:
-        Acs.append(s)
-
-    ########################################################### 
-    # Escoger Actividades
-    print "Escoger Actividades"
-    #############################################################   
-    day = departureDate
-    contadorActividad = 0
-    while day <= returnDate:
-        # cada dia
-        grfdata = myns_data.day
-        
-        if contadorActividad > (len(Acs)-3) :
-            contadorActividad = 0
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades1" 
-        print Acs[contadorActividad]
-        #############################################################
-        # manana
-        grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
-        ########################################################### 
-        # Escoger Actividades
-        print "Actividades1 Anadido"
-        #############################################################                
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.manana))
-
-        grep += gr.triples((Acs[contadorActividad], None, None))
-        
-        ########################################################### 
-        # Escoger Actividades
-        print "Actividades1 por manana"
-        #############################################################
-        contadorActividad += 1;
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades2"
-        #############################################################
-        # tarde
-        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.tarde))
-        grep += gr.triples((Acs[contadorActividad], None, None))
-        contadorActividad += 1;
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades3"
-        #############################################################
-        # noche
-        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.noche))
-        grep += gr.triples((Acs[contadorActividad], None, None))
-        contadorActividad += 1;
-
-        day = day + datetime.timedelta(days=1)
-
-    print departureDate
-
-    ########################################################### 
-    # Construir mensage de repuesta
-    print "Construir mensage de repuesta"
-    #############################################################
-    for s, p, o in grep:
-        print 's: ' + s
-        print 'p: ' + p
-        print 'o: ' + o
-        print '\n'
-        mss_cnt += 1
-
-    print 'Respondemos a la peticion\n'
-########################################################### 
-# Construir mensage de repuesta
-    print "Retornar repuesta"
-#############################################################   
+    grep = comu()
 
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
