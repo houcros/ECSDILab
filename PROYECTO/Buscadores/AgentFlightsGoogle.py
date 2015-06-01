@@ -295,7 +295,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
   #print payload
 
   r = requests.post(QPX_END_POINT, params={'key': QPX_API_KEY}, data=json.dumps(payload), headers=headers)
-  #print r.text
+  print r.text
 
   dic = r.json()
   #print json.dumps(dic, indent=4, sort_keys=True)

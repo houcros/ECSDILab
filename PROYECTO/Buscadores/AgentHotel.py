@@ -88,7 +88,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
                           'departureDate': departureDate,
                           'numberOfAdults': numberOfAdults,
                           'numberOfChildren': numberOfChildren,
-                          'propertyCategory': propertyCategory
+                          'propertyCategory': propertyCategory  
                       	})
 
   #print r.text
@@ -116,6 +116,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
   	 # 	' tripAdvisorReviewCount: ' + '{:.0f}'.format(hot['tripAdvisorReviewCount'])
   	 # 	)
       hot_obj = myns_hot[hot['hotelId']]
+      gresp.add((hot_obj, myns_atr.esUn, myns.hotel))
       gresp.add((hot_obj, myns_atr.distancia, Literal(hot['proximityDistance'])))
       gresp.add((hot_obj, myns_atr.distancia_unidad, Literal(hot['proximityUnit'])))
       gresp.add((hot_obj, myns_atr.cuesta, Literal(hot['RoomRateDetailsList']['RoomRateDetails']['RateInfos']['RateInfo']['ChargeableRateInfo']['@total'])))

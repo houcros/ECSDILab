@@ -199,6 +199,20 @@ def comunicacion():
 
             maxPrice=gm.value(subject= peticion, predicate= myns_atr.maxPrice)
 
+            ########################################################### 
+            # Comunicar con buscador
+            print "Los parametros de hotel"
+            #############################################################
+            originVuelo=gm.value(subject= peticion, predicate= myns_atr.originVuelo)
+
+            destinationVuelo=gm.value(subject= peticion, predicate= myns_atr.destinationVuelo)
+
+            departureDate=gm.value(subject= peticion, predicate= myns_atr.departureDate)
+
+            returnDate=gm.value(subject= peticion, predicate= myns_atr.returnDate)
+
+            maxPrice=gm.value(subject= peticion, predicate= myns_atr.maxPrice)
+
             grep = comu()
 
     print 'Respondemos a la peticion\n'
@@ -275,6 +289,7 @@ def comu():
     
     destination = "Madrid, Spain"
     activity="Movie"
+
     radius = 20000
     departureDate = datetime.date(2015, 9, 8)
     returnDate = datetime.date(2015, 9, 20)
@@ -282,9 +297,17 @@ def comu():
 
     originVuelo="BCN"
     destinationVuelo="PRG"
+
     departureDate="2015-06-02"
     returnDate="2015-06-08"
-    maxPrice='EUR500'
+    maxPrice="EUR500"
+
+    destinationCity="Barcelona"
+    destinationCountry="Spain" 
+    searchRadius=2 
+    arrivalDate="06/02/2015"
+    departureDateHotel="06/08/2015" 
+    propertyCategory=1
     ########################################################### 
     # Mejorar preferencia de busqueda
     print "Mejorar preferencia de busqueda"
@@ -315,7 +338,7 @@ def comu():
     
     ########################################################### 
     # Comunicar con buscador
-    print "Añadir parametros de actividad"
+    print "Añadir parametros de vuelo"
     #############################################################
     vuelo = myns_pet.vuelo
     gmess.add((vuelo, myns_atr.originVuelo, Literal(originVuelo)))
@@ -324,7 +347,17 @@ def comu():
     gmess.add((vuelo, myns_atr.returnDate, Literal(returnDate)))          
     gmess.add((vuelo, myns_atr.maxPrice, Literal(maxPrice))) 
 
-
+    ########################################################### 
+    # Comunicar con buscador
+    print "Añadir parametros de hotel"
+    #############################################################
+    hotel = myns_pet.hotel
+    gmess.add((hotel, myns_atr.destinationCity, Literal(destinationCity)))
+    gmess.add((hotel, myns_atr.destinationCountry, Literal(destinationCountry)))
+    gmess.add((hotel, myns_atr.searchRadius, Literal(searchRadius)))
+    gmess.add((hotel, myns_atr.arrivalDate, Literal(arrivalDate)))
+    gmess.add((hotel, myns_atr.departureDate, Literal(departureDateHotel)))          
+    gmess.add((hotel, myns_atr.propertyCategory, Literal(propertyCategory))) 
 
     # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
     res_obj= agn['Planificador-pide-datos']
@@ -361,8 +394,8 @@ def comu():
     # Calcular paquete
     print "Calcular Vuelos"
     #############################################################    
-
-    gvueloid = gr.query("""
+    gvuelo = gr.triples((None, myns_atr.esUn, myns.vuelo))
+    gvueloid = gvuelo.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
                 SELECT DISTINCT ?a ?cuesta
                 WHERE{
@@ -373,10 +406,31 @@ def comu():
                 LIMIT 1
         """)
     Aid = []
-    for s in gvueloid
+    for s in gvueloid:
         Aid.append(s)
 
-    grep += gr.triples((Aid[0], None, None))
+    grep += gvuelo.triples((Aid[0], None, None))
+
+    ########################################################### 
+    # Calcular paquete
+    print "Calcular Hotel"
+    #############################################################    
+    gvuelo = gr.triples((None, myns_atr.esUn, myns.hotel))
+    gvueloid = gvuelo.query("""
+                PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                SELECT DISTINCT ?a ?ratin
+                WHERE{
+                    ?a myns_atr:rating ?ratin .
+                    FILTER(str(?ratin) != "")
+                }
+                ORDER BY DESC(?ratin)
+                LIMIT 1
+        """)
+    Aid = []
+    for s in gvueloid:
+        Aid.append(s)
+
+    grep += gvuelo.triples((Aid[0], None, None))
 
 
     #Actividades 
@@ -384,8 +438,8 @@ def comu():
     # Calcular paquete
     print "Calcular Actividades"
     #############################################################           
-
-    gact = gr.query("""
+    gactividad = gr.triples((None, myns_atr.esUn, myns.actividad))
+    gact = gactividad.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
                 SELECT DISTINCT ?a ?ratin
                 WHERE{
@@ -422,9 +476,9 @@ def comu():
     # Escoger Actividades
     print "Actividades1 Anadido"
     #############################################################                
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.manana))
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns.manana))
 
-    grep += gr.triples((Acs[contadorActividad], None, None))
+    grep += gactividad.triples((Acs[contadorActividad], None, None))
     
     ########################################################### 
     # Escoger Actividades
@@ -437,8 +491,8 @@ def comu():
     #############################################################
     # tarde
     grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.tarde))
-    grep += gr.triples((Acs[contadorActividad], None, None))
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns.tarde))
+    grep += gactividad.triples((Acs[contadorActividad], None, None))
     contadorActividad += 1;
     ########################################################### 
     # Escoger Actividades
@@ -446,8 +500,8 @@ def comu():
     #############################################################
     # noche
     grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns_atr.noche))
-    grep += gr.triples((Acs[contadorActividad], None, None))
+    grep.add((Acs[contadorActividad], myns_atr.momento, myns.noche))
+    grep += gactividad.triples((Acs[contadorActividad], None, None))
     contadorActividad += 1;
 
     day = day + datetime.timedelta(days=1)

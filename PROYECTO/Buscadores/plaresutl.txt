@@ -2,7 +2,8 @@ Los parametros hardcoreado
 Mejorar preferencia de busqueda
 Iniciar la comunicaion con buscador
 Añadir parametros de actividad
-Añadir parametros de actividad
+Añadir parametros de vuelo
+Añadir parametros de hotel
 INFO AgentePlanificador=> Sending request to AgenteBuscador
 
 500

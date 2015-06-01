@@ -262,15 +262,42 @@ def comunicacion():
     #     print '\n'
 
     # Buscamos hoteles
-    ghoteles = buscar_hoteles()
+
+
+    hotel = myns_pet.hotel
+
+    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
+    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
+
+    searchRadiu=gm.value(subject= hotel, predicate= myns_atr.searchRadius)
+
+    arrivalDat=gm.value(subject= hotel, predicate= myns_atr.arrivalDate)
+
+    departureDatehotel=gm.value(subject= hotel, predicate= myns_atr.departureDate)
+
+    propertyCategor=gm.value(subject= hotel, predicate= myns_atr.propertyCategory)
+ 
+
+    ghoteles = buscar_hoteles(destinationCity = destinationCit,
+                                destinationCountry = destinationCountr,
+                                searchRadius = searchRadiu,
+                               arrivalDate = arrivalDat,
+                               departureDate = departureDatehotel,
+                               propertyCategory = propertyCategor)
     
     # Buscamos vuelos
     vuelo = myns_pet.vuelo
+
     originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
+
     destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo)
+
     departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
+
     returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
+
     maxPric=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
+
     gvuelos = Graph()
     gvuelos = buscar_vuelos(origin=originVuelo, 
                             destination=destinationVuelo,
