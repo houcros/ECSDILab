@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>BeStrip</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.min.css')}}">
 	</head>
 	<body>
 	<div id="page">
@@ -31,7 +32,7 @@
 					<br>
 					{{ form.activities.label }} {{ form.activities(size=20)}}
 					<br> <br> <br>
-					<input type="submit" value="Search Packet">
+					<input type="submit" value="Search Packet" class="button btn-primary">
 				</form>
 			</div>
 		</div>
