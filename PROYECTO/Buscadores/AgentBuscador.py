@@ -55,20 +55,17 @@ else:
 
 plan_port = 9002
 
-if args.open is None:
-    hostname = '0.0.0.0'
-else:
-    hostname = socket.gethostname()
+
+#hostname = socket.gethostname()
+hostname = 'localhost'
 
 if args.dport is None:
     dport = 9000
 else:
     dport = args.dport
 
-if args.dhost is None:
-    dhostname = socket.gethostname()
-else:
-    dhostname = args.dhost
+#dhostname = socket.gethostname()
+dhostname = 'localhost'
 
 # Flask stuff
 app = Flask(__name__)

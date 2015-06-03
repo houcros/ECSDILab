@@ -3,144 +3,144 @@
    xmlns:myns_atr="http://my.namespace.org/atributos/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ4VUr7H8oQg0RXrdv8qEzACs">
+    <myns_atr:nombre>Cine Ideal</myns_atr:nombre>
+    <myns_atr:direccion>Calle del Doctor Cortezo, 6, 28012 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</myns_atr:rating>
+    <myns_atr:localizacion>{u'lat': 40.413583, u'lng': -3.70389}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJy4P69HwoQg0RAJ4HUV1Bt7w">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8</myns_atr:rating>
+    <myns_atr:direccion>Calle Gran Vía, 41, 28013 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:nombre>Capitol</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 40.420602, u'lng': -3.706578}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJV43K93snQg0RD6Lp7oJ06OE">
+    <myns_atr:localizacion>{u'lat': 40.363946, u'lng': -3.738539}</myns_atr:localizacion>
+    <myns_atr:direccion>C.C Islazul, Calle de la Calderilla, 1, 28054 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
+    <myns_atr:nombre>Yelmo Cines</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJFQfKnm8oQg0Ru0_cIEAMtxU">
+    <myns_atr:direccion>Calle de Martín de los Heros, 14, 28008 Madrid, Spain</myns_atr:direccion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1</myns_atr:rating>
+    <myns_atr:tel_int>+34 915 59 38 36</myns_atr:tel_int>
+    <myns_atr:nombre>Golem</myns_atr:nombre>
+    <myns_atr:localizacion>{u'lat': 40.424703, u'lng': -3.713695}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ08-v_n8oQg0R1_RilinHs5Y">
+    <myns_atr:nombre>Ficciones de CIne</myns_atr:nombre>
+    <myns_atr:direccion>Calle de Relatores, 10, 28012 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.413162, u'lng': -3.70324}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.6</myns_atr:rating>
+    <myns_atr:tel_int>+34 913 69 33 11</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJSwHmj28oQg0RF9clst3Ks7o">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:nombre>Renoir Plaza de España</myns_atr:nombre>
+    <myns_atr:tel_int>+34 915 42 27 02</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 40.424495, u'lng': -3.713494}</myns_atr:localizacion>
+    <myns_atr:direccion>Calle de Martín de los Heros, 12, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJKTA6gmUoQg0RRVg_XaEY4BY">
+    <myns_atr:localizacion>{u'lat': 40.424857, u'lng': -3.713004}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
+    <myns_atr:nombre>Cines Renoir Princesa</myns_atr:nombre>
+    <myns_atr:direccion>Princesa, 3, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 915 41 41 00</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJARSJM5GIQQ0RXGxHuKtRge4">
+    <myns_atr:localizacion>{u'lat': 40.394547, u'lng': -3.798581}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.4</myns_atr:rating>
+    <myns_atr:nombre>Kinépolis Madrid Ciudad de la Imagen</myns_atr:nombre>
+    <myns_atr:tel_int>+34 915 12 70 00</myns_atr:tel_int>
+    <myns_atr:direccion>C/ Edgar Neville, 28223 Pozuelo de Alarcón, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ2zMteNKOQQ0RapVADdjy5ZY">
+    <myns_atr:nombre>Yelmo Cines TresAguas (C.C. TresAguas)</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
+    <myns_atr:direccion>Ctro.Cial TresAguas, Avenida San Martín de Valdeiglesias, 24, 28922 Alcorcón, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:localizacion>{u'lat': 40.358088, u'lng': -3.833198}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJd4LeJWAoQg0RKd1wxXvZZS8">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8</myns_atr:rating>
+    <myns_atr:direccion>Fuencarral, 136, 28001 Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.43135, u'lng': -3.703301}</myns_atr:localizacion>
+    <myns_atr:nombre>CINESA PROYECCIONES</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ8VK6GaqLQQ0RWB-hVOpo3m0">
+    <myns_atr:nombre>Palacio de la Prensa</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:tel_int>+34 915 21 99 00</myns_atr:tel_int>
+    <myns_atr:direccion>Plaza de Callao, 4, 28013 Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.420443, u'lng': -3.705939}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJJZWhYmAoQg0RimCOPTLzJ4g">
+    <myns_atr:nombre>Pequeño Cine Estudio</myns_atr:nombre>
+    <myns_atr:direccion>Calle de Magallanes, 1, 28015 Madrid, Community of Madrid, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 915 93 00 86</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 40.432565, u'lng': -3.705383}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ-4Yk2lYoQg0Rur538RZIM9g">
+    <myns_atr:nombre>Parral Entertainment</myns_atr:nombre>
+    <myns_atr:localizacion>{u'lat': 40.446121, u'lng': -3.70717}</myns_atr:localizacion>
+    <myns_atr:rating></myns_atr:rating>
+    <myns_atr:direccion>Avenida de Pablo Iglesias, 22, 28003 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 636 86 53 82</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJO-5qaocoQg0R8W-pcjeDJb4">
+    <myns_atr:tel_int>+34 915 22 22 81</myns_atr:tel_int>
+    <myns_atr:direccion>Calle Montera, 31, 28013 Madrid, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.418808, u'lng': -3.702503}</myns_atr:localizacion>
+    <myns_atr:nombre>Acteón</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:rating>
+  </rdf:Description>
   <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJIVL5XYsoQg0RA6MgUC9_Hww">
     <myns_atr:localizacion>{u'lat': 40.431822, u'lng': -3.69819}</myns_atr:localizacion>
-    <myns_atr:direccion>Calle de Luchana, 38, 28010 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</myns_atr:rating>
-    <myns_atr:tel_int>None</myns_atr:tel_int>
     <myns_atr:nombre>LUCHANA'S</myns_atr:nombre>
+    <myns_atr:tel_int>None</myns_atr:tel_int>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</myns_atr:rating>
+    <myns_atr:direccion>Calle de Luchana, 38, 28010 Madrid, Madrid, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJqRkui3IoQg0RsNM3BQFSV-Q">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
+    <myns_atr:nombre>Príncipe Pío</myns_atr:nombre>
+    <myns_atr:tel_int>+34 915 40 14 90</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 40.42194, u'lng': -3.720038}</myns_atr:localizacion>
+    <myns_atr:direccion>C.C. Príncipe Pío. Pº de la Florida, s/n, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
   </rdf:Description>
   <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJQccYvBMoQg0RMT_7u5Y2IQ4">
     <myns_atr:direccion>Plaza San Antonio La Florida, 1, 28008 Madrid, Spain</myns_atr:direccion>
     <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2</myns_atr:rating>
     <myns_atr:nombre>CINE DE VERANO DE LA BOMBILLA: FESCINAL</myns_atr:nombre>
-    <myns_atr:localizacion>{u'lat': 40.426507, u'lng': -3.725912}</myns_atr:localizacion>
     <myns_atr:tel_int>+34 609 76 23 65</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJJxkUgLItQg0R-npg9YSajHs">
-    <myns_atr:localizacion>{u'lat': 40.527924, u'lng': -3.622314}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 916 23 64 92</myns_atr:tel_int>
-    <myns_atr:nombre>Hobby Card</myns_atr:nombre>
-    <myns_atr:rating></myns_atr:rating>
-    <myns_atr:direccion>Paseo de Alcobendas, 10, 28109 Alcobendas, Madrid, Spain</myns_atr:direccion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJV43K93snQg0RD6Lp7oJ06OE">
-    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
-    <myns_atr:localizacion>{u'lat': 40.363946, u'lng': -3.738539}</myns_atr:localizacion>
-    <myns_atr:nombre>Yelmo Cines</myns_atr:nombre>
-    <myns_atr:direccion>C.C Islazul, Calle de la Calderilla, 1, 28054 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJJZWhYmAoQg0RimCOPTLzJ4g">
-    <myns_atr:nombre>Pequeño Cine Estudio</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
-    <myns_atr:direccion>Calle de Magallanes, 1, 28015 Madrid, Community of Madrid, Spain</myns_atr:direccion>
-    <myns_atr:localizacion>{u'lat': 40.432565, u'lng': -3.705383}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 915 93 00 86</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJARSJM5GIQQ0RXGxHuKtRge4">
-    <myns_atr:direccion>C/ Edgar Neville, 28223 Pozuelo de Alarcón, Spain</myns_atr:direccion>
-    <myns_atr:localizacion>{u'lat': 40.394547, u'lng': -3.798581}</myns_atr:localizacion>
-    <myns_atr:nombre>Kinépolis Madrid Ciudad de la Imagen</myns_atr:nombre>
-    <myns_atr:tel_int>+34 915 12 70 00</myns_atr:tel_int>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.4</myns_atr:rating>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ8VK6GaqLQQ0RWB-hVOpo3m0">
-    <myns_atr:nombre>Palacio de la Prensa</myns_atr:nombre>
-    <myns_atr:direccion>Plaza de Callao, 4, 28013 Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
-    <myns_atr:localizacion>{u'lat': 40.420443, u'lng': -3.705939}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 915 21 99 00</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJSwHmj28oQg0RF9clst3Ks7o">
-    <myns_atr:nombre>Renoir Plaza de España</myns_atr:nombre>
-    <myns_atr:tel_int>+34 915 42 27 02</myns_atr:tel_int>
-    <myns_atr:localizacion>{u'lat': 40.424495, u'lng': -3.713494}</myns_atr:localizacion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
-    <myns_atr:direccion>Calle de Martín de los Heros, 12, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJkfK9PyomQg0R9P8bQpD0wBk">
-    <myns_atr:tel_int>+34 913 69 11 25</myns_atr:tel_int>
-    <myns_atr:nombre>Cine Doré</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:rating>
-    <myns_atr:localizacion>{u'lat': 40.411616, u'lng': -3.699027}</myns_atr:localizacion>
-    <myns_atr:direccion>Calle de Santa Isabel, 3, 28012 Madrid, Spain</myns_atr:direccion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJDwpH8RghQg0R4vpANNhSSk0">
-    <myns_atr:tel_int>+34 916 65 24 31</myns_atr:tel_int>
-    <myns_atr:nombre>Molina Efectos Especiales</myns_atr:nombre>
-    <myns_atr:rating></myns_atr:rating>
-    <myns_atr:direccion>Calle Torneros, 33, 28906 Getafe, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:localizacion>{u'lat': 40.309688, u'lng': -3.696491}</myns_atr:localizacion>
+    <myns_atr:localizacion>{u'lat': 40.426507, u'lng': -3.725912}</myns_atr:localizacion>
   </rdf:Description>
   <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJLzxJSUgmQg0RBTfHHwBeI_k">
-    <myns_atr:localizacion>{u'lat': 40.391459, u'lng': -3.696297}</myns_atr:localizacion>
     <myns_atr:nombre>Cineteca</myns_atr:nombre>
+    <myns_atr:localizacion>{u'lat': 40.391459, u'lng': -3.696297}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:rating>
     <myns_atr:tel_int>+34 915 17 98 17</myns_atr:tel_int>
     <myns_atr:direccion>Plaza de Legazpi, 8, 28045 Madrid, Madrid, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJkfK9PyomQg0R9P8bQpD0wBk">
+    <myns_atr:nombre>Cine Doré</myns_atr:nombre>
+    <myns_atr:direccion>Calle de Santa Isabel, 3, 28012 Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.411616, u'lng': -3.699027}</myns_atr:localizacion>
     <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:rating>
+    <myns_atr:tel_int>+34 913 69 11 25</myns_atr:tel_int>
   </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ08-v_n8oQg0R1_RilinHs5Y">
-    <myns_atr:localizacion>{u'lat': 40.413162, u'lng': -3.70324}</myns_atr:localizacion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.6</myns_atr:rating>
-    <myns_atr:direccion>Calle de Relatores, 10, 28012 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:nombre>Ficciones de CIne</myns_atr:nombre>
-    <myns_atr:tel_int>+34 913 69 33 11</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ-4Yk2lYoQg0Rur538RZIM9g">
-    <myns_atr:tel_int>+34 636 86 53 82</myns_atr:tel_int>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJJxkUgLItQg0R-npg9YSajHs">
+    <myns_atr:tel_int>+34 916 23 64 92</myns_atr:tel_int>
     <myns_atr:rating></myns_atr:rating>
-    <myns_atr:nombre>Parral Entertainment</myns_atr:nombre>
-    <myns_atr:localizacion>{u'lat': 40.446121, u'lng': -3.70717}</myns_atr:localizacion>
-    <myns_atr:direccion>Avenida de Pablo Iglesias, 22, 28003 Madrid, Madrid, Spain</myns_atr:direccion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJqRkui3IoQg0RsNM3BQFSV-Q">
-    <myns_atr:localizacion>{u'lat': 40.42194, u'lng': -3.720038}</myns_atr:localizacion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
-    <myns_atr:direccion>C.C. Príncipe Pío. Pº de la Florida, s/n, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:tel_int>+34 915 40 14 90</myns_atr:tel_int>
-    <myns_atr:nombre>Príncipe Pío</myns_atr:nombre>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJd4LeJWAoQg0RKd1wxXvZZS8">
-    <myns_atr:nombre>CINESA PROYECCIONES</myns_atr:nombre>
-    <myns_atr:direccion>Fuencarral, 136, 28001 Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8</myns_atr:rating>
-    <myns_atr:localizacion>{u'lat': 40.43135, u'lng': -3.703301}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ2zMteNKOQQ0RapVADdjy5ZY">
-    <myns_atr:direccion>Ctro.Cial TresAguas, Avenida San Martín de Valdeiglesias, 24, 28922 Alcorcón, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
-    <myns_atr:nombre>Yelmo Cines TresAguas (C.C. TresAguas)</myns_atr:nombre>
-    <myns_atr:localizacion>{u'lat': 40.358088, u'lng': -3.833198}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJKTA6gmUoQg0RRVg_XaEY4BY">
-    <myns_atr:nombre>Cines Renoir Princesa</myns_atr:nombre>
-    <myns_atr:localizacion>{u'lat': 40.424857, u'lng': -3.713004}</myns_atr:localizacion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
-    <myns_atr:direccion>Princesa, 3, 28008 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:tel_int>+34 915 41 41 00</myns_atr:tel_int>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJO-5qaocoQg0R8W-pcjeDJb4">
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:rating>
-    <myns_atr:tel_int>+34 915 22 22 81</myns_atr:tel_int>
-    <myns_atr:localizacion>{u'lat': 40.418808, u'lng': -3.702503}</myns_atr:localizacion>
-    <myns_atr:direccion>Calle Montera, 31, 28013 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:nombre>Acteón</myns_atr:nombre>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJFQfKnm8oQg0Ru0_cIEAMtxU">
-    <myns_atr:nombre>Golem</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1</myns_atr:rating>
-    <myns_atr:localizacion>{u'lat': 40.424703, u'lng': -3.713695}</myns_atr:localizacion>
-    <myns_atr:tel_int>+34 915 59 38 36</myns_atr:tel_int>
-    <myns_atr:direccion>Calle de Martín de los Heros, 14, 28008 Madrid, Spain</myns_atr:direccion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJy4P69HwoQg0RAJ4HUV1Bt7w">
-    <myns_atr:nombre>Capitol</myns_atr:nombre>
-    <myns_atr:direccion>Calle Gran Vía, 41, 28013 Madrid, Madrid, Spain</myns_atr:direccion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8</myns_atr:rating>
-    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
-    <myns_atr:localizacion>{u'lat': 40.420602, u'lng': -3.706578}</myns_atr:localizacion>
+    <myns_atr:nombre>Hobby Card</myns_atr:nombre>
+    <myns_atr:direccion>Paseo de Alcobendas, 10, 28109 Alcobendas, Madrid, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 40.527924, u'lng': -3.622314}</myns_atr:localizacion>
   </rdf:Description>
 </rdf:RDF>

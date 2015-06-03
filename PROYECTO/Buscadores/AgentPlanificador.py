@@ -33,7 +33,7 @@ import json
 import logging
 import datetime
 # Configuration stuff
-hostname = socket.gethostname()
+hostname = 'localhost' 
 port = 9002
 bus_port = 9003
 
@@ -298,8 +298,8 @@ def comu():
     originVuelo="BCN"
     destinationVuelo="PRG"
 
-    departureDate="2015-06-02"
-    returnDate="2015-06-08"
+    departureDate="2015-07-02"
+    returnDate="2015-07-08"
     maxPrice="EUR500"
 
     destinationCity="Barcelona"
