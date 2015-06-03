@@ -27,6 +27,7 @@ from AgentUtil.APIKeys import QPX_API_KEY
 
 from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
+from datetime import datetime
 
 # Nuestros namespaces que usaremos luego
 myns = Namespace("http://my.namespace.org/")
@@ -242,8 +243,13 @@ response = {
  }
 }
 
+# Formato Datetime
+# defaultDepDate = datetime.strptime("2015-08-20", '%Y-%m-%d')
+# defaultRetDate = datetime.strptime("2015-08-30", '%Y-%m-%d')
+
 def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
-  departureDate="2015-07-02", returnDate="2015-07-08", solutions=50,
+
+  departureDate="2015-08-20", returnDate="2015-08-30", solutions=2,
   maxPrice="EUR500", earliestDepartureTime="06:00", latestDepartureTime="23:00",
   earliestReturnTime="06:00", latestReturnTime="23:00"):
   # print origin

@@ -292,22 +292,21 @@ def comu():
 
     radius = 20000
 
-
     tipo = types.TYPE_MOVIE_THEATER 
 
     originVuelo="BCN"
     destinationVuelo="PRG"
-    departureDate = datetime.date(2015, 9, 8)
-    returnDate = datetime.date(2015, 9, 20)
-    departureDate="2015-07-02"
-    returnDate="2015-07-08"
+
+    departureDate="2015-08-20"
+    returnDate="2015-08-30"
     maxPrice="EUR500"
 
     destinationCity="Barcelona"
     destinationCountry="Spain" 
     searchRadius=2 
-    arrivalDate="08/02/2015"
-    departureDateHotel="08/08/2015" 
+
+    arrivalDate="08/20/2015"
+    departureDateHotel="08/30/2015"
     propertyCategory=1
 
     print departureDate
