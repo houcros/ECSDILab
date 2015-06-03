@@ -299,7 +299,7 @@ def comu():
 
     departureDate="2015-08-20"
     returnDate="2015-08-30"
-    maxPrice="EUR500"
+    maxPrice=500
 
     destinationCity="Barcelona"
     destinationCountry="Spain" 

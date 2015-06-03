@@ -30,7 +30,8 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 LOG_TAG = "DEBUG: AgenteActividades => "
 
-def buscar_actividades(location="Barcelona, Spain", keyword="movie", radius=20000, types=[]):
+def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", keyword="movie", radius=20000, types=[]):
+    location= destinationCity+", "+destinationCountry
     gr = Graph()
     gr.parse('a.rdf' ,format='xml')
     b = False

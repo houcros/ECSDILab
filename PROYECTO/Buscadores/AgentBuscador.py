@@ -248,7 +248,9 @@ def comunicacion():
 
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-    # gactividades = buscar_actividades(location, activity, radius, lista)
+    gactividades = buscar_actividades(destinationCity = destinationCit,
+                                destinationCountry = destinationCountr,
+                                activity, radius, lista)
     print "INFO AgentBuscador => Activities found: "
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
