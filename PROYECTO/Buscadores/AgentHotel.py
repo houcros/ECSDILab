@@ -28,6 +28,7 @@ from AgentUtil.APIKeys import EAN_DEV_CID, EAN_KEY, EAN_SECRET
 from AgentUtil.Agent import Agent
 import socket
 from rdflib import Graph, Namespace, Literal
+from datetime import datetime
 
 # Nuestros namespaces que usaremos luego
 agn = Namespace("http://www.agentes.org#")
@@ -61,8 +62,12 @@ timestamp = str(int(time.time()))
 sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 # print "Sig has ", sig.__len__(), " charachters"
 
+# Formato Datetime
+# defaultArrDate = datetime.strptime("08/20/2015", '%m/%d/%Y')
+# defaultDepDate = datetime.strptime("08/30/2015", '%m/%d/%Y')
+
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
-  searchRadius=2, arrivalDate="06/02/2015", departureDate="06/08/2015", 
+  searchRadius=2, arrivalDate="08/20/2015", departureDate="08/30/2015", 
   numberOfAdults=2, numberOfChildren=0, propertyCategory=1):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
 

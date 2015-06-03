@@ -291,22 +291,20 @@ def comu():
     activity="Movie"
 
     radius = 20000
-    departureDate = datetime.date(2015, 9, 8)
-    returnDate = datetime.date(2015, 9, 20)
     tipo = types.TYPE_MOVIE_THEATER 
 
     originVuelo="BCN"
     destinationVuelo="PRG"
 
-    departureDate="2015-07-02"
-    returnDate="2015-07-08"
+    departureDate="2015-08-20"
+    returnDate="2015-08-30"
     maxPrice="EUR500"
 
     destinationCity="Barcelona"
     destinationCountry="Spain" 
     searchRadius=2 
-    arrivalDate="06/02/2015"
-    departureDateHotel="06/08/2015" 
+    arrivalDate="08/20/2015"
+    departureDateHotel="08/30/2015"
     propertyCategory=1
     ########################################################### 
     # Mejorar preferencia de busqueda

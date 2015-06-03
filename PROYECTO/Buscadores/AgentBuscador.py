@@ -26,6 +26,7 @@ from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
 from AgentFlightsGoogle import buscar_vuelos
 from AgentHotel import buscar_hoteles
+from datetime import datetime
 import logging
 
 import pprint
@@ -247,18 +248,18 @@ def comunicacion():
 
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-    gactividades = buscar_actividades(location, activity, radius, lista)
+    # gactividades = buscar_actividades(location, activity, radius, lista)
     print "INFO AgentBuscador => Activities found: "
-    # VERBOSE
-    # Imprimimos el grafo de resultados para ver que pinta tiene
-    # Realmente solo queremos devolverlo al planificador
+    #VERBOSE
+    #Imprimimos el grafo de resultados para ver que pinta tiene
+    #Realmente solo queremos devolverlo al planificador
     # for s, p, o in gactividades:
     #     print 's: ' + s
     #     print 'p: ' + p
     #     print 'o: ' + o
     #     print '\n'
 
-    # Buscamos hoteles
+    print "Buscamos hoteles"
 
 
     hotel = myns_pet.hotel
@@ -273,8 +274,8 @@ def comunicacion():
     departureDatehotel=gm.value(subject= hotel, predicate= myns_atr.departureDate)
 
     propertyCategor=gm.value(subject= hotel, predicate= myns_atr.propertyCategory)
- 
 
+    print "INFO AgentBuscador => Looking for hotels (in AgentHotel)..."
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountr,
                                 searchRadius = searchRadiu,
@@ -510,7 +511,15 @@ if __name__ == '__main__':
     ###########################################################################
     # print "Busco vuelos"
     
-    # gvuelos = buscar_vuelos()
+    # #gvuelos = buscar_vuelos()
+    # depD = datetime.strptime("2015-08-20", '%Y-%m-%d')
+    # retD = datetime.strptime("2015-08-30", '%Y-%m-%d')
+    # depDStr = depD.strftime("%Y-%m-%d")
+    # retDStr = retD.strftime("%Y-%m-%d")
+    # print depDStr
+    # print retDStr
+
+    # gvuelos = buscar_vuelos(departureDate="2015-08-20", returnDate="2015-08-30")
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in gvuelos:
@@ -525,7 +534,16 @@ if __name__ == '__main__':
     ###########################################################################
     # print "Busco hoteles"
     
-    # ghoteles = buscar_hoteles()
+    # # ghoteles = buscar_hoteles()
+
+    # arrD = datetime.strptime("08/20/2015", '%m/%d/%Y')
+    # depD = datetime.strptime("08/30/2015", '%m/%d/%Y')
+    # arrDStr = arrD.strftime("%m/%d/%Y")
+    # depDStr = depD.strftime("%m/%d/%Y")
+    # print arrDStr
+    # print depDStr
+
+    # ghoteles = buscar_hoteles(arrivalDate=08/20/2015, departureDate=08/30/2015)
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in ghoteles:
