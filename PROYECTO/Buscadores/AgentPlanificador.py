@@ -305,8 +305,6 @@ def comu():
     destinationCountry="Spain" 
     searchRadius=2 
 
-    arrivalDate="08/20/2015"
-    departureDateHotel="08/30/2015"
     propertyCategory=1
 
     print departureDate

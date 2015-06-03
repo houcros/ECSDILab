@@ -248,9 +248,7 @@ def comunicacion():
 
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-    gactividades = buscar_actividades(destinationCity = destinationCit,
-                                destinationCountry = destinationCountr,
-                                activity, radius, lista)
+    gactividades = buscar_actividades(destinationCit, destinationCountr, activity, radius, lista)
     print "INFO AgentBuscador => Activities found: "
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
@@ -271,9 +269,9 @@ def comunicacion():
 
     searchRadiu=gm.value(subject= hotel, predicate= myns_atr.searchRadius)
 
-    arrivalDat=gm.value(subject= hotel, predicate= myns_atr.arrivalDate)
+    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
 
-    departureDatehotel=gm.value(subject= hotel, predicate= myns_atr.departureDate)
+    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
 
     propertyCategor=gm.value(subject= hotel, predicate= myns_atr.propertyCategory)
 
@@ -281,8 +279,8 @@ def comunicacion():
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountr,
                                 searchRadius = searchRadiu,
-                               arrivalDate = arrivalDat,
-                               departureDate = departureDatehotel,
+                               arrivalDate = departureDat,
+                               departureDate = returnDat,
                                propertyCategory = propertyCategor)
     
     # Buscamos vuelos
@@ -291,10 +289,6 @@ def comunicacion():
     originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
 
     destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo)
-
-    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
-
-    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
 
     maxPric=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
 

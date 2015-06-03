@@ -67,9 +67,15 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 # defaultDepDate = datetime.strptime("08/30/2015", '%m/%d/%Y')
 
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
-  searchRadius=2, arrivalDate="08/20/2015", departureDate="08/30/2015", 
+  searchRadius=2, arrivalDate="2015-8-20", departureDate="2015-8-30", 
   numberOfAdults=2, numberOfChildren=0, propertyCategory=1):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
+
+  arrD = datetime.strptime(arrivalDate, '%Y-%m-%d')
+  depD = datetime.strptime(departureDate, '%Y-%m-%d')
+  arrDStr = arrD.strftime("%m/%d/%Y")
+  depDStr = depD.strftime("%m/%d/%Y")
+
   gresp = Graph()
   # COORDINATES OF THE DESTINATION
   b = False
@@ -91,8 +97,8 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
                      		'longitude': location.longitude,
                             'searchRadius': searchRadius,
                             'searchRadiusUnit': "KM",
-                            'arrivalDate': arrivalDate,
-                            'departureDate': departureDate,
+                            'arrivalDate': arrDStr,
+                            'departureDate': depDStr,
                             'numberOfAdults': numberOfAdults,
                             'numberOfChildren': numberOfChildren,
                             'propertyCategory': propertyCategory  
