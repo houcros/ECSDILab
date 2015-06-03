@@ -248,22 +248,11 @@ response = {
 # defaultRetDate = datetime.strptime("2015-08-30", '%Y-%m-%d')
 
 def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
-
-  departureDate="2015-08-20", returnDate="2015-08-30", solutions=2,
+  departureDate="2015-08-20", returnDate="2015-08-30", solutions=50,
   maxPrice=500, earliestDepartureTime="06:00", latestDepartureTime="23:00",
   earliestReturnTime="06:00", latestReturnTime="23:00"):
 
   maxPriceStr = "EUR" + str(maxPrice)
-  # print origin
-  # print destination
-  # print departureDate
-  # print returnDate
-  # print maxPrice
-  # originVuelo="BCN"
-  # destinationVuelo="PRG"
-  # departureDate="2015-06-02"
-  # returnDate="2015-06-08"
-  # maxPrice='EUR500'
 
   payload = {
     "request": {
@@ -301,7 +290,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
   }
   gresp = Graph()
   #print payload
-  b = True
+  b = False
   if b == True:
     r = requests.post(QPX_END_POINT, params={'key': QPX_API_KEY}, data=json.dumps(payload), headers=headers)
     #print r.text
@@ -346,6 +335,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
     gresp.bind('myns_vlo', myns_vlo)
     gresp.bind('myns', myns)
     i = 0
+    print len(dic['trips']['tripOption'])
     # TODO: ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
     for trip in dic['trips']['tripOption']:
         # Identificador unico para cada roundtrip
@@ -371,8 +361,15 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
         gresp.add((vlo_obj_go, myns_atr.hora_sale, Literal(horaGoSale)))
         gresp.add((vlo_obj_go, myns_atr.hora_llega, Literal(horaGoLlega)))
         # Terminal y ciudad de salida de la ida
-        terminalGoSale = trip['slice'][0]['segment'][0]['leg'][0]['originTerminal']
-        terminalGoLlega = trip['slice'][0]['segment'][0]['leg'][0]['destinationTerminal']
+
+        terminalGoSale = "unknown"
+        if 'originTerminal' in trip['slice'][0]['segment'][0]['leg'][0]:
+          terminalGoSale = trip['slice'][0]['segment'][0]['leg'][0]['originTerminal']
+
+        terminalGoLlega = "unknown"
+        if 'destinationTerminal' in trip['slice'][0]['segment'][0]['leg'][0]:
+          terminalGoLlega = trip['slice'][0]['segment'][0]['leg'][0]['destinationTerminal']
+        
         gresp.add((vlo_obj_go, myns_atr.terminal_sale, Literal(terminalGoSale)))
         gresp.add((vlo_obj_go, myns_atr.terminal_llega, Literal(terminalGoLlega)))
         # Direccion de la ida (redundante)
@@ -395,16 +392,22 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
         horaBackLlega = trip['slice'][1]['segment'][0]['leg'][0]['arrivalTime']
         gresp.add((vlo_obj_back, myns_atr.hora_sale, Literal(horaBackSale)))
         gresp.add((vlo_obj_back, myns_atr.hora_llega, Literal(horaBackLlega)))
-        # Terminal y ciudad de salida de la vuelta
-        terminalBackSale = trip['slice'][1]['segment'][0]['leg'][0]['originTerminal']
-        terminalBackLlega = trip['slice'][1]['segment'][0]['leg'][0]['destinationTerminal']
+        # Terminal y ciudad de salida de la vuelt
+        terminalBackSale = "unknown"
+        if 'originTerminal' in trip['slice'][1]['segment'][0]['leg'][0]:
+          terminalBackSale = trip['slice'][1]['segment'][0]['leg'][0]['originTerminal']
+
+        terminalBackLlega = "unknown"
+        if 'destinationTerminal' in trip['slice'][1]['segment'][0]['leg'][0]:
+          terminalBackLlega = trip['slice'][1]['segment'][0]['leg'][0]['destinationTerminal']
+
         gresp.add((vlo_obj_back, myns_atr.terminal_sale, Literal(terminalBackSale)))
         gresp.add((vlo_obj_back, myns_atr.terminal_llega, Literal(terminalBackLlega)))
         # Direccion de la vuelta (redundante)
         ciudadBackSale = trip['slice'][1]['segment'][0]['leg'][0]['origin']
         ciudadBackLlega = trip['slice'][1]['segment'][0]['leg'][0]['destination']
-        gresp.add((vlo_obj_go, myns_atr.ciudad_sale, Literal(ciudadBackSale)))
-        gresp.add((vlo_obj_go, myns_atr.ciudad_llega, Literal(ciudadBackLlega)))
+        gresp.add((vlo_obj_back, myns_atr.ciudad_sale, Literal(ciudadBackSale)))
+        gresp.add((vlo_obj_back, myns_atr.ciudad_llega, Literal(ciudadBackLlega)))
     
     gresp.serialize('f.rdf')
   else:
