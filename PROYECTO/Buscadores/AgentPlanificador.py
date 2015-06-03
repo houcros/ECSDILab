@@ -291,13 +291,14 @@ def comu():
     activity="Movie"
 
     radius = 20000
-    departureDate = datetime.date(2015, 9, 8)
-    returnDate = datetime.date(2015, 9, 20)
+
+
     tipo = types.TYPE_MOVIE_THEATER 
 
     originVuelo="BCN"
     destinationVuelo="PRG"
-
+    departureDate = datetime.date(2015, 9, 8)
+    returnDate = datetime.date(2015, 9, 20)
     departureDate="2015-07-02"
     returnDate="2015-07-08"
     maxPrice="EUR500"
@@ -305,9 +306,12 @@ def comu():
     destinationCity="Barcelona"
     destinationCountry="Spain" 
     searchRadius=2 
-    arrivalDate="06/02/2015"
-    departureDateHotel="06/08/2015" 
+    arrivalDate="08/02/2015"
+    departureDateHotel="08/08/2015" 
     propertyCategory=1
+
+    print departureDate
+
     ########################################################### 
     # Mejorar preferencia de busqueda
     print "Mejorar preferencia de busqueda"
@@ -375,13 +379,12 @@ def comu():
         AgenteBuscador.address)
     print "Respuesta de busqueda recibida\n"
     
-    
-    
+
     for s, p, o in gr:
         print 's: ' + s
         print 'p: ' + p
-        print 'o: ' + o
         print '\n'
+    
 
     ########################################################### 
     # Calcular paquete
@@ -394,10 +397,13 @@ def comu():
     # Calcular paquete
     print "Calcular Vuelos"
     #############################################################    
-    gvuelo = gr.triples((None, myns_atr.esUn, myns.vuelo))
+    gvuelo = Graph()
+    for s,p,o in gr.triples((None, myns_atr.esUn, myns.viaje)):
+        gvuelo += gr.triples((s, None, None) )
+
     gvueloid = gvuelo.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a ?cuesta
+                SELECT DISTINCT ?a
                 WHERE{
                     ?a myns_atr:cuesta ?cuesta .
                     FILTER(str(?cuesta) != "")
@@ -405,8 +411,10 @@ def comu():
                 ORDER BY (?cuesta)
                 LIMIT 1
         """)
+
     Aid = []
     for s in gvueloid:
+        print s
         Aid.append(s)
 
     grep += gvuelo.triples((Aid[0], None, None))
@@ -415,10 +423,12 @@ def comu():
     # Calcular paquete
     print "Calcular Hotel"
     #############################################################    
-    gvuelo = gr.triples((None, myns_atr.esUn, myns.hotel))
-    gvueloid = gvuelo.query("""
+    ghotel = Graph()
+    for s,p,o in gr.triples((None, myns_atr.esUn, myns.hotel)):
+        ghotel += gr.triples((s, None, None) )
+    ghotelid = ghotel.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a ?ratin
+                SELECT DISTINCT ?a
                 WHERE{
                     ?a myns_atr:rating ?ratin .
                     FILTER(str(?ratin) != "")
@@ -427,18 +437,20 @@ def comu():
                 LIMIT 1
         """)
     Aid = []
-    for s in gvueloid:
+    for s in ghotelid:
         Aid.append(s)
 
-    grep += gvuelo.triples((Aid[0], None, None))
+    grep += ghotel.triples((Aid[0], None, None))
 
 
     #Actividades 
     ########################################################### 
     # Calcular paquete
     print "Calcular Actividades"
-    #############################################################           
-    gactividad = gr.triples((None, myns_atr.esUn, myns.actividad))
+    #############################################################    
+    gactividad = Graph()       
+    for s,p,o in gr.triples((None, myns_atr.esUn, myns.actividad)):
+        gactividad += gr.triples((s, None, None) )
     gact = gactividad.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
                 SELECT DISTINCT ?a ?ratin
@@ -517,7 +529,8 @@ def comu():
         print 'p: ' + p
         print 'o: ' + o
         print '\n'
-        mss_cnt += 1
+    
+    mss_cnt += 1
 
     return grep
 

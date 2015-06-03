@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:myns_atr="http://my.namespace.org/atributos/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://my.namespace.org/hoteles/">
+    <myns_atr:distancia_unidad>KM</myns_atr:distancia_unidad>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1819063</myns_atr:distancia>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
+    <myns_atr:cuesta>977.50</myns_atr:cuesta>
+    <myns_atr:cuesta>844.77</myns_atr:cuesta>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.501804</myns_atr:distancia>
+    <myns_atr:cuesta>682.58</myns_atr:cuesta>
+    <myns_atr:cuesta>747.90</myns_atr:cuesta>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38908416</myns_atr:distancia>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">739</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1054.00</myns_atr:cuesta>
+    <myns_atr:cuesta>959.20</myns_atr:cuesta>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.62898606</myns_atr:distancia>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</myns_atr:rating>
+    <myns_atr:cuesta>657.89</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1205</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">918</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1110</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1168</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1095.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1576</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7080029</myns_atr:distancia>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2434</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">657</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>738.05</myns_atr:cuesta>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.34751347</myns_atr:distancia>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2151376</myns_atr:distancia>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">437</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.76840836</myns_atr:distancia>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.115137</myns_atr:distancia>
+    <myns_atr:cuesta>894.85</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">229</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.27811298</myns_atr:distancia>
+  </rdf:Description>
+</rdf:RDF>

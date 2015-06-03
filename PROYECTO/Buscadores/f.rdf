@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:myns_atr="http://my.namespace.org/atributos/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8652 VY">
+    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:hora_sale>2015-07-02T07:45+02:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-07-02T10:05+02:00</myns_atr:hora_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5850 IB">
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:hora_sale>2015-07-02T18:10+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-07-02T20:30+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8656 VY">
+    <myns_atr:hora_llega>2015-07-02T20:30+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-07-02T18:10+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/Vsiuho9q30BT9XyS4Fbdo2003">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5780 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5779 IB"/>
+    <myns_atr:cuesta>EUR210.24</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/Vsiuho9q30BT9XyS4Fbdo2005">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5780 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5850 IB"/>
+    <myns_atr:cuesta>EUR240.24</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/Vsiuho9q30BT9XyS4Fbdo2002">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8653 VY"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR210.24</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8652 VY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/Vsiuho9q30BT9XyS4Fbdo2001">
+    <myns_atr:cuesta>EUR145.24</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8688 QS"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1059 QS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8688 QS">
+    <myns_atr:hora_sale>2015-07-08T11:25+02:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</myns_atr:dura>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-07-08T13:50+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5780 IB">
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:hora_llega>2015-07-08T16:15+02:00</myns_atr:hora_llega>
+    <myns_atr:hora_sale>2015-07-08T13:55+02:00</myns_atr:hora_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1059 QS">
+    <myns_atr:hora_llega>2015-07-02T17:15+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-07-02T14:40+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</myns_atr:dura>
+    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8653 VY">
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:hora_sale>2015-07-08T13:55+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+    <myns_atr:hora_llega>2015-07-08T16:15+02:00</myns_atr:hora_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5779 IB">
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-07-02T07:45+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:hora_llega>2015-07-02T10:05+02:00</myns_atr:hora_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/Vsiuho9q30BT9XyS4Fbdo2004">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8656 VY"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8653 VY"/>
+    <myns_atr:cuesta>EUR240.24</myns_atr:cuesta>
+  </rdf:Description>
+</rdf:RDF>
