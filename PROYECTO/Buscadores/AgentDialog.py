@@ -23,6 +23,7 @@ from wtforms import Form, BooleanField, TextField, PasswordField, StringField, D
 from wtforms.validators import DataRequired
 from wtforms.fields.html5 import DateField
 
+
 class MyForm (Form):
     cityDestination = StringField ('City of Destination', validators=[DataRequired()])
     cityOrigin = StringField ('City of Origin', validators=[DataRequired()])
@@ -117,6 +118,46 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 form = MyForm()
 
+@app.route("/solution", methods=['GET'])
+def solution():
+    if request.args:
+        return ''
+    else:
+        hardcodedPacket = {
+            'nombreHotel' : 'Sol Melia',
+            'precioHotel': 500,
+            'durationGo': 90,
+            'horaGoLlega': 16,
+            'terminalGoSale':'Madrid',
+            'terminalGoLlega': 'Barcelona',
+            'ciudadGoSale': 'Madrid',
+            'durationBack':90,
+            'horaBackSale':90,
+            'horaBackLlega':90,
+            'terminalBackSale':'Barcelona',
+            'terminalBackLlega': 'Madrid',
+            'ciudadBackSale': 'Madrid',
+            'ciudadBackLlega':'Barcelona'
+        }
+        listActivities = [
+            { 
+                'tipo': 'Museo',
+                'momento': 'tarde',
+                'direccion': 'Calle de los Jefes',
+                'telefono': 8593859,
+                'rating': 10,
+                'precio': 50
+            },
+            { 
+                'tipo': 'Parque',
+                'momento': 'noche',
+                'direccion': 'Calle de los Esclavos',
+                'telefono': 3232323,
+                'rating': 1,
+                'precio': 5
+            }  
+        ]
+        return render_template('solution.html',hardcodedPacket=hardcodedPacket, listActivities=listActivities) #Tambien habra que pasarle la solucion cuando este hecho
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -128,23 +169,21 @@ def submit():
         maxPriceField = request.form['maxPrice']
         numberOfStarsField = request.form['numberOfStars']
         activitiesField = request.form['activities']
-        return message_dialogador() 
+        return message_dialogador()
+        #return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
         #returnDateField = request.form['returnDate'] 
        # return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
-        return "ERROR , pon bien los campos inutil"
+        return 'ERROR , pon bien los campos inutil'
     #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
     #message_dialogador(cityDestinationField, cityOriginField, departureDateField, returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
     
-
-
 @app.route("/main", methods=['GET'])
 def main():
     if request.args:
-       return "Argsss"
+       return 'Argsss'
     else:
         return render_template('main.html', form=form)
-
 
 @app.route("/Stop")
 def stop():
@@ -329,8 +368,8 @@ def message_dialogador(cityOrigin = "Barcelona, Spain",
 
 if __name__ == '__main__':
     # Ponemos en marcha los behaviors
-    ab1 = Process(target=agentbehavior1, args=(cola1,))
-    ab1.start()
+    #ab1 = Process(target=agentbehavior1, args=(cola1,))
+    #ab1.start()
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
