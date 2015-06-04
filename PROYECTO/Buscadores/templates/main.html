@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>BeStrip</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='form.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.min.css')}}">
 	</head>
 	<body>
@@ -10,29 +11,28 @@
 		<br /> <br /> <br />
 		<div ALIGN=center id="wrapper">
 			<div id="menu">
-				<div>DATOS DEL PAQUETE</div>
-					<hr style="color:red; background-color:red; width:50%;" />
+				<div class="title">BeStrip <em>- The leading trip planner for your holidays</em></div>
+					<hr style="color:red; background-color:red; width:100%;" />
 				<ul>
 			</div>
-			<div id="body">
+			<div class="transbox">
 				<form action="/submit" method="post" name="main">
 					{{ form.cityOrigin.label }} {{ form.cityOrigin(size=20)}}
 					<br>
 					{{ form.cityDestination.label }} {{ form.cityDestination(size=20)}}
 					<br>
-					{{ form.departureDate.label }} 
-					<input class="datepicker" format="dd/mm/yyyy" id="departureDate" name="departureDate" type="text" value="">
-					<br>
-					{{ form.returnDate.label }} 
-					<input class="datepicker" format="dd/mm/yyyy" id="returnDate" name="returnDate" type="text" value="">
+  				   	{{ form.departureDate.label }} {{ form.departureDate(class='datepicker') }}
+  				   	<br>
+  				   	{{ form.returnDate.label }} {{ form.returnDate(class='datepicker') }}
 					<br>
 					{{ form.maxPrice.label }} {{ form.maxPrice(size=20)}}
 					<br>
 					{{ form.numberOfStars.label }} {{ form.numberOfStars(size=20)}}
 					<br>
 					{{ form.activities.label }} {{ form.activities(size=20)}}
-					<br> <br> <br>
+					<br> 
 					<input type="submit" value="Search Packet" class="button btn-primary">
+					<br>
 				</form>
 			</div>
 		</div>

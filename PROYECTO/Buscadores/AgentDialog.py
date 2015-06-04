@@ -8,6 +8,7 @@ from flask import Flask, request
 
 from flask import Flask, request , redirect
 from flask import render_template
+
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
 
@@ -17,20 +18,22 @@ from AgentUtil.ACLMessages import build_message, send_message, get_message_prope
 from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 
-from flask.ext.wtf import Form
+from flask_wtf import Form
 from wtforms import Form, BooleanField, TextField, PasswordField, StringField, DateField, IntegerField, validators
 from wtforms.validators import DataRequired
+from wtforms.fields.html5 import DateField
 
 class MyForm (Form):
     cityDestination = StringField ('City of Destination', validators=[DataRequired()])
     cityOrigin = StringField ('City of Origin', validators=[DataRequired()])
 
-    departureDate = DateField ('Departure date', format='%d/%m/%y', validators=(validators.Optional(),))
-    returnDate = DateField ('Return date', format='%d/%m/%y', validators=(validators.Optional(),))
-
+    #departureDate = DateField ('Departure date', format='%d/%m/%y', validators=(validators.Optional(),))
+    #returnDate = DateField ('Return date', format='%d/%m/%y', validators=(validators.Optional(),))
+    departureDate = DateField ('Departure date', format='%d-%m-%Y')
+    returnDate = DateField ('Return date', format='%d-%m-%Y')
     maxPrice = IntegerField ('Max. Price',validators=[DataRequired()])
     numberOfStars = IntegerField ('Number of Stars', validators=[DataRequired()])
-    activities = StringField ('activities', validators=[DataRequired()])
+    activities = StringField ('Activities', validators=[DataRequired()])
 
 #He tenido que copiar esta variable global porque sino me petaba
 AMO = Namespace('http://www.semanticweb.org/houcros/ontologies/2015/4/agentsMessages')
@@ -117,7 +120,7 @@ form = MyForm()
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    if form.validate():
+    if not form.validate():
         cityDestinationField = request.form['cityDestination']
         cityOriginField = request.form['cityOrigin']
         returnDateField = str(request.form['returnDate'])
@@ -125,8 +128,9 @@ def submit():
         maxPriceField = request.form['maxPrice']
         numberOfStarsField = request.form['numberOfStars']
         activitiesField = request.form['activities']
+        return message_dialogador() 
         #returnDateField = request.form['returnDate'] 
-        return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
+       # return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
         return "ERROR , pon bien los campos inutil"
     #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
@@ -325,8 +329,8 @@ def message_dialogador(cityOrigin = "Barcelona, Spain",
 
 if __name__ == '__main__':
     # Ponemos en marcha los behaviors
-    #ab1 = Process(target=agentbehavior1, args=(cola1,))
-    #ab1.start()
+    ab1 = Process(target=agentbehavior1, args=(cola1,))
+    ab1.start()
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
