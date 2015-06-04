@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution</title>
+	</head>
+	<body>
+		<h1 align="center"> SOLUCION DEL PAQUETE </h1>
+		<h3 align="center"> Vuelos y Hoteles</h3>
+		<p> Nombre Hotel: {{hardcodedPacket.nombreHotel}} </p>
+		<p> Precio Hotel: {{hardcodedPacket.precioHotel}} </p>
+		<p> Duration Go:{{hardcodedPacket.durationGo}} </p>
+		<p> Hora Go Llega: {{hardcodedPacket.horaGoLlega}} </p>
+		<p> Terminal Go Sale: {{hardcodedPacket.terminalGoSale}} </p>
+		<p> Terminal Go Llega: {{hardcodedPacket.terminalGoLlega}} </p>
+		<p> Ciudad Go Sale: {{hardcodedPacket.ciudadGoSale}} </p>
+		<p> Duration Back: {{hardcodedPacket.durationBack}} </p>
+		<p> Hora Back Sale: {{hardcodedPacket.horaBackSale}} </p>
+		<p> Hora Back LLega: {{hardcodedPacket.horaBackLlega}} </p>
+		<p> Terminal Back Sale: {{hardcodedPacket.terminalBackSale}} </p>
+		<p> Terminal Back Llega: {{hardcodedPacket.terminalBackLlega}} </p>
+		<p> Ciudad Back Sale: {{hardcodedPacket.ciudadBackSale}} </p>
+		<p> Ciudad Back Llega: {{hardcodedPacket.ciudadBackLlega}} </p>
+
+		<h3 align="center"> Actividades</h3>
+		{% for activity in listActivities %}
+		<!-- Se tendra que recorrer todos los elementos en Javascript y luego imprimirlos-->
+		<div> 
+			<p> Tipo : {{activity.tipo}} <br>
+			 	Momento: {{activity.momento}} <br>
+				Direccion: {{activity.direccion}} <br>
+				Telefono: {{activity.telefono}} <br>
+				Rating: {{activity.rating}} <br>
+				Precio: {{activity.precio}}</p>
+		</div>
+		{% endfor %}
+		<!--<p id="activities"></p>
+		<script type="text/javascript">
+			var index;
+			alert("Hola");
+			var listActivities =;
+			var activitiesHTML = "";
+
+			for(index = 0; index < listActivities.length; index++){
+				activitiesHTML += + listActivities[index][0] + " : " + listActivities[index][1] + "<br>";
+			}
+			if(listActivities.length === 0) activitiesHTML = "Error, tamano";
+			document.getElementById("activities").innerHTML = activitiesHTML;
+		</script> -->
+	</body>
+</html>
