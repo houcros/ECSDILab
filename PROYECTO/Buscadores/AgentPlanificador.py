@@ -31,7 +31,7 @@ from AgentUtil.Logging import config_logger
 from googleplaces import types
 import json
 import logging
-import datetime
+from datetime import datetime, timedelta
 # Configuration stuff
 hostname = 'localhost' 
 port = 9002
@@ -305,8 +305,6 @@ def comu():
     destinationCountry="Spain" 
     searchRadius=2 
 
-    arrivalDate="08/20/2015"
-    departureDateHotel="08/30/2015"
     propertyCategory=1
 
     print departureDate
@@ -334,7 +332,6 @@ def comu():
     #############################################################
     # Paso los parametros de busqueda de actividad en el grafo
     actv = myns_pet.actividad
-    gmess.add((actv, myns_atr.lugar, Literal(destination)))
     gmess.add((actv, myns_atr.actividad, Literal(activity)))
     gmess.add((actv, myns_atr.radio, Literal(radius)))
     gmess.add((actv, myns_atr.tipo, Literal(tipo)))
@@ -357,9 +354,7 @@ def comu():
     hotel = myns_pet.hotel
     gmess.add((hotel, myns_atr.destinationCity, Literal(destinationCity)))
     gmess.add((hotel, myns_atr.destinationCountry, Literal(destinationCountry)))
-    gmess.add((hotel, myns_atr.searchRadius, Literal(searchRadius)))
-    gmess.add((hotel, myns_atr.arrivalDate, Literal(arrivalDate)))
-    gmess.add((hotel, myns_atr.departureDate, Literal(departureDateHotel)))          
+    gmess.add((hotel, myns_atr.searchRadius, Literal(searchRadius)))         
     gmess.add((hotel, myns_atr.propertyCategory, Literal(propertyCategory))) 
 
     # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
@@ -378,11 +373,11 @@ def comu():
         AgenteBuscador.address)
     print "Respuesta de busqueda recibida\n"
     
-
-    for s, p, o in gr:
-        print 's: ' + s
-        print 'p: ' + p
-        print '\n'
+    # for s, p, o in grep:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o.encode('utf-8')
+    #     print '\n'
     
 
     ########################################################### 
@@ -391,7 +386,6 @@ def comu():
     #############################################################   
 
     grep = Graph()
-
     ########################################################### 
     # Calcular paquete
     print "Calcular Vuelos"
@@ -468,56 +462,57 @@ def comu():
     # Escoger Actividades
     print "Escoger Actividades"
     #############################################################   
-    day = departureDate
+    day = datetime.strptime(departureDate, '%Y-%m-%d')
     contadorActividad = 0
-    while day <= returnDate:
+    rd = datetime.strptime(returnDate, '%Y-%m-%d')
+    while day <= rd:
        # cada dia
         grfdata = myns_data.day
-    
-    if contadorActividad > (len(Acs)-3) :
-        contadorActividad = 0
-    ########################################################### 
-    # Escoger Actividades
-    print "Escoger Actividades1" 
-    print Acs[contadorActividad]
-    #############################################################
-    # manana
-    grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
-    ########################################################### 
-    # Escoger Actividades
-    print "Actividades1 Anadido"
-    #############################################################                
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns.manana))
+        
+        if contadorActividad > (len(Acs)-3) :
+            contadorActividad = 0
+        ########################################################### 
+        # Escoger Actividades
+        print "Escoger Actividades1" 
+        print Acs[contadorActividad]
+        #############################################################
+        # manana
+        grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
+        ########################################################### 
+        # Escoger Actividades
+        print "Actividades1 Anadido"
+        #############################################################                
+        grep.add((Acs[contadorActividad], myns_atr.momento, myns.manana))
 
-    grep += gactividad.triples((Acs[contadorActividad], None, None))
-    
-    ########################################################### 
-    # Escoger Actividades
-    print "Actividades1 por manana"
-    #############################################################
-    contadorActividad += 1;
-    ########################################################### 
-    # Escoger Actividades
-    print "Escoger Actividades2"
-    #############################################################
-    # tarde
-    grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns.tarde))
-    grep += gactividad.triples((Acs[contadorActividad], None, None))
-    contadorActividad += 1;
-    ########################################################### 
-    # Escoger Actividades
-    print "Escoger Actividades3"
-    #############################################################
-    # noche
-    grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-    grep.add((Acs[contadorActividad], myns_atr.momento, myns.noche))
-    grep += gactividad.triples((Acs[contadorActividad], None, None))
-    contadorActividad += 1;
+        grep += gactividad.triples((Acs[contadorActividad], None, None))
+        
+        ########################################################### 
+        # Escoger Actividades
+        print "Actividades1 por manana"
+        #############################################################
+        contadorActividad += 1;
+        ########################################################### 
+        # Escoger Actividades
+        print "Escoger Actividades2"
+        #############################################################
+        # tarde
+        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
+        grep.add((Acs[contadorActividad], myns_atr.momento, myns.tarde))
+        grep += gactividad.triples((Acs[contadorActividad], None, None))
+        contadorActividad += 1;
+        ########################################################### 
+        # Escoger Actividades
+        print "Escoger Actividades3"
+        #############################################################
+        # noche
+        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
+        grep.add((Acs[contadorActividad], myns_atr.momento, myns.noche))
+        grep += gactividad.triples((Acs[contadorActividad], None, None))
+        contadorActividad += 1;
 
-    day = day + datetime.timedelta(days=1)
+        day = day + timedelta(days=1)
 
-    print departureDate
+        print departureDate
 
     ########################################################### 
     # Construir mensage de repuesta
@@ -526,7 +521,7 @@ def comu():
     for s, p, o in grep:
         print 's: ' + s
         print 'p: ' + p
-        print 'o: ' + o
+        print 'o: ' + o.encode('utf-8')
         print '\n'
     
     mss_cnt += 1
@@ -539,7 +534,7 @@ if __name__ == '__main__':
     # Ponemos en marcha los behaviors
     ab1 = Process(target=agentbehavior1, args=(cola1,))
     ab1.start()
-    ###################################################
+    #################1##################################
     # Inicio de peticion de ACTIVIDADES a AgentBuscador
     ###################################################
 

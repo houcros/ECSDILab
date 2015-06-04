@@ -67,9 +67,15 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 # defaultDepDate = datetime.strptime("08/30/2015", '%m/%d/%Y')
 
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
-  searchRadius=2, arrivalDate="08/20/2015", departureDate="08/30/2015", 
-  numberOfAdults=2, numberOfChildren=0, propertyCategory=1):
+  searchRadius=2, arrivalDate="2015-8-20", departureDate="2015-8-30", 
+  numberOfAdults=1, numberOfChildren=0, propertyCategory=1):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
+  # print destinationCity
+  # print destinationCountry
+  # print arrivalDate
+  # print departureDate
+
+
   gresp = Graph()
   # COORDINATES OF THE DESTINATION
   b = False

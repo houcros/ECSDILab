@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:myns_atr="http://my.namespace.org/atributos/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJcVbxI7-ipBIR3ItPdO3gXs4">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.405361, u'lng': 2.16215}</myns_atr:localizacion>
+    <myns_atr:rating></myns_atr:rating>
+    <myns_atr:tel_int>+34 932 85 53 84</myns_atr:tel_int>
+    <myns_atr:nombre>La Casa del Cine</myns_atr:nombre>
+    <myns_atr:direccion>Plaça Joanic, 6, 08024 Barcelona, Barcelona, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ7cUpUG6YpBIRaFGYvFHZgNI">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.394685, u'lng': 2.13377}</myns_atr:localizacion>
+    <myns_atr:direccion>Ronda del General Mitre, 38 - 44, 08017 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:nombre>Gran Sarria Multicines 8 sales 3D</myns_atr:nombre>
+    <myns_atr:tel_int>None</myns_atr:tel_int>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.6</myns_atr:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJc5lJj4qipBIRvXN5n6bk_so">
+    <myns_atr:nombre>Renoir Floridablanca</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.3</myns_atr:rating>
+    <myns_atr:direccion>Calle Floridablanca, 135, 08011 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.381758, u'lng': 2.162546}</myns_atr:localizacion>
+    <myns_atr:tel_int>+34 932 28 93 93</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJbd_F9IaYpBIRQTswpBZqEys">
+    <myns_atr:nombre>Palau Balaña Multicines 7 sales 3D</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:direccion>Carrer De Sant Antoni, 43, 08014 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:tel_int>None</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 41.377829, u'lng': 2.137857}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJY4ccqPSipBIRu3E_5lqCUUM">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:direccion>Calle Pelai, 8, 08001 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 41.385754, u'lng': 2.165323}</myns_atr:localizacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9</myns_atr:rating>
+    <myns_atr:nombre>Lauren Universitat</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 52 87 36</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJg_RkeaKipBIRL2cu-hiaY3o">
+    <myns_atr:tel_int>None</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 41.401511, u'lng': 2.15185}</myns_atr:localizacion>
+    <myns_atr:nombre>Bosque Multicines 9 sales 3D</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.6</myns_atr:rating>
+    <myns_atr:direccion>Rambla del Prat, 16, 08012 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJueWcFsK8pBIR-c6WsqzJDrU">
+    <myns_atr:localizacion>{u'lat': 41.439493, u'lng': 2.198422}</myns_atr:localizacion>
+    <myns_atr:direccion>Carrer de Potosí, 2, 08030 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</myns_atr:rating>
+    <myns_atr:nombre>CINESA LA MAQUINISTA</myns_atr:nombre>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJu4dPNHCYpBIRA5y4cRUQB4A">
+    <myns_atr:direccion>Carrer de Santa Fe de Nou Mèxic, s/n, 08021 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:rating>
+    <myns_atr:nombre>CINESA DIAGONAL</myns_atr:nombre>
+    <myns_atr:localizacion>{u'lat': 41.393575, u'lng': 2.136062}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJQ5WONVejpBIRBHgaGg2ts6E">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:direccion>Avda. Diagonal, 3, 08019 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.410315, u'lng': 2.216534}</myns_atr:localizacion>
+    <myns_atr:nombre>CINESA DIAGONAL MAR</myns_atr:nombre>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ3XVPnSSjpBIRZZkGrlmBDZg">
+    <myns_atr:tel_int>None</myns_atr:tel_int>
+    <myns_atr:direccion>Avinguda Diagonal, 208, 08018 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:rating></myns_atr:rating>
+    <myns_atr:localizacion>{u'lat': 41.40547, u'lng': 2.192351}</myns_atr:localizacion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:nombre>Glories Multicines 8 sales 3D</myns_atr:nombre>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJT16ztVSipBIRhz-9c6Nt_vE">
+    <myns_atr:nombre>CINESA MAREMAGNUM</myns_atr:nombre>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 41.375266, u'lng': 2.183658}</myns_atr:localizacion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:direccion>Moll d'Espanya, 5, 08039 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ28XhAQ6jpBIRfsTZiNyRVXM">
+    <myns_atr:tel_int>+34 902 22 09 22</myns_atr:tel_int>
+    <myns_atr:localizacion>{u'lat': 41.390606, u'lng': 2.198283}</myns_atr:localizacion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:nombre>Icária Yelmo Cineplex</myns_atr:nombre>
+    <myns_atr:direccion>Centro Comercial El Centre de la Vila Port Olimpic, Calle Salvador Espriu, 61, 08005 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</myns_atr:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJOavlWryipBIRt4ZcmXJ9yec">
+    <myns_atr:localizacion>{u'lat': 41.404321, u'lng': 2.157709}</myns_atr:localizacion>
+    <myns_atr:nombre>Verdi Park</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.3</myns_atr:rating>
+    <myns_atr:direccion>Carrer de Torrijos, 49, 08012 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:tel_int>+34 932 38 79 90</myns_atr:tel_int>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ78qMXE6ZpBIRHGabxoEV7oA">
+    <myns_atr:tel_int>+34 934 71 92 72</myns_atr:tel_int>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2</myns_atr:rating>
+    <myns_atr:nombre>Cinemes Fullhd</myns_atr:nombre>
+    <myns_atr:direccion>Centro Comercial Splau, Avenida Baix Llobregat, s/n, 08940 Cornellà de Llobregat, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.347411, u'lng': 2.078835}</myns_atr:localizacion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJ75zp7b6YpBIRvschMsGDkhM">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</myns_atr:rating>
+    <myns_atr:localizacion>{u'lat': 41.358199, u'lng': 2.12857}</myns_atr:localizacion>
+    <myns_atr:nombre>Filmax Granvia</myns_atr:nombre>
+    <myns_atr:tel_int>+34 932 59 00 49</myns_atr:tel_int>
+    <myns_atr:direccion>C.C. Gran Vía 2, Avda. Gran Vía, 75, 08908 Hospitalet del Llobregat, Barcelona, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJOavlWryipBIRrbVD5YE5rSo">
+    <myns_atr:nombre>Verdi</myns_atr:nombre>
+    <myns_atr:tel_int>+34 932 38 79 90</myns_atr:tel_int>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.4</myns_atr:rating>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:localizacion>{u'lat': 41.403942, u'lng': 2.156884}</myns_atr:localizacion>
+    <myns_atr:direccion>Carrer Verdi, 32, 08012 Barcelona, Barcelona, Spain</myns_atr:direccion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJBWx-GNyipBIRVl6ecJIV0hc">
+    <myns_atr:localizacion>{u'lat': 41.403116, u'lng': 2.181871}</myns_atr:localizacion>
+    <myns_atr:direccion>Valencia 492, Ent 3a, 08013 Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:nombre>cine.cat</myns_atr:nombre>
+    <myns_atr:rating></myns_atr:rating>
+    <myns_atr:tel_int>+34 666 46 23 38</myns_atr:tel_int>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJT0nxLhydpBIRs6XhMJ4h71Y">
+    <myns_atr:rating></myns_atr:rating>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:nombre>Cinesa</myns_atr:nombre>
+    <myns_atr:localizacion>{u'lat': 41.296168, u'lng': 2.008375}</myns_atr:localizacion>
+    <myns_atr:direccion>Carrer de l'Energia, 10, 08850 Gavà, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/actividades/ChIJzadz3ia9pBIRI9y-wxC8RiI">
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</myns_atr:rating>
+    <myns_atr:tel_int>+34 902 33 32 31</myns_atr:tel_int>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/actividad"/>
+    <myns_atr:direccion>Centro Comercial Heron City, Passeig d'Andreu Nin, s/n, 08016 Barcelona, Barcelona, Spain</myns_atr:direccion>
+    <myns_atr:localizacion>{u'lat': 41.435497, u'lng': 2.180562}</myns_atr:localizacion>
+    <myns_atr:nombre>CINESA HERON CITY</myns_atr:nombre>
+  </rdf:Description>
+</rdf:RDF>

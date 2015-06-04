@@ -31,11 +31,13 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 LOG_TAG = "DEBUG: AgenteActividades => "
 
 def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", keyword="movie", radius=20000, types=[]):
-    location= destinationCity+", "+destinationCountry   
+    location= destinationCity+", "+destinationCountry
     gr = Graph()
-    gr.parse('a.rdf' ,format='xml')
+
     b = False
     
+    print location
+
     if b == True:
         print "INFO AgenteActividades => Recibo peticion de actividades.\n"
         google_places = GooglePlaces(GOOGLEAPI_KEY)
@@ -80,7 +82,8 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             #print place.local_phone_number
         
         gr.serialize('a.rdf')
-
+    else: 
+        gr.parse('a.rdf' ,format='xml')
     print "retornar repuesta"
     return gr
 

@@ -245,12 +245,14 @@ def comunicacion():
     # VERBOSE
     #print "Lista append:"
     #print lista
-
+    hotel = myns_pet.hotel
+    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
+    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-    gactividades = buscar_actividades(destinationCit,
-                                destinationCountr,
-                                activity, radius, lista)
+
+    gactividades = buscar_actividades(destinationCit, destinationCountr, activity, radius, lista)
+
     print "INFO AgentBuscador => Activities found: "
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
@@ -261,19 +263,14 @@ def comunicacion():
     #     print 'o: ' + o
     #     print '\n'
 
-    print "Buscamos hoteles"
+    print "Buscamos hoteles"    
 
-
-    hotel = myns_pet.hotel
-
-    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
-    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
-
+    vuelo = myns_pet.vuelo
     searchRadiu=gm.value(subject= hotel, predicate= myns_atr.searchRadius)
 
-    arrivalDat=gm.value(subject= hotel, predicate= myns_atr.arrivalDate)
+    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
 
-    departureDatehotel=gm.value(subject= hotel, predicate= myns_atr.departureDate)
+    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
 
     propertyCategor=gm.value(subject= hotel, predicate= myns_atr.propertyCategory)
 
@@ -281,20 +278,16 @@ def comunicacion():
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountr,
                                 searchRadius = searchRadiu,
-                               arrivalDate = arrivalDat,
-                               departureDate = departureDatehotel,
+                               arrivalDate = departureDat,
+                               departureDate = returnDat,
                                propertyCategory = propertyCategor)
     
     # Buscamos vuelos
-    vuelo = myns_pet.vuelo
+
 
     originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
 
     destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo)
-
-    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
-
-    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
 
     maxPric=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
 
@@ -501,6 +494,8 @@ def buscar_transportes():
         print row    
 
 if __name__ == '__main__':
+
+
     #buscar_vuelos() #Funciona
     #buscar_transportes() #Funciona pero con vuelos, con transportes peta
 
@@ -587,6 +582,8 @@ if __name__ == '__main__':
     ###########################################################################
 
     # Ponemos en marcha el servidor
+
+
     print "Preparing to run\n"
     app.run(host=hostname, port=port)
 
