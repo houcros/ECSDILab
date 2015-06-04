@@ -346,6 +346,8 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
         # Precio del roundtrip
         gresp.add((rndtrip_obj, myns_atr.esUn, myns.viaje))
         gresp.add((rndtrip_obj, myns_atr.cuesta, Literal(trip['saleTotal'])))
+        
+
         # DATOS IDA
         # Id unico para la ida del roundtrip
         idGo = trip['slice'][0]['segment'][0]['flight']['number'] + " " + trip['slice'][0]['segment'][0]['flight']['carrier']
@@ -354,6 +356,22 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
         gresp.add((rndtrip_obj, myns_atr.ida, vlo_obj_go))
         # La ida dura esto
         durationGo = trip['slice'][0]['duration']
+
+        originid = trip['slice'][0]['segment'][0]['leg'][0]['origin']
+        #este puede ser code
+        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(originid)
+        Goairname = dic['trips']['data']['airport'][Gonameid]['name']
+
+        destinationid = trip['slice'][0]['segment'][0]['leg'][0]['destination']
+        #este puede ser code
+        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(destinationid)
+        Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
+
+
+        gresp.add((vlo_obj_go, myns_atr.airportSalida, Literal(Goairname)))
+        gresp.add((vlo_obj_go, myns_atr.airportLlegada, Literal(Goairllname)))
+        
+
         gresp.add((vlo_obj_go, myns_atr.dura, Literal(durationGo)))
         # Fecha y hora de salida y aterrizaje de la ida
         horaGoSale = trip['slice'][0]['segment'][0]['leg'][0]['departureTime']
@@ -384,6 +402,22 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
         vlo_obj_back = myns_vlo[idBack]
         # El roundtrip tiene esta vuelta
         gresp.add((rndtrip_obj, myns_atr.vuelta, vlo_obj_back))
+
+        originid = trip['slice'][1]['segment'][0]['leg'][0]['origin']
+        #este puede ser code
+        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(originid)
+        Goairname = dic['trips']['data']['airport'][Gonameid]['name']
+
+        destinationid = trip['slice'][1]['segment'][0]['leg'][0]['destination']
+        #este puede ser code
+        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(destinationid)
+        Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
+
+
+        gresp.add((vlo_obj_go, myns_atr.airportSalida, Literal(Goairname)))
+        gresp.add((vlo_obj_go, myns_atr.airportLlegada, Literal(Goairllname)))
+
+
         # Cuanto dura esta vuelta
         durationBack = trip['slice'][1]['duration']
         gresp.add((vlo_obj_back, myns_atr.dura, Literal(durationBack)))

@@ -3,42 +3,34 @@ precio total
 
 El Vuelo:
 
-precio total
- # DATOS IDA
+        precio total
+
+        # id de vuelo
+        idGo
+        idBack
+
+        cada vuelo tiene:
+
+                airportSalida
+                airportLlegada
+                # La ida dura esto
+                durationGo
+
+                # Fecha y hora de salida y aterrizaje de la ida
+                horaSale 
+                horaLlega
 
 
-        # La ida dura esto
-        durationGo
+                # Terminal y ciudad de salida de la ida, que puede ser nula
 
-        # Fecha y hora de salida y aterrizaje de la ida
-        horaGoSale 
-        horaGoLlega
+                terminalSale
 
+                terminalLlega
 
-        # Terminal y ciudad de salida de la ida, que puede ser nula
-
-        terminalGoSale
-
-        terminalGoLlega
-
-        ciudadGoSale = trip['slice'][0]['segment'][0]['leg'][0]['origin']
-        ciudadGoLlega = trip['slice'][0]['segment'][0]['leg'][0]['destination']
+                ciudadSale = trip['slice'][0]['segment'][0]['leg'][0]['origin']
+                ciudadLlega = trip['slice'][0]['segment'][0]['leg'][0]['destination']
 
 
-
-        # Cuanto dura esta vuelta
-        durationBack
-        horaBackSale
-        horaBackLlega
-
-        # Terminal y ciudad de salida de la vuelt, que puede ser nula
-        terminalBackSale 
-        terminalBackLlega
-
-
-        # Direccion de la vuelta (redundante)
-        ciudadBackSale 
-        ciudadBackLlega 
 
 Actividades: sera una lista
 en que cada actividad:
@@ -51,6 +43,19 @@ en que cada actividad:
 
 
 Hotel:
-	-precio
+	precio
 
-	aqui falta cosas que ya lo añadire
+        codigoPostal
+
+        descripcionDeHabitacion
+
+        adresa
+        nombre
+        descriptionCorta
+        distanciaRepectoAlCentro
+        distanciaRepectoAlCentro_unidad
+
+        rating
+        
+        tripAdvisorRating
+        tripAdvisorReviewCount

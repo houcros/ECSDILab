@@ -424,9 +424,11 @@ def comu():
                 SELECT DISTINCT ?a
                 WHERE{
                     ?a myns_atr:rating ?ratin .
+                    ?a myns_atr:cuesta ?cuesta .
                     FILTER(str(?ratin) != "")
+                    FILTER(str(?cuesta) != "")
                 }
-                ORDER BY DESC(?ratin)
+                ORDER BY DESC(?ratin, ?cuesta)
                 LIMIT 1
         """)
     Aid = []

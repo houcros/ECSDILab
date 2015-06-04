@@ -67,14 +67,18 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 # defaultDepDate = datetime.strptime("08/30/2015", '%m/%d/%Y')
 
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
-  searchRadius=2, arrivalDate="2015-8-20", departureDate="2015-8-30", 
+  searchRadius=5, arrivalDate="2015-8-20", departureDate="2015-8-30", 
   numberOfAdults=1, numberOfChildren=0, propertyCategory=1):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
   # print destinationCity
   # print destinationCountry
   # print arrivalDate
   # print departureDate
+  arrivaldepD = datetime.strptime(arrivalDate, '%Y-%m-%d')
+  arrivaldepDStr = arrivaldepD.strftime("%m/%d/%Y")
 
+  departuredepD = datetime.strptime(departureDate, '%Y-%m-%d')
+  departuredepDStr = departuredepD.strftime("%m/%d/%Y")
 
   gresp = Graph()
   # COORDINATES OF THE DESTINATION
@@ -97,8 +101,8 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
                      		'longitude': location.longitude,
                             'searchRadius': searchRadius,
                             'searchRadiusUnit': "KM",
-                            'arrivalDate': arrivalDate,
-                            'departureDate': departureDate,
+                            'arrivalDate': arrivaldepDStr,
+                            'departureDate': departuredepDStr,
                             'numberOfAdults': numberOfAdults,
                             'numberOfChildren': numberOfChildren,
                             'propertyCategory': propertyCategory  
@@ -106,6 +110,11 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
 
     #print r.text
     dic = r.json()
+    out_file = open("h.json","w")
+
+# Save the dictionary into this file
+# (the 'indent=4' is optional, but makes it more readable)
+    json.dump(dic,out_file, indent=4) 
     #print json.dumps(dic, indent=4, sort_keys=True)
 
     # Hago bind de las ontologias que usaremos en el grafo
@@ -129,8 +138,13 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
     	 # 	)
         hot_obj = myns_hot[hot['hotelId']]
         gresp.add((hot_obj, myns_atr.esUn, myns.hotel))
-        gresp.add((hot_obj, myns_atr.distancia, Literal(hot['proximityDistance'])))
-        gresp.add((hot_obj, myns_atr.distancia_unidad, Literal(hot['proximityUnit'])))
+        gresp.add((hot_obj, myns_atr.codigoPostal, Literal(hot['postalCode'])))
+        gresp.add((hot_obj, myns_atr.descripcionDeHabitacion, Literal(hot['RoomRateDetailsList']['RoomRateDetails']['roomDescription'])))
+        gresp.add((hot_obj, myns_atr.adresa, Literal(hot['address1'])))
+        gresp.add((hot_obj, myns_atr.nombre, Literal(hot['name'])))
+        gresp.add((hot_obj, myns_atr.descriptionCorta, Literal(hot['shortDescription'])))
+        gresp.add((hot_obj, myns_atr.distanciaRepectoAlCentro, Literal(hot['proximityDistance'])))
+        gresp.add((hot_obj, myns_atr.distanciaRepectoAlCentro_unidad, Literal(hot['proximityUnit'])))
         gresp.add((hot_obj, myns_atr.cuesta, Literal(hot['RoomRateDetailsList']['RoomRateDetails']['RateInfos']['RateInfo']['ChargeableRateInfo']['@total'])))
         gresp.add((hot_obj, myns_atr.rating, Literal(hot['hotelRating'])))
         gresp.add((hot_obj, myns_atr.tripAdvisorRating, Literal(hot['tripAdvisorRating'])))

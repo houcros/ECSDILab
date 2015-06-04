@@ -582,7 +582,7 @@ if __name__ == '__main__':
     ###########################################################################
 
     # Ponemos en marcha el servidor
-
+    buscar_hoteles()
 
     print "Preparing to run\n"
     app.run(host=hostname, port=port)
