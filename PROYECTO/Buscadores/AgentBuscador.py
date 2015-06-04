@@ -245,10 +245,14 @@ def comunicacion():
     # VERBOSE
     #print "Lista append:"
     #print lista
-
+    hotel = myns_pet.hotel
+    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
+    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
+
     gactividades = buscar_actividades(destinationCit, destinationCountr, activity, radius, lista)
+
     print "INFO AgentBuscador => Activities found: "
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
@@ -259,14 +263,9 @@ def comunicacion():
     #     print 'o: ' + o
     #     print '\n'
 
-    print "Buscamos hoteles"
+    print "Buscamos hoteles"    
 
-
-    hotel = myns_pet.hotel
-
-    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
-    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
-
+    vuelo = myns_pet.vuelo
     searchRadiu=gm.value(subject= hotel, predicate= myns_atr.searchRadius)
 
     departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
@@ -284,7 +283,7 @@ def comunicacion():
                                propertyCategory = propertyCategor)
     
     # Buscamos vuelos
-    vuelo = myns_pet.vuelo
+
 
     originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
 
@@ -495,6 +494,8 @@ def buscar_transportes():
         print row    
 
 if __name__ == '__main__':
+
+
     #buscar_vuelos() #Funciona
     #buscar_transportes() #Funciona pero con vuelos, con transportes peta
 
@@ -581,6 +582,8 @@ if __name__ == '__main__':
     ###########################################################################
 
     # Ponemos en marcha el servidor
+
+
     print "Preparing to run\n"
     app.run(host=hostname, port=port)
 
