@@ -1,0 +1,56 @@
+El hotel:
+precio total
+
+El Vuelo:
+
+precio total
+ # DATOS IDA
+
+
+        # La ida dura esto
+        durationGo
+
+        # Fecha y hora de salida y aterrizaje de la ida
+        horaGoSale 
+        horaGoLlega
+
+
+        # Terminal y ciudad de salida de la ida, que puede ser nula
+
+        terminalGoSale
+
+        terminalGoLlega
+
+        ciudadGoSale = trip['slice'][0]['segment'][0]['leg'][0]['origin']
+        ciudadGoLlega = trip['slice'][0]['segment'][0]['leg'][0]['destination']
+
+
+
+        # Cuanto dura esta vuelta
+        durationBack
+        horaBackSale
+        horaBackLlega
+
+        # Terminal y ciudad de salida de la vuelt, que puede ser nula
+        terminalBackSale 
+        terminalBackLlega
+
+
+        # Direccion de la vuelta (redundante)
+        ciudadBackSale 
+        ciudadBackLlega 
+
+Actividades: sera una lista
+en que cada actividad:
+		-momento(mañana, tarde, noche)
+		-tipo
+		-adreça
+		-telefono
+		-rating
+		-precio
+
+
+Hotel:
+	-precio
+
+	aqui falta cosas que ya lo añadire
