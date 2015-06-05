@@ -80,6 +80,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
 
             # Ponemos el nombre y localizacion de la actividad
             gr.add((plc_obj, myns_atr.esUn, myns.actividad))
+            gr.add((plc_obj, myns_atr.tipo, Literal(types[0])))
             gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
             gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
             # Otra llamada a la API para los otros datos

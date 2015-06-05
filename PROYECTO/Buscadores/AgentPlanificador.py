@@ -42,6 +42,7 @@ agn = Namespace("http://www.agentes.org#")
 myns = Namespace("http://my.namespace.org/")
 myns_data = Namespace("http://my.namespace.org/fechas/")
 myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_par = Namespace("http://my.namespace.org/parametros/")
 myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 
@@ -329,33 +330,38 @@ def comu():
     print "Añadir parametros de actividad"
     #############################################################
     # Paso los parametros de busqueda de actividad en el grafo
+    busqueda = myns_pet.busqueda
     i = 0
     for a in actividades:
         i+= 1
         actv = "actividad" + str(i)
-        gmess.add((myns_pet.actv, myns_atr.tipo, Literal(a)))
+        gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+        gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
     
+    i+= 1
+    actv = "actividad" + str(i)
+    gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+    gmess.add((myns_act.actv, myns_atr.tipo, Literal('restaurant')))
     
     ########################################################### 
     # Comunicar con buscador
     print "Añadir parametros de vuelo"
     #############################################################
-    vuelo = myns_pet.vuelo
-    gmess.add((vuelo, myns_atr.originVuelo, Literal(originVuelo)))
-    gmess.add((vuelo, myns_atr.destinationVuelo, Literal(destinationVuelo)))
-    gmess.add((vuelo, myns_atr.departureDate, Literal(departureDate)))
-    gmess.add((vuelo, myns_atr.returnDate, Literal(returnDate)))          
-    gmess.add((vuelo, myns_atr.maxPrice, Literal(maxPrice))) 
+    
+    gmess.add((busqueda, myns_par.originVuelo, Literal(originVuelo)))
+    gmess.add((busqueda, myns_par.destinationVuelo, Literal(destinationVuelo)))
+    gmess.add((busqueda, myns_par.departureDate, Literal(departureDate)))
+    gmess.add((busqueda, myns_par.returnDate, Literal(returnDate)))          
+    gmess.add((busqueda, myns_par.maxPrice, Literal(maxPrice/3))) 
 
     ########################################################### 
     # Comunicar con buscador
     print "Añadir parametros de hotel"
     #############################################################
     hotel = myns_pet.hotel
-    gmess.add((hotel, myns_atr.destinationCity, Literal(destinationCity)))
-    gmess.add((hotel, myns_atr.destinationCountry, Literal(destinationCountry)))
-    gmess.add((hotel, myns_atr.searchRadius, Literal(searchRadius)))         
-    gmess.add((hotel, myns_atr.propertyCategory, Literal(propertyCategory))) 
+    gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))
+    gmess.add((busqueda, myns_par.destinationCountry, Literal(destinationCountry)))       
+    gmess.add((busqueda, myns_par.propertyCategory, Literal(propertyCategory))) 
 
     # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
     res_obj= agn['Planificador-pide-datos']
@@ -396,7 +402,7 @@ def comu():
 
     gvueloid = gvuelo.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a
+                SELECT DISTINCT ?a ?cuesta
                 WHERE{
                     ?a myns_atr:cuesta ?cuesta .
                     FILTER(str(?cuesta) != "")
@@ -406,10 +412,13 @@ def comu():
         """)
 
     Aid = []
-    for s in gvueloid:
+    cuestaVuelo = 0
+    for s, c in gvueloid:
         print s
         Aid.append(s)
+        cuestaVuelo = float(c[3:])
 
+    maxPrice -= cuestaVuelo
     grep += gvuelo.triples((Aid[0], None, None))
 
     ########################################################### 
@@ -421,7 +430,7 @@ def comu():
         ghotel += gr.triples((s, None, None) )
     ghotelid = ghotel.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a
+                SELECT DISTINCT ?a ?cuesta
                 WHERE{
                     ?a myns_atr:rating ?ratin .
                     ?a myns_atr:cuesta ?cuesta .
@@ -432,9 +441,11 @@ def comu():
                 LIMIT 1
         """)
     Aid = []
-    for s in ghotelid:
+    cuestaHotel = 0
+    for s, c in ghotelid:
         Aid.append(s)
-
+        cuestaHotel = float(c)
+    maxPrice -= cuestaHotel
     grep += ghotel.triples((Aid[0], None, None))
 
 
@@ -446,17 +457,19 @@ def comu():
     gactividad = Graph()       
     for s,p,o in gr.triples((None, myns_atr.esUn, myns.actividad)):
         gactividad += gr.triples((s, None, None) )
+
+
     gact = gactividad.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
                 SELECT DISTINCT ?a ?ratin
                 WHERE{
                     ?a myns_atr:rating ?ratin .
-                    FILTER(str(?ratin) != "")
+                    FILTER(str(?ratin))
                 }
                 ORDER BY DESC(?ratin)
         """)
 
-    Acs = []
+    Acs = []    
     for s, s1 in gact:
         Acs.append(s)
 
@@ -607,7 +620,7 @@ if __name__ == '__main__':
     # Descomentar para un print "pretty" del grafo de respuesta
     # print json.dumps(gr.json(), indent=4, sort_keys=True)
     #grep = comu()
-
+    comu()
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
 

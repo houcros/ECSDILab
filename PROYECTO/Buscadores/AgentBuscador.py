@@ -79,7 +79,7 @@ myns_pet = Namespace("http://my.namespace.org/peticiones/")
 myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 myns_lug = Namespace("http://my.namespace.org/lugares/")
-
+myns_par = Namespace("http://my.namespace.org/parametros/")
 # Contador de mensajes
 mss_cnt = 0
 
@@ -222,8 +222,9 @@ def comunicacion():
     #print "Lista append:"
     #print lista
     hotel = myns_pet.hotel
-    destinationCit = gm.value(subject= hotel, predicate= myns_atr.destinationCity)
-    destinationCountr = gm.value(subject= hotel, predicate= myns_atr.destinationCountry)
+    busqueda = myns_pet.busqueda
+    destinationCit = gm.value(subject= busqueda, predicate= myns_par.destinationCity)
+    destinationCountr = gm.value(subject= busqueda, predicate= myns_par.destinationCountry)
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
 
@@ -235,7 +236,7 @@ def comunicacion():
         gactividades += buscar_actividades(destinationCity=destinationCit, 
             destinationCountry= destinationCountr, types= [o])
 
-    print "INFO AgentBuscador => Activities found: "
+    print "INFO AgentBuscador => Activities founded"
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
     #Realmente solo queremos devolverlo al planificador
@@ -246,20 +247,17 @@ def comunicacion():
     #     print '\n'
 
     print "Buscamos hoteles"    
+    
 
-    vuelo = myns_pet.vuelo
-    searchRadiu=gm.value(subject= hotel, predicate= myns_atr.searchRadius)
+    departureDat=gm.value(subject= busqueda, predicate= myns_par.departureDate)
 
-    departureDat=gm.value(subject= vuelo, predicate= myns_atr.departureDate)
+    returnDat=gm.value(subject= busqueda, predicate= myns_par.returnDate)
 
-    returnDat=gm.value(subject= vuelo, predicate= myns_atr.returnDate)
-
-    propertyCategor=gm.value(subject= hotel, predicate= myns_atr.propertyCategory)
+    propertyCategor=gm.value(subject= busqueda, predicate= myns_par.propertyCategory)
 
     print "INFO AgentBuscador => Looking for hotels (in AgentHotel)..."
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountr,
-                                searchRadius = searchRadiu,
                                arrivalDate = departureDat,
                                departureDate = returnDat,
                                propertyCategory = propertyCategor)
@@ -267,11 +265,11 @@ def comunicacion():
     # Buscamos vuelos
 
 
-    originVuelo=gm.value(subject= vuelo, predicate= myns_atr.originVuelo)
+    originVuelo=gm.value(subject= busqueda, predicate= myns_par.originVuelo)
 
-    destinationVuelo=gm.value(subject= vuelo, predicate= myns_atr.destinationVuelo)
+    destinationVuelo=gm.value(subject= busqueda, predicate= myns_par.destinationVuelo)
 
-    maxPric=gm.value(subject= vuelo, predicate= myns_atr.maxPrice)
+    maxPric=gm.value(subject= busqueda, predicate= myns_par.maxPrice)
 
     gvuelos = Graph()
     gvuelos = buscar_vuelos(origin=originVuelo, 
@@ -562,7 +560,7 @@ if __name__ == '__main__':
     #     print 'o: ' + o
     #     print '\n'
     ###########################################################################
-    buscar_actividades()
+    #buscar_actividades()
     # Ponemos en marcha el servidor
     print "Preparing to run\n"
     app.run(host=hostname, port=port)
