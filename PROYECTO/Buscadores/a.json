@@ -1,12 +1,12 @@
 {
     "status": "OK", 
-    "next_page_token": "CoQC9wAAAAWSMbleCrELRosDBHTajECFOLHPUP17mhSJb-rVkgpTs-ipIPKJ5WnmccKdu-tbGqTjKku_jNnkH3-JFubiT_VeJ2gz0qz-90xkAXOXRWtM56E5mumlUzcqZPPxodkUOj97CY5x7HQSiv0Tz2t8T2OiZeqIedadYGRVIt9vw3xSqCc6eLRHMq4e9dE4g39oYynjekBKXPBra-tpOEdiegftTgzJP7mbHpIpd3w1FZj-CPqjr_3owDsYShrBKHZ4P7O6nJJZnP-CaI6OKf8ZakIN_cq0N6nJEm9IwUcqUDmzzbECwZSBspEhD4bDvZWY5wF7gKOBXgMg42EldTJjxuYSEC476fF_l029MsESOhbwgPEaFLHyu2vXkFnB33lyra6yBzGXSM-5", 
+    "next_page_token": "CoQC9wAAAPX5XWw9ovGzbZP0oAh2VqOA0JAq4uNAfKzAMc4LGFsH1g22xfgPGHZXisuIgQaYfodz1Z93rKGvWb9wNmAPLDlD-xqEgahvvD7M22unno0m2UkxDMqwK8rV7GE8IHJXYpSkdthgaTGv8GSyXbAT8AfBN2bwqPQ-Zr0vKbqAqs40yL3oGEqZATJb7dmIP4_RTml0Q3fZH4Uu5ywy7YirNdz5L8FgbHlyXzhCnyUbx0K4-6TM8WibtLLscT-ruJ84ZRymF3uvbN2IBRDVtdZXZa0dDssiQkDSLIcIFDubRr2G4oz9cvcmr0iwdAzXkAVkVzRwj2vKlQtBUQsX5sr1f7QSEN94LEO9ev0Pe9IiOovRAkIaFMhbMnCAcsnVbh0HVOBBzLJ0B-YX", 
     "html_attributions": [], 
     "results": [
         {
             "rating": 4.3, 
             "name": "Malda", 
-            "reference": "CmRYAAAAtdDPG-iyGaHnUf4dkPvbOBKOfTF0xLUcNzHs60eFaUo_wlIxPmKqnzi3WC6AG_QOot0dQS7FgRHsZVGYu-4I9xEUVcNu2OGRwZSiGHSidYuAKe3oMpAG9Qvir6bVzPAKEhDQl2Dc3E9DfUQYA52j4zzKGhTNl3yPsKb4OLISes2vV0O7oo9sQQ", 
+            "reference": "CmRYAAAAlFnWv0PR_0ApKDEBYFqNfKwht7ZDzb82C9Gh7MIavBwqYMMVaxkNw81XtcZ-q0IJq_IdQphBtYIsPA2QRghlCZVbx7oJ0sW3k1APh6chg1mSeHaV3JI1ZmtL8LCZsjEtEhBLoVou8kyyf9RT7xqCqSlCGhRyeur57jv6Kfmzyrmst3OTJKQVVQ", 
             "geometry": {
                 "location": {
                     "lat": 41.383192, 
@@ -17,7 +17,7 @@
             "vicinity": "Carrer del Pi, 5, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CoQBdwAAAIftYnaB4fHotmT5vz85Fziy71bArn5YiNJjATdO9x8WkGICABdxfY0toTNbEOpycYCGtPwJTU1E8J8yijfLtPjkTKEXFXZ03VjK_em7cLKS3VdejaTCivy5mE_OLtNOLKs085DE43rSPKSt2HcykGdxRzeKtcCQMI0N6429W0OrEhCvNh7Zp5win29L2rS21ud0GhQl-bNdytH2V4ZSg7JEx5fySFs3VA", 
+                    "photo_reference": "CoQBdwAAAGHJGokmsSP4nWza6B3ypdcKTF1B2didBrgoanuoebRR0hGL7FvbnDK4jLpc3ek7Es4Ocoq7pmPzYNsWTt8HrMymH-B1Ei8cfy3XQI37hg19wKY-0yM58mBXzwl__TsaQ5wkt5okT75EwZPdW8Xa88wv0-2eyupfFOWCtlyHZFD2EhDbIEexEx9dTslsQWpV8wzGGhTAaBJJv9UkbbYV4mwkddYRDO8UmQ", 
                     "width": 976, 
                     "html_attributions": [
                         "From a Google User"
@@ -36,7 +36,7 @@
         {
             "rating": 4.3, 
             "name": "M\u00e9li\u00e8s Cinemes", 
-            "reference": "CnRjAAAAbqDY0y-5Gpv_m_jt4P7Z6aDZH3n9EM_4-MQbhiFpiLLKLzQM4_WzE0gNw5XTEeVSLdH0e2d7IoIVq8zGPN27Qg5PYrtV9EKiwl1etvn7eu-l_27BKD3MMXmhzSyY8Ddrb3KCidCXQ6GuovuNUTljdBIQmAbxGUBUKYCvyznwRw3A1BoUh1k19LRqpg2dGSVnU5s8XRDc1uY", 
+            "reference": "CnRjAAAApkLCPS6Z2rMOMY1R5t_2Nue0TvDXUrmxQkM6mmdD1sR9NYYJB6m_-5u_QzTzVZJQywxeFbpJYEQKk3dFxpCqHGTK6K5BhhKp-PJXSG3ivEDLJcWivCOfzMCga0eW22A7nuXsVnaEqVOjyCGJ12XUVBIQOnBMJFBwbPyk03KWgRXebxoUEcsAotB9-HAf3q_Do0C8vZyQNlc", 
             "geometry": {
                 "location": {
                     "lat": 41.385275, 
@@ -47,7 +47,7 @@
             "vicinity": "Carrer de Villarroel, 102, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAA23J3wKzF7s2XrAe9pFqzayg2TZKI5m8u0RhOlPuXZJsWYwByhNbX-A6BrJopzSRjOSLKMFWqqYTsepzfOKzwczArAoDtwISt_-H1a_k29Qze5h6ElzwISfCXImP8GRTpnw1RbrmVOXvZ2v8P3sZ-0hIQNfgXbdiBn01tMe-i0T3wchoU4-uty2icgEmzltIx8T6JtnUJsTw", 
+                    "photo_reference": "CnRnAAAA0wItvnPnH6jpFA_ZCqdqIoUo8PW8y5luBfl3UDf3plhTtk1qGfDGFL6ABL8l2OoLqgPYZm9NNv0ZyZle9OyJihlSsDW4mpqU2g0cayyGg8QPkcOAUqxmABfYSDU5ieKn2VdvJSomJFmz8xMRfZ4mDBIQmO6cEs1zkLoQdv1kix0inRoURsTDOp1in64mfXbhi0ao5_1tsaw", 
                     "width": 2844, 
                     "html_attributions": [], 
                     "height": 1600
@@ -64,7 +64,7 @@
         {
             "rating": 3.6, 
             "name": "Bosque Multicines 9 sales 3D", 
-            "reference": "CnRvAAAAez-GyZ0Ga2eYR_AagEh8Vzwc6y2sAeBQ6ROsBHvULdU7KjE81EayciI3Sb4rgQkvDkv27D2Ip45G9Es4m3hg0xufSwrq0uSnfWqeLJ4httgFgS0ge-gS3p0goVduBb4azx3qL00iUR-nasjDscPlZRIQEpagDvPkLwwYSo0uIYDMthoUDd8qIanWpSzZgSIbwxUXIAz4n3U", 
+            "reference": "CnRvAAAAYY1xatIvatiHehiANfsnFTnn5hdVonMGMXfWVEOdCgy49pMCfGlIb4K79gds8zj2uwBi30H9llI4oqzUa5_FddLhe3ATHiw1hqMPs9pCBnFiVYnt8EIz9EF-Yq1B01sp16tH3VMMJN19Mw2fQ6W2pxIQssutMaAZ6SVUVHBoEepCiRoUWunV2ff1DoRFx5Yurs-LdGO9s-I", 
             "geometry": {
                 "location": {
                     "lat": 41.401511, 
@@ -79,7 +79,7 @@
             "vicinity": "Rambla del Prat, 16, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAAPLqqX_NWjHEUmFXOq-3B1y_EqxYTjDjDNa1n7kfB__oA7bwfEXcUbw5t9xeLDHaj0qeIhwdQ5p5mlT3fN_nB1F9tkmx1j2Xy40BoKRGl_xUPg7AVCh3NtuW9neJN8dwK80KzIeGsewUiovzY7S8VRIQ0tgxPyNkV9uC67_H1rHVAhoUydSyfpSss8VjJHaW_3wyxSF_MOc", 
+                    "photo_reference": "CnRnAAAAw7fGPkVae8asYdy3b3stvmrPZUiCdxtvZGvwp89hkl2XRUafaoF12sc9r7JcF91SIwYrE0159FzlvHXjPBtmHLLiE1z4-B5e_jxEjWZWRZXOwuyuARk71K5swDJS5tLNzei3h2OdMB9lZ__kHyrKpRIQ29lLzFIxJgWG26FNzYNx_xoUTzdCWCANKLF1MPMIjRbv8v65H8o", 
                     "width": 976, 
                     "html_attributions": [], 
                     "height": 648
@@ -96,7 +96,7 @@
         {
             "rating": 4, 
             "name": "Filmoteca de Catalunya", 
-            "reference": "CnRqAAAA2knZZMUX7i62tHQoDtVsBiBGSXk5ekwTJ9u-Ihbn3PZfc2rNC4VNsq8mzTZuxkMTHZcH0F27Ck15ckkUNd2xJh8pRkYBn_q3oahOp3BGtyLuPc_Q39Nc7402Z8GXhHIO1NFpXqIvWVfMDG6wJsfm3RIQ4I7IXITauDD1epVWkHE9choUZ8ErEHeCS8_bPv7t1kMa7hzSLXw", 
+            "reference": "CnRqAAAATiV3fcp92p6OcUB4TowJRUg3Tl13BXm8YwwYR3NJpUdu6ilJKgI4dJVhsjTaSzDQgFG-d-fnuxku136P8wwAY6nL279ha_IVXO9tePTJsyS555q-KqQXi643Ku7s-_vTCOXJeTjehYg3zAbF-JiBOBIQ7yMPC8XbhLjazJJX7s6GxxoUG-EpHdDv8AlsT-E6iwWPbR4efm8", 
             "geometry": {
                 "location": {
                     "lat": 41.378676, 
@@ -107,7 +107,7 @@
             "vicinity": "Pla\u00e7a de Salvador Segu\u00ed, 1, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAGz-lPHR6bGQfjuEkJWKfYSia_o3vmy6ac3wbMcULAnnoZ8QNnEmC4ZC1KBZd3b-a6_hprG1UN5M-qAyTOdIXTxiGKv1YrYI6bjnQGFeUF5PXGevIgwwkg0fNL_UrScHORwaAcXvfM1GWFw0fLR-i5xIQhooTqSFJZ2AR_8lCGNIEqxoUIU1OBghql0RMzOPM2UQxPvLNNBE", 
+                    "photo_reference": "CnRnAAAAtkDxihJUa_7RMYt6JB45mRevk4ButG6i0LOpi0KpKRMErE3c-a7wJ1a0ikB0odX8ks3DojZ9jzAOlsDCu9LX9o0QHaB9Lw0LKQDxkrzun3oqrlGcFjNOzIKsM6Anz7THnwxb3OSqS64V4zoUkfSoyRIQDNugQpGuXAS6c4FcTrtOHxoU5G_bCawXVVu0ns8hNbkJOCbduV4", 
                     "width": 512, 
                     "html_attributions": [], 
                     "height": 339
@@ -124,7 +124,7 @@
         {
             "rating": 4, 
             "name": "Ic\u00e1ria Yelmo Cineplex", 
-            "reference": "CnRpAAAAz_ufu6zNNc_Kv6GzxxKqAWCH7714c1m2hdXV0Rqw2brRxn0JUGPGisWGuer8vAEVPmOhVFJm5zPol0-kKHYtVupAyU6I9yW_DRKt-FS6AmsOpfcJNO6uSY71s1CiRiL4g98k7QA571qbihR0tlE5tBIQ2tGRN8gCRSMt-3FRIXR3KBoUa7bPShds1g2m-gkv1qSGLYalV7c", 
+            "reference": "CnRpAAAAmajMBvaz6C72CrXbdkb88W5A_Z_75PwcA5EpE9kVAi8dFeNygD_Kmrw89lj53MTsznms6ftGlZ4HpfmbmdI6O2x6DsObn1OpBe2CJ6y4ZV-0yxjxLNHXe5RY65CxXyO7gOw-M3M2qqx2QPoL5rzVBRIQ19IRwvN9uNV5SOlaPJLWcRoUwK-RbfBIKu2WjGiujoDp9-ANKEE", 
             "geometry": {
                 "location": {
                     "lat": 41.390606, 
@@ -144,7 +144,7 @@
         {
             "rating": 4.3, 
             "name": "Renoir Floridablanca", 
-            "reference": "CnRoAAAAiv3oduTyyKVCfnmm8yVTPoRTMlq8Fwo4YeoUt_2qCOdfIEBcOjA4IUeUV_2Pg9S9XiobfSygISTSwNaIHWiM94N0Q8w7Zn8rCf06hd9sdQklIef0Lw7Fq1zOS1e9wFRnISsdIeYTwzqjPCTbIW-7mxIQXMJGziHCt2OX09N-y3OYkRoU5DKCKhnp8qMV9wMi2ZuWPvepgzk", 
+            "reference": "CnRoAAAAiggltLXGQZcfcfnkjWrSb0qXZ9mDsI6TtTddjWSuKOi6UAXV2UUfuU0Nbf9nOD4jSMAJH0Gy6V-Il8CKrf3WgkgvmWeVugGx8oOsXX2REnB6bvohLov4hMqiejO9nXetFks1WyJMk6VpR8tdCCIAOhIQnaqD61ar6-TSZ-jU7KfyTxoU_qQR1_iF01DE_ERMBu3AhQgaKXg", 
             "geometry": {
                 "location": {
                     "lat": 41.381758, 
@@ -164,7 +164,7 @@
         {
             "rating": 3, 
             "name": "CINESA LA MAQUINISTA", 
-            "reference": "CnRoAAAAdbKqIxbgq7AK-caPfPHNIefJJUbeKGfszwSphhVySF0fLxJPNkRYzJ7iFB_b80n8uoE5JRLeo7SCXaQEM-iyd1eMQaabmhuz6BHYQBRa8LiXca6VtWSBWAIhT1y9jyYk40Iobmva_Qwz6pOKXBUZXxIQ3B7-VaryfIJ39TNkjrwEnxoUEb4TFPRb2g8BFV3mB3kdlXPKeq8", 
+            "reference": "CnRoAAAALO7Qaf9LUqbpyDnUOouKDJLXjG8-z_5iG2Al6BcJf6KnszMvkEyMLA3_urbjbFKpoOhf4V8BuGX_4m2AixN9UZS97M925oi1iJm76hcsz5eCFh0MxGOMxiHZ-Vn7oCdN4ryw2_Ire8yrgm6aRPZ4shIQRBX0jn19bV368VW0zQC-MxoU-Fwy9Y87SfvhEKNSlYlhsw7JqVI", 
             "geometry": {
                 "location": {
                     "lat": 41.439493, 
@@ -179,7 +179,7 @@
             "vicinity": "Carrer de Potos\u00ed, 2, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CoQBdQAAAGL5IQjD2AeirTFFCM-Qoi4iOAikHxyX_J6L7M3HqXpt34s2ia-PXxgIrnmme1jj0FBKZ08pSVVZc-LmafmlWndg_R9vXUZV7x3D_Vlo0OzJ9bTHZXvkkgY8DeoQ9APP_An0eZ0Mb5qZwoeoMzgd4GiKQu9MZPDdJCt00pFBR_0OEhDS4bD9A6FTqLZpseGYyr7kGhTbTTDTvK3RqyfeR0uuFADk9H0OVQ", 
+                    "photo_reference": "CoQBdQAAAHA1RXLiRK_BF8Yi3mMNR4-sojtocOJQ81w5sdg8JqgoGCfxLE7Tw_jWAX5bMw0vnzY37InKSiKmTanbHatroVdqB2d277bOv7lhk59Rj1rNhtKZQZeFkaIAq6vPrLxpLF59EbrmxxJZob6k2yvFAjHOYnAFjC29SjE4iApVVVpOEhDdosWvo2t7ANsIySWzOnTlGhRlWQ1YHkSLDF8SZMEFZ4FaIVFZFA", 
                     "width": 250, 
                     "html_attributions": [], 
                     "height": 250
@@ -195,7 +195,7 @@
         }, 
         {
             "name": "Acad\u00e8mia del Cinema Catal\u00e0", 
-            "reference": "CnRvAAAAJEF1WwAKOiJBRI05QaRLH2uzFFsn5FRuS4LOjGqtDas43GJZD5deP5yUYR8QJU62ytaWbqj0qtESuKQpxS2-Sf58d82uuawRY-GCfH1QjyM569namVQ-OSio2ZKRBykSkSoO2gSCDdNZ_oIdejN3FxIQNB5kDQhXX0f2U6ZbvTVl_xoUJmeXpdDV_poVCsCWZtqVkIMjeBA", 
+            "reference": "CnRvAAAACtPvm2TTCh5EdPOQMoJw4lqNXG5rMP5sKr0BbYhKejAEHNT-fGzJ3SShJv3y57gNgf17-E3zP1-fLrD9QaadGxSYXvLrqxdh-51xK5a19wkY_hPyXjXzmqycMa1KAAJ9yUNbdKAHljY0Onv-Go_n1hIQO9canrod7e0X_Pw305jZ0xoUGhMeqF98o0hRYj-6Xm5le0h0ClU", 
             "geometry": {
                 "location": {
                     "lat": 41.380553, 
@@ -206,7 +206,7 @@
             "vicinity": "Passeig de Colom, 6, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAq3BL4KRu-x68CPytNiYSmzwJdwTHQINwCHCZ_mNvAFnPCOmUOwiwZsSTW-JkQk285I2tm03nUgx_0ydEwkOIhWEPNQ0lzx0yQKqv3XlQu1Pyu8g9TXyCa_sPOsv3-sJUNJsD2ZubOyZ-U-b7N1PzCBIQ9pi3Eo1jwoN7JF3SUtuJNxoUJGHsE2iVcf1qkiXo97ZACSbqhA0", 
+                    "photo_reference": "CnRnAAAAFttxBkIfqdSzNZQ7ejNLi6oaehKv4kSB8xCIR1Jugidj-kS2_QwSQEZAcCjigoh-8133n_b5rzK_pn7b1siQIX167IbM7xGW5bbxwfK5u8vfkpxMQ4n8AfeQFUvQsDtc43lP4pMPfZlZgHKLCmgaURIQNGzhsfm5l3eQKxeMpmsRpxoUWq2boaLLIzk_0N-s3XS0IMuWEo4", 
                     "width": 350, 
                     "html_attributions": [], 
                     "height": 192
@@ -223,7 +223,7 @@
         {
             "rating": 3.7, 
             "name": "Palau Bala\u00f1a Multicines 7 sales 3D", 
-            "reference": "CoQBdgAAAG6iKF6eip3hjbnoCZQgT5-3Qmew-RX4r2_Y7T5AoB0lvG-6ottq9ZlgXAGQ-3QVnCNxq-jngMNWc6-MTJX6rDSPlS64EOtUTNUOyMJhFG_uvNY879O-_ImhrZ7Y2xUkOHrWYFpuQY4iFZ2gybupiRlYxPvVjT_2dnTLflYCiwj2EhCKMrehhN8uoGBMczLbYXI-GhQWjamWyrL4s_oEiMeVyu_h0beUcg", 
+            "reference": "CoQBdgAAAHL9kqun77H_I4yWMT5QHtynoPTMAj7MvF5Gufx3kd8OQ0hNwZVa6yXbcSGJBOwlzivlYSQyH8A6IdhfyZCwsO4FFjhvGfn_bYGAw2RK3ijkDPcV0i9wE9uXAr6aeuJa-n1OohZTmaTUqilGTZxFc0nPWYkTS_eEMb0eqvSGrPMdEhBF1Lbq-zCGBeVCIdX-d3BEGhRY_Eujx0tDyTqJ4aArWl2-uwMmqw", 
             "geometry": {
                 "location": {
                     "lat": 41.377829, 
@@ -238,7 +238,7 @@
             "vicinity": "Carrer De Sant Antoni, 43, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAA4RLigADVnO9ultQKKkmWINDGEzQGa1TRLlmav-scPs7nutmKIJWOShM9fxufiwM5AavvcCHMreJ4JTaQ2ZpEPpP85VqnZRo9w6qXYgSHjEYi_pyfa6WuStDrjezi0JD3ufNE38fNKqBM45U-ZVlbzBIQhR-WK089phmECMseF6HnEhoUzlc6M_a7Jf-kQ7PCIJH3NUtoJLo", 
+                    "photo_reference": "CnRnAAAAhUkKRIVLcXkIQQ0NeO0ffDkZafkP53N9nAd8XwCngJkY2SctbbBcbnLF6HeNzeIBWjV5nkOZSvLgRvy4rYdYOshdfQYY_NVMOvQqQBhel30opCsCrDUUx9VTYfBLWsjdRvnnIwJCIdViXxSeCr9IXhIQ0Aloq6-O8ibAGNer3O6X-BoUtqhcL7m4oc1LD7ehfWUuMs4qxIs", 
                     "width": 976, 
                     "html_attributions": [], 
                     "height": 648
@@ -255,7 +255,7 @@
         {
             "rating": 3.2, 
             "name": "Comedia", 
-            "reference": "CmRbAAAAfmnTwrYD1s8YVwXKyEAPDDwglq5keQUR3q-xvxkfy8sGHK_sfGjfHQThFR6wtbqAFAc3aqbuy_s3z9s8tueviZ-K5H2w8Uzih6kyxfPn4x5vDU9ultmucxNsZbjO8CCbEhDFR497DZvNphUvjvGP9JgHGhQQRFvLH7APejooiKJIhFV45BmhTQ", 
+            "reference": "CmRbAAAA0z1z3S8cAGrTNCbpwZ1Et6HBi2hM1bmrbYTEn-wOc6ehmYS7AdBxBrNdArEHXMRxz0M59TFpAXKlvZOf2G80A-fMkwWq2FTghkqASmMPri4zKl45qt-jcZRkMTwcZbprEhD_dXQunDqrZPnQb5K8fkKWGhQ4TPxvc5mMDyJd4ICkEmjJRKVLxg", 
             "geometry": {
                 "location": {
                     "lat": 41.389398, 
@@ -266,7 +266,7 @@
             "vicinity": "Passeig de Gr\u00e0cia, 13, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRlAAAAutfyyG_mTBCflZ9eLF_lq2cRZAu-V2YuF2YolzOudQ6TsqrdsO4gQGg29E9obCOrFAImtdCRDHhBYdkmeCZtsz_qMcQDdQ4mEj1feMcLpiItMHg424XVbG5aYtk9w27N3V21hNieK0fHCtlnUc6cuRIQ6bIpEEOkxCY5_JGzEJIdRBoU2keCs732yosdp9O6L_5wj20q9FY", 
+                    "photo_reference": "CnRlAAAAS5jdWokG4jnPVq3qbPOoG1kX0uUbfbh9DhylRkxcCBUAEZP4DsEgIAAsJEUgB9VaYpAoS_7Uzt1eliUNNjK14cumoPgW2y0hx_XiXJASe0IJQJpIUip08XlniCBzqbZmCTYMmaSi3oX51M_Kr3vuMBIQrDdY3eRi_fiqHYQl4vdy4RoUxhIH6x11uXPAmkNBkZOpUo2FSC0", 
                     "width": 749, 
                     "html_attributions": [
                         "From a Google User"
@@ -285,7 +285,7 @@
         {
             "rating": 4.3, 
             "name": "Verdi Park", 
-            "reference": "CmReAAAASSHQP0e5GrA1n7cO-qEtvR0JzjPnNhLpXbAG7M2cATUKezbeKaHvZK-SR4ROAx-DA6yb4g7i3TyBmdn8sL5fj_4agqGv_SXc6Wy9rYIFenyXMLNwnxYnL6NuEVTDilzCEhCI7XauOjF7eNGas98WDGgLGhTzj45xyS1Uvpl55y1ZNckKzbmUnA", 
+            "reference": "CmReAAAA7DCokITlhiavTi3g7017pE_YEk3XPYjZGIOi29JuyHWYUlkm3e-lLonS05jrlUT2OV1aPi-K8mu7G4gNwSjL5K1aT1d8eU3w0FT5PKFMeuaX0auLaPyP142JloiMxO3qEhAQ3GdAMNALKWqIVx0HuCJgGhQXRw5evJ-A43_6_zUr8dDvg4lcbQ", 
             "geometry": {
                 "location": {
                     "lat": 41.404321, 
@@ -296,7 +296,7 @@
             "vicinity": "Carrer de Torrijos, 49, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAUFuKCX5FvCuCNj0sAmire3R3QjwRlfyDaLoTFjHOFIn-mP9Zav024nouDG15YWlYUQbjKIMWTvh9BLUVwtmr5qZsMHzmEZr5adeXYDEashOZzEKwEipQeaiguQZywL_mrOOe4E7AqtkK8sfzKx0LRBIQUD5pj_FNxm7JW7Jz5RkV4xoUUHgVLNNux5Qcnn8etFGmj0Ij-2s", 
+                    "photo_reference": "CnRnAAAA0l7Zwixs5T7PUqSmfhgHLu6YXliA9E4suhg7z5ctr_vx_YytM-1BhvFiIzGeJAfvLX0AKmp-NmNP9bjRVSU3_KdC4DpgCeFAvX5wlDLQ-bMgYVaRTTT8YW9luTG8xGFBLllQZJm8q0wGV5rqm64yjBIQvLmeHZQeX6cU2NA2BNFOyxoUWqH4Mr65N7I9YocQ2HS5P7joRZs", 
                     "width": 2844, 
                     "html_attributions": [], 
                     "height": 1600
@@ -313,7 +313,7 @@
         {
             "rating": 3.8, 
             "name": "Aribau Multicines 5 sales", 
-            "reference": "CnRtAAAAWanuOQo1XZUAd2zYdMknsTMQb2YX2OstFdQ8VraDfvP6efdQ5_YEGe9f9Vhy_EPiV7JVs2Q5rSL7vXSzZ_Mz19xnF0MPJC83fsBPVW6Yp-qiCr3rOcQ4y4hS0el-9Y0ABExBuWrCCvv9NefrV4H0kRIQNaaJ72P9YXaZg4Wuxv_FTRoUcI-F5Zw7JEoWcCWs3StB0TRF1s4", 
+            "reference": "CnRtAAAA4xxCZbEhT4H9bbjhvoZTqLEr5EF-OJIUqVOmlPotYrQzZ9-NWwMiA1dsQFSBPiYQDvzwUsZBqoy-kfX3KNlzidn5_uQ_HvqfaNy5tuibM_piGZIgMHMIAEapnis4xo4BxGt_6rHTjL409sA-sk1rHBIQNKq_A1oRa1bPw3r_n7ZmaRoU-Wxw_Dmeu-HUWzfvb0rgfv1643U", 
             "geometry": {
                 "location": {
                     "lat": 41.385898, 
@@ -328,7 +328,7 @@
             "vicinity": "Carrer Aribau, 8-10, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAMh_9hnJqtoWmVsWkup7lbIuNa-bZK2zerEXKmLFciWeveJyf_vhz8xR3JGe5uUMriUztuCDrTfRPm1HbYVRAA1VMA2_WK8Kqnw7tJ-4UZRhFTlLnwlTpukPMCR6I5Gf22kBlk0-HcnQAI8x6T7fZIhIQVaol2uTWP5fsRXU3pG1I7BoUn1p6RrwhK171uYWSWlEPBOfYp3Y", 
+                    "photo_reference": "CnRnAAAA63Wwccx3cCeMjbgbpXaeWXZXVcR_ZuQow-7H_SHq8A2VH1vNTWsQww0nKYlh8no_rt1X2waha6I5hQRNC55XoPxvauNj6hf8ydv06u4lCfTlcjdwRDMQexStGJW1qD9MoU4xx5dWaX81VhDKi0OSfRIQSYKS0TJuVpL2rmlPVyj8vRoUePK7Kz7YE3xt1uJdF-r52Nj9q3w", 
                     "width": 1024, 
                     "html_attributions": [], 
                     "height": 768
@@ -345,7 +345,7 @@
         {
             "rating": 3.9, 
             "name": "Lauren Universitat", 
-            "reference": "CnRlAAAA6NizoSA_NQ-UI-ZbtKqLGPrb-k-JV3AEyvgx5FPtvVbG5DvWD3JQjfHexfYDzxViMawf_34yQCkwEamjsfQ9LeA-22AlQPrJ4_JlNPWaoKXkBMJrYtVYn6kXN3kD1JjCrePvq74pmp_7s2pKpZO4eRIQbfnfJ6xXyHTnbPc5zcghbBoU9rbot2TcWFr8nZGGsxPuu0kMGPc", 
+            "reference": "CnRlAAAAZ5woTDuHfPwb71OTU1wqQiMbpuNXAaaSGw2uwb2QmJ38LoDySh5FnCHhGA2BZUQZF58nBwuEIJCBlwv9H09Iur3KzxKYRsb2csG5x6VbvrA1Nd-q_ofXnoz5vdRxKsK6xeEPZUxrURL9byGMLesf_RIQLM2Di5pml0Lh-OOwK1qqZBoU6hI8EbWFaXl4oAJ2msuOq0IZMDY", 
             "geometry": {
                 "location": {
                     "lat": 41.385754, 
@@ -365,7 +365,7 @@
         {
             "rating": 3.6, 
             "name": "Gran Sarria Multicines 8 sales 3D", 
-            "reference": "CoQBdQAAAH3asyYB7AZYk4Jhtdt4psKbmuRCynDwvw4g4wZSknkU32lLq77jtcMPqmt55VF050vvkuUG6nQWTauCzEshYTN0b_WNTbSQzFkIfksm1nGccUuevrI-Pj8ZCpO_OpPtHY22EDTmIMAo9ZuP714jVQR1TbEDOTRthhmsdRwQJ1KWEhAHL3dfAO2gM8yMta4ii_IwGhRcxWCXNizUlMQNK_CYuLgULHdZng", 
+            "reference": "CoQBdQAAAHX8ZiJiteccRDQDUHtfm4DQTBVB1K80sMMiaQhQsn1RFN5qKR0k0HnsTquv6mEZVT2bQRbaBCHGm5dUb0FJqXeLWMioQr1brhxuvMGfgpdWNvJ0vhpmGOJukixt0vU94qAPz3yQRZUNxrseZm1ixY3P34dYsPdL-EYUkDqG-PIWEhDrLwzbCS0Z_A4M7480ev8qGhRMmOlU_2WngsDFcmn9_JlrUtQuVA", 
             "geometry": {
                 "location": {
                     "lat": 41.394685, 
@@ -380,7 +380,7 @@
             "vicinity": "Ronda del General Mitre, 38 - 44, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAvZDAUG9jiTmiMooCuhh7TIKHVklJEKjmWoijq9wky4XJRa3CPblsMOnIs-oQKSOgl1oS01mshFd65cr1xfcN0GtEQOdXG7b03FZnBd0T609skrM1gbjUJyhJi2H2vMzxWRDm9xTldOsBMAZVCFePhBIQSQGRPfNYZQUkeKHGivdhvhoUpMCypSgNQFS2gIco28OjAZPzpqQ", 
+                    "photo_reference": "CnRnAAAAtBz9UjLazrFaE7eHTmydcbM83-ArYGcQiVbXXVI4UlVn0O9Vp8mBGaoJyOFJWO6bvucxK-lsK38lZQ4K_DPcAO93Pm4MNElXlMXzH6RRDkULZ_ifNLV3E4GULYcXg-8NlVlsUhyB5-zmCmuPn5jfohIQYp3c824w4K6O7jlSKT2M6xoUd6MrfsHvowP5-hO0qiwXNGvcYPg", 
                     "width": 976, 
                     "html_attributions": [], 
                     "height": 648
@@ -397,7 +397,7 @@
         {
             "rating": 3.5, 
             "name": "CINESA MAREMAGNUM", 
-            "reference": "CnRlAAAApeYa9_6NJTqvUjWwVNONjbt403_gI7a1iKqRuYVnto_dQK_X1CmwdSealUqtksqvtQvNbJJm0nUBLO7pHpdy97nlRD0wzaE_1lmCdkalC56x929uzJtPPOdy6T28CFG8tfNku4Vqc8h1M0PbygyMcRIQXrF56m4enWYF3ccGPLrTgxoUl4W8nbdFzNDCy0ZQU1g4BN8CMyU", 
+            "reference": "CnRlAAAAKQ_AgLKHfTvzCq5WgItGdbQDTQJ3GuOSOfi66-cQr-iKmgIs7Mw048ziOgdAoBcleSZWzmKjcTT6b8MxKHGgunIwnZhUkeBoNxremBW2WEV0oCwsnbGOU8Ws6V8jC2eOZWL0I3gRh6Na_UQLmo3D-RIQaEyeOGN8camlMXCZ-n7aihoUzyViV1FJS7FpX0lc0Qa_5AOUShE", 
             "geometry": {
                 "location": {
                     "lat": 41.375266, 
@@ -408,7 +408,7 @@
             "vicinity": "Moll d'Espanya, 5, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRsAAAA_UPBs7k9Ps6-pYVdsYsDoMlOwUwdKROfpXwPmMDhHsu8gjy0REWnUFC7s3-QVvBJ6MrDx-BeckYVymSI7rm5977aTcoN6QMTucCj4qBqRMwSrT_Jtybo5Spgz6tj6ZSmT8pLaNjM9nW8Jvyy5u_2ABIQeEnAMRZ_1zwaSsyBMq7H3hoUDBI9tYKa4vx_5lzh1XvIUaR2yTQ", 
+                    "photo_reference": "CnRsAAAAcKtTW5ltIe84EBLYhpNiGroEESW6vawRgL3cQ971omBs8GcJbQksPsbJFnYr9HFoNVLUFQm6KkSpjStlKHF5tP08I9DeQaF3JjLVba0etm2j2sEssHwjvuOsdN9mPCw7wWpkgs22kvXrJAaHznvCQhIQk0FuSj8AwdaFCFIWuezrRhoU4mJK-ttyJgkTv3A2HwY9tum-riY", 
                     "width": 453, 
                     "html_attributions": [], 
                     "height": 453
@@ -425,7 +425,7 @@
         {
             "rating": 4.4, 
             "name": "Verdi", 
-            "reference": "CmRYAAAARuOPJpCG2trEBUMqa058NowiejVzMnryZRSKuZDSFMPwsyghdWlHv8LXAy2q1qqaiZomAZvPT-h4ZvBkC20GytrJL_D0Tt0jg2fPDp0Mh6DyhuiXzLKtlGgZX1hHxwpvEhAs5ntA-6bQyB1kJsyrjC4jGhSMNIe0bgu4nhthwWN-JnKnwljUKA", 
+            "reference": "CmRYAAAAiGYz16Tl_xlmge-dZHfPpLa6HhpN9yL18GSdXZ2gTFSMgS20IbW5drSrOGDSQIR2shUGG2picXAFMxm9_Sn_ZjPa4eFokOEG-y4FQhCByJuzuQIX7SsdP1PfJITxHEyAEhBMvjEymRUdQp7hRMSXhwHwGhQZHUND7SpLesyWfIiCSpCZkAjtCQ", 
             "geometry": {
                 "location": {
                     "lat": 41.403942, 
@@ -440,7 +440,7 @@
             "vicinity": "Carrer Verdi, 32, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRqAAAAKJJhoGjKT-HT7Y4I3ZbcOMmkIwB88tR974jzZL3PVFa8dYO-Ocyfs3NfofP_yGbFVXjmQzBxcXRuGQpF-mWmmx-NBbNqsb2L4HGgOpuNQ-ILWD09gIT0yfO_Z0R4Sor9_me09WQXZUutQ_qr0J4dpxIQi0gKWRNS0zmMA-L_DhqGRhoUzgbWJ3SLWiNQJXk2s7bUPO_zUx0", 
+                    "photo_reference": "CnRqAAAAwykxYRsCrvSh74ujXmNWSrg74tVAUSr51_QUhliWtClFHe3_BaJLraECSLVsh0ulcirD-cA56sjuFP6X09tmYDlyiK0nTxhaZ7v3zlLR4f2BOCn-RCfZOzjUsyY_sWMVccqS4DjkAz9IS666H7Q6sRIQ4NfTZdJC2cQoMeRIlDm-BhoUW47H2bcpAzAqVkhxdgX4axLxvBA", 
                     "width": 1579, 
                     "html_attributions": [
                         "From a Google User"
@@ -459,7 +459,7 @@
         {
             "rating": 3.7, 
             "name": "CINESA DIAGONAL MAR", 
-            "reference": "CnRnAAAA_pxgytffPzPlXwIofe9KmO0H6w8QoOeAsVRuA0p6oBrri9ONIzPB3vCh7q4KKwcUnhYI9rZzLVOdiO3HXSo7RaDoHpnriDOU-JaziVoc_l4w-uVzHEKT-Z6YCbKJOMrEwplhCngLP3g0y19mLFP0uBIQpcBjKhbqaHUv2Vfha__j6BoUgMONjrRzz22zrFekjcsPMsuglhc", 
+            "reference": "CnRnAAAArGwfjuzvKo2cwfzlxYMIOTxeooITCgei2b6mzDSfl--EhaiRIh971lWMtvInGU_fvP9unFhQQ3OhkJcLtnL56LdpP7jkUrhqJZVxyy7zOzGLPXJJYWjRXGOJ9GpJKDqvp5ZBk2k6tmFumAoMhl9AnhIQBQ-2UKeesRn8VpwnINprMBoUZQaH0KTxbJL1cyxjLH7GouV0h0c", 
             "geometry": {
                 "location": {
                     "lat": 41.410315, 
@@ -470,7 +470,7 @@
             "vicinity": "Avda. Diagonal, 3, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRoAAAAO9b3TMo4WHrhUwUNewBYRuhXZdRxif4pWHSuolXkErFYidk8AfrBCRrnk4mTEAatysXrIt4kQPmwzbWL8GeCp5INp4YVwKCXz0vl4ZHHVm3FzdpxPrPjKfBwd77fPNObesPxAOlZDAKZXbbknxVRiRIQJL2rdImckTQiHdATrz4oTRoUo8TEq0Zi9O8Y4PD386X3dXB-7kk", 
+                    "photo_reference": "CnRoAAAA6OZJVbl62wWmiFsfRaDZfrnj-RoCC7m0RmwO6MEI_XGLwHpKOBPDrefaNZh2Ou4haTNnjsvzByaMxm2Pnio4Y68cGoUV2Tl4YzvE26x7h25f4HOJsjFCoJo0G6RlVNv-EpRney78XclHuJZGBOM4rRIQfv1lo9C4J5O6JcyRs2l9CxoU6iSp-JDS0023IJnUsRZsMJ3xCns", 
                     "width": 494, 
                     "html_attributions": [], 
                     "height": 494
@@ -486,7 +486,7 @@
         }, 
         {
             "name": "Club Coliseum", 
-            "reference": "CmRgAAAAIjHmeKiFvXH2OzTikHuYHC4F2KKZdoZxvwiyL2NCQM7z6OKBvF8IgXcUbP9ww04m_Dq2fNZBaEEVCxkgA-7N7s0hYDaHCrgzd_aT3JvCAzX4I07ZM_XV--b9UaFUUnn8EhD-Z--tvG-4SAOg3LlB3oeQGhRKwIajeMeWVfxuuzno7VkU53fhdA", 
+            "reference": "CmRgAAAALt76-ZVw_pjiQf00T91_QGGcEZVM5MTbmzhTqSytrQ_f5mYDMSm22vzI3qxIugeY6qPg2u0plWcwBZCvaPB7cxPFSOXAuxN20cfBKjhyBItLB4eW1QOypKBPfcFlUUkdEhBOv6pCCqpQ6z0lK31JFkSYGhRFMZoTnAvZT4f8bYUFVK-wKWPQ8Q", 
             "geometry": {
                 "location": {
                     "lat": 41.388887, 
@@ -497,7 +497,7 @@
             "vicinity": "Rambla de Catalunya, 23, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAGfoLfBCcyYOq9FYokQk3I6GkjycRCpl1-OuQ8ke8dmOSUmeCe8NJ702rAApjXSBFD0pQMKYcE6kn_sCi7YU5C_i94A4mSdvBBrJ53qxFUQLRDUhiTIIewhVFl2OA1Tyeino67F9dqWGeOIW2MiFEXxIQyjJOR3Pi1XteO6Brh4H1gRoURKX1NghXg7lNp_9tqGKvy4kFl-0", 
+                    "photo_reference": "CnRnAAAAIRR7-xB2r2AdVrVCe3dDv9cCeUqKwNixkzjgXoqzrV8_beh7PJpYrbLDuVR1nt2kFDnr-CS0dX1pjbhlCX5cdQgiokH4J3GIkOuLcOSo_RghAbxuf8mNi-zsKTf6ibq8G2qZfCDATwiRqEI7dGaIsBIQKW1Ssyid7ul9WdwTku7KphoU7isMESbtMgE6kGZkWqxzwXUu0F0", 
                     "width": 1042, 
                     "html_attributions": [], 
                     "height": 648
@@ -514,7 +514,7 @@
         {
             "rating": 3.7, 
             "name": "CINESA HERON CITY", 
-            "reference": "CnRkAAAAyB1f149Wu1L0j5HjRzlOINLlSmzRNLCGvsscdC6BbB0pCn2rgiQzxz3YJ3U7p1s3ZJav1MRXB_meIm8OQ9OSIBAjjyT8LQ3uTSYWKUH2KNn0k76BNM-mpY2ccJRV9Pdz5YloznTls9XvFDiwxcDyTBIQrfRZhzezSEQsOzi4SyFG-RoU_YjV-S4dniUESPEf_oB98Y67bX0", 
+            "reference": "CnRkAAAAsfHVUZg--TSAm2eDv6u4P8AEqN97irNOt2LBimxeUXpVAJ-a5-rJdyyl3vldJXiD80VBI7n7ML5hKFBL6r45fmhT9DXeNlGEVFJZ-wA14foC-JPi5u0pTr8xyR0On1vu4eJoF6j6Hwfu6LbWYbbVzxIQCLrUMHZ8En5_2rT2QpxFXhoUnjOiUv46DuK7YjevMYP9HkIOqK4", 
             "geometry": {
                 "location": {
                     "lat": 41.435497, 
@@ -525,7 +525,7 @@
             "vicinity": "Centro Comercial Heron City, Passeig d'Andreu Nin, s/n, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAADfCQkWyf9QNgGIOmGRu3TFt551uI417uqZTyM8ck2iFsg_SWHK6R2E8yXzSqakhYnyvOAR7nHbC31I8OTRhyrYiyqbO7KbmKThdb-90dqyGaaai8KvGanMXEq4ty3alvCOCCvsVzfhQ4cz6Z0VIxVRIQJutzNWxotHl6-CdFVtHpvhoU6zKuzKG-L1STI-X4AtH-Ktb85OE", 
+                    "photo_reference": "CnRnAAAA359W0xYiw78h6Snyh4YpV1sSaQIgrEUrjgTNNrQJW97ENDLsX1xbSlDxFRydH36jVrtalwT9J4C_CfvDelWA7efmEG9XpI_o0niDs3y2E4narYhO4J71M3_ksyqCKmoqS6UYI4-43xKHRELKTc37BhIQ4gydvQxVXQp-yGGWGhGGVxoU8agNu_LKvA-qnrJaapxLWR1eokI", 
                     "width": 371, 
                     "html_attributions": [], 
                     "height": 371
@@ -542,7 +542,7 @@
         {
             "rating": 3.9, 
             "name": "Foster's Hollywood", 
-            "reference": "CnRmAAAAFRByjAs-gH79w9Zwg47L7D5LaPJ2yAHbIHAqLCDTDcf8ioNABPJOYaTT-izhpkLJ0O7sofn34vY0V8hhnRUiKMuHomEIQRm607fOkV4VK4wrChIGDkoN3ZVATM5Ie6cafM4_21mruC19Wpko5LkVQhIQxzewNwNFyzNHhmFHJyXb7xoURCq0wcSaQz-jneC1nal2aZxLSxM", 
+            "reference": "CnRmAAAArZUdOHKGCrOreI4ypQ1MMu5ZWYpHFLHQ4d23iqLvtMqsOhutRblESfHPo9jfxWA-WUohnqy6Ic9nzeP2E2vBrAKHtSRcjNrAEf2FPtM1XJmT5GMNwWmJAK0HzSufoO8lLcYRQB3sMSSMmKrZAJoCdxIQCvOZzcUAeQGRn7yZwNVFgRoUkr-U1HRLtLyZE0CqEySVolv_XS0", 
             "geometry": {
                 "location": {
                     "lat": 41.409453, 
@@ -557,7 +557,7 @@
             "vicinity": "Avinguda Diagonal, 3, Barcelona", 
             "photos": [
                 {
-                    "photo_reference": "CnRoAAAAj85OrljIsTZOyqmaPiWQiLQ0JsF5jgyF-xlcosBbWlDjXpryq_nFqRdUMTVfbtkSdiGEhUc9FeulCz0ayNZTQVOOLtJlppL-T5t1EPJts3MWe1cvzDorEY5GagJ-dtiBFRJ1Y_UuHkHiGaJ0KgjEMBIQeXMcSvTne43ZEvrT24C0nRoUZHSkdzXJDHSxKn1FwbUVszCJuzE", 
+                    "photo_reference": "CnRoAAAADIhjrkx7qv22A2iByqD95AelxzrFqV-o42I4lKTMWlRlrAG04Y_pI4YT1zULs_4IbBWcwRMkgpGTvRIhenM4pGa0wE6PoN0YRjo8SROfawNevBLcDN5xCJ4PH-NsmewoQQU_RKOudBkQvG2o8tQUDxIQjuuWqXVfjbZ0VscolwY6TBoU9F7NYR6MczM8_TiL8IJpXYFo9zk", 
                     "width": 612, 
                     "html_attributions": [
                         "From a Google User"

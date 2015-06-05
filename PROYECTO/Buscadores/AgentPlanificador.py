@@ -140,7 +140,6 @@ def comunicacion():
             #############################################################
 
             destination = gm.value(subject= peticion, predicate= myns_atr.destination)
-            gmess.add((actv, myns_atr.lugar, destination))
             # VERBOSE
             print "destination: "
             print destination
@@ -176,7 +175,7 @@ def comunicacion():
             print numberOfStars
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
-            gmess.add((actv, myns_atr.actividad, activity))
+            
             # VERBOSE
             print "activity: "
             print activity
