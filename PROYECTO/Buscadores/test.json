@@ -78,7 +78,7 @@
                         ]
                     }
                 ], 
-                "id": "cZfursMVQAFNOFtTIHkywD001", 
+                "id": "dAcb6074W51Tou19N45kxP001", 
                 "pricing": [
                     {
                         "fare": [
@@ -197,7 +197,7 @@
                         "saleFareTotal": "CZK500", 
                         "baseFareTotal": "CZK500", 
                         "saleTaxTotal": "CZK3497", 
-                        "latestTicketingTime": "2015-06-06T15:56-04:00"
+                        "latestTicketingTime": "2015-06-06T18:13-04:00"
                     }
                 ]
             }, 
@@ -276,7 +276,7 @@
                         ]
                     }
                 ], 
-                "id": "cZfursMVQAFNOFtTIHkywD002", 
+                "id": "dAcb6074W51Tou19N45kxP002", 
                 "pricing": [
                     {
                         "fare": [
@@ -395,7 +395,7 @@
                         "saleFareTotal": "CZK500", 
                         "baseFareTotal": "CZK500", 
                         "saleTaxTotal": "CZK3497", 
-                        "latestTicketingTime": "2015-06-06T15:56-04:00"
+                        "latestTicketingTime": "2015-06-06T18:13-04:00"
                     }
                 ]
             }
@@ -476,6 +476,6 @@
                 }
             ]
         }, 
-        "requestId": "ZyAsIQ9IVuNiL7cr30MFqG"
+        "requestId": "YJICnJupSf653bnwC0MFsT"
     }
 }

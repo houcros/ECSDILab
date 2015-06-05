@@ -265,34 +265,33 @@ def comunicacion():
     
     # Buscamos vuelos
 
-
     originVuelo="PRG"
-    # if originCit == "Barcelona":
-    #     originVuelo="BCN"
-    # elif originCit == "Amsterdam":
-    #     originVuelo="AMS"
-    # elif originCit == "London":
-    #     originVuelo="LON"
-    # elif originCit == "Roma":
-    #     originVuelo="ROM"
-    # elif originCit == "Praha":
-    #     originVuelo="PRG"
-    # elif originCit == "Paris":
-    #     originVuelo="PAR"
+    if str(originCit) == "Barcelona":
+        originVuelo="BCN"
+    elif str(originCit) == "Amsterdam":
+        originVuelo="AMS"
+    elif str(originCit) == "London":
+        originVuelo="LON"
+    elif str(originCit) == "Roma":
+        originVuelo="ROM"
+    elif str(originCit) == "Praha":
+        originVuelo="PRG"
+    elif str(originCit) == "Paris":
+        originVuelo="PAR"
 
     destinationVuelo="BCN"
-    # if destinationCit == "Barcelona":
-    #     destinationVuelo="BCN"
-    # elif destinationCit == "Amsterdam":
-    #     destinationVuelo="AMS"
-    # elif destinationCit == "London":
-    #     destinationVuelo="LON"
-    # elif destinationCit == "Roma":
-    #     destinationVuelo="ROM"
-    # elif destinationCit == "Praha":
-    #     destinationVuelo="PRG"
-    # elif destinationCit == "Paris":
-    #     destinationVuelo="PAR"
+    if str(destinationCit) == "Barcelona":
+        destinationVuelo="BCN"
+    elif str(destinationCit) == "Amsterdam":
+        destinationVuelo="AMS"
+    elif str(destinationCit) == "London":
+        destinationVuelo="LON"
+    elif str(destinationCit) == "Roma":
+        destinationVuelo="ROM"
+    elif str(destinationCit) == "Praha":
+        destinationVuelo="PRG"
+    elif str(destinationCit) == "Paris":
+        destinationVuelo="PAR"
 
     print "INFO AgentBuscador => Looking for flights (in AgentFlightsGoogle)..."
     maxPric=gm.value(subject= busqueda, predicate= myns_par.maxPrice)
@@ -588,7 +587,7 @@ if __name__ == '__main__':
     ###########################################################################
     #buscar_actividades()
     # Ponemos en marcha el servidor
-    print "Preparing to run\n"
+    #buscar_vuelos()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
