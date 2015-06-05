@@ -252,7 +252,7 @@ def comunicacion():
     elif str(destinationCit) == "Roma":
         destinationVuelo="ROM"
         destinationCountry="Italy"
-    elif str(destinationCit) == "Prage":
+    elif str(destinationCit) == "Praha":
         destinationVuelo="PRG"
         destinationCountry="Czech Republic"
     elif str(destinationCit) == "Paris":
