@@ -34,7 +34,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
     location= destinationCity+", "+destinationCountry
     gr = Graph()
 
-    b = True
+    b = False
     
     print location
 
@@ -99,7 +99,9 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             # Por si queremos mas detalles en el futuro
             #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
             #print place.local_phone_number
-        
+        guax = Graph()
+        guax.parse('a.rdf' ,format='xml')
+        gr += guax
         gr.serialize('a.rdf')
     else: 
         gr.parse('a.rdf' ,format='xml')

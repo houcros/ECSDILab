@@ -63,7 +63,7 @@ en que cada dia tiene momento(mañana, tarde, noche):
 		-adreça
 		-telefono
 		-rating
-		-precio
+		-precio (es un string)
                 -nombre
                 -Descripcion
                 -googleUrl
