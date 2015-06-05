@@ -53,6 +53,11 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
   maxPrice=500, earliestDepartureTime="06:00", latestDepartureTime="23:00",
   earliestReturnTime="06:00", latestReturnTime="23:00"):
 
+  print "origin: " + origin
+  print "destination: " + destination
+  print "departureDate: " + departureDate
+  print "returnDate: " + returnDate
+
   maxPriceStr = "EUR" + str(maxPrice)
 
   payload = {

@@ -292,14 +292,11 @@ def comu():
 
     radius = 20000
 
-
-    originVuelo="BCN"
-    destinationVuelo="PRG"
-
     departureDate="2015-08-20"
     returnDate="2015-08-30"
     maxPrice=500
 
+    originCity="Amsterdam"
     destinationCity="Barcelona"
     destinationCountry="Spain" 
     searchRadius=2 
@@ -348,8 +345,6 @@ def comu():
     print "Añadir parametros de vuelo"
     #############################################################
     
-    gmess.add((busqueda, myns_par.originVuelo, Literal(originVuelo)))
-    gmess.add((busqueda, myns_par.destinationVuelo, Literal(destinationVuelo)))
     gmess.add((busqueda, myns_par.departureDate, Literal(departureDate)))
     gmess.add((busqueda, myns_par.returnDate, Literal(returnDate)))          
     gmess.add((busqueda, myns_par.maxPrice, Literal(maxPrice/3))) 
@@ -359,6 +354,7 @@ def comu():
     print "Añadir parametros de hotel"
     #############################################################
     hotel = myns_pet.hotel
+    gmess.add((busqueda, myns_par.originCity, Literal(originCity)))
     gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))
     gmess.add((busqueda, myns_par.destinationCountry, Literal(destinationCountry)))       
     gmess.add((busqueda, myns_par.propertyCategory, Literal(propertyCategory))) 

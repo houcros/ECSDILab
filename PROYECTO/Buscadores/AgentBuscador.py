@@ -223,6 +223,7 @@ def comunicacion():
     #print lista
     hotel = myns_pet.hotel
     busqueda = myns_pet.busqueda
+    originCit = gm.value(subject= busqueda, predicate= myns_par.originCity)
     destinationCit = gm.value(subject= busqueda, predicate= myns_par.destinationCity)
     destinationCountr = gm.value(subject= busqueda, predicate= myns_par.destinationCountry)
     # Buscamos actividades en el metodo de AgentActividades
@@ -236,7 +237,7 @@ def comunicacion():
         gactividades += buscar_actividades(destinationCity=destinationCit, 
             destinationCountry= destinationCountr, types= [o])
 
-    print "INFO AgentBuscador => Activities founded"
+    print "INFO AgentBuscador => Activities found"
     #VERBOSE
     #Imprimimos el grafo de resultados para ver que pinta tiene
     #Realmente solo queremos devolverlo al planificador
@@ -265,10 +266,35 @@ def comunicacion():
     # Buscamos vuelos
 
 
-    originVuelo=gm.value(subject= busqueda, predicate= myns_par.originVuelo)
+    originVuelo="PRG"
+    # if originCit == "Barcelona":
+    #     originVuelo="BCN"
+    # elif originCit == "Amsterdam":
+    #     originVuelo="AMS"
+    # elif originCit == "London":
+    #     originVuelo="LON"
+    # elif originCit == "Roma":
+    #     originVuelo="ROM"
+    # elif originCit == "Praha":
+    #     originVuelo="PRG"
+    # elif originCit == "Paris":
+    #     originVuelo="PAR"
 
-    destinationVuelo=gm.value(subject= busqueda, predicate= myns_par.destinationVuelo)
+    destinationVuelo="BCN"
+    # if destinationCit == "Barcelona":
+    #     destinationVuelo="BCN"
+    # elif destinationCit == "Amsterdam":
+    #     destinationVuelo="AMS"
+    # elif destinationCit == "London":
+    #     destinationVuelo="LON"
+    # elif destinationCit == "Roma":
+    #     destinationVuelo="ROM"
+    # elif destinationCit == "Praha":
+    #     destinationVuelo="PRG"
+    # elif destinationCit == "Paris":
+    #     destinationVuelo="PAR"
 
+    print "INFO AgentBuscador => Looking for flights (in AgentFlightsGoogle)..."
     maxPric=gm.value(subject= busqueda, predicate= myns_par.maxPrice)
 
     gvuelos = Graph()
