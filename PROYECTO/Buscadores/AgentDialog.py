@@ -123,21 +123,31 @@ def solution():
     if request.args:
         return ''
     else:
-        hardcodedPacket = {
+        airportData = {
+            'idGo' : 5000,
+            'idBack': 4000,
+            'airportSalida': 'Barajas',
+            'airportLlegada': 'Prat',
+            'durationGo': 90,
+            'horaSale': '15:00',
+            'horaLlega': '16:00',
+            'terminalSale': 'Barcelona',
+            'terminalLlega': 'Madrid',
+            'ciudadSale': 'Barcelona',
+            'ciudadLlega': 'Madrid'
+        }
+        hotelData = {
             'nombreHotel' : 'Sol Melia',
             'precioHotel': 500,
-            'durationGo': 90,
-            'horaGoLlega': 16,
-            'terminalGoSale':'Madrid',
-            'terminalGoLlega': 'Barcelona',
-            'ciudadGoSale': 'Madrid',
-            'durationBack':90,
-            'horaBackSale':90,
-            'horaBackLlega':90,
-            'terminalBackSale':'Barcelona',
-            'terminalBackLlega': 'Madrid',
-            'ciudadBackSale': 'Madrid',
-            'ciudadBackLlega':'Barcelona'
+            'codigoPostal': 033203,
+            'descripcionDeHabitacion': 'Es muy chula',
+            'direccion': 'Calle Numancia',
+            'descripcionCorta' : 'chula',
+            'distanciaRespectoAlCentro': 5.3,
+            'distanciaAlCentro_unidad': 3.2,
+            'rating': 3,
+            'tripAdvisorRating': 3,
+            'tripAdvisorReviewCount': 4
         }
         listActivities = [
             { 
