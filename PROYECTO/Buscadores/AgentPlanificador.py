@@ -355,8 +355,7 @@ def comu():
     #############################################################
     hotel = myns_pet.hotel
     gmess.add((busqueda, myns_par.originCity, Literal(originCity)))
-    gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))
-    gmess.add((busqueda, myns_par.destinationCountry, Literal(destinationCountry)))       
+    gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))       
     gmess.add((busqueda, myns_par.propertyCategory, Literal(propertyCategory))) 
 
     # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
