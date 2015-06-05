@@ -19,19 +19,20 @@ from AgentUtil.Agent import Agent
 from AgentUtil.Logging import config_logger
 
 from flask_wtf import Form
-from wtforms import Form, BooleanField, TextField, PasswordField, StringField, DateField, IntegerField, validators
+from wtforms import Form, BooleanField, TextField, PasswordField, StringField, DateField, IntegerField,SelectField, validators
 from wtforms.validators import DataRequired
 from wtforms.fields.html5 import DateField
 
+Cities = ['Barcelona','London', 'Amsterdam', 'Praha', 'Paris', 'Roma']
+
 
 class MyForm (Form):
-    cityDestination = StringField ('City of Destination', validators=[DataRequired()])
-    cityOrigin = StringField ('City of Origin', validators=[DataRequired()])
+    cityOrigin = SelectField('City of Origin', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'),(3,'Praha'), (4,'Paris'), (5,'Roma')])
+    cityDestination = SelectField('City of Destination', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'),(3,'Praha'), (4,'Paris'), (5,'Roma')])
 
-    #departureDate = DateField ('Departure date', format='%d/%m/%y', validators=(validators.Optional(),))
-    #returnDate = DateField ('Return date', format='%d/%m/%y', validators=(validators.Optional(),))
     departureDate = DateField ('Departure date', format='%d-%m-%Y')
     returnDate = DateField ('Return date', format='%d-%m-%Y')
+
     maxPrice = IntegerField ('Max. Price',validators=[DataRequired()])
     numberOfStars = IntegerField ('Number of Stars', validators=[DataRequired()])
     activities = StringField ('Activities', validators=[DataRequired()])
@@ -164,22 +165,23 @@ def solution():
                 'precio': 5
             }  
         ]
-        return render_template('solution.html',hardcodedPacket=hardcodedPacket, listActivities=listActivities) #Tambien habra que pasarle la solucion cuando este hecho
+        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData) #Tambien habra que pasarle la solucion cuando este hecho
 
 @app.route('/submit', methods=['POST'])
 def submit():
     if not form.validate():
-        cityDestinationField = request.form['cityDestination']
-        cityOriginField = request.form['cityOrigin']
+        cityOriginField = Cities[int(request.form['cityDestination'])]
+        cityDestinationField = Cities[int(request.form['cityOrigin'])]
         returnDateField = str(request.form['returnDate'])
         departureDateField = str(request.form['departureDate'])
         maxPriceField = request.form['maxPrice']
         numberOfStarsField = request.form['numberOfStars']
         activitiesField = request.form['activities']
-        return message_dialogador()
+
+       # return message_dialogador()
         #return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
         #returnDateField = request.form['returnDate'] 
-       # return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
+        return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
         return 'ERROR , pon bien los campos inutil'
     #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
