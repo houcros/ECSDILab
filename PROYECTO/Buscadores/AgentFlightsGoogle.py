@@ -48,7 +48,7 @@ headers = {'content-type': 'application/json'}
 # defaultDepDate = datetime.strptime("2015-08-20", '%Y-%m-%d')
 # defaultRetDate = datetime.strptime("2015-08-30", '%Y-%m-%d')
 
-def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
+def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   departureDate="2015-08-20", returnDate="2015-08-30", solutions=50,
   maxPrice=500, earliestDepartureTime="06:00", latestDepartureTime="23:00",
   earliestReturnTime="06:00", latestReturnTime="23:00"):
@@ -140,6 +140,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
     gresp.bind('myns_rndtrp', myns_rndtrp)
     gresp.bind('myns_vlo', myns_vlo)
     gresp.bind('myns', myns)
+
     i = 0
     print len(dic['trips']['tripOption'])
     # TODO: ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
@@ -165,12 +166,14 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
 
         originid = trip['slice'][0]['segment'][0]['leg'][0]['origin']
         #este puede ser code
-        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(originid)
+        Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(originid)
         Goairname = dic['trips']['data']['airport'][Gonameid]['name']
 
         destinationid = trip['slice'][0]['segment'][0]['leg'][0]['destination']
+        
         #este puede ser code
-        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(destinationid)
+        
+        Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(destinationid)
         Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
 
 
@@ -211,12 +214,12 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
 
         originid = trip['slice'][1]['segment'][0]['leg'][0]['origin']
         #este puede ser code
-        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(originid)
+        Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(originid)
         Goairname = dic['trips']['data']['airport'][Gonameid]['name']
 
         destinationid = trip['slice'][1]['segment'][0]['leg'][0]['destination']
         #este puede ser code
-        Gonameid = [x['city'] for x in dic['trips']['data']['airport']].index(destinationid)
+        Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(destinationid)
         Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
 
 

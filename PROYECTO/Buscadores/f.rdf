@@ -3,47 +3,408 @@
    xmlns:myns_atr="http://my.namespace.org/atributos/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1058 QS">
-    <myns_atr:airportSalida>Prague Ruzyne</myns_atr:airportSalida>
-    <myns_atr:hora_llega>2015-08-20T13:55+02:00</myns_atr:hora_llega>
-    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</myns_atr:dura>
-    <myns_atr:hora_sale>2015-08-20T11:20+02:00</myns_atr:hora_sale>
-    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00R">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/7472 IB"/>
+    <myns_atr:cuesta>EUR157.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/4697 IB">
     <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
-    <myns_atr:airportLlegada>Prague Ruzyne</myns_atr:airportLlegada>
-    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:hora_llega>2015-09-08T23:10+01:00</myns_atr:hora_llega>
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:hora_sale>2015-09-08T21:50+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00J">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4681 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00A">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR151.77</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2739 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4695 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO001">
+    <myns_atr:cuesta>EUR135.34</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2711 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2708 BA">
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-20T14:05+02:00</myns_atr:hora_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</myns_atr:dura>
+    <myns_atr:hora_sale>2015-09-20T11:05+01:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
     <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
   </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1059 QS">
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5163 DY">
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</myns_atr:dura>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-20T11:35+01:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-09-20T14:35+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>S</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/4696 IB">
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:hora_sale>2015-09-20T18:40+01:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-09-20T21:50+02:00</myns_atr:hora_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2709 IB">
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:hora_sale>2015-09-08T14:45+02:00</myns_atr:hora_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:terminal_llega>4</myns_atr:terminal_llega>
     <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
-    <myns_atr:hora_sale>2015-08-30T22:05+02:00</myns_atr:hora_sale>
-    <myns_atr:hora_llega>2015-08-31T00:40+02:00</myns_atr:hora_llega>
-    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</myns_atr:dura>
-    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/cZfursMVQAFNOFtTIHkywD001">
-    <myns_atr:cuesta>CZK3997</myns_atr:cuesta>
-    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
-    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1058 QS"/>
-    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8689 QS"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8689 QS">
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
     <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
-    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
-    <myns_atr:hora_sale>2015-08-30T14:35+02:00</myns_atr:hora_sale>
-    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</myns_atr:dura>
-    <myns_atr:hora_llega>2015-08-30T17:00+02:00</myns_atr:hora_llega>
+    <myns_atr:airportLlegada>Madrid Adolfo Suarez-Barajas</myns_atr:airportLlegada>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</myns_atr:dura>
+    <myns_atr:hora_llega>2015-09-08T16:05+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>MAD</myns_atr:ciudad_llega>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
   </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/cZfursMVQAFNOFtTIHkywD002">
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2707 BA">
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-08T11:50+01:00</myns_atr:hora_llega>
+    <myns_atr:hora_sale>2015-09-08T10:30+02:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00C">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
     <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
-    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/1059 QS"/>
-    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1058 QS"/>
-    <myns_atr:cuesta>CZK3997</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2711 BA"/>
+    <myns_atr:cuesta>EUR135.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8849 BA">
+    <myns_atr:hora_sale>2015-09-20T21:05+01:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:hora_llega>2015-09-21T00:10+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</myns_atr:dura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2710 BA">
+    <myns_atr:hora_llega>2015-09-20T21:50+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-20T18:40+01:00</myns_atr:hora_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00G">
+    <myns_atr:cuesta>EUR143.87</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4681 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4696 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00M">
+    <myns_atr:cuesta>EUR161.34</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8849 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2711 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00H">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4697 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:cuesta>EUR135.34</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2711 BA">
+    <myns_atr:hora_sale>2015-09-08T21:50+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-08T23:10+01:00</myns_atr:hora_llega>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/471 BA">
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:hora_sale>2015-09-08T21:20+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:hora_llega>2015-09-08T22:30+01:00</myns_atr:hora_llega>
+    <myns_atr:airportLlegada>London Heathrow</myns_atr:airportLlegada>
+    <myns_atr:ciudad_llega>LHR</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:terminal_llega>3</myns_atr:terminal_llega>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00F">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5164 DY">
+    <myns_atr:hora_sale>2015-09-08T17:25+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:terminal_llega>S</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-08T18:40+01:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO007">
+    <myns_atr:cuesta>EUR157.34</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/471 BA"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO008">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/7472 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR157.87</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4695 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00L">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4681 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5917 IB">
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-20T21:05+01:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</myns_atr:dura>
+    <myns_atr:hora_llega>2015-09-21T00:10+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00K">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR161.87</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4697 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5917 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00B">
+    <myns_atr:cuesta>EUR151.77</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4695 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO004">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 BA"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2739 IB">
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</myns_atr:dura>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:hora_sale>2015-09-08T06:50+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:terminal_llega>4</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-08T08:10+02:00</myns_atr:hora_llega>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:ciudad_llega>MAD</myns_atr:ciudad_llega>
+    <myns_atr:airportLlegada>Madrid Adolfo Suarez-Barajas</myns_atr:airportLlegada>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO006">
+    <myns_atr:cuesta>EUR159.87</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5163 DY"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5164 DY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/4693 IB">
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-08T15:15+02:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:hora_llega>2015-09-08T16:35+01:00</myns_atr:hora_llega>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00W">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2739 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR151.24</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00E">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2707 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/4681 IB">
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-09-08T11:50+01:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-08T10:30+02:00</myns_atr:hora_sale>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/4695 IB">
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:hora_sale>2015-09-20T11:05+01:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</myns_atr:dura>
+    <myns_atr:hora_llega>2015-09-20T14:05+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>N</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>LGW</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/2709 BA">
+    <myns_atr:terminal_llega>N</myns_atr:terminal_llega>
+    <myns_atr:hora_sale>2015-09-08T15:15+02:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-09-08T16:35+01:00</myns_atr:hora_llega>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportLlegada>London Gatwick</myns_atr:airportLlegada>
+    <myns_atr:ciudad_llega>LGW</myns_atr:ciudad_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</myns_atr:dura>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00U">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:cuesta>EUR151.24</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2739 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/7472 IB">
+    <myns_atr:hora_sale>2015-09-08T21:20+02:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:ciudad_llega>LHR</myns_atr:ciudad_llega>
+    <myns_atr:hora_llega>2015-09-08T22:30+01:00</myns_atr:hora_llega>
+    <myns_atr:airportLlegada>London Heathrow</myns_atr:airportLlegada>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportSalida>London Gatwick</myns_atr:airportSalida>
+    <myns_atr:terminal_llega>3</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00T">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4696 IB"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 IB"/>
+    <myns_atr:cuesta>EUR151.77</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00X">
+    <myns_atr:cuesta>EUR151.24</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00P">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4693 IB"/>
+    <myns_atr:cuesta>EUR166.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00V">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2709 IB"/>
+    <myns_atr:cuesta>EUR151.24</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00Q">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/7472 IB"/>
+    <myns_atr:cuesta>EUR157.34</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO003">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2707 BA"/>
+    <myns_atr:cuesta>EUR143.34</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO009">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2708 BA"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4693 IB"/>
+    <myns_atr:cuesta>EUR166.34</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00I">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR135.34</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4697 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00S">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/2739 IB"/>
+    <myns_atr:cuesta>EUR151.77</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4696 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO002">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR135.87</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4697 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4695 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00D">
+    <myns_atr:cuesta>EUR135.87</myns_atr:cuesta>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4697 IB"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4696 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00O">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4696 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR157.87</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/7472 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO005">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR143.87</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/4695 IB"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/4681 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/KSoHNOmd0LMTKBjOeVd8uO00N">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR157.34</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/471 BA"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/2710 BA"/>
   </rdf:Description>
 </rdf:RDF>

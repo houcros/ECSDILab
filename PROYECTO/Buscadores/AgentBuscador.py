@@ -225,7 +225,37 @@ def comunicacion():
     busqueda = myns_pet.busqueda
     originCit = gm.value(subject= busqueda, predicate= myns_par.originCity)
     destinationCit = gm.value(subject= busqueda, predicate= myns_par.destinationCity)
-    destinationCountr = gm.value(subject= busqueda, predicate= myns_par.destinationCountry)
+    
+    originVuelo="PRG"
+    if str(originCit) == "Barcelona":
+        originVuelo="BCN"
+    elif str(originCit) == "Amsterdam":
+        originVuelo="AMS"
+    elif str(originCit) == "London":
+        originVuelo="LON"
+    elif str(originCit) == "Roma":
+        originVuelo="ROM"
+    elif str(originCit) == "Paris":
+        originVuelo="PAR"
+
+    destinationVuelo="BCN"
+    destinationCountry="Spain"
+    if str(destinationCit) == "Amsterdam":
+        destinationVuelo="AMS"
+        destinationCountry="Holland"
+    elif str(destinationCit) == "London":
+        destinationVuelo="LON"
+        destinationCountry="United Kingdom"
+    elif str(destinationCit) == "Roma":
+        destinationVuelo="ROM"
+        destinationCountry="Italy"
+    elif str(destinationCit) == "Prage":
+        destinationVuelo="PRG"
+        destinationCountry="Czech Republic"
+    elif str(destinationCit) == "Paris":
+        destinationVuelo="PAR"
+        destinationCountry="France"
+
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
 
@@ -235,7 +265,7 @@ def comunicacion():
     for s,p, o in actividadesInt:
         print o
         gactividades += buscar_actividades(destinationCity=destinationCit, 
-            destinationCountry= destinationCountr, types= [o])
+            destinationCountry= destinationCountry, types= [o])
 
     print "INFO AgentBuscador => Activities found"
     #VERBOSE
@@ -258,41 +288,12 @@ def comunicacion():
 
     print "INFO AgentBuscador => Looking for hotels (in AgentHotel)..."
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
-                                destinationCountry = destinationCountr,
+                                destinationCountry = destinationCountry,
                                arrivalDate = departureDat,
                                departureDate = returnDat,
                                propertyCategory = propertyCategor)
     
     # Buscamos vuelos
-
-
-    originVuelo="PRG"
-    # if originCit == "Barcelona":
-    #     originVuelo="BCN"
-    # elif originCit == "Amsterdam":
-    #     originVuelo="AMS"
-    # elif originCit == "London":
-    #     originVuelo="LON"
-    # elif originCit == "Roma":
-    #     originVuelo="ROM"
-    # elif originCit == "Praha":
-    #     originVuelo="PRG"
-    # elif originCit == "Paris":
-    #     originVuelo="PAR"
-
-    destinationVuelo="BCN"
-    # if destinationCit == "Barcelona":
-    #     destinationVuelo="BCN"
-    # elif destinationCit == "Amsterdam":
-    #     destinationVuelo="AMS"
-    # elif destinationCit == "London":
-    #     destinationVuelo="LON"
-    # elif destinationCit == "Roma":
-    #     destinationVuelo="ROM"
-    # elif destinationCit == "Praha":
-    #     destinationVuelo="PRG"
-    # elif destinationCit == "Paris":
-    #     destinationVuelo="PAR"
 
     print "INFO AgentBuscador => Looking for flights (in AgentFlightsGoogle)..."
     maxPric=gm.value(subject= busqueda, predicate= myns_par.maxPrice)
@@ -588,7 +589,7 @@ if __name__ == '__main__':
     ###########################################################################
     #buscar_actividades()
     # Ponemos en marcha el servidor
-    print "Preparing to run\n"
+    #buscar_vuelos()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

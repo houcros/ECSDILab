@@ -313,13 +313,13 @@ def agentbehavior1(cola):
 
 
 
-def message_dialogador(cityOrigin = "Barcelona, Spain", 
-    cityDestination = "Madrid, Spain",
+def message_dialogador(cityOrigin = "Barcelona", 
+    cityDestination = "London",
     departureDate = datetime.date(2015, 9, 8),
     returnDate = datetime.date(2015, 9, 20),
     maxPrice = 500,
     numberOfStars = 3,
-    activities = "Movie",
+    actividades = ["Movie", "Casino", "Theater"]
     ):
     #Preguntamos al usuario sus preferencias 
     print ('Welcome to Bestrip! The best trip search engine in the world!' + '\n')
@@ -346,14 +346,20 @@ def message_dialogador(cityOrigin = "Barcelona, Spain",
 
     peticion = myns_pet["Dialogador-pide-paquete"]
 
-    gmess.add((peticion, myns_atr.origin, Literal(cityOrigin)))
-    gmess.add((peticion, myns_atr.destination, Literal(cityDestination)))
+    gmess.add((peticion, myns_atr.originCity, Literal(cityOrigin)))
+    gmess.add((peticion, myns_atr.destinationCity, Literal(cityDestination)))
     gmess.add((peticion, myns_atr.departureDate, Literal(departureDate)))
     gmess.add((peticion, myns_atr.returnDate, Literal(returnDate)))
     gmess.add((peticion, myns_atr.maxPrice, Literal(maxPrice)))
-    gmess.add((peticion, myns_atr.numberOfStars, Literal(numberOfStars)))
+    gmess.add((peticion, myns_atr.propertyCategory, Literal(numberOfStars)))
     #for a in activities
-    gmess.add((peticion, myns_atr.activities, Literal(activities)))
+    i = 0
+    for a in actividades:
+                i+= 1
+                actv = "actividad" + str(i)
+                gmess.add((peticion, myns_atr.actividad, myns_act.actv))
+                gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
+
     #gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
 
     
@@ -382,6 +388,7 @@ if __name__ == '__main__':
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
+    message_dialogador()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

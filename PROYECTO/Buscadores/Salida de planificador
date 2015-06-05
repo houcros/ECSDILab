@@ -8,18 +8,13 @@ TYPE_MUSEUM = 'museum'
 TYPE_SPA = 'spa'
 TYPE_SHOPPING_MALL = 'shopping_mall'
 TYPE_ZOO = 'zoo'
-
-
 TYPE_MOVIE_THEATER = 'movie_theater'
+
+
+
 TYPE_NIGHT_CLUB = 'night_club'
 TYPE_BAR = 'bar'
-
-
-
-
-
-
-
+'casino'
 
 
 
@@ -57,7 +52,7 @@ El Vuelo:
 
 Actividades: sera una lista de dias
 
-en que cada dia tiene momento(mañana, tarde, noche):
+en que cada dia tiene momento(mañana, tarde, noche, comida, cena):
  cada momento tiene actividades:
 		-tipo
 		-adreça
