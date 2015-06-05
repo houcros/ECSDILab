@@ -14,7 +14,7 @@ acceso a las APIs de Google (GOOGLEAPI_KEY)
 @author: javier
 """
 __author__ = 'javier'
-
+import json
 import pprint
 from googleplaces import GooglePlaces
 from flask import Flask, request
@@ -30,7 +30,7 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 LOG_TAG = "DEBUG: AgenteActividades => "
 
-def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", keyword="movie", radius=20000, types=[]):
+def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", radius=20000, types=[]):
     location= destinationCity+", "+destinationCountry
     gr = Graph()
 
@@ -44,8 +44,19 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
 
         # You may prefer to use the text_search API, instead.
         query_result = google_places.nearby_search(
-            location=location, keyword=keyword,
+            location=location,
             radius=radius, types=types)
+        
+        print 
+
+        out_file = open("a.json","w")
+
+  # Save the dictionary into this file
+  # (the 'indent=4' is optional, but makes it more readable)
+        json.dump(query_result.raw_response,out_file, indent=4) 
+# Save the dictionary into this file
+# (the 'indent=4' is optional, but makes it more readable)
+
 
         print LOG_TAG + " => built query"
 
@@ -60,27 +71,37 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
         gr.bind('myns_pet', myns_pet)
         gr.bind('myns_atr', myns_atr)
         gr.bind('myns_act', myns_act)
-
         # TODO: ANADIR TIPO DE ACTIVIDAD PARA RECORRER EL GRAFO
+        print len(query_result.places)
         for place in query_result.places:
             # Identificador unico para cada actividad
             # Lo de -Found no se si hace falta en verdad...
             plc_obj = myns_act[place.place_id]
+
             # Ponemos el nombre y localizacion de la actividad
             gr.add((plc_obj, myns_atr.esUn, myns.actividad))
+            gr.add((plc_obj, myns_atr.tipo, Literal(types[0])))
             gr.add((plc_obj, myns_atr.nombre, Literal(place.name)))
             gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
             # Otra llamada a la API para los otros datos
             place.get_details()
+            
             gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
             gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
+            gr.add((plc_obj, myns_atr.Descripcion, Literal(place.details)))
+            
+            gr.add((plc_obj, myns_atr.googleUrl, Literal(place.url)))
+            gr.add((plc_obj, myns_atr.website, Literal(place.website)))
+
             gr.add((plc_obj, myns_atr.tel_int, Literal(place.international_phone_number)))
             
             # VERBOSE
             # Por si queremos mas detalles en el futuro
             #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
             #print place.local_phone_number
-        
+        guax = Graph()
+        guax.parse('a.rdf' ,format='xml')
+        gr += guax
         gr.serialize('a.rdf')
     else: 
         gr.parse('a.rdf' ,format='xml')

@@ -42,6 +42,7 @@ agn = Namespace("http://www.agentes.org#")
 myns = Namespace("http://my.namespace.org/")
 myns_data = Namespace("http://my.namespace.org/fechas/")
 myns_pet = Namespace("http://my.namespace.org/peticiones/")
+myns_par = Namespace("http://my.namespace.org/parametros/")
 myns_atr = Namespace("http://my.namespace.org/atributos/")
 myns_act = Namespace("http://my.namespace.org/actividades/")
 
@@ -140,7 +141,6 @@ def comunicacion():
             #############################################################
 
             destination = gm.value(subject= peticion, predicate= myns_atr.destination)
-            gmess.add((actv, myns_atr.lugar, destination))
             # VERBOSE
             print "destination: "
             print destination
@@ -176,7 +176,7 @@ def comunicacion():
             print numberOfStars
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
-            gmess.add((actv, myns_atr.actividad, activity))
+            
             # VERBOSE
             print "activity: "
             print activity
@@ -288,19 +288,15 @@ def comu():
 
     
     destination = "Madrid, Spain"
-    activity="Movie"
+    actividades= [types.TYPE_MOVIE_THEATER, types.TYPE_CASINO, types.TYPE_MUSEUM]
 
     radius = 20000
-
-    tipo = types.TYPE_MOVIE_THEATER 
-
-    originVuelo="BCN"
-    destinationVuelo="PRG"
 
     departureDate="2015-08-20"
     returnDate="2015-08-30"
     maxPrice=500
 
+    originCity="Amsterdam"
     destinationCity="Barcelona"
     destinationCountry="Spain" 
     searchRadius=2 
@@ -331,31 +327,37 @@ def comu():
     print "Añadir parametros de actividad"
     #############################################################
     # Paso los parametros de busqueda de actividad en el grafo
-    actv = myns_pet.actividad
-    gmess.add((actv, myns_atr.actividad, Literal(activity)))
-    gmess.add((actv, myns_atr.radio, Literal(radius)))
-    gmess.add((actv, myns_atr.tipo, Literal(tipo)))
+    busqueda = myns_pet.busqueda
+    i = 0
+    for a in actividades:
+        i+= 1
+        actv = "actividad" + str(i)
+        gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+        gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
+    
+    i+= 1
+    actv = "actividad" + str(i)
+    gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+    gmess.add((myns_act.actv, myns_atr.tipo, Literal('restaurant')))
     
     ########################################################### 
     # Comunicar con buscador
     print "Añadir parametros de vuelo"
     #############################################################
-    vuelo = myns_pet.vuelo
-    gmess.add((vuelo, myns_atr.originVuelo, Literal(originVuelo)))
-    gmess.add((vuelo, myns_atr.destinationVuelo, Literal(destinationVuelo)))
-    gmess.add((vuelo, myns_atr.departureDate, Literal(departureDate)))
-    gmess.add((vuelo, myns_atr.returnDate, Literal(returnDate)))          
-    gmess.add((vuelo, myns_atr.maxPrice, Literal(maxPrice))) 
+    
+    gmess.add((busqueda, myns_par.departureDate, Literal(departureDate)))
+    gmess.add((busqueda, myns_par.returnDate, Literal(returnDate)))          
+    gmess.add((busqueda, myns_par.maxPrice, Literal(maxPrice/3))) 
 
     ########################################################### 
     # Comunicar con buscador
     print "Añadir parametros de hotel"
     #############################################################
     hotel = myns_pet.hotel
-    gmess.add((hotel, myns_atr.destinationCity, Literal(destinationCity)))
-    gmess.add((hotel, myns_atr.destinationCountry, Literal(destinationCountry)))
-    gmess.add((hotel, myns_atr.searchRadius, Literal(searchRadius)))         
-    gmess.add((hotel, myns_atr.propertyCategory, Literal(propertyCategory))) 
+    gmess.add((busqueda, myns_par.originCity, Literal(originCity)))
+    gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))
+    gmess.add((busqueda, myns_par.destinationCountry, Literal(destinationCountry)))       
+    gmess.add((busqueda, myns_par.propertyCategory, Literal(propertyCategory))) 
 
     # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
     res_obj= agn['Planificador-pide-datos']
@@ -396,7 +398,7 @@ def comu():
 
     gvueloid = gvuelo.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a
+                SELECT DISTINCT ?a ?cuesta
                 WHERE{
                     ?a myns_atr:cuesta ?cuesta .
                     FILTER(str(?cuesta) != "")
@@ -406,10 +408,13 @@ def comu():
         """)
 
     Aid = []
-    for s in gvueloid:
+    cuestaVuelo = 0
+    for s, c in gvueloid:
         print s
         Aid.append(s)
+        cuestaVuelo = float(c[3:])
 
+    maxPrice -= cuestaVuelo
     grep += gvuelo.triples((Aid[0], None, None))
 
     ########################################################### 
@@ -421,20 +426,22 @@ def comu():
         ghotel += gr.triples((s, None, None) )
     ghotelid = ghotel.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a
+                SELECT DISTINCT ?a ?cuesta
                 WHERE{
                     ?a myns_atr:rating ?ratin .
                     ?a myns_atr:cuesta ?cuesta .
-                    FILTER(str(?ratin) != "")
-                    FILTER(str(?cuesta) != "")
+                    FILTER(str(?ratin) != "" && str(?cuesta) != "")
+                    
                 }
-                ORDER BY DESC(?ratin, ?cuesta)
+                ORDER BY DESC(?ratin) ?cuesta
                 LIMIT 1
         """)
     Aid = []
-    for s in ghotelid:
+    cuestaHotel = 0
+    for s, c in ghotelid:
         Aid.append(s)
-
+        cuestaHotel = float(c)
+    maxPrice -= cuestaHotel
     grep += ghotel.triples((Aid[0], None, None))
 
 
@@ -446,85 +453,115 @@ def comu():
     gactividad = Graph()       
     for s,p,o in gr.triples((None, myns_atr.esUn, myns.actividad)):
         gactividad += gr.triples((s, None, None) )
-    gact = gactividad.query("""
+
+    grestaurante = gactividad.query("""
                 PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                SELECT DISTINCT ?a ?ratin
+                SELECT DISTINCT ?a ?ratin ?tip
                 WHERE{
                     ?a myns_atr:rating ?ratin .
-                    FILTER(str(?ratin) != "")
+                    ?a myns_atr:tipo ?tip
+                    FILTER(?tip = "restaurant")
                 }
                 ORDER BY DESC(?ratin)
         """)
-
-    Acs = []
-    for s, s1 in gact:
-        Acs.append(s)
+    restaurant = []
+    for g, r, t in grestaurante:
+        restaurant.append(g)
+    
+    gnight = gactividad.query("""
+                PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                SELECT DISTINCT ?a ?ratin ?tip
+                WHERE{
+                    ?a myns_atr:rating ?ratin .
+                    ?a myns_atr:tipo ?tip
+                    FILTER
+                        (?tip = "night_club" || 
+                         ?tip = "bar" ||
+                         ?tip = "casino"
+                         )
+                }
+                ORDER BY DESC(?ratin)
+        """)
+    
+    night = []
+    for g, r, t in gnight:
+        night.append(g)
+    print len(night)
+    gday = gactividad.query("""
+                PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                SELECT DISTINCT ?a ?ratin ?tip
+                WHERE{
+                    ?a myns_atr:rating ?ratin .
+                    ?a myns_atr:tipo ?tip
+                }
+                ORDER BY DESC(?ratin)
+        """)
+    daylist = []
+    for g, r, t in gday:
+        daylist.append(g)
 
     ########################################################### 
     # Escoger Actividades
     print "Escoger Actividades"
     #############################################################   
     day = datetime.strptime(departureDate, '%Y-%m-%d')
-    contadorActividad = 0
+    cday = 0
+    cnight = 0
+    cres = 0
     rd = datetime.strptime(returnDate, '%Y-%m-%d')
+
     while day <= rd:
        # cada dia
         grfdata = myns_data.day
         
-        if contadorActividad > (len(Acs)-3) :
-            contadorActividad = 0
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades1" 
-        print Acs[contadorActividad]
-        #############################################################
         # manana
-        grep.add((grfdata, myns_data.actividades, Acs[contadorActividad]))
-        ########################################################### 
-        # Escoger Actividades
-        print "Actividades1 Anadido"
-        #############################################################                
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns.manana))
+        grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))
 
-        grep += gactividad.triples((Acs[contadorActividad], None, None))
+
+        grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
         
-        ########################################################### 
-        # Escoger Actividades
-        print "Actividades1 por manana"
-        #############################################################
-        contadorActividad += 1;
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades2"
-        #############################################################
-        # tarde
-        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns.tarde))
-        grep += gactividad.triples((Acs[contadorActividad], None, None))
-        contadorActividad += 1;
-        ########################################################### 
-        # Escoger Actividades
-        print "Escoger Actividades3"
-        #############################################################
+        cday += 1;
+
+
+        grep.add((grfdata, myns_data.tarde, daylist[cday%len(daylist)]))
+
+        grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
+        
+        cday += 1;
+
+        # comida
+        grep.add((grfdata, myns_data.comida, restaurant[cres%len(restaurant)]))
+
+        grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
+        
+        cres += 1;       
+        # cena
+
+        grep.add((grfdata, myns_data.cena, restaurant[cres%len(restaurant)]))
+
+        grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
+        
+        cres += 1;       
         # noche
-        grep.add((grfdata,myns_data.actividades, Acs[contadorActividad]))
-        grep.add((Acs[contadorActividad], myns_atr.momento, myns.noche))
-        grep += gactividad.triples((Acs[contadorActividad], None, None))
-        contadorActividad += 1;
+        if len(night) != 0:
+            grep.add((grfdata, myns_data.noche, night[cnight%len(night)]))
+
+            grep += gactividad.triples((night[cnight%len(night)], None, None))
+            
+            cnight += 1;
 
         day = day + timedelta(days=1)
 
-        print departureDate
 
     ########################################################### 
     # Construir mensage de repuesta
     print "Construir mensage de repuesta"
     #############################################################
-    for s, p, o in grep:
-        print 's: ' + s
-        print 'p: ' + p
-        print 'o: ' + o.encode('utf-8')
-        print '\n'
+    # for s, p, o in grep:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o.encode('utf-8')
+    #     print '\n'
     
     mss_cnt += 1
 
@@ -606,8 +643,8 @@ if __name__ == '__main__':
     # VERBOSE
     # Descomentar para un print "pretty" del grafo de respuesta
     # print json.dumps(gr.json(), indent=4, sort_keys=True)
-    grep = comu()
-
+    #grep = comu()
+    comu()
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
 

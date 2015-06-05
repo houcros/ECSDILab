@@ -1,5 +1,28 @@
-El hotel:
-precio total
+
+TYPE_AQUARIUM = 'aquarium'
+TYPE_ART_GALLERY = 'art_gallery'
+TYPE_BOWLING_ALLEY = 'bowling_alley'
+TYPE_CHURCH = 'church'
+TYPE_PARK = 'park'
+TYPE_MUSEUM = 'museum'
+TYPE_SPA = 'spa'
+TYPE_SHOPPING_MALL = 'shopping_mall'
+TYPE_ZOO = 'zoo'
+
+
+TYPE_MOVIE_THEATER = 'movie_theater'
+TYPE_NIGHT_CLUB = 'night_club'
+TYPE_BAR = 'bar'
+
+
+
+
+
+
+
+
+
+
 
 El Vuelo:
 
@@ -32,14 +55,20 @@ El Vuelo:
 
 
 
-Actividades: sera una lista
-en que cada actividad:
-		-momento(mañana, tarde, noche)
+Actividades: sera una lista de dias
+
+en que cada dia tiene momento(mañana, tarde, noche):
+ cada momento tiene actividades:
 		-tipo
 		-adreça
 		-telefono
 		-rating
-		-precio
+		-precio (es un string)
+                -nombre
+                -Descripcion
+                -googleUrl
+                -website
+                -tel_int
 
 
 Hotel:
