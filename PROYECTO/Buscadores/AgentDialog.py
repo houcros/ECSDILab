@@ -334,12 +334,12 @@ def message_dialogador(cityOrigin = "Barcelona, Spain",
 
     peticion = myns_pet["Dialogador-pide-paquete"]
 
-    gmess.add((peticion, myns_atr.origin, Literal(cityOrigin)))
-    gmess.add((peticion, myns_atr.destination, Literal(cityDestination)))
+    gmess.add((peticion, myns_atr.originCity, Literal(cityOrigin)))
+    gmess.add((peticion, myns_atr.destinationCity, Literal(cityDestination)))
     gmess.add((peticion, myns_atr.departureDate, Literal(departureDate)))
     gmess.add((peticion, myns_atr.returnDate, Literal(returnDate)))
     gmess.add((peticion, myns_atr.maxPrice, Literal(maxPrice)))
-    gmess.add((peticion, myns_atr.numberOfStars, Literal(numberOfStars)))
+    gmess.add((peticion, myns_atr.propertyCategory, Literal(numberOfStars)))
     #for a in activities
     gmess.add((peticion, myns_atr.activities, Literal(activities)))
     #gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
@@ -370,6 +370,7 @@ if __name__ == '__main__':
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
+    message_dialogador()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

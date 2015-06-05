@@ -3,47 +3,183 @@
    xmlns:myns_atr="http://my.namespace.org/atributos/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1059 QS">
-    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
-    <myns_atr:hora_llega>2015-08-31T00:40+02:00</myns_atr:hora_llega>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</myns_atr:dura>
-    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
-    <myns_atr:hora_sale>2015-08-30T22:05+02:00</myns_atr:hora_sale>
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
-    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8689 QS">
-    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
-    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
-    <myns_atr:hora_sale>2015-08-30T14:35+02:00</myns_atr:hora_sale>
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
-    <myns_atr:hora_llega>2015-08-30T17:00+02:00</myns_atr:hora_llega>
-    <myns_atr:ciudad_llega>PRG</myns_atr:ciudad_llega>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</myns_atr:dura>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1058 QS">
-    <myns_atr:ciudad_sale>PRG</myns_atr:ciudad_sale>
-    <myns_atr:terminal_llega>2</myns_atr:terminal_llega>
-    <myns_atr:hora_llega>2015-08-20T13:55+02:00</myns_atr:hora_llega>
-    <myns_atr:airportLlegada>Prague Ruzyne</myns_atr:airportLlegada>
-    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
-    <myns_atr:airportSalida>Prague Ruzyne</myns_atr:airportSalida>
-    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5657 IB">
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
     <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
-    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</myns_atr:dura>
-    <myns_atr:hora_sale>2015-08-20T11:20+02:00</myns_atr:hora_sale>
-    <myns_atr:terminal_sale>2</myns_atr:terminal_sale>
+    <myns_atr:hora_llega>2015-08-20T23:50+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>3</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:hora_sale>2015-08-20T21:35+02:00</myns_atr:hora_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
   </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/dAcb6074W51Tou19N45kxP001">
-    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1058 QS"/>
-    <myns_atr:cuesta>CZK3997</myns_atr:cuesta>
-    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8689 QS"/>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8305 VY">
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>unknown</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:hora_sale>2015-08-20T21:35+02:00</myns_atr:hora_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:hora_llega>2015-08-20T23:50+02:00</myns_atr:hora_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5771 IB">
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:hora_llega>2015-08-20T20:50+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:hora_sale>2015-08-20T18:35+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_sale>3</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N005">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5772 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5771 IB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8318 VY">
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:terminal_sale>unknown</myns_atr:terminal_sale>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:hora_sale>2015-08-20T07:00+02:00</myns_atr:hora_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:hora_llega>2015-08-20T09:15+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1676 KL">
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:hora_llega>2015-08-30T22:10+02:00</myns_atr:hora_llega>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:terminal_llega>unknown</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:hora_sale>2015-08-30T19:55+02:00</myns_atr:hora_sale>
+    <myns_atr:ciudad_llega>AMS</myns_atr:ciudad_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8301 VY">
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_sale>unknown</myns_atr:terminal_sale>
+    <myns_atr:hora_sale>2015-08-20T10:00+02:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-08-20T12:15+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5861 IB">
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:terminal_sale>3</myns_atr:terminal_sale>
+    <myns_atr:hora_sale>2015-08-20T07:00+02:00</myns_atr:hora_sale>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:hora_llega>2015-08-20T09:15+02:00</myns_atr:hora_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N008">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8301 VY"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8300 VY"/>
+    <myns_atr:cuesta>EUR161.23</myns_atr:cuesta>
     <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/dAcb6074W51Tou19N45kxP002">
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8300 VY">
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:terminal_llega>unknown</myns_atr:terminal_llega>
+    <myns_atr:hora_sale>2015-08-30T07:10+02:00</myns_atr:hora_sale>
+    <myns_atr:hora_llega>2015-08-30T09:20+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>AMS</myns_atr:ciudad_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N004">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5657 IB"/>
     <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
-    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1058 QS"/>
-    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/1059 QS"/>
-    <myns_atr:cuesta>CZK3997</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5772 IB"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/1675 KL">
+    <myns_atr:terminal_sale>unknown</myns_atr:terminal_sale>
+    <myns_atr:hora_sale>2015-08-20T16:55+02:00</myns_atr:hora_sale>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:hora_llega>2015-08-20T19:05+02:00</myns_atr:hora_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N007">
+    <myns_atr:cuesta>EUR158.73</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/1675 KL"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/1676 KL"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N002">
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8305 VY"/>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8300 VY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N001">
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8300 VY"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8323 VY"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/8323 VY">
+    <myns_atr:airportSalida>Barcelona</myns_atr:airportSalida>
+    <myns_atr:hora_llega>2015-08-20T20:50+02:00</myns_atr:hora_llega>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</myns_atr:dura>
+    <myns_atr:airportLlegada>Barcelona</myns_atr:airportLlegada>
+    <myns_atr:airportSalida>Amsterdam Schiphol Airport</myns_atr:airportSalida>
+    <myns_atr:hora_sale>2015-08-20T18:35+02:00</myns_atr:hora_sale>
+    <myns_atr:airportLlegada>Amsterdam Schiphol Airport</myns_atr:airportLlegada>
+    <myns_atr:terminal_sale>unknown</myns_atr:terminal_sale>
+    <myns_atr:ciudad_llega>BCN</myns_atr:ciudad_llega>
+    <myns_atr:ciudad_sale>AMS</myns_atr:ciudad_sale>
+    <myns_atr:terminal_llega>1</myns_atr:terminal_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/vuelos/5772 IB">
+    <myns_atr:terminal_llega>3</myns_atr:terminal_llega>
+    <myns_atr:ciudad_sale>BCN</myns_atr:ciudad_sale>
+    <myns_atr:hora_sale>2015-08-30T07:10+02:00</myns_atr:hora_sale>
+    <myns_atr:dura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</myns_atr:dura>
+    <myns_atr:terminal_sale>1</myns_atr:terminal_sale>
+    <myns_atr:hora_llega>2015-08-30T09:20+02:00</myns_atr:hora_llega>
+    <myns_atr:ciudad_llega>AMS</myns_atr:ciudad_llega>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N003">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/8318 VY"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/8300 VY"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.namespace.org/roundtrips/X6CxucnJCuRTyy8QKOCN8N006">
+    <myns_atr:ida rdf:resource="http://my.namespace.org/vuelos/5861 IB"/>
+    <myns_atr:cuesta>EUR151.23</myns_atr:cuesta>
+    <myns_atr:vuelta rdf:resource="http://my.namespace.org/vuelos/5772 IB"/>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/viaje"/>
   </rdf:Description>
 </rdf:RDF>

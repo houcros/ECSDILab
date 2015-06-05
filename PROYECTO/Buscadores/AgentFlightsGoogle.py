@@ -170,6 +170,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         Goairname = dic['trips']['data']['airport'][Gonameid]['name']
 
         destinationid = trip['slice'][0]['segment'][0]['leg'][0]['destination']
+        
         #este puede ser code
         
         Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(destinationid)

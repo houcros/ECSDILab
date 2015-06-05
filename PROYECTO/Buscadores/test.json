@@ -3,148 +3,147 @@
     "trips": {
         "tripOption": [
             {
-                "saleTotal": "CZK3997", 
+                "saleTotal": "EUR151.23", 
                 "kind": "qpxexpress#tripOption", 
                 "slice": [
                     {
-                        "duration": 155, 
+                        "duration": 135, 
                         "kind": "qpxexpress#sliceInfo", 
                         "segment": [
                             {
                                 "kind": "qpxexpress#segmentInfo", 
                                 "bookingCodeCount": 9, 
                                 "flight": {
-                                    "carrier": "QS", 
-                                    "number": "1058"
+                                    "carrier": "VY", 
+                                    "number": "8323"
                                 }, 
                                 "leg": [
                                     {
-                                        "origin": "PRG", 
-                                        "originTerminal": "2", 
-                                        "departureTime": "2015-08-20T11:20+02:00", 
-                                        "destinationTerminal": "2", 
+                                        "origin": "AMS", 
+                                        "departureTime": "2015-08-20T18:35+02:00", 
+                                        "destinationTerminal": "1", 
                                         "destination": "BCN", 
                                         "kind": "qpxexpress#legInfo", 
                                         "meal": "Food and Beverages for Purchase", 
-                                        "aircraft": "738", 
-                                        "mileage": 843, 
-                                        "arrivalTime": "2015-08-20T13:55+02:00", 
-                                        "duration": 155, 
-                                        "id": "LowLXi-P5M-9x5R4"
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T20:50+02:00", 
+                                        "duration": 135, 
+                                        "id": "L5uP+DKkwC6RQXU1"
                                     }
                                 ], 
-                                "bookingCode": "J", 
-                                "duration": 155, 
-                                "id": "G4DhfIQjNwn0WVGK", 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "G1Kzz7Ku7uK59+zU", 
                                 "cabin": "COACH", 
                                 "marriedSegmentGroup": "0"
                             }
                         ]
                     }, 
                     {
-                        "duration": 145, 
+                        "duration": 130, 
                         "kind": "qpxexpress#sliceInfo", 
                         "segment": [
                             {
                                 "kind": "qpxexpress#segmentInfo", 
                                 "bookingCodeCount": 9, 
                                 "flight": {
-                                    "carrier": "QS", 
-                                    "number": "8689"
+                                    "carrier": "VY", 
+                                    "number": "8300"
                                 }, 
                                 "leg": [
                                     {
                                         "origin": "BCN", 
                                         "originTerminal": "1", 
-                                        "departureTime": "2015-08-30T14:35+02:00", 
-                                        "destinationTerminal": "2", 
-                                        "destination": "PRG", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "mileage": 770, 
+                                        "destination": "AMS", 
                                         "kind": "qpxexpress#legInfo", 
-                                        "meal": "Snack or Brunch", 
-                                        "aircraft": "319", 
-                                        "mileage": 843, 
-                                        "arrivalTime": "2015-08-30T17:00+02:00", 
-                                        "duration": 145, 
-                                        "operatingDisclosure": "OPERATED BY CZECH AIRLINES", 
-                                        "id": "Lio7Rt-xMDlTV32e"
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "id": "LJ-UhqBkrfpfg2s8"
                                     }
                                 ], 
-                                "bookingCode": "J", 
-                                "duration": 145, 
-                                "id": "G386y-gMXk6OYJiG", 
+                                "bookingCode": "W", 
+                                "duration": 130, 
+                                "id": "GyJM2cfV5nXOHB22", 
                                 "cabin": "COACH", 
                                 "marriedSegmentGroup": "1"
                             }
                         ]
                     }
                 ], 
-                "id": "dAcb6074W51Tou19N45kxP001", 
+                "id": "X6CxucnJCuRTyy8QKOCN8N001", 
                 "pricing": [
                     {
                         "fare": [
                             {
-                                "origin": "PRG", 
-                                "basisCode": "JQS", 
+                                "origin": "AMS", 
+                                "basisCode": "PRTVY", 
                                 "kind": "qpxexpress#fareInfo", 
                                 "destination": "BCN", 
-                                "carrier": "QS", 
-                                "id": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA"
+                                "carrier": "VY", 
+                                "id": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg"
                             }, 
                             {
                                 "origin": "BCN", 
-                                "basisCode": "JQS", 
+                                "basisCode": "WRTVY", 
                                 "kind": "qpxexpress#fareInfo", 
-                                "destination": "PRG", 
-                                "carrier": "QS", 
-                                "id": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA"
+                                "destination": "AMS", 
+                                "carrier": "VY", 
+                                "id": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k"
                             }
                         ], 
-                        "saleTotal": "CZK3997", 
+                        "saleTotal": "EUR151.23", 
                         "kind": "qpxexpress#pricingInfo", 
                         "segmentPricing": [
                             {
                                 "kind": "qpxexpress#segmentPricing", 
-                                "fareId": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA", 
+                                "fareId": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k", 
                                 "freeBaggageOption": [
                                     {
                                         "kind": "qpxexpress#freeBaggageAllowance", 
                                         "bagDescriptor": [
                                             {
                                                 "count": 1, 
-                                                "subcode": "0C1", 
+                                                "subcode": "0GO", 
                                                 "kind": "qpxexpress#bagDescriptor", 
-                                                "commercialName": "UPTO33LB 15KG BAGGAGE", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
                                                 "description": [
-                                                    "Up to 33 lb/15 kg"
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
                                                 ]
                                             }
                                         ], 
-                                        "kilos": 15
+                                        "pieces": 1
                                     }
                                 ], 
-                                "segmentId": "G386y-gMXk6OYJiG"
+                                "segmentId": "GyJM2cfV5nXOHB22"
                             }, 
                             {
                                 "kind": "qpxexpress#segmentPricing", 
-                                "fareId": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA", 
+                                "fareId": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg", 
                                 "freeBaggageOption": [
                                     {
                                         "kind": "qpxexpress#freeBaggageAllowance", 
                                         "bagDescriptor": [
                                             {
                                                 "count": 1, 
-                                                "subcode": "0C1", 
+                                                "subcode": "0GO", 
                                                 "kind": "qpxexpress#bagDescriptor", 
-                                                "commercialName": "UPTO33LB 15KG BAGGAGE", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
                                                 "description": [
-                                                    "Up to 33 lb/15 kg"
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
                                                 ]
                                             }
                                         ], 
-                                        "kilos": 15
+                                        "pieces": 1
                                     }
                                 ], 
-                                "segmentId": "G4DhfIQjNwn0WVGK"
+                                "segmentId": "G1Kzz7Ku7uK59+zU"
                             }
                         ], 
                         "passengers": {
@@ -155,24 +154,32 @@
                         "tax": [
                             {
                                 "kind": "qpxexpress#taxInfo", 
-                                "code": "YQ", 
-                                "id": "YQ_F", 
-                                "chargeType": "CARRIER_SURCHARGE", 
-                                "salePrice": "CZK2364"
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
                             }, 
                             {
                                 "kind": "qpxexpress#taxInfo", 
-                                "code": "CZ", 
-                                "country": "CZ", 
-                                "salePrice": "CZK591", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
                                 "chargeType": "GOVERNMENT", 
-                                "id": "CZ_001"
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
                             }, 
                             {
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "JD", 
                                 "country": "ES", 
-                                "salePrice": "CZK422", 
+                                "salePrice": "EUR15.32", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "JD_001"
                             }, 
@@ -180,7 +187,7 @@
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "QV", 
                                 "country": "ES", 
-                                "salePrice": "CZK104", 
+                                "salePrice": "EUR3.78", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "QV_001"
                             }, 
@@ -188,161 +195,239 @@
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "OG", 
                                 "country": "ES", 
-                                "salePrice": "CZK16", 
+                                "salePrice": "EUR0.58", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "OG_001"
                             }
                         ], 
-                        "fareCalculation": "PRG QS BCN 10.01JQS QS PRG 10.01JQS NUC 20.02 END ROE 24.96870 FARE CZK 500 XT 591CZ 422JD 16OG 104QV 2364YQ", 
-                        "saleFareTotal": "CZK500", 
-                        "baseFareTotal": "CZK500", 
-                        "saleTaxTotal": "CZK3497", 
-                        "latestTicketingTime": "2015-06-06T18:13-04:00"
+                        "fareCalculation": "AMS VY BCN 19.15PRTVY VY AMS 62.95WRTVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
                     }
                 ]
             }, 
             {
-                "saleTotal": "CZK3997", 
+                "saleTotal": "EUR151.23", 
                 "kind": "qpxexpress#tripOption", 
                 "slice": [
                     {
-                        "duration": 155, 
+                        "duration": 135, 
                         "kind": "qpxexpress#sliceInfo", 
                         "segment": [
                             {
                                 "kind": "qpxexpress#segmentInfo", 
-                                "bookingCodeCount": 9, 
+                                "bookingCodeCount": 4, 
                                 "flight": {
-                                    "carrier": "QS", 
-                                    "number": "1058"
+                                    "carrier": "IB", 
+                                    "number": "5657"
                                 }, 
                                 "leg": [
                                     {
-                                        "origin": "PRG", 
-                                        "originTerminal": "2", 
-                                        "departureTime": "2015-08-20T11:20+02:00", 
-                                        "destinationTerminal": "2", 
+                                        "origin": "AMS", 
+                                        "originTerminal": "3", 
+                                        "departureTime": "2015-08-20T21:35+02:00", 
+                                        "destinationTerminal": "1", 
                                         "destination": "BCN", 
                                         "kind": "qpxexpress#legInfo", 
                                         "meal": "Food and Beverages for Purchase", 
-                                        "aircraft": "738", 
-                                        "mileage": 843, 
-                                        "arrivalTime": "2015-08-20T13:55+02:00", 
-                                        "duration": 155, 
-                                        "id": "LowLXi-P5M-9x5R4"
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T23:50+02:00", 
+                                        "duration": 135, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LBxNz35k22F2AvT+"
                                     }
                                 ], 
-                                "bookingCode": "J", 
-                                "duration": 155, 
-                                "id": "G4DhfIQjNwn0WVGK", 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "GWDOyHJ0Twxz9lu-", 
                                 "cabin": "COACH", 
                                 "marriedSegmentGroup": "0"
                             }
                         ]
                     }, 
                     {
-                        "duration": 155, 
+                        "duration": 130, 
                         "kind": "qpxexpress#sliceInfo", 
                         "segment": [
                             {
                                 "kind": "qpxexpress#segmentInfo", 
-                                "bookingCodeCount": 9, 
+                                "bookingCodeCount": 4, 
                                 "flight": {
-                                    "carrier": "QS", 
-                                    "number": "1059"
+                                    "carrier": "IB", 
+                                    "number": "5772"
                                 }, 
                                 "leg": [
                                     {
                                         "origin": "BCN", 
-                                        "originTerminal": "2", 
-                                        "departureTime": "2015-08-30T22:05+02:00", 
-                                        "destinationTerminal": "2", 
-                                        "destination": "PRG", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "destinationTerminal": "3", 
+                                        "destination": "AMS", 
                                         "kind": "qpxexpress#legInfo", 
                                         "meal": "Food and Beverages for Purchase", 
-                                        "aircraft": "738", 
-                                        "mileage": 843, 
-                                        "arrivalTime": "2015-08-31T00:40+02:00", 
-                                        "duration": 155, 
-                                        "id": "LNjAOQ21nJuucGRM"
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LhIBj4ol2SHxmSS8"
                                     }
                                 ], 
-                                "bookingCode": "J", 
-                                "duration": 155, 
-                                "id": "GiSrmekBwv0vUktq", 
+                                "bookingCode": "Q", 
+                                "duration": 130, 
+                                "id": "Gt7ys9SrNypaxhZ8", 
                                 "cabin": "COACH", 
                                 "marriedSegmentGroup": "1"
                             }
                         ]
                     }
                 ], 
-                "id": "dAcb6074W51Tou19N45kxP002", 
+                "id": "X6CxucnJCuRTyy8QKOCN8N004", 
                 "pricing": [
                     {
                         "fare": [
                             {
-                                "origin": "PRG", 
-                                "basisCode": "JQS", 
+                                "origin": "AMS", 
+                                "basisCode": "PRTNVY", 
                                 "kind": "qpxexpress#fareInfo", 
                                 "destination": "BCN", 
-                                "carrier": "QS", 
-                                "id": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA"
+                                "carrier": "IB", 
+                                "id": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/"
                             }, 
                             {
                                 "origin": "BCN", 
-                                "basisCode": "JQS", 
+                                "basisCode": "QRTNVY", 
                                 "kind": "qpxexpress#fareInfo", 
-                                "destination": "PRG", 
-                                "carrier": "QS", 
-                                "id": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA"
+                                "destination": "AMS", 
+                                "carrier": "IB", 
+                                "id": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2"
                             }
                         ], 
-                        "saleTotal": "CZK3997", 
+                        "saleTotal": "EUR151.23", 
                         "kind": "qpxexpress#pricingInfo", 
                         "segmentPricing": [
                             {
                                 "kind": "qpxexpress#segmentPricing", 
-                                "fareId": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA", 
+                                "fareId": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/", 
                                 "freeBaggageOption": [
                                     {
                                         "kind": "qpxexpress#freeBaggageAllowance", 
                                         "bagDescriptor": [
                                             {
                                                 "count": 1, 
-                                                "subcode": "0C1", 
+                                                "subcode": "0GO", 
                                                 "kind": "qpxexpress#bagDescriptor", 
-                                                "commercialName": "UPTO33LB 15KG BAGGAGE", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
                                                 "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
                                                     "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
                                                 ]
                                             }
                                         ], 
-                                        "kilos": 15
+                                        "pieces": 1
                                     }
                                 ], 
-                                "segmentId": "GiSrmekBwv0vUktq"
+                                "segmentId": "GWDOyHJ0Twxz9lu-"
                             }, 
                             {
                                 "kind": "qpxexpress#segmentPricing", 
-                                "fareId": "AXEtXU7qZN80Fou3i2t8B9TsoBKBGlvrmO1wdvfA", 
+                                "fareId": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2", 
                                 "freeBaggageOption": [
                                     {
                                         "kind": "qpxexpress#freeBaggageAllowance", 
                                         "bagDescriptor": [
                                             {
                                                 "count": 1, 
-                                                "subcode": "0C1", 
+                                                "subcode": "0GO", 
                                                 "kind": "qpxexpress#bagDescriptor", 
-                                                "commercialName": "UPTO33LB 15KG BAGGAGE", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
                                                 "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
                                                     "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
                                                 ]
                                             }
                                         ], 
-                                        "kilos": 15
+                                        "pieces": 1
                                     }
                                 ], 
-                                "segmentId": "G4DhfIQjNwn0WVGK"
+                                "segmentId": "Gt7ys9SrNypaxhZ8"
                             }
                         ], 
                         "passengers": {
@@ -353,24 +438,32 @@
                         "tax": [
                             {
                                 "kind": "qpxexpress#taxInfo", 
-                                "code": "YQ", 
-                                "id": "YQ_F", 
-                                "chargeType": "CARRIER_SURCHARGE", 
-                                "salePrice": "CZK2364"
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
                             }, 
                             {
                                 "kind": "qpxexpress#taxInfo", 
-                                "code": "CZ", 
-                                "country": "CZ", 
-                                "salePrice": "CZK591", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
                                 "chargeType": "GOVERNMENT", 
-                                "id": "CZ_001"
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
                             }, 
                             {
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "JD", 
                                 "country": "ES", 
-                                "salePrice": "CZK422", 
+                                "salePrice": "EUR15.32", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "JD_001"
                             }, 
@@ -378,7 +471,7 @@
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "QV", 
                                 "country": "ES", 
-                                "salePrice": "CZK104", 
+                                "salePrice": "EUR3.78", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "QV_001"
                             }, 
@@ -386,16 +479,1392 @@
                                 "kind": "qpxexpress#taxInfo", 
                                 "code": "OG", 
                                 "country": "ES", 
-                                "salePrice": "CZK16", 
+                                "salePrice": "EUR0.58", 
                                 "chargeType": "GOVERNMENT", 
                                 "id": "OG_001"
                             }
                         ], 
-                        "fareCalculation": "PRG QS BCN 10.01JQS QS PRG 10.01JQS NUC 20.02 END ROE 24.96870 FARE CZK 500 XT 591CZ 422JD 16OG 104QV 2364YQ", 
-                        "saleFareTotal": "CZK500", 
-                        "baseFareTotal": "CZK500", 
-                        "saleTaxTotal": "CZK3497", 
-                        "latestTicketingTime": "2015-06-06T18:13-04:00"
+                        "fareCalculation": "AMS IB BCN 19.15PRTNVY IB AMS 62.95QRTNVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR151.23", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8318"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "departureTime": "2015-08-20T07:00+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T09:15+02:00", 
+                                        "duration": 135, 
+                                        "id": "Lpkcwr5g+UkOC+DH"
+                                    }
+                                ], 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "GEZvmOaMyeUs+UjQ", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8300"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "mileage": 770, 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "id": "LJ-UhqBkrfpfg2s8"
+                                    }
+                                ], 
+                                "bookingCode": "W", 
+                                "duration": 130, 
+                                "id": "GyJM2cfV5nXOHB22", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N003", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "PRTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "VY", 
+                                "id": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "WRTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "VY", 
+                                "id": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k"
+                            }
+                        ], 
+                        "saleTotal": "EUR151.23", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GEZvmOaMyeUs+UjQ"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GyJM2cfV5nXOHB22"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS VY BCN 19.15PRTVY VY AMS 62.95WRTVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR151.23", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8305"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "departureTime": "2015-08-20T21:35+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T23:50+02:00", 
+                                        "duration": 135, 
+                                        "id": "Lq-esmivigDr3VoU"
+                                    }
+                                ], 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "GdU7RI6Gc+LnJGCW", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8300"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "mileage": 770, 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "id": "LJ-UhqBkrfpfg2s8"
+                                    }
+                                ], 
+                                "bookingCode": "W", 
+                                "duration": 130, 
+                                "id": "GyJM2cfV5nXOHB22", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N002", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "PRTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "VY", 
+                                "id": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "WRTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "VY", 
+                                "id": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k"
+                            }
+                        ], 
+                        "saleTotal": "EUR151.23", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A+LaX8SZo8FNtBI3XsVS3K4+FpxdViHek/rc9iP1mwHg", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GdU7RI6Gc+LnJGCW"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GyJM2cfV5nXOHB22"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS VY BCN 19.15PRTVY VY AMS 62.95WRTVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR151.23", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "flight": {
+                                    "carrier": "IB", 
+                                    "number": "5861"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "originTerminal": "3", 
+                                        "departureTime": "2015-08-20T07:00+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T09:15+02:00", 
+                                        "duration": 135, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LSuWWn7ggTfyKyjJ"
+                                    }
+                                ], 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "GHmSnlkAPMJWWmIB", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "flight": {
+                                    "carrier": "IB", 
+                                    "number": "5772"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "destinationTerminal": "3", 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LhIBj4ol2SHxmSS8"
+                                    }
+                                ], 
+                                "bookingCode": "Q", 
+                                "duration": 130, 
+                                "id": "Gt7ys9SrNypaxhZ8", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N006", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "PRTNVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "IB", 
+                                "id": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "QRTNVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "IB", 
+                                "id": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2"
+                            }
+                        ], 
+                        "saleTotal": "EUR151.23", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
+                                                    "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "Gt7ys9SrNypaxhZ8"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
+                                                    "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GHmSnlkAPMJWWmIB"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS IB BCN 19.15PRTNVY IB AMS 62.95QRTNVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR151.23", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "flight": {
+                                    "carrier": "IB", 
+                                    "number": "5771"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "originTerminal": "3", 
+                                        "departureTime": "2015-08-20T18:35+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T20:50+02:00", 
+                                        "duration": 135, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LPM194DxpXfEyZ+z"
+                                    }
+                                ], 
+                                "bookingCode": "P", 
+                                "duration": 135, 
+                                "id": "GwfaZl1awAdH52Eu", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "flight": {
+                                    "carrier": "IB", 
+                                    "number": "5772"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "destinationTerminal": "3", 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "operatingDisclosure": "OPERATED BY VUELING AIRLINES", 
+                                        "id": "LhIBj4ol2SHxmSS8"
+                                    }
+                                ], 
+                                "bookingCode": "Q", 
+                                "duration": 130, 
+                                "id": "Gt7ys9SrNypaxhZ8", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N005", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "PRTNVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "IB", 
+                                "id": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "QRTNVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "IB", 
+                                "id": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2"
+                            }
+                        ], 
+                        "saleTotal": "EUR151.23", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A6yGjH3FSuqKtCR/MdcAb9Fx24RGoRT6zlEi3PpYm70/", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
+                                                    "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GwfaZl1awAdH52Eu"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "A8LECPPL7js/xnRjOhnALp9B5/W5qo/motTKZqXcTWI2", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UP TO 23 KG AND 158 LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "GOLF EQUIPMENT UP TO 15 KG", 
+                                                "description": [
+                                                    "Golf Equipment", 
+                                                    "Up to 33 lb/15 kg"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0DD", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SKI SNOW", 
+                                                "description": [
+                                                    "Ski Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0D6", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "FISHING EQUIPMENT", 
+                                                "description": [
+                                                    "Fishing Equipment"
+                                                ]
+                                            }, 
+                                            {
+                                                "count": 0, 
+                                                "subcode": "0F4", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "STROLLER OR PUSHCHAIR", 
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "Gt7ys9SrNypaxhZ8"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS IB BCN 19.15PRTNVY IB AMS 62.95QRTNVY NUC 82.10 END ROE 0.913391 FARE EUR 75.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR75.00", 
+                        "baseFareTotal": "EUR75.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR158.73", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "KL", 
+                                    "number": "1675"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "departureTime": "2015-08-20T16:55+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Snack or Brunch", 
+                                        "aircraft": "73J", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T19:05+02:00", 
+                                        "duration": 130, 
+                                        "id": "LeOlBDli+dK-Yqr6"
+                                    }
+                                ], 
+                                "bookingCode": "V", 
+                                "duration": 130, 
+                                "id": "GA4l5Rt2dG80x1z6", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "KL", 
+                                    "number": "1676"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T19:55+02:00", 
+                                        "mileage": 770, 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Snack or Brunch", 
+                                        "aircraft": "73J", 
+                                        "arrivalTime": "2015-08-30T22:10+02:00", 
+                                        "duration": 135, 
+                                        "id": "LQclbllRSKtg8ov1"
+                                    }
+                                ], 
+                                "bookingCode": "N", 
+                                "duration": 135, 
+                                "id": "GdJfIOKqqDcmzX5y", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N007", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "VSRNL", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "KL", 
+                                "id": "AhOeBy1UfpUdsI8pOUS2hfdi/7G6BGBZ0JxruIMS8nSA"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "NSRNL", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "KL", 
+                                "id": "AubaDXlSOHITpw44mVrRfdUiXi49GaFTgUNjKnn1XSgQ"
+                            }
+                        ], 
+                        "saleTotal": "EUR158.73", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "AhOeBy1UfpUdsI8pOUS2hfdi/7G6BGBZ0JxruIMS8nSA", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "pieces": 0
+                                    }
+                                ], 
+                                "segmentId": "GA4l5Rt2dG80x1z6"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "AubaDXlSOHITpw44mVrRfdUiXi49GaFTgUNjKnn1XSgQ", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "pieces": 0
+                                    }
+                                ], 
+                                "segmentId": "GdJfIOKqqDcmzX5y"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "VV", 
+                                "country": "NL", 
+                                "salePrice": "EUR0.50", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "VV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YR", 
+                                "id": "YR_I", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR34.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS KL BCN 31.74VSRNL KL AMS 53.64NSRNL NUC 85.38 END ROE 0.913391 FARE EUR 78.00 XT 12.17CJ 14.38RN 0.50VV 15.32JD 0.58OG 3.78QV 34.00YR", 
+                        "saleFareTotal": "EUR78.00", 
+                        "baseFareTotal": "EUR78.00", 
+                        "saleTaxTotal": "EUR80.73", 
+                        "latestTicketingTime": "2015-06-08T23:59-04:00"
+                    }
+                ]
+            }, 
+            {
+                "saleTotal": "EUR161.23", 
+                "kind": "qpxexpress#tripOption", 
+                "slice": [
+                    {
+                        "duration": 135, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8301"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "AMS", 
+                                        "departureTime": "2015-08-20T10:00+02:00", 
+                                        "destinationTerminal": "1", 
+                                        "destination": "BCN", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "mileage": 770, 
+                                        "arrivalTime": "2015-08-20T12:15+02:00", 
+                                        "duration": 135, 
+                                        "id": "LXKSdajd0dvwTnDB"
+                                    }
+                                ], 
+                                "bookingCode": "O", 
+                                "duration": 135, 
+                                "id": "G5behI9OZiYOklO1", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "0"
+                            }
+                        ]
+                    }, 
+                    {
+                        "duration": 130, 
+                        "kind": "qpxexpress#sliceInfo", 
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "flight": {
+                                    "carrier": "VY", 
+                                    "number": "8300"
+                                }, 
+                                "leg": [
+                                    {
+                                        "origin": "BCN", 
+                                        "originTerminal": "1", 
+                                        "departureTime": "2015-08-30T07:10+02:00", 
+                                        "mileage": 770, 
+                                        "destination": "AMS", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "aircraft": "320", 
+                                        "arrivalTime": "2015-08-30T09:20+02:00", 
+                                        "duration": 130, 
+                                        "id": "LJ-UhqBkrfpfg2s8"
+                                    }
+                                ], 
+                                "bookingCode": "W", 
+                                "duration": 130, 
+                                "id": "GyJM2cfV5nXOHB22", 
+                                "cabin": "COACH", 
+                                "marriedSegmentGroup": "1"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "X6CxucnJCuRTyy8QKOCN8N008", 
+                "pricing": [
+                    {
+                        "fare": [
+                            {
+                                "origin": "AMS", 
+                                "basisCode": "ORTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "BCN", 
+                                "carrier": "VY", 
+                                "id": "Af+61zvNhXJNDFnt1LI+4w26pa1C1tFZsuafoVPyi6xc"
+                            }, 
+                            {
+                                "origin": "BCN", 
+                                "basisCode": "WRTVY", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "destination": "AMS", 
+                                "carrier": "VY", 
+                                "id": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k"
+                            }
+                        ], 
+                        "saleTotal": "EUR161.23", 
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "Af+61zvNhXJNDFnt1LI+4w26pa1C1tFZsuafoVPyi6xc", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "G5behI9OZiYOklO1"
+                            }, 
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "fareId": "AP/XLlalz2Zll8ANBOLCv5y0eOGNYSVBnCiB3U+kJq9k", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "count": 1, 
+                                                "subcode": "0GO", 
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 62 li/158 lcm"
+                                                ]
+                                            }
+                                        ], 
+                                        "pieces": 1
+                                    }
+                                ], 
+                                "segmentId": "GyJM2cfV5nXOHB22"
+                            }
+                        ], 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "ptc": "ADT", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "RN", 
+                                "country": "NL", 
+                                "salePrice": "EUR14.38", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "RN_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "CJ", 
+                                "country": "NL", 
+                                "salePrice": "EUR12.17", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "CJ_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "YQ", 
+                                "id": "YQ_F", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "salePrice": "EUR30.00"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "JD", 
+                                "country": "ES", 
+                                "salePrice": "EUR15.32", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "JD_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "QV", 
+                                "country": "ES", 
+                                "salePrice": "EUR3.78", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "QV_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "code": "OG", 
+                                "country": "ES", 
+                                "salePrice": "EUR0.58", 
+                                "chargeType": "GOVERNMENT", 
+                                "id": "OG_001"
+                            }
+                        ], 
+                        "fareCalculation": "AMS VY BCN 30.10ORTVY VY AMS 62.95WRTVY NUC 93.05 END ROE 0.913391 FARE EUR 85.00 XT 12.17CJ 14.38RN 15.32JD 0.58OG 3.78QV 30.00YQ", 
+                        "saleFareTotal": "EUR85.00", 
+                        "baseFareTotal": "EUR85.00", 
+                        "saleTaxTotal": "EUR76.23", 
+                        "latestTicketingTime": "2015-06-06T18:17-04:00"
                     }
                 ]
             }
@@ -405,17 +1874,32 @@
             "city": [
                 {
                     "kind": "qpxexpress#cityData", 
-                    "code": "BCN", 
-                    "name": "Barcelona"
+                    "code": "AMS", 
+                    "name": "Amsterdam"
                 }, 
                 {
                     "kind": "qpxexpress#cityData", 
-                    "code": "PRG", 
-                    "name": "Prague"
+                    "code": "BCN", 
+                    "name": "Barcelona"
                 }
             ], 
             "kind": "qpxexpress#data", 
             "tax": [
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "id": "VV_001", 
+                    "name": "The Netherlands Domestic and International Noise Surcharge"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "id": "RN_001", 
+                    "name": "The Netherlands Passenger Service Charge"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "id": "YR_I", 
+                    "name": "KL YR surcharge"
+                }, 
                 {
                     "kind": "qpxexpress#taxData", 
                     "id": "JD_001", 
@@ -424,17 +1908,17 @@
                 {
                     "kind": "qpxexpress#taxData", 
                     "id": "YQ_F", 
-                    "name": "QS YQ surcharge"
+                    "name": "VY YQ surcharge"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "id": "CJ_001", 
+                    "name": "Netherlands CJ"
                 }, 
                 {
                     "kind": "qpxexpress#taxData", 
                     "id": "QV_001", 
                     "name": "Spain QV"
-                }, 
-                {
-                    "kind": "qpxexpress#taxData", 
-                    "id": "CZ_001", 
-                    "name": "Czech Republic Embarkation Tax"
                 }, 
                 {
                     "kind": "qpxexpress#taxData", 
@@ -444,38 +1928,48 @@
             ], 
             "airport": [
                 {
+                    "city": "AMS", 
+                    "kind": "qpxexpress#airportData", 
+                    "code": "AMS", 
+                    "name": "Amsterdam Schiphol Airport"
+                }, 
+                {
                     "city": "BCN", 
                     "kind": "qpxexpress#airportData", 
                     "code": "BCN", 
                     "name": "Barcelona"
-                }, 
-                {
-                    "city": "PRG", 
-                    "kind": "qpxexpress#airportData", 
-                    "code": "PRG", 
-                    "name": "Prague Ruzyne"
                 }
             ], 
             "aircraft": [
                 {
                     "kind": "qpxexpress#aircraftData", 
-                    "code": "319", 
-                    "name": "Airbus A319"
+                    "code": "320", 
+                    "name": "Airbus A320"
                 }, 
                 {
                     "kind": "qpxexpress#aircraftData", 
-                    "code": "738", 
+                    "code": "73J", 
                     "name": "Boeing 737"
                 }
             ], 
             "carrier": [
                 {
                     "kind": "qpxexpress#carrierData", 
-                    "code": "QS", 
-                    "name": "Travel Service, A.S."
+                    "code": "IB", 
+                    "name": "Iberia Lineas Aereas de Espana S.A."
+                }, 
+                {
+                    "kind": "qpxexpress#carrierData", 
+                    "code": "KL", 
+                    "name": "KLM Royal Dutch Airlines"
+                }, 
+                {
+                    "kind": "qpxexpress#carrierData", 
+                    "code": "VY", 
+                    "name": "Vueling Airlines S.A."
                 }
             ]
         }, 
-        "requestId": "YJICnJupSf653bnwC0MFsT"
+        "requestId": "TtCIhJ8WcGeojMq2G0MFsX"
     }
 }

@@ -137,19 +137,21 @@ def comunicacion():
 
             ########################################################### 
             # Comunicar con buscador
-            print "Los parametros de actividad"
+            print "Los parametros recibidos"
             #############################################################
+            # departureDate="2015-08-20"
+            # returnDate="2015-08-30"
+            # maxPrice=500
+            # originCity="Amsterdam"
+            # destinationCity="Barcelona"
+            # propertyCategory=1
 
-            destination = gm.value(subject= peticion, predicate= myns_atr.destination)
-            # VERBOSE
-            print "destination: "
-            print destination
 
-            origin = gm.value(subject= peticion, predicate= myns_atr.origin)
+            originCity = gm.value(subject= peticion, predicate= myns_atr.originCity)
             #gmess.add((actv, myns_atr.lugar, origin))
             # VERBOSE
-            print "origin: "
-            print origin
+            print "originCity: "
+            print originCity
 
             departureDate = gm.value(subject= peticion, predicate= myns_atr.departureDate)
             #gmess.add((actv, myns_atr.lugar, departureDate))
@@ -163,57 +165,315 @@ def comunicacion():
             print "returnDate: "
             print returnDate
 
-            maxPrice = gm.value(subject= peticion, predicate= myns_atr.maxPrice)
+            maxPrice = float(gm.value(subject= peticion, predicate= myns_atr.maxPrice))
             #gmess.add((actv, myns_atr.lugar, maxPrice))
             # VERBOSE
             print "maxPrice: "
             print maxPrice
 
-            numberOfStars = gm.value(subject= peticion, predicate= myns_atr.numberOfStars)
+            propertyCategory = gm.value(subject= peticion, predicate= myns_atr.propertyCategory)
             #gmess.add((actv, myns_atr.lugar, numberOfStars))
             # VERBOSE
-            print "numberOfStars: "
-            print numberOfStars
+            print "propertyCategory: "
+            print propertyCategory
+            
+            actividades = []
+            
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
-            
-            # VERBOSE
             print "activity: "
             print activity
+            actividades.append(activity)
+            
 
-            radius = 20000
-            # De momento solo permitimos pasar un tipo. Ampliar a mas de uno luego quizas
-            tipo = types.TYPE_MOVIE_THEATER # Equivalente a: tipo = ['movie_theater']
 
-            ########################################################### 
-            # Comunicar con buscador
-            print "Los parametros de vuelo"
-            #############################################################
-            originVuelo=gm.value(subject= peticion, predicate= myns_atr.originVuelo)
+            destinationCity=gm.value(subject= peticion, predicate= myns_atr.destinationCity)
+            print "destinationCity: "
+            print destinationCity
 
-            destinationVuelo=gm.value(subject= peticion, predicate= myns_atr.destinationVuelo)
-
-            departureDate=gm.value(subject= peticion, predicate= myns_atr.departureDate)
-
-            returnDate=gm.value(subject= peticion, predicate= myns_atr.returnDate)
-
-            maxPrice=gm.value(subject= peticion, predicate= myns_atr.maxPrice)
+            # Graph para buscador
+            gmess = Graph()
+            gmess.bind('myns_pet', myns_pet)
+            gmess.bind('myns_atr', myns_atr)
 
             ########################################################### 
             # Comunicar con buscador
-            print "Los parametros de hotel"
+            # print "Los parametros hardcoreado"
             #############################################################
-            originVuelo=gm.value(subject= peticion, predicate= myns_atr.originVuelo)
 
-            destinationVuelo=gm.value(subject= peticion, predicate= myns_atr.destinationVuelo)
+            
+            # actividades= [types.TYPE_MOVIE_THEATER, types.TYPE_CASINO, types.TYPE_MUSEUM]
 
-            departureDate=gm.value(subject= peticion, predicate= myns_atr.departureDate)
 
-            returnDate=gm.value(subject= peticion, predicate= myns_atr.returnDate)
+            # departureDate="2015-08-20"
+            # returnDate="2015-08-30"
+            # maxPrice=500
+            # originCity="Amsterdam"
+            # destinationCity="Barcelona"
+            # propertyCategory=1
 
-            maxPrice=gm.value(subject= peticion, predicate= myns_atr.maxPrice)
+            print departureDate
 
-            grep = comu()
+            ########################################################### 
+            # Mejorar preferencia de busqueda
+            print "Mejorar preferencia de busqueda"
+            #############################################################
+
+            ########################################################### 
+            # Comunicar con buscador
+            print "Iniciar la comunicaion con buscador"
+            #############################################################
+            
+            # Hago bind de las ontologias que voy a usar en el grafo
+            # Estas ontologias estan definidas arriba (abajo de los imports)
+            # Son las de peticiones y atributos (para los predicados de la tripleta)
+
+            # Sujeto de la tripleta: http://my.namespace.org/peticiones/actividad
+            # O sea, el mensaje sera una peticion de actividad
+            # El buscador tendra que ver que tipo de peticion es
+            ########################################################### 
+            # Comunicar con buscador
+            print "Añadir parametros de actividad"
+            #############################################################
+            # Paso los parametros de busqueda de actividad en el grafo
+            busqueda = myns_pet.busqueda
+            i = 0
+            for a in actividades:
+                i+= 1
+                actv = "actividad" + str(i)
+                gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+                gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
+            
+            i+= 1
+            actv = "actividad" + str(i)
+            gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+            gmess.add((myns_act.actv, myns_atr.tipo, Literal('restaurant')))
+            
+            ########################################################### 
+            # Comunicar con buscador
+            print "Añadir parametros de vuelo"
+            #############################################################
+            
+            gmess.add((busqueda, myns_par.departureDate, Literal(departureDate)))
+            gmess.add((busqueda, myns_par.returnDate, Literal(returnDate)))          
+            gmess.add((busqueda, myns_par.maxPrice, Literal(maxPrice/3))) 
+
+            ########################################################### 
+            # Comunicar con buscador
+            print "Añadir parametros de hotel"
+            #############################################################
+            hotel = myns_pet.hotel
+            gmess.add((busqueda, myns_par.originCity, Literal(originCity)))
+            gmess.add((busqueda, myns_par.destinationCity, Literal(destinationCity)))      
+            gmess.add((busqueda, myns_par.propertyCategory, Literal(propertyCategory))) 
+
+            # Uri asociada al mensaje sera: http://www.agentes.org#Planificador-pide-actividades
+            res_obj= agn['Planificador-pide-datos']
+
+            # Construyo el grafo y lo mando (ver los metodos send_message y build_message
+            # en ACLMessages para entender mejor los parametros)
+            print "INFO AgentePlanificador=> Sending request to AgenteBuscador\n"
+            gr = send_message(build_message(gmess, 
+                               perf=ACL.request, 
+                               sender=AgentePlanificador.uri, 
+                               receiver=AgenteBuscador.uri,
+                               content=res_obj,
+                               msgcnt=mss_cnt 
+                               ),
+                AgenteBuscador.address)
+            print "Respuesta de busqueda recibida\n"
+            
+            # for s, p, o in grep:
+            #     print 's: ' + s
+            #     print 'p: ' + p
+            #     print 'o: ' + o.encode('utf-8')
+            #     print '\n'
+            
+
+            ########################################################### 
+            # Calcular paquete
+            print "Calcular paquete"
+            #############################################################   
+
+            grep = Graph()
+            ########################################################### 
+            # Calcular paquete
+            print "Calcular Vuelos"
+            #############################################################    
+            gvuelo = Graph()
+            for s,p,o in gr.triples((None, myns_atr.esUn, myns.viaje)):
+                gvuelo += gr.triples((s, None, None) )
+
+            gvueloid = gvuelo.query("""
+                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                        SELECT DISTINCT ?a ?cuesta
+                        WHERE{
+                            ?a myns_atr:cuesta ?cuesta .
+                            FILTER(str(?cuesta) != "")
+                        }
+                        ORDER BY (?cuesta)
+                        LIMIT 1
+                """)
+
+            Aid = []
+            cuestaVuelo = 0
+            for s, c in gvueloid:
+                print s
+                Aid.append(s)
+                cuestaVuelo = float(c[3:])
+
+            maxPrice -= cuestaVuelo
+            grep += gvuelo.triples((Aid[0], None, None))
+
+            ########################################################### 
+            # Calcular paquete
+            print "Calcular Hotel"
+            #############################################################    
+            ghotel = Graph()
+            for s,p,o in gr.triples((None, myns_atr.esUn, myns.hotel)):
+                ghotel += gr.triples((s, None, None) )
+            ghotelid = ghotel.query("""
+                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                        SELECT DISTINCT ?a ?cuesta
+                        WHERE{
+                            ?a myns_atr:rating ?ratin .
+                            ?a myns_atr:cuesta ?cuesta .
+                            FILTER(str(?ratin) != "" && str(?cuesta) != "")
+                            
+                        }
+                        ORDER BY DESC(?ratin) ?cuesta
+                        LIMIT 1
+                """)
+            Aid = []
+            cuestaHotel = 0
+            for s, c in ghotelid:
+                Aid.append(s)
+                cuestaHotel = float(c)
+            maxPrice -= cuestaHotel
+            grep += ghotel.triples((Aid[0], None, None))
+
+
+            #Actividades 
+            ########################################################### 
+            # Calcular paquete
+            print "Calcular Actividades"
+            #############################################################    
+            gactividad = Graph()       
+            for s,p,o in gr.triples((None, myns_atr.esUn, myns.actividad)):
+                gactividad += gr.triples((s, None, None) )
+
+            grestaurante = gactividad.query("""
+                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                        SELECT DISTINCT ?a ?ratin ?tip
+                        WHERE{
+                            ?a myns_atr:rating ?ratin .
+                            ?a myns_atr:tipo ?tip
+                            FILTER(?tip = "restaurant")
+                        }
+                        ORDER BY DESC(?ratin)
+                """)
+            restaurant = []
+            for g, r, t in grestaurante:
+                restaurant.append(g)
+            
+            gnight = gactividad.query("""
+                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                        SELECT DISTINCT ?a ?ratin ?tip
+                        WHERE{
+                            ?a myns_atr:rating ?ratin .
+                            ?a myns_atr:tipo ?tip
+                            FILTER
+                                (?tip = "night_club" || 
+                                 ?tip = "bar" ||
+                                 ?tip = "casino"
+                                 )
+                        }
+                        ORDER BY DESC(?ratin)
+                """)
+            
+            night = []
+            for g, r, t in gnight:
+                night.append(g)
+            print len(night)
+            gday = gactividad.query("""
+                        PREFIX myns_atr: <http://my.namespace.org/atributos/>
+                        SELECT DISTINCT ?a ?ratin ?tip
+                        WHERE{
+                            ?a myns_atr:rating ?ratin .
+                            ?a myns_atr:tipo ?tip
+                        }
+                        ORDER BY DESC(?ratin)
+                """)
+            daylist = []
+            for g, r, t in gday:
+                daylist.append(g)
+
+            ########################################################### 
+            # Escoger Actividades
+            print "Escoger Actividades"
+            #############################################################   
+            day = datetime.strptime(departureDate, '%Y-%m-%d')
+            cday = 0
+            cnight = 0
+            cres = 0
+            rd = datetime.strptime(returnDate, '%Y-%m-%d')
+
+            while day <= rd:
+               # cada dia
+                grfdata = myns_data.day
+                
+                # manana
+                grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))
+
+
+                grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
+                
+                cday += 1;
+
+
+                grep.add((grfdata, myns_data.tarde, daylist[cday%len(daylist)]))
+
+                grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
+                
+                cday += 1;
+
+                # comida
+                grep.add((grfdata, myns_data.comida, restaurant[cres%len(restaurant)]))
+
+                grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
+                
+                cres += 1;       
+                # cena
+
+                grep.add((grfdata, myns_data.cena, restaurant[cres%len(restaurant)]))
+
+                grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
+                
+                cres += 1;       
+                # noche
+                if len(night) != 0:
+                    grep.add((grfdata, myns_data.noche, night[cnight%len(night)]))
+
+                    grep += gactividad.triples((night[cnight%len(night)], None, None))
+                    
+                    cnight += 1;
+
+                day = day + timedelta(days=1)
+
+
+    ########################################################### 
+    # Construir mensage de repuesta
+    print "Construir mensage de repuesta"
+    #############################################################
+    # for s, p, o in grep:
+    #     print 's: ' + s
+    #     print 'p: ' + p
+    #     print 'o: ' + o.encode('utf-8')
+    #     print '\n'
+    
+    mss_cnt += 1
+
+    return grep
 
     print 'Respondemos a la peticion\n'
     ########################################################### 
@@ -644,7 +904,6 @@ if __name__ == '__main__':
     # Descomentar para un print "pretty" del grafo de respuesta
     # print json.dumps(gr.json(), indent=4, sort_keys=True)
     #grep = comu()
-    comu()
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)
 
