@@ -425,20 +425,21 @@ def comunicacion():
                # cada dia
                 grfdata = myns_data.day
                 
-                # manana
-                grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))
+                if len(daylist) != 0:
+                    # manana
+                    grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))
 
 
-                grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
-                
-                cday += 1;
+                    grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
+                    
+                    cday += 1;
 
 
-                grep.add((grfdata, myns_data.tarde, daylist[cday%len(daylist)]))
+                    grep.add((grfdata, myns_data.tarde, daylist[cday%len(daylist)]))
 
-                grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
-                
-                cday += 1;
+                    grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
+                    
+                    cday += 1;
 
                 # comida
                 grep.add((grfdata, myns_data.comida, restaurant[cres%len(restaurant)]))
