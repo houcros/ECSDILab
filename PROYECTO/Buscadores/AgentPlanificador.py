@@ -327,6 +327,11 @@ def comunicacion():
 
             maxPrice -= cuestaVuelo
             grep += gvuelo.triples((Aid[0], None, None))
+            idgo = gr.value(subject= Aid[0], predicate= myns_atr.ida)
+            idback = gr.value(subject= Aid[0], predicate= myns_atr.vuelta)
+
+            grep += gr.triples((idgo,None, None))
+            grep += gr.triples((idback, None, None))
 
             ########################################################### 
             # Calcular paquete
@@ -353,6 +358,7 @@ def comunicacion():
                 Aid.append(s)
                 cuestaHotel = float(c)
             maxPrice -= cuestaHotel
+
             grep += ghotel.triples((Aid[0], None, None))
 
 
@@ -424,7 +430,7 @@ def comunicacion():
             while day <= rd:
                # cada dia
                 grfdata = myns_data.day
-                
+
                 if len(daylist) != 0:
                     # manana
                     grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))

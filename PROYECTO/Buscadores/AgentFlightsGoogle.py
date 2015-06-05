@@ -27,8 +27,9 @@ from AgentUtil.APIKeys import QPX_API_KEY
 
 from flask import Flask, request
 from rdflib import Graph, Namespace, Literal
-from datetime import datetime
+import datetime
 
+CACHE_TIME_CONST = 1
 # Nuestros namespaces que usaremos luego
 myns = Namespace("http://my.namespace.org/")
 myns_pet = Namespace("http://my.namespace.org/peticiones/")
@@ -51,7 +52,7 @@ headers = {'content-type': 'application/json'}
 def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   departureDate="2015-08-20", returnDate="2015-08-30", solutions=50,
   maxPrice=500, earliestDepartureTime="06:00", latestDepartureTime="23:00",
-  earliestReturnTime="06:00", latestReturnTime="23:00"):
+  earliestReturnTime="06:00", latestReturnTime="23:00", requestTime=datetime.datetime.fromtimestamp(0)):
 
   print "origin: " + origin
   print "destination: " + destination
@@ -96,8 +97,15 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   }
   gresp = Graph()
   #print payload
+  tDelta = datetime.datetime.now() - requestTime
+  days, seconds = tDelta.days, tDelta.seconds
+  hours = days * 24 + seconds // 3600
+  minutes = (seconds % 3600) // 60
+  seconds = seconds % 60
+  b = (minutes < CACHE_TIME_CONST)
   b = False
-  if b == True:
+  if b == False:
+    print "AgentFlightsGoogle => We make a new service request; cant rely on cache"
     r = requests.post(QPX_END_POINT, params={'key': QPX_API_KEY}, data=json.dumps(payload), headers=headers)
     #print r.text
 
@@ -165,6 +173,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         durationGo = trip['slice'][0]['duration']
 
         originid = trip['slice'][0]['segment'][0]['leg'][0]['origin']
+
         #este puede ser code
         Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(originid)
         Goairname = dic['trips']['data']['airport'][Gonameid]['name']
@@ -172,7 +181,6 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         destinationid = trip['slice'][0]['segment'][0]['leg'][0]['destination']
         
         #este puede ser code
-        
         Gonameid = [x['code'] for x in dic['trips']['data']['airport']].index(destinationid)
         Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
 
@@ -223,8 +231,8 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         Goairllname = dic['trips']['data']['airport'][Gonameid]['name']
 
 
-        gresp.add((vlo_obj_go, myns_atr.airportSalida, Literal(Goairname)))
-        gresp.add((vlo_obj_go, myns_atr.airportLlegada, Literal(Goairllname)))
+        gresp.add((vlo_obj_back, myns_atr.airportSalida, Literal(Goairname)))
+        gresp.add((vlo_obj_back, myns_atr.airportLlegada, Literal(Goairllname)))
 
 
         # Cuanto dura esta vuelta
@@ -254,6 +262,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
     
     gresp.serialize('f.rdf')
   else:
+    print "AgentFlightsGoogle => We read from cache"
   # print "GRAFO DE RESPUESTA"
   # for s, p, o in gresp:
   #   print 's: ' + s

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Solution</title>
 		<!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='form.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.min.css')}}"> -->
@@ -8,32 +9,30 @@
 	<body>
 		<h1 align="center"> FOUND THE BEST PACKET ACCORDING TO YOUR PREFERENCES </h1>
 		<!-- INFORMACION DE LOS VUELOS --> 
-		<h3 align="center"> VUELOS</h3>
-		<p> Id Ida: {{ airportData.idGo }} </p>
-		<p> Id Llegada: {{ airportData.idBack }} </p>
-		<p> Aeropuerto Salida:{{ airportData.airportSalida }} </p>
-		<p> Aeropuerto Llegada: {{ airportData.airportLlegada }} </p>
-		<p> Duraction Ida: {{ airportData.durationGo }} </p>
-		<p> Hora Salida: {{ airportData.horaSale }} </p>
-		<p> Hora Llegada: {{ airportData.horaLlega }} </p>
-		<p> Terminal Sale: {{ airportData.terminalSale }} </p>
-		<p> Terminal Llega: {{ airportData.terminalLlega }} </p>
-		<p> Ciudad Sale: {{ airportData.ciudadSale }} </p>
-		<p> Ciudad Llega: {{ airportData.ciudadLLega }} </p>
+<p> PRECIO TOTAL: {{precioTotalVuelos}} </p>
+                {% for airport in airportData %}
+                        <p> Aeropuerto Salida:{{ airport.airportSalida }}, en {{ airport.ciudadSale }} </p>
+                        <p> Aeropuerto Llegada: {{ airport.airportLlegada }} , en  {{ airport.ciudadLlega }}</p>
+                        <p> Duración de la ida: {{ airport.durationGo }} </p>
+                        <p> Hora Salida: {{ airport.horaSale }} </p>
+                        <p> Hora Llegada: {{ airport.horaLlega }} </p>
+                        <p> Terminal de salida: {{ airport.terminalSale }} </p>
+                        <p> Terminal de llegada: {{ airport.terminalLlega }} </p>
+                        <br>
+                {% endfor %}
 
 		<!-- INFORMACION DE LOS HOTELES --> 
 		<h3 align="center"> HOTELES</h3>
 		<p> Nombre Hotel: {{  hotelData.nombreHotel }} </p>
 		<p> Precio Hotel: {{  hotelData.precioHotel }} </p>
-		<p> Duration Go:{{  hotelData.codigoPostal }} </p>
-		<p> Hora Go Llega: {{  hotelData.descripcionDeHabitacion }} </p>
-		<p> Terminal Go Sale: {{ hotelData.direccion }} </p>
-		<p> Terminal Go Llega: {{ hotelData.descripcionCorta }} </p>
-		<p> Ciudad Go Sale: {{ hotelData.distanciaRespectoAlCentro }} </p>
-		<p> Duration Back: {{ hotelData.distanciaAlCentro_unidad }} </p>
-		<p> Hora Back Sale: {{ hotelData.rating }} </p>
-		<p> Hora Back LLega: {{ hotelData.tripAdvisorRating }} </p>
-		<p> Terminal Back Sale: {{ hotelData.tripAdvisorReviewCount }} </p>
+		<p> Código Postal:{{  hotelData.codigoPostal }} </p>
+		<p> Descripción de la habitación: {{  hotelData.descripcionDeHabitacion }} </p>
+		<p> Dirección: {{ hotelData.direccion }} </p>
+		<p> Dscripción corta: {{ hotelData.descripcionCorta }} </p>
+		<p> Distancia respecto al centro de la ciudad: {{ hotelData.distanciaRespectoAlCentro }} {{ hotelData.distanciaAlCentro_unidad }}</p>
+		<p> Rating: {{ hotelData.rating }} </p>
+		<p> Rating en TripAdvisor: {{ hotelData.tripAdvisorRating }} </p>
+		<p> Número de reviews en TripAdvisor: {{ hotelData.tripAdvisorReviewCount }} </p>
 
 		<h3 align="center"> ACTIVIDADES </h3>
 		{% for activity in listActivities %}

@@ -136,61 +136,31 @@ def solution():
         g = message_dialogador(cityOriginField, cityDestinationField, 
                                 departureDateField,returnDateField, maxPriceField, 
                                 numberOfStarsField, activitiesField) 
-
+        hlis = Graph()
         hlis = g.subjects(predicate=myns_atr.esUn, object=myns.hotel)
         hotelid = ''
         #only 1 s
         for s in hlis:
             hotelid = s
-        hotel = Graph()
-        gmess.bind('myns_atr', myns_atr)
-        hotel = g.triples((hotelid, None, None))
+
+        codigoPostal =  g.value(subject= hotelid, predicate= myns_atr.codigoPostal) 
+        descripcionDeHabitacion = g.value(subject=hotelid,predicate=  myns_atr.descripcionDeHabitacion)
+        direccion = g.value(subject=hotelid,predicate=  myns_atr.adresa)
+        nombre = g.value(subject=hotelid,predicate=  myns_atr.nombre)
+        descripcionCortaHotel = g.value(subject=hotelid,predicate=  myns_atr.descriptionCorta)
+        distanciaRespectoAlCentro = g.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro)
+        distanciaRespectoAlCentro_unidad = g.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro_unidad)
+        preciohotel = g.value(subject=hotelid,predicate=  myns_atr.cuesta)
+        rating = g.value(subject=hotelid,predicate=  myns_atr.rating)
+        tripAdvisorRating = g.value(subject=hotelid,predicate=  myns_atr.tripAdvisorRating)
+        tripAdvisorReviewCount = g.value(subject=hotelid,predicate=  myns_atr.tripAdvisorReviewCount)
+
         
-        for s, p, o in hotel:
-            print s
-            print p
-            print o
-
-        print g.value(subject= hotelid, predicate= myns_atr.codigoPostal)   
-        codigoPostal = hotel.value(subject= hotelid, predicate= myns_atr.codigoPostal)
-
-        descripcionDeHabitacion = hotel.value(subject=hotelid,predicate=  myns_atr.descripcionDeHabitacion)
-        direccion = hotel.value(subject=hotelid,predicate=  myns_atr.adresa)
-        nombre = hotel.value(subject=hotelid,predicate=  myns_atr.nombre)
-        descripcionCortaHotel = hotel.value(subject=hotelid,predicate=  myns_atr.descriptionCorta)
-        distanciaRespectoAlCentro = hotel.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro)
-        distanciaRespectoAlCentro_unidad = hotel.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro_unidad)
-        preciohotel = hotel.value(subject=hotelid,predicate=  myns_atr.cuesta)
-        rating = hotel.value(subject=hotelid,predicate=  myns_atr.rating)
-        tripAdvisorRating = hotel.value(subject=hotelid,predicate=  myns_atr.tripAdvisorRating)
-        tripAdvisorReviewCount = hotel.value(subject=hotelid,predicate=  myns_atr.tripAdvisorReviewCount)
-
-        flis = g.subjects(predicate=myns_atr.esUn, object=myns.viaje)
-        flyid = ''
-        #only 1 s
-        for s in flis:
-            flyid = s
-
-        hotel = g.triples((hotelid, None, None))        
-
-
-        airportData = {
-            'idGo' : 5000,
-            'idBack': 4000,
-            'airportSalida': 'Barajas',
-            'airportLlegada': 'Prat',
-            'durationGo': 90,
-            'horaSale': '15:00',
-            'horaLlega': '16:00',
-            'terminalSale': 'Barcelona',
-            'terminalLlega': 'Madrid',
-            'ciudadSale': 'Barcelona',
-            'ciudadLlega': 'Madrid'
-        }
+        
         hotelData = {
             'nombreHotel' : nombre,
             'precioHotel': preciohotel,
-            'codigoPostal': codigoPostal,
+            'codigoPostal':  codigoPostal,
             'descripcionDeHabitacion': descripcionDeHabitacion,
             'direccion': direccion,
             'descripcionCorta' : descripcionCortaHotel,
@@ -200,7 +170,43 @@ def solution():
             'tripAdvisorRating': tripAdvisorRating,
             'tripAdvisorReviewCount': tripAdvisorReviewCount
         }
-        return hotelData
+
+        flis = Graph()
+        flis = g.subjects(predicate=myns_atr.esUn, object=myns.viaje)
+        viajeid = ''
+        #only 1 s
+        for s in flis:
+            viajeid = s
+
+        precioTotalVuelos = g.value(subject= viajeid, predicate= myns_atr.cuesta)
+        
+        idgo = g.value(subject= viajeid, predicate= myns_atr.ida)
+        idback = g.value(subject= viajeid, predicate= myns_atr.vuelta)
+        print g.value(subject= idgo, predicate= myns_atr.ciudad_llega)
+        airportData = [
+            {
+                'airportSalida': g.value(subject= idgo, predicate= myns_atr.airportSalida),
+                'airportLlegada': g.value(subject= idgo, predicate= myns_atr.airportLlegada),
+                'durationGo': g.value(subject= idgo, predicate= myns_atr.dura) ,
+                'horaSale': g.value(subject= idgo, predicate= myns_atr.hora_sale) ,
+                'horaLlega': g.value(subject= idgo, predicate= myns_atr.hora_llega) ,
+                'terminalSale': g.value(subject= idgo, predicate= myns_atr.terminal_sale) ,
+                'terminalLlega': g.value(subject= idgo, predicate= myns_atr.terminal_llega) ,
+                'ciudadSale': g.value(subject= idgo, predicate= myns_atr.ciudad_sale),
+                'ciudadLlega': g.value(subject= idgo, predicate= myns_atr.ciudad_llega)
+            },
+            {
+                'airportSalida': g.value(subject= idback, predicate= myns_atr.airportSalida),
+                'airportLlegada': g.value(subject= idback, predicate= myns_atr.airportLlegada),
+                'durationGo': g.value(subject= idback, predicate= myns_atr.dura) ,
+                'horaSale': g.value(subject= idback, predicate= myns_atr.hora_sale) ,
+                'horaLlega': g.value(subject= idback, predicate= myns_atr.hora_llega) ,
+                'terminalSale': g.value(subject= idback, predicate= myns_atr.terminal_sale) ,
+                'terminalLlega': g.value(subject= idback, predicate= myns_atr.terminal_llega) ,
+                'ciudadSale': g.value(subject= idback, predicate= myns_atr.ciudad_sale),
+                'ciudadLlega': g.value(subject= idback, predicate= myns_atr.ciudad_llega)
+            }
+        ]
         listActivities = [
             { 
                 'tipo': 'Museo',
@@ -220,7 +226,7 @@ def solution():
             }  
         ]
 
-        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData)
+        return render_template('solution.html',airportData=airportData, precioTotalVuelos = precioTotalVuelos, listActivities=listActivities,hotelData=hotelData)
         #Renderizamos la template pasandole los datos
 
        # return message_dialogador()
@@ -431,7 +437,6 @@ if __name__ == '__main__':
     #ab1 = Process(target=agentbehavior1, args=(cola1,))
     #ab1.start()
     #cont = message_dialogador();
-   
     # Ponemos en marcha el servidor
     #message_dialogador()
     app.run(host=hostname, port=port)

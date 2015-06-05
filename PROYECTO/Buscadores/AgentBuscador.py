@@ -26,12 +26,15 @@ from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
 from AgentFlightsGoogle import buscar_vuelos
 from AgentHotel import buscar_hoteles
-from datetime import datetime
+import datetime
 import logging
 
 import pprint
 from googleplaces import GooglePlaces, types, lang
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
+
+lastRequestFlightsTimestamp = datetime.datetime.fromtimestamp(0)
+lastRequestHotelsTimestamp = datetime.datetime.fromtimestamp(0)
 
 # Definimos los parametros de la linea de comandos
 parser = argparse.ArgumentParser()
@@ -249,7 +252,7 @@ def comunicacion():
     elif str(destinationCit) == "Roma":
         destinationVuelo="ROM"
         destinationCountry="Italy"
-    elif str(destinationCit) == "Prage":
+    elif str(destinationCit) == "Praha":
         destinationVuelo="PRG"
         destinationCountry="Czech Republic"
     elif str(destinationCit) == "Paris":
@@ -523,7 +526,8 @@ if __name__ == '__main__':
     # print depDStr
     # print retDStr
 
-    # gvuelos = buscar_vuelos(departureDate="2015-08-20", returnDate="2015-08-30")
+    # gvuelos = buscar_vuelos(requestTime = lastRequestFlightsTimestamp)
+    # lastRequestFlightsTimestamp = datetime.datetime.now()
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in gvuelos:
@@ -547,7 +551,8 @@ if __name__ == '__main__':
     # print arrDStr
     # print depDStr
 
-    # ghoteles = buscar_hoteles(arrivalDate=08/20/2015, departureDate=08/30/2015)
+    #ghoteles = buscar_hoteles(requestTime = lastRequestFlightsTimestamp)
+    #lastRequestFlightsTimestamp = datetime.datetime.now()
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in ghoteles:
@@ -590,6 +595,7 @@ if __name__ == '__main__':
     #buscar_actividades()
     # Ponemos en marcha el servidor
     #buscar_vuelos()
+    #buscar_hoteles()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
