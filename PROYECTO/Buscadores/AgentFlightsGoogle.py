@@ -298,8 +298,8 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="PRG",
     dic = r.json()
     out_file = open("test.json","w")
 
-# Save the dictionary into this file
-# (the 'indent=4' is optional, but makes it more readable)
+  # Save the dictionary into this file
+  # (the 'indent=4' is optional, but makes it more readable)
     json.dump(dic,out_file, indent=4) 
     #print json.dumps(dic, indent=4, sort_keys=True)
 

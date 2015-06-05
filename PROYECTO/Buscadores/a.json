@@ -1,0 +1,579 @@
+{
+    "status": "OK", 
+    "next_page_token": "CoQC9wAAAAWSMbleCrELRosDBHTajECFOLHPUP17mhSJb-rVkgpTs-ipIPKJ5WnmccKdu-tbGqTjKku_jNnkH3-JFubiT_VeJ2gz0qz-90xkAXOXRWtM56E5mumlUzcqZPPxodkUOj97CY5x7HQSiv0Tz2t8T2OiZeqIedadYGRVIt9vw3xSqCc6eLRHMq4e9dE4g39oYynjekBKXPBra-tpOEdiegftTgzJP7mbHpIpd3w1FZj-CPqjr_3owDsYShrBKHZ4P7O6nJJZnP-CaI6OKf8ZakIN_cq0N6nJEm9IwUcqUDmzzbECwZSBspEhD4bDvZWY5wF7gKOBXgMg42EldTJjxuYSEC476fF_l029MsESOhbwgPEaFLHyu2vXkFnB33lyra6yBzGXSM-5", 
+    "html_attributions": [], 
+    "results": [
+        {
+            "rating": 4.3, 
+            "name": "Malda", 
+            "reference": "CmRYAAAAtdDPG-iyGaHnUf4dkPvbOBKOfTF0xLUcNzHs60eFaUo_wlIxPmKqnzi3WC6AG_QOot0dQS7FgRHsZVGYu-4I9xEUVcNu2OGRwZSiGHSidYuAKe3oMpAG9Qvir6bVzPAKEhDQl2Dc3E9DfUQYA52j4zzKGhTNl3yPsKb4OLISes2vV0O7oo9sQQ", 
+            "geometry": {
+                "location": {
+                    "lat": 41.383192, 
+                    "lng": 2.173906
+                }
+            }, 
+            "place_id": "ChIJAbHHnfeipBIRfRrH2BWSXxw", 
+            "vicinity": "Carrer del Pi, 5, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CoQBdwAAAIftYnaB4fHotmT5vz85Fziy71bArn5YiNJjATdO9x8WkGICABdxfY0toTNbEOpycYCGtPwJTU1E8J8yijfLtPjkTKEXFXZ03VjK_em7cLKS3VdejaTCivy5mE_OLtNOLKs085DE43rSPKSt2HcykGdxRzeKtcCQMI0N6429W0OrEhCvNh7Zp5win29L2rS21ud0GhQl-bNdytH2V4ZSg7JEx5fySFs3VA", 
+                    "width": 976, 
+                    "html_attributions": [
+                        "From a Google User"
+                    ], 
+                    "height": 1296
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "531bc8e82d48839ab3628500e84601552cbefcc6", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4.3, 
+            "name": "M\u00e9li\u00e8s Cinemes", 
+            "reference": "CnRjAAAAbqDY0y-5Gpv_m_jt4P7Z6aDZH3n9EM_4-MQbhiFpiLLKLzQM4_WzE0gNw5XTEeVSLdH0e2d7IoIVq8zGPN27Qg5PYrtV9EKiwl1etvn7eu-l_27BKD3MMXmhzSyY8Ddrb3KCidCXQ6GuovuNUTljdBIQmAbxGUBUKYCvyznwRw3A1BoUh1k19LRqpg2dGSVnU5s8XRDc1uY", 
+            "geometry": {
+                "location": {
+                    "lat": 41.385275, 
+                    "lng": 2.157016
+                }
+            }, 
+            "place_id": "ChIJeSPe24iipBIRnCBPlM5mTlY", 
+            "vicinity": "Carrer de Villarroel, 102, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAA23J3wKzF7s2XrAe9pFqzayg2TZKI5m8u0RhOlPuXZJsWYwByhNbX-A6BrJopzSRjOSLKMFWqqYTsepzfOKzwczArAoDtwISt_-H1a_k29Qze5h6ElzwISfCXImP8GRTpnw1RbrmVOXvZ2v8P3sZ-0hIQNfgXbdiBn01tMe-i0T3wchoU4-uty2icgEmzltIx8T6JtnUJsTw", 
+                    "width": 2844, 
+                    "html_attributions": [], 
+                    "height": 1600
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "766336d1c2cf9bef1d7514ef183c05306477eb8a", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.6, 
+            "name": "Bosque Multicines 9 sales 3D", 
+            "reference": "CnRvAAAAez-GyZ0Ga2eYR_AagEh8Vzwc6y2sAeBQ6ROsBHvULdU7KjE81EayciI3Sb4rgQkvDkv27D2Ip45G9Es4m3hg0xufSwrq0uSnfWqeLJ4httgFgS0ge-gS3p0goVduBb4azx3qL00iUR-nasjDscPlZRIQEpagDvPkLwwYSo0uIYDMthoUDd8qIanWpSzZgSIbwxUXIAz4n3U", 
+            "geometry": {
+                "location": {
+                    "lat": 41.401511, 
+                    "lng": 2.15185
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJg_RkeaKipBIRL2cu-hiaY3o", 
+            "vicinity": "Rambla del Prat, 16, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAAPLqqX_NWjHEUmFXOq-3B1y_EqxYTjDjDNa1n7kfB__oA7bwfEXcUbw5t9xeLDHaj0qeIhwdQ5p5mlT3fN_nB1F9tkmx1j2Xy40BoKRGl_xUPg7AVCh3NtuW9neJN8dwK80KzIeGsewUiovzY7S8VRIQ0tgxPyNkV9uC67_H1rHVAhoUydSyfpSss8VjJHaW_3wyxSF_MOc", 
+                    "width": 976, 
+                    "html_attributions": [], 
+                    "height": 648
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "9b3c3e8284d67eee7d55733be537edfc30fa8f40", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4, 
+            "name": "Filmoteca de Catalunya", 
+            "reference": "CnRqAAAA2knZZMUX7i62tHQoDtVsBiBGSXk5ekwTJ9u-Ihbn3PZfc2rNC4VNsq8mzTZuxkMTHZcH0F27Ck15ckkUNd2xJh8pRkYBn_q3oahOp3BGtyLuPc_Q39Nc7402Z8GXhHIO1NFpXqIvWVfMDG6wJsfm3RIQ4I7IXITauDD1epVWkHE9choUZ8ErEHeCS8_bPv7t1kMa7hzSLXw", 
+            "geometry": {
+                "location": {
+                    "lat": 41.378676, 
+                    "lng": 2.170958
+                }
+            }, 
+            "place_id": "ChIJJysg51iipBIRSso7Q1Y9nd4", 
+            "vicinity": "Pla\u00e7a de Salvador Segu\u00ed, 1, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAGz-lPHR6bGQfjuEkJWKfYSia_o3vmy6ac3wbMcULAnnoZ8QNnEmC4ZC1KBZd3b-a6_hprG1UN5M-qAyTOdIXTxiGKv1YrYI6bjnQGFeUF5PXGevIgwwkg0fNL_UrScHORwaAcXvfM1GWFw0fLR-i5xIQhooTqSFJZ2AR_8lCGNIEqxoUIU1OBghql0RMzOPM2UQxPvLNNBE", 
+                    "width": 512, 
+                    "html_attributions": [], 
+                    "height": 339
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "e680133fc4edd18d7037f75aa98f781879c0f401", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4, 
+            "name": "Ic\u00e1ria Yelmo Cineplex", 
+            "reference": "CnRpAAAAz_ufu6zNNc_Kv6GzxxKqAWCH7714c1m2hdXV0Rqw2brRxn0JUGPGisWGuer8vAEVPmOhVFJm5zPol0-kKHYtVupAyU6I9yW_DRKt-FS6AmsOpfcJNO6uSY71s1CiRiL4g98k7QA571qbihR0tlE5tBIQ2tGRN8gCRSMt-3FRIXR3KBoUa7bPShds1g2m-gkv1qSGLYalV7c", 
+            "geometry": {
+                "location": {
+                    "lat": 41.390606, 
+                    "lng": 2.198283
+                }
+            }, 
+            "place_id": "ChIJ28XhAQ6jpBIRfsTZiNyRVXM", 
+            "vicinity": "Centro Comercial El Centre de la Vila Port Olimpic, Calle Salvador Espriu, 61, Barcelona", 
+            "scope": "GOOGLE", 
+            "id": "6ca8068455e4c766424b9a46177dc211be4292cd", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4.3, 
+            "name": "Renoir Floridablanca", 
+            "reference": "CnRoAAAAiv3oduTyyKVCfnmm8yVTPoRTMlq8Fwo4YeoUt_2qCOdfIEBcOjA4IUeUV_2Pg9S9XiobfSygISTSwNaIHWiM94N0Q8w7Zn8rCf06hd9sdQklIef0Lw7Fq1zOS1e9wFRnISsdIeYTwzqjPCTbIW-7mxIQXMJGziHCt2OX09N-y3OYkRoU5DKCKhnp8qMV9wMi2ZuWPvepgzk", 
+            "geometry": {
+                "location": {
+                    "lat": 41.381758, 
+                    "lng": 2.162546
+                }
+            }, 
+            "place_id": "ChIJc5lJj4qipBIRvXN5n6bk_so", 
+            "vicinity": "Calle Floridablanca, 135, Barcelona", 
+            "scope": "GOOGLE", 
+            "id": "0d39e34ccb61f1d652b3d8d407dce07d578d55c3", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3, 
+            "name": "CINESA LA MAQUINISTA", 
+            "reference": "CnRoAAAAdbKqIxbgq7AK-caPfPHNIefJJUbeKGfszwSphhVySF0fLxJPNkRYzJ7iFB_b80n8uoE5JRLeo7SCXaQEM-iyd1eMQaabmhuz6BHYQBRa8LiXca6VtWSBWAIhT1y9jyYk40Iobmva_Qwz6pOKXBUZXxIQ3B7-VaryfIJ39TNkjrwEnxoUEb4TFPRb2g8BFV3mB3kdlXPKeq8", 
+            "geometry": {
+                "location": {
+                    "lat": 41.439493, 
+                    "lng": 2.198422
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJueWcFsK8pBIR-c6WsqzJDrU", 
+            "vicinity": "Carrer de Potos\u00ed, 2, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CoQBdQAAAGL5IQjD2AeirTFFCM-Qoi4iOAikHxyX_J6L7M3HqXpt34s2ia-PXxgIrnmme1jj0FBKZ08pSVVZc-LmafmlWndg_R9vXUZV7x3D_Vlo0OzJ9bTHZXvkkgY8DeoQ9APP_An0eZ0Mb5qZwoeoMzgd4GiKQu9MZPDdJCt00pFBR_0OEhDS4bD9A6FTqLZpseGYyr7kGhTbTTDTvK3RqyfeR0uuFADk9H0OVQ", 
+                    "width": 250, 
+                    "html_attributions": [], 
+                    "height": 250
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "8e81c6e27a1c1983617e5805428b91fe2f0d34bf", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "name": "Acad\u00e8mia del Cinema Catal\u00e0", 
+            "reference": "CnRvAAAAJEF1WwAKOiJBRI05QaRLH2uzFFsn5FRuS4LOjGqtDas43GJZD5deP5yUYR8QJU62ytaWbqj0qtESuKQpxS2-Sf58d82uuawRY-GCfH1QjyM569namVQ-OSio2ZKRBykSkSoO2gSCDdNZ_oIdejN3FxIQNB5kDQhXX0f2U6ZbvTVl_xoUJmeXpdDV_poVCsCWZtqVkIMjeBA", 
+            "geometry": {
+                "location": {
+                    "lat": 41.380553, 
+                    "lng": 2.181156
+                }
+            }, 
+            "place_id": "ChIJjxM7iFWipBIR5g2_pHs7okA", 
+            "vicinity": "Passeig de Colom, 6, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAq3BL4KRu-x68CPytNiYSmzwJdwTHQINwCHCZ_mNvAFnPCOmUOwiwZsSTW-JkQk285I2tm03nUgx_0ydEwkOIhWEPNQ0lzx0yQKqv3XlQu1Pyu8g9TXyCa_sPOsv3-sJUNJsD2ZubOyZ-U-b7N1PzCBIQ9pi3Eo1jwoN7JF3SUtuJNxoUJGHsE2iVcf1qkiXo97ZACSbqhA0", 
+                    "width": 350, 
+                    "html_attributions": [], 
+                    "height": 192
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "fb7398c356160096015446dc132f398567eddb5d", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.7, 
+            "name": "Palau Bala\u00f1a Multicines 7 sales 3D", 
+            "reference": "CoQBdgAAAG6iKF6eip3hjbnoCZQgT5-3Qmew-RX4r2_Y7T5AoB0lvG-6ottq9ZlgXAGQ-3QVnCNxq-jngMNWc6-MTJX6rDSPlS64EOtUTNUOyMJhFG_uvNY879O-_ImhrZ7Y2xUkOHrWYFpuQY4iFZ2gybupiRlYxPvVjT_2dnTLflYCiwj2EhCKMrehhN8uoGBMczLbYXI-GhQWjamWyrL4s_oEiMeVyu_h0beUcg", 
+            "geometry": {
+                "location": {
+                    "lat": 41.377829, 
+                    "lng": 2.137857
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJbd_F9IaYpBIRQTswpBZqEys", 
+            "vicinity": "Carrer De Sant Antoni, 43, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAA4RLigADVnO9ultQKKkmWINDGEzQGa1TRLlmav-scPs7nutmKIJWOShM9fxufiwM5AavvcCHMreJ4JTaQ2ZpEPpP85VqnZRo9w6qXYgSHjEYi_pyfa6WuStDrjezi0JD3ufNE38fNKqBM45U-ZVlbzBIQhR-WK089phmECMseF6HnEhoUzlc6M_a7Jf-kQ7PCIJH3NUtoJLo", 
+                    "width": 976, 
+                    "html_attributions": [], 
+                    "height": 648
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "f562337f6bc214861439a7ace6bbc85c8f6b5b8d", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.2, 
+            "name": "Comedia", 
+            "reference": "CmRbAAAAfmnTwrYD1s8YVwXKyEAPDDwglq5keQUR3q-xvxkfy8sGHK_sfGjfHQThFR6wtbqAFAc3aqbuy_s3z9s8tueviZ-K5H2w8Uzih6kyxfPn4x5vDU9ultmucxNsZbjO8CCbEhDFR497DZvNphUvjvGP9JgHGhQQRFvLH7APejooiKJIhFV45BmhTQ", 
+            "geometry": {
+                "location": {
+                    "lat": 41.389398, 
+                    "lng": 2.167565
+                }
+            }, 
+            "place_id": "ChIJfcX3QvKipBIR-UMjyl486_g", 
+            "vicinity": "Passeig de Gr\u00e0cia, 13, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRlAAAAutfyyG_mTBCflZ9eLF_lq2cRZAu-V2YuF2YolzOudQ6TsqrdsO4gQGg29E9obCOrFAImtdCRDHhBYdkmeCZtsz_qMcQDdQ4mEj1feMcLpiItMHg424XVbG5aYtk9w27N3V21hNieK0fHCtlnUc6cuRIQ6bIpEEOkxCY5_JGzEJIdRBoU2keCs732yosdp9O6L_5wj20q9FY", 
+                    "width": 749, 
+                    "html_attributions": [
+                        "From a Google User"
+                    ], 
+                    "height": 749
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "1763f2405d49a551cf47da14b483417d96fe36e9", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4.3, 
+            "name": "Verdi Park", 
+            "reference": "CmReAAAASSHQP0e5GrA1n7cO-qEtvR0JzjPnNhLpXbAG7M2cATUKezbeKaHvZK-SR4ROAx-DA6yb4g7i3TyBmdn8sL5fj_4agqGv_SXc6Wy9rYIFenyXMLNwnxYnL6NuEVTDilzCEhCI7XauOjF7eNGas98WDGgLGhTzj45xyS1Uvpl55y1ZNckKzbmUnA", 
+            "geometry": {
+                "location": {
+                    "lat": 41.404321, 
+                    "lng": 2.157709
+                }
+            }, 
+            "place_id": "ChIJOavlWryipBIRt4ZcmXJ9yec", 
+            "vicinity": "Carrer de Torrijos, 49, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAUFuKCX5FvCuCNj0sAmire3R3QjwRlfyDaLoTFjHOFIn-mP9Zav024nouDG15YWlYUQbjKIMWTvh9BLUVwtmr5qZsMHzmEZr5adeXYDEashOZzEKwEipQeaiguQZywL_mrOOe4E7AqtkK8sfzKx0LRBIQUD5pj_FNxm7JW7Jz5RkV4xoUUHgVLNNux5Qcnn8etFGmj0Ij-2s", 
+                    "width": 2844, 
+                    "html_attributions": [], 
+                    "height": 1600
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "e3c52082c8dc122f62a2b734a439cacf49a27d8a", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.8, 
+            "name": "Aribau Multicines 5 sales", 
+            "reference": "CnRtAAAAWanuOQo1XZUAd2zYdMknsTMQb2YX2OstFdQ8VraDfvP6efdQ5_YEGe9f9Vhy_EPiV7JVs2Q5rSL7vXSzZ_Mz19xnF0MPJC83fsBPVW6Yp-qiCr3rOcQ4y4hS0el-9Y0ABExBuWrCCvv9NefrV4H0kRIQNaaJ72P9YXaZg4Wuxv_FTRoUcI-F5Zw7JEoWcCWs3StB0TRF1s4", 
+            "geometry": {
+                "location": {
+                    "lat": 41.385898, 
+                    "lng": 2.162424
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJBfAufouipBIRZQdM9h5OGLs", 
+            "vicinity": "Carrer Aribau, 8-10, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAMh_9hnJqtoWmVsWkup7lbIuNa-bZK2zerEXKmLFciWeveJyf_vhz8xR3JGe5uUMriUztuCDrTfRPm1HbYVRAA1VMA2_WK8Kqnw7tJ-4UZRhFTlLnwlTpukPMCR6I5Gf22kBlk0-HcnQAI8x6T7fZIhIQVaol2uTWP5fsRXU3pG1I7BoUn1p6RrwhK171uYWSWlEPBOfYp3Y", 
+                    "width": 1024, 
+                    "html_attributions": [], 
+                    "height": 768
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "756cbb8870a37d8f12a48039be445d0fc43c4870", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.9, 
+            "name": "Lauren Universitat", 
+            "reference": "CnRlAAAA6NizoSA_NQ-UI-ZbtKqLGPrb-k-JV3AEyvgx5FPtvVbG5DvWD3JQjfHexfYDzxViMawf_34yQCkwEamjsfQ9LeA-22AlQPrJ4_JlNPWaoKXkBMJrYtVYn6kXN3kD1JjCrePvq74pmp_7s2pKpZO4eRIQbfnfJ6xXyHTnbPc5zcghbBoU9rbot2TcWFr8nZGGsxPuu0kMGPc", 
+            "geometry": {
+                "location": {
+                    "lat": 41.385754, 
+                    "lng": 2.165323
+                }
+            }, 
+            "place_id": "ChIJY4ccqPSipBIRu3E_5lqCUUM", 
+            "vicinity": "Calle Pelai, 8, Barcelona", 
+            "scope": "GOOGLE", 
+            "id": "c79bda2c93604f9dac49308cee0bc50c8cc569af", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.6, 
+            "name": "Gran Sarria Multicines 8 sales 3D", 
+            "reference": "CoQBdQAAAH3asyYB7AZYk4Jhtdt4psKbmuRCynDwvw4g4wZSknkU32lLq77jtcMPqmt55VF050vvkuUG6nQWTauCzEshYTN0b_WNTbSQzFkIfksm1nGccUuevrI-Pj8ZCpO_OpPtHY22EDTmIMAo9ZuP714jVQR1TbEDOTRthhmsdRwQJ1KWEhAHL3dfAO2gM8yMta4ii_IwGhRcxWCXNizUlMQNK_CYuLgULHdZng", 
+            "geometry": {
+                "location": {
+                    "lat": 41.394685, 
+                    "lng": 2.13377
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJ7cUpUG6YpBIRaFGYvFHZgNI", 
+            "vicinity": "Ronda del General Mitre, 38 - 44, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAvZDAUG9jiTmiMooCuhh7TIKHVklJEKjmWoijq9wky4XJRa3CPblsMOnIs-oQKSOgl1oS01mshFd65cr1xfcN0GtEQOdXG7b03FZnBd0T609skrM1gbjUJyhJi2H2vMzxWRDm9xTldOsBMAZVCFePhBIQSQGRPfNYZQUkeKHGivdhvhoUpMCypSgNQFS2gIco28OjAZPzpqQ", 
+                    "width": 976, 
+                    "html_attributions": [], 
+                    "height": 648
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "8dcfe3d70943b09d8cb00d40e9dc38b086701401", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.5, 
+            "name": "CINESA MAREMAGNUM", 
+            "reference": "CnRlAAAApeYa9_6NJTqvUjWwVNONjbt403_gI7a1iKqRuYVnto_dQK_X1CmwdSealUqtksqvtQvNbJJm0nUBLO7pHpdy97nlRD0wzaE_1lmCdkalC56x929uzJtPPOdy6T28CFG8tfNku4Vqc8h1M0PbygyMcRIQXrF56m4enWYF3ccGPLrTgxoUl4W8nbdFzNDCy0ZQU1g4BN8CMyU", 
+            "geometry": {
+                "location": {
+                    "lat": 41.375266, 
+                    "lng": 2.183658
+                }
+            }, 
+            "place_id": "ChIJT16ztVSipBIRhz-9c6Nt_vE", 
+            "vicinity": "Moll d'Espanya, 5, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRsAAAA_UPBs7k9Ps6-pYVdsYsDoMlOwUwdKROfpXwPmMDhHsu8gjy0REWnUFC7s3-QVvBJ6MrDx-BeckYVymSI7rm5977aTcoN6QMTucCj4qBqRMwSrT_Jtybo5Spgz6tj6ZSmT8pLaNjM9nW8Jvyy5u_2ABIQeEnAMRZ_1zwaSsyBMq7H3hoUDBI9tYKa4vx_5lzh1XvIUaR2yTQ", 
+                    "width": 453, 
+                    "html_attributions": [], 
+                    "height": 453
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "990c3d4fac033e1f4cc57f8ec20e6ac3dfaf29e5", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 4.4, 
+            "name": "Verdi", 
+            "reference": "CmRYAAAARuOPJpCG2trEBUMqa058NowiejVzMnryZRSKuZDSFMPwsyghdWlHv8LXAy2q1qqaiZomAZvPT-h4ZvBkC20GytrJL_D0Tt0jg2fPDp0Mh6DyhuiXzLKtlGgZX1hHxwpvEhAs5ntA-6bQyB1kJsyrjC4jGhSMNIe0bgu4nhthwWN-JnKnwljUKA", 
+            "geometry": {
+                "location": {
+                    "lat": 41.403942, 
+                    "lng": 2.156884
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJOavlWryipBIRrbVD5YE5rSo", 
+            "vicinity": "Carrer Verdi, 32, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRqAAAAKJJhoGjKT-HT7Y4I3ZbcOMmkIwB88tR974jzZL3PVFa8dYO-Ocyfs3NfofP_yGbFVXjmQzBxcXRuGQpF-mWmmx-NBbNqsb2L4HGgOpuNQ-ILWD09gIT0yfO_Z0R4Sor9_me09WQXZUutQ_qr0J4dpxIQi0gKWRNS0zmMA-L_DhqGRhoUzgbWJ3SLWiNQJXk2s7bUPO_zUx0", 
+                    "width": 1579, 
+                    "html_attributions": [
+                        "From a Google User"
+                    ], 
+                    "height": 1119
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "9d3fe88fd1966edfca3972ee5bcad145c1c9eaf2", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.7, 
+            "name": "CINESA DIAGONAL MAR", 
+            "reference": "CnRnAAAA_pxgytffPzPlXwIofe9KmO0H6w8QoOeAsVRuA0p6oBrri9ONIzPB3vCh7q4KKwcUnhYI9rZzLVOdiO3HXSo7RaDoHpnriDOU-JaziVoc_l4w-uVzHEKT-Z6YCbKJOMrEwplhCngLP3g0y19mLFP0uBIQpcBjKhbqaHUv2Vfha__j6BoUgMONjrRzz22zrFekjcsPMsuglhc", 
+            "geometry": {
+                "location": {
+                    "lat": 41.410315, 
+                    "lng": 2.216534
+                }
+            }, 
+            "place_id": "ChIJQ5WONVejpBIRBHgaGg2ts6E", 
+            "vicinity": "Avda. Diagonal, 3, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRoAAAAO9b3TMo4WHrhUwUNewBYRuhXZdRxif4pWHSuolXkErFYidk8AfrBCRrnk4mTEAatysXrIt4kQPmwzbWL8GeCp5INp4YVwKCXz0vl4ZHHVm3FzdpxPrPjKfBwd77fPNObesPxAOlZDAKZXbbknxVRiRIQJL2rdImckTQiHdATrz4oTRoUo8TEq0Zi9O8Y4PD386X3dXB-7kk", 
+                    "width": 494, 
+                    "html_attributions": [], 
+                    "height": 494
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "2a8796ea2031f803bdc8e1fc74f00e34d25d15c6", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "name": "Club Coliseum", 
+            "reference": "CmRgAAAAIjHmeKiFvXH2OzTikHuYHC4F2KKZdoZxvwiyL2NCQM7z6OKBvF8IgXcUbP9ww04m_Dq2fNZBaEEVCxkgA-7N7s0hYDaHCrgzd_aT3JvCAzX4I07ZM_XV--b9UaFUUnn8EhD-Z--tvG-4SAOg3LlB3oeQGhRKwIajeMeWVfxuuzno7VkU53fhdA", 
+            "geometry": {
+                "location": {
+                    "lat": 41.388887, 
+                    "lng": 2.166131
+                }
+            }, 
+            "place_id": "ChIJTbo15PKipBIRA3QjD903WAU", 
+            "vicinity": "Rambla de Catalunya, 23, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAGfoLfBCcyYOq9FYokQk3I6GkjycRCpl1-OuQ8ke8dmOSUmeCe8NJ702rAApjXSBFD0pQMKYcE6kn_sCi7YU5C_i94A4mSdvBBrJ53qxFUQLRDUhiTIIewhVFl2OA1Tyeino67F9dqWGeOIW2MiFEXxIQyjJOR3Pi1XteO6Brh4H1gRoURKX1NghXg7lNp_9tqGKvy4kFl-0", 
+                    "width": 1042, 
+                    "html_attributions": [], 
+                    "height": 648
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "8d3b084b09d43d106b6c25fa7f4b36f3083e1049", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.7, 
+            "name": "CINESA HERON CITY", 
+            "reference": "CnRkAAAAyB1f149Wu1L0j5HjRzlOINLlSmzRNLCGvsscdC6BbB0pCn2rgiQzxz3YJ3U7p1s3ZJav1MRXB_meIm8OQ9OSIBAjjyT8LQ3uTSYWKUH2KNn0k76BNM-mpY2ccJRV9Pdz5YloznTls9XvFDiwxcDyTBIQrfRZhzezSEQsOzi4SyFG-RoU_YjV-S4dniUESPEf_oB98Y67bX0", 
+            "geometry": {
+                "location": {
+                    "lat": 41.435497, 
+                    "lng": 2.180562
+                }
+            }, 
+            "place_id": "ChIJzadz3ia9pBIRI9y-wxC8RiI", 
+            "vicinity": "Centro Comercial Heron City, Passeig d'Andreu Nin, s/n, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAADfCQkWyf9QNgGIOmGRu3TFt551uI417uqZTyM8ck2iFsg_SWHK6R2E8yXzSqakhYnyvOAR7nHbC31I8OTRhyrYiyqbO7KbmKThdb-90dqyGaaai8KvGanMXEq4ty3alvCOCCvsVzfhQ4cz6Z0VIxVRIQJutzNWxotHl6-CdFVtHpvhoU6zKuzKG-L1STI-X4AtH-Ktb85OE", 
+                    "width": 371, 
+                    "html_attributions": [], 
+                    "height": 371
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "1093ac3885169ee37fe33ae5ae32a907176f3a75", 
+            "types": [
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "rating": 3.9, 
+            "name": "Foster's Hollywood", 
+            "reference": "CnRmAAAAFRByjAs-gH79w9Zwg47L7D5LaPJ2yAHbIHAqLCDTDcf8ioNABPJOYaTT-izhpkLJ0O7sofn34vY0V8hhnRUiKMuHomEIQRm607fOkV4VK4wrChIGDkoN3ZVATM5Ie6cafM4_21mruC19Wpko5LkVQhIQxzewNwNFyzNHhmFHJyXb7xoURCq0wcSaQz-jneC1nal2aZxLSxM", 
+            "geometry": {
+                "location": {
+                    "lat": 41.409453, 
+                    "lng": 2.215416
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJHT0MvFCjpBIRhDutdjy4mPs", 
+            "vicinity": "Avinguda Diagonal, 3, Barcelona", 
+            "photos": [
+                {
+                    "photo_reference": "CnRoAAAAj85OrljIsTZOyqmaPiWQiLQ0JsF5jgyF-xlcosBbWlDjXpryq_nFqRdUMTVfbtkSdiGEhUc9FeulCz0ayNZTQVOOLtJlppL-T5t1EPJts3MWe1cvzDorEY5GagJ-dtiBFRJ1Y_UuHkHiGaJ0KgjEMBIQeXMcSvTne43ZEvrT24C0nRoUZHSkdzXJDHSxKn1FwbUVszCJuzE", 
+                    "width": 612, 
+                    "html_attributions": [
+                        "From a Google User"
+                    ], 
+                    "height": 816
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "7472f173a012eb0e73fa69b365c27f790e1699ff", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "movie_theater", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }
+    ]
+}

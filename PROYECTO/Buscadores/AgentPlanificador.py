@@ -288,11 +288,10 @@ def comu():
 
     
     destination = "Madrid, Spain"
-    activity="Movie"
+    actividades= [types.TYPE_MOVIE_THEATER, types.TYPE_CASINO, types.TYPE_MUSEUM]
 
     radius = 20000
 
-    tipo = types.TYPE_MOVIE_THEATER 
 
     originVuelo="BCN"
     destinationVuelo="PRG"
@@ -331,10 +330,12 @@ def comu():
     print "Añadir parametros de actividad"
     #############################################################
     # Paso los parametros de busqueda de actividad en el grafo
-    actv = myns_pet.actividad
-    gmess.add((actv, myns_atr.actividad, Literal(activity)))
-    gmess.add((actv, myns_atr.radio, Literal(radius)))
-    gmess.add((actv, myns_atr.tipo, Literal(tipo)))
+    i = 0
+    for a in actividades:
+        i+= 1
+        actv = "actividad" + str(i)
+        gmess.add((myns_pet.actv, myns_atr.tipo, Literal(a)))
+    
     
     ########################################################### 
     # Comunicar con buscador
@@ -425,10 +426,10 @@ def comu():
                 WHERE{
                     ?a myns_atr:rating ?ratin .
                     ?a myns_atr:cuesta ?cuesta .
-                    FILTER(str(?ratin) != "")
-                    FILTER(str(?cuesta) != "")
+                    FILTER(str(?ratin) != "" && str(?cuesta) != "")
+                    
                 }
-                ORDER BY DESC(?ratin, ?cuesta)
+                ORDER BY DESC(?ratin) ?cuesta
                 LIMIT 1
         """)
     Aid = []
@@ -606,7 +607,7 @@ if __name__ == '__main__':
     # VERBOSE
     # Descomentar para un print "pretty" del grafo de respuesta
     # print json.dumps(gr.json(), indent=4, sort_keys=True)
-    grep = comu()
+    #grep = comu()
 
     # Ponemos en marcha el servidor
     app.run(host=hostname, port=port)

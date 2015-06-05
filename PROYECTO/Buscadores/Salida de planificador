@@ -40,6 +40,11 @@ en que cada actividad:
 		-telefono
 		-rating
 		-precio
+                -nombre
+                -Descripcion
+                -googleUrl
+                -website
+                -tel_int
 
 
 Hotel:
