@@ -96,7 +96,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   }
   gresp = Graph()
   #print payload
-  b = True
+  b = False
   if b == True:
     r = requests.post(QPX_END_POINT, params={'key': QPX_API_KEY}, data=json.dumps(payload), headers=headers)
     #print r.text

@@ -235,14 +235,12 @@ def comunicacion():
         originVuelo="LON"
     elif str(originCit) == "Roma":
         originVuelo="ROM"
-    elif str(originCit) == "Prage":
-        originVuelo="PRG"
     elif str(originCit) == "Paris":
         originVuelo="PAR"
 
     destinationVuelo="BCN"
     destinationCountry="Spain"
-    elif str(destinationCit) == "Amsterdam":
+    if str(destinationCit) == "Amsterdam":
         destinationVuelo="AMS"
         destinationCountry="Holland"
     elif str(destinationCit) == "London":

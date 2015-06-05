@@ -178,7 +178,10 @@ def comunicacion():
             print propertyCategory
             
             actividades = []
-            
+            actividadesInt = gm.triples((None, myns_atr.tipo, None))
+
+            for s,p, o in actividadesInt:
+                actividades.append(o)
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
             print "activity: "
@@ -472,8 +475,6 @@ def comunicacion():
     #     print '\n'
     
     mss_cnt += 1
-
-    return grep
 
     print 'Respondemos a la peticion\n'
     ########################################################### 

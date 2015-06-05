@@ -301,13 +301,13 @@ def agentbehavior1(cola):
 
 
 
-def message_dialogador(cityOrigin = "Barcelona, Spain", 
-    cityDestination = "Madrid, Spain",
+def message_dialogador(cityOrigin = "Barcelona", 
+    cityDestination = "London",
     departureDate = datetime.date(2015, 9, 8),
     returnDate = datetime.date(2015, 9, 20),
     maxPrice = 500,
     numberOfStars = 3,
-    activities = "Movie",
+    actividades = ["Movie", "Casino", "Theater"]
     ):
     #Preguntamos al usuario sus preferencias 
     print ('Welcome to Bestrip! The best trip search engine in the world!' + '\n')
@@ -341,7 +341,13 @@ def message_dialogador(cityOrigin = "Barcelona, Spain",
     gmess.add((peticion, myns_atr.maxPrice, Literal(maxPrice)))
     gmess.add((peticion, myns_atr.propertyCategory, Literal(numberOfStars)))
     #for a in activities
-    gmess.add((peticion, myns_atr.activities, Literal(activities)))
+    i = 0
+    for a in actividades:
+                i+= 1
+                actv = "actividad" + str(i)
+                gmess.add((peticion, myns_atr.actividad, myns_act.actv))
+                gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
+
     #gmess.add((peticion, myns_atr.useTransportPublic, Literal(transport)))
 
     
