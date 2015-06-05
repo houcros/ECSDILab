@@ -116,11 +116,19 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 form = MyForm()
 
-@app.route("/solution", methods=['GET'])
+@app.route('/solution', methods=['POST'])
 def solution():
-    if request.args:
-        return ''
-    else:
+    if not form.validate():
+        cityOriginField = Cities[int(request.form['cityDestination'])]
+        cityDestinationField = Cities[int(request.form['cityOrigin'])]
+        returnDateField = str(request.form['returnDate'])
+        departureDateField = str(request.form['departureDate'])
+        maxPriceField = request.form['maxPrice']
+        numberOfStarsField = request.form['numberOfStars']
+        activitiesField = request.form['activities']
+        #Llamamos a message dialogador pasandole los parametros
+        #Esto de devuelve un resultado
+        #Dicho resultado lo pones en el formato debido (Por ahora esta hardcodeado)
         airportData = {
             'idGo' : 5000,
             'idBack': 4000,
@@ -165,23 +173,13 @@ def solution():
                 'precio': 5
             }  
         ]
-        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData) #Tambien habra que pasarle la solucion cuando este hecho
-
-@app.route('/submit', methods=['POST'])
-def submit():
-    if not form.validate():
-        cityOriginField = Cities[int(request.form['cityDestination'])]
-        cityDestinationField = Cities[int(request.form['cityOrigin'])]
-        returnDateField = str(request.form['returnDate'])
-        departureDateField = str(request.form['departureDate'])
-        maxPriceField = request.form['maxPrice']
-        numberOfStarsField = request.form['numberOfStars']
-        activitiesField = request.form['activities']
+        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData)
+        #Renderizamos la template pasandole los datos
 
        # return message_dialogador()
         #return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
         #returnDateField = request.form['returnDate'] 
-        return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
+        #return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
         return 'ERROR , pon bien los campos inutil'
     #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
@@ -388,7 +386,7 @@ if __name__ == '__main__':
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
-    message_dialogador()
+    #message_dialogador()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors
