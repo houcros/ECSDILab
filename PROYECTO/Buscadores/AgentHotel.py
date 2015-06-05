@@ -28,7 +28,7 @@ from AgentUtil.APIKeys import EAN_DEV_CID, EAN_KEY, EAN_SECRET
 from AgentUtil.Agent import Agent
 import socket
 from rdflib import Graph, Namespace, Literal
-from datetime import datetime
+import datetime
 
 # Nuestros namespaces que usaremos luego
 agn = Namespace("http://www.agentes.org#")
@@ -41,6 +41,8 @@ myns_hot = Namespace("http://my.namespace.org/hoteles/")
 port = 9004
 hostname = socket.gethostname()
 
+CACHE_TIME_CONST = 1
+LOG_TAG = "DEBUG AgentHotel => "
 # Datos del Agente
 AgenteHotel = Agent('AgentHotel',
                   agn.AgentHotel,
@@ -68,22 +70,32 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
   searchRadius=5, arrivalDate="2015-8-20", departureDate="2015-8-30", 
-  numberOfAdults=1, numberOfChildren=0, propertyCategory=1):
+  numberOfAdults=1, numberOfChildren=0, propertyCategory=1, requestTime=datetime.datetime.fromtimestamp(0)):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
   # print destinationCity
   # print destinationCountry
   # print arrivalDate
   # print departureDate
-  arrivaldepD = datetime.strptime(arrivalDate, '%Y-%m-%d')
+  print LOG_TAG+"looking for hotels"
+  arrivaldepD = datetime.datetime.strptime(arrivalDate, '%Y-%m-%d')
   arrivaldepDStr = arrivaldepD.strftime("%m/%d/%Y")
 
-  departuredepD = datetime.strptime(departureDate, '%Y-%m-%d')
+  departuredepD = datetime.datetime.strptime(departureDate, '%Y-%m-%d')
   departuredepDStr = departuredepD.strftime("%m/%d/%Y")
 
   gresp = Graph()
   # COORDINATES OF THE DESTINATION
-  b = False
-  if b == True:
+  print LOG_TAG+"checking cache"
+  tDelta = datetime.datetime.now() - requestTime
+  days, seconds = tDelta.days, tDelta.seconds
+  hours = days * 24 + seconds // 3600
+  minutes = (seconds % 3600) // 60
+  seconds = seconds % 60
+  print LOG_TAG+"resolving timestamp"
+  b = (minutes < CACHE_TIME_CONST)
+
+  if b == False:
+    print "AgentHotel => We make a new service request; cant rely on cache"
     geolocator = Nominatim()
     location = geolocator.geocode(destinationCity + ", " + destinationCountry)
     print ((location.latitude, location.longitude))
@@ -151,6 +163,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
         gresp.add((hot_obj, myns_atr.tripAdvisorReviewCount, Literal(hot['tripAdvisorReviewCount'])))
         gresp.serialize('h.rdf')
   else: 
+    print "AgentHotel => We read from cache"
     gresp.parse('h.rdf' ,format='xml')
   print "retornar repuesta"
   return gresp

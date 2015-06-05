@@ -26,12 +26,15 @@ from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
 from AgentFlightsGoogle import buscar_vuelos
 from AgentHotel import buscar_hoteles
-from datetime import datetime
+import datetime
 import logging
 
 import pprint
 from googleplaces import GooglePlaces, types, lang
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
+
+lastRequestFlightsTimestamp = datetime.datetime.fromtimestamp(0)
+lastRequestHotelsTimestamp = datetime.datetime.fromtimestamp(0)
 
 # Definimos los parametros de la linea de comandos
 parser = argparse.ArgumentParser()
@@ -291,7 +294,9 @@ def comunicacion():
                                 destinationCountry = destinationCountry,
                                arrivalDate = departureDat,
                                departureDate = returnDat,
-                               propertyCategory = propertyCategor)
+                               propertyCategory = propertyCategor,
+                               requestTime = lastRequestHotelsTimestamp)
+    lastRequestHotelsTimestamp = datetime.datetime.now()
     
     # Buscamos vuelos
 
@@ -303,7 +308,9 @@ def comunicacion():
                             destination=destinationVuelo,
                             departureDate= departureDat, 
                             returnDate=returnDat,
-                            maxPrice=maxPric)
+                            maxPrice=maxPric,
+                            requestTime = lastRequestFlightsTimestamp)
+    lastRequestFlightsTimestamp = datetime.datetime.now()
 
     # Juntamos los tres grafos en una respuesta
     grespuesta = Graph()
@@ -523,7 +530,8 @@ if __name__ == '__main__':
     # print depDStr
     # print retDStr
 
-    # gvuelos = buscar_vuelos(departureDate="2015-08-20", returnDate="2015-08-30")
+    # gvuelos = buscar_vuelos(requestTime = lastRequestFlightsTimestamp)
+    # lastRequestFlightsTimestamp = datetime.datetime.now()
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in gvuelos:
@@ -547,7 +555,8 @@ if __name__ == '__main__':
     # print arrDStr
     # print depDStr
 
-    # ghoteles = buscar_hoteles(arrivalDate=08/20/2015, departureDate=08/30/2015)
+    # ghoteles = buscar_hoteles(requestTime = lastRequestFlightsTimestamp)
+    # lastRequestFlightsTimestamp = datetime.datetime.now()
     
     # print "GRAFO DE RESPUESTA"
     # for s, p, o in ghoteles:
