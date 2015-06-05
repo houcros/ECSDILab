@@ -4,7 +4,7 @@ import gzip
 import argparse
 import datetime
 from flask import Flask, request
-
+import logging
 
 from flask import Flask, request , redirect
 from flask import render_template
@@ -116,11 +116,64 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 form = MyForm()
 
-@app.route("/solution", methods=['GET'])
+@app.route('/solution', methods=['POST'])
 def solution():
-    if request.args:
-        return ''
-    else:
+    if not form.validate():
+        cityOriginField = Cities[int(request.form['cityDestination'])]
+        cityDestinationField = Cities[int(request.form['cityOrigin'])]
+        returnDateField = str(request.form['returnDate'])
+        departureDateField = str(request.form['departureDate'])
+        maxPriceField = request.form['maxPrice']
+        numberOfStarsField = request.form['numberOfStars']
+        activitiesField = []
+
+        activitiesField.append(request.form['activities'])
+
+        #Llamamos a message dialogador pasandole los parametros
+        #Esto de devuelve un resultado
+        #Dicho resultado lo pones en el formato debido (Por ahora esta hardcodeado)
+        g = Graph()
+        g = message_dialogador(cityOriginField, cityDestinationField, 
+                                departureDateField,returnDateField, maxPriceField, 
+                                numberOfStarsField, activitiesField) 
+
+        hlis = g.subjects(predicate=myns_atr.esUn, object=myns.hotel)
+        hotelid = ''
+        #only 1 s
+        for s in hlis:
+            hotelid = s
+        hotel = Graph()
+        gmess.bind('myns_atr', myns_atr)
+        hotel = g.triples((hotelid, None, None))
+        
+        for s, p, o in hotel:
+            print s
+            print p
+            print o
+
+        print g.value(subject= hotelid, predicate= myns_atr.codigoPostal)   
+        codigoPostal = hotel.value(subject= hotelid, predicate= myns_atr.codigoPostal)
+
+        descripcionDeHabitacion = hotel.value(subject=hotelid,predicate=  myns_atr.descripcionDeHabitacion)
+        direccion = hotel.value(subject=hotelid,predicate=  myns_atr.adresa)
+        nombre = hotel.value(subject=hotelid,predicate=  myns_atr.nombre)
+        descripcionCortaHotel = hotel.value(subject=hotelid,predicate=  myns_atr.descriptionCorta)
+        distanciaRespectoAlCentro = hotel.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro)
+        distanciaRespectoAlCentro_unidad = hotel.value(subject=hotelid,predicate=  myns_atr.distanciaRepectoAlCentro_unidad)
+        preciohotel = hotel.value(subject=hotelid,predicate=  myns_atr.cuesta)
+        rating = hotel.value(subject=hotelid,predicate=  myns_atr.rating)
+        tripAdvisorRating = hotel.value(subject=hotelid,predicate=  myns_atr.tripAdvisorRating)
+        tripAdvisorReviewCount = hotel.value(subject=hotelid,predicate=  myns_atr.tripAdvisorReviewCount)
+
+        flis = g.subjects(predicate=myns_atr.esUn, object=myns.viaje)
+        flyid = ''
+        #only 1 s
+        for s in flis:
+            flyid = s
+
+        hotel = g.triples((hotelid, None, None))        
+
+
         airportData = {
             'idGo' : 5000,
             'idBack': 4000,
@@ -135,18 +188,19 @@ def solution():
             'ciudadLlega': 'Madrid'
         }
         hotelData = {
-            'nombreHotel' : 'Sol Melia',
-            'precioHotel': 500,
-            'codigoPostal': 033203,
-            'descripcionDeHabitacion': 'Es muy chula',
-            'direccion': 'Calle Numancia',
-            'descripcionCorta' : 'chula',
-            'distanciaRespectoAlCentro': 5.3,
-            'distanciaAlCentro_unidad': 3.2,
-            'rating': 3,
-            'tripAdvisorRating': 3,
-            'tripAdvisorReviewCount': 4
+            'nombreHotel' : nombre,
+            'precioHotel': preciohotel,
+            'codigoPostal': codigoPostal,
+            'descripcionDeHabitacion': descripcionDeHabitacion,
+            'direccion': direccion,
+            'descripcionCorta' : descripcionCortaHotel,
+            'distanciaRespectoAlCentro': distanciaRespectoAlCentro,
+            'distanciaAlCentro_unidad': distanciaRespectoAlCentro_unidad,
+            'rating': rating,
+            'tripAdvisorRating': tripAdvisorRating,
+            'tripAdvisorReviewCount': tripAdvisorReviewCount
         }
+        return hotelData
         listActivities = [
             { 
                 'tipo': 'Museo',
@@ -165,23 +219,14 @@ def solution():
                 'precio': 5
             }  
         ]
-        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData) #Tambien habra que pasarle la solucion cuando este hecho
 
-@app.route('/submit', methods=['POST'])
-def submit():
-    if not form.validate():
-        cityOriginField = Cities[int(request.form['cityDestination'])]
-        cityDestinationField = Cities[int(request.form['cityOrigin'])]
-        returnDateField = str(request.form['returnDate'])
-        departureDateField = str(request.form['departureDate'])
-        maxPriceField = request.form['maxPrice']
-        numberOfStarsField = request.form['numberOfStars']
-        activitiesField = request.form['activities']
-        activitiesField = ["Movie", "Casino", "Theater"]
+        return render_template('solution.html',airportData=airportData, listActivities=listActivities,hotelData=hotelData)
+        #Renderizamos la template pasandole los datos
+
        # return message_dialogador()
-        return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
+        #return 
         #returnDateField = request.form['returnDate'] 
-        return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
+        #return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
         return 'ERROR , pon bien los campos inutil'
     #return cityDestinationField + ' ' + cityOriginField + ' ' +  departureDateField + ' ' +  returnDateField + ' ' + maxPriceField + ' ' +  numberOfStarsField + ' ' +  activitiesField
@@ -388,7 +433,7 @@ if __name__ == '__main__':
     #cont = message_dialogador();
    
     # Ponemos en marcha el servidor
-    message_dialogador()
+    #message_dialogador()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

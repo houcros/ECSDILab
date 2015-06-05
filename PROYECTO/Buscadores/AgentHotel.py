@@ -82,7 +82,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
 
   gresp = Graph()
   # COORDINATES OF THE DESTINATION
-  b = False
+  b = True
   if b == True:
     geolocator = Nominatim()
     location = geolocator.geocode(destinationCity + ", " + destinationCountry)
