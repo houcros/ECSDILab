@@ -177,9 +177,9 @@ def submit():
         maxPriceField = request.form['maxPrice']
         numberOfStarsField = request.form['numberOfStars']
         activitiesField = request.form['activities']
-
+        activitiesField = ["Movie", "Casino", "Theater"]
        # return message_dialogador()
-        #return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
+        return message_dialogador(cityOriginField, cityDestinationField, departureDateField,returnDateField, maxPriceField, numberOfStarsField, activitiesField) 
         #returnDateField = request.form['returnDate'] 
         return cityDestinationField + ' ' + cityOriginField + ' ' + returnDateField + ' '  + departureDateField + ' ' +  maxPriceField  + ' ' + numberOfStarsField + ' ' + activitiesField
     else:
