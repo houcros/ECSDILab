@@ -26,6 +26,7 @@ from AgentUtil.Logging import config_logger
 from AgentActividades import buscar_actividades
 from AgentFlightsGoogle import buscar_vuelos
 from AgentHotel import buscar_hoteles
+from datetime import timedelta
 import datetime
 import logging
 
@@ -33,8 +34,11 @@ import pprint
 from googleplaces import GooglePlaces, types, lang
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
 
+
+#tiempo y listas que se usan para hacer control de cache
 lastRequestFlightsTimestamp = datetime.datetime.fromtimestamp(0)
 lastRequestHotelsTimestamp = datetime.datetime.fromtimestamp(0)
+hotelconsult = {}
 
 # Definimos los parametros de la linea de comandos
 parser = argparse.ArgumentParser()
@@ -108,6 +112,7 @@ cola1 = Queue()
 
 
 
+
 @app.route("/iface", methods=['GET', 'POST'])
 def browser_iface():
     """
@@ -143,14 +148,8 @@ def comunicacion():
     """
     global dsgraph
     global mss_cnt
-
-    # Variables globales con los parametros de busqueda de actividades
-    # Realmente creo que podrian ser locales...
-    global location
-    global activity
-    global radius
-    global tipo
-
+    global hotelconsult
+    global lastRequestHotelsTimestamp
     #logger.info('Peticion de informacion recibida')
     print 'INFO AgentBuscador=> Peticion de informacion recibida\n'
 
@@ -158,8 +157,6 @@ def comunicacion():
     message = request.args['content']
     print "INFO AgentBuscador => Mensaje extraído\n"
     # VERBOSE
-    print message
-    print '\n\n'
 
     # Grafo en el que volcamos el contenido de la request
     gm = Graph()
@@ -219,14 +216,15 @@ def comunicacion():
 
     # Buscamos actividades en el metodo de AgentActividades
     print "INFO AgentBuscador => Looking for activities (in AgentActividades)..."
-
+    requestTime=datetime.datetime.now()
     actividadesInt = gm.triples((None, myns_atr.tipo, None))
     gactividades = Graph()
 
     for s,p, o in actividadesInt:
         print o
-        gactividades += buscar_actividades(destinationCity=destinationCit, 
-            destinationCountry= destinationCountry, types= [o])
+        if o != None:
+            gactividades += buscar_actividades(destinationCity=destinationCit, 
+                destinationCountry= destinationCountry, types= [o])
 
     print "INFO AgentBuscador => Activities found"
     #VERBOSE
@@ -237,9 +235,9 @@ def comunicacion():
     #     print 'p: ' + p
     #     print 'o: ' + o
     #     print '\n'
-
-    print "Buscamos hoteles"    
     
+    print "Buscamos hoteles"    
+
 
     departureDat=gm.value(subject= busqueda, predicate= myns_par.departureDate)
 
@@ -247,13 +245,23 @@ def comunicacion():
 
     propertyCategor=gm.value(subject= busqueda, predicate= myns_par.propertyCategory)
 
-    
+    b = True
+    if lastRequestHotelsTimestamp == datetime.datetime.fromtimestamp(0) or requestTime - lastRequestHotelsTimestamp >= datetime.timedelta(minutes=15):
+        if (destinationCit, departureDat, returnDat, propertyCategor) != hotelconsult:
+            b = False
+    if b == False :
+        lastRequestHotelsTimestamp = requestTime
+        hotelconsult = (destinationCit, departureDat, returnDat, propertyCategor)
+
     print "INFO AgentBuscador => Looking for hotels (in AgentHotel)..."
+
+
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountry,
                                arrivalDate = departureDat,
                                departureDate = returnDat,
-                               propertyCategory = propertyCategor)
+                               propertyCategory = propertyCategor,
+                               cache = b)
     
     # Buscamos vuelos
 
@@ -554,6 +562,7 @@ if __name__ == '__main__':
     #buscar_actividades()
     # Ponemos en marcha el servidor
     #buscar_vuelos()
+    
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

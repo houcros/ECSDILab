@@ -62,7 +62,9 @@ def send_message(gmess, address):
     #print r.text + '\n\n'
     # Procesa la respuesta y la retorna como resultado como grafo
     gr = Graph()
+    #gr.add((ACL.status, ACL.status_code, Literal(r.status_code)))
     gr.parse(data=r.text)
+
     return gr
 
 

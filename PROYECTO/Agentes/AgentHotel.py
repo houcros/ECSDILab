@@ -70,7 +70,7 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 #requestTime=datetime.datetime.fromtimestamp(0)
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
   searchRadius=5, arrivalDate="2015-8-20", departureDate="2015-8-30", 
-  numberOfAdults=1, numberOfChildren=0, propertyCategory=3, cache = False):
+  numberOfAdults=1, numberOfChildren=0, propertyCategory=3, cache = True):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
   print destinationCity
   print destinationCountry
@@ -141,9 +141,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
         ' => ' + dic['HotelListResponse']['EanWsError']['verboseMessage'])
       #gresp = build_message(Graph(), ACL['not-understood'], sender=AgentHotel.uri)
     else:
-      print len(dic['HotelListResponse']['HotelList'])
-      if len(dic['HotelListResponse']['HotelList']) <= 3 :
-        print "repuesta no pareable, intenta de nuevo cambiando numero de repuesta"
+      print len(dic['HotelListResponse']['HotelList']['HotelSummary'])
       for hot in dic['HotelListResponse']['HotelList']['HotelSummary']:
     	 # print ("Hotel " + hot['name'],
     	 # 	", distancia del centro: " + '{:.2f}'.format(hot['proximityDistance']),
@@ -153,11 +151,10 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
     	 # 	', tripAdvisorRating: ' + '{:.1f}'.format(hot['tripAdvisorRating']),
     	 # 	' tripAdvisorReviewCount: ' + '{:.0f}'.format(hot['tripAdvisorReviewCount'])
     	 # 	)
-        print hot
         hotel = hot["hotelId"]
         hot_obj = myns_hot[hotel]
         gresp.add((hot_obj, myns_atr.esUn, myns.hotel))
-        gresp.add((hot_obj, myns_atr.ciudad, hot['city']))
+        gresp.add((hot_obj, myns_atr.ciudad, Literal(hot['city'])))
         gresp.add((hot_obj, myns_atr.codigoPostal, Literal(hot['postalCode'])))
         gresp.add((hot_obj, myns_atr.descripcionDeHabitacion, Literal(hot['RoomRateDetailsList']['RoomRateDetails']['roomDescription'])))
         gresp.add((hot_obj, myns_atr.adresa, Literal(hot['address1'])))
@@ -169,9 +166,6 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
         gresp.add((hot_obj, myns_atr.rating, Literal(hot['hotelRating'])))
         gresp.add((hot_obj, myns_atr.tripAdvisorRating, Literal(hot['tripAdvisorRating'])))
         gresp.add((hot_obj, myns_atr.tripAdvisorReviewCount, Literal(hot['tripAdvisorReviewCount'])))
-        gaux = Graph()
-        gaux.parse('h.rdf' ,format='xml')
-        gresp += gaux
         gresp.serialize('h.rdf')
   else: 
     print "AgentHotel => We read from cache"

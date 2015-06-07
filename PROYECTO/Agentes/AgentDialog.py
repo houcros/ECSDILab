@@ -8,7 +8,6 @@ import logging
 
 from flask import Flask, request , redirect
 from flask import render_template
-
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import FOAF, RDF
 
@@ -27,8 +26,8 @@ Cities = ['Barcelona','London', 'Amsterdam', 'Praha', 'Paris', 'Roma']
 
 
 class MyForm (Form):
-    cityOrigin = SelectField('City of Origin', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'),(3,'Praha'), (4,'Paris'), (5,'Roma')])
-    cityDestination = SelectField('City of Destination', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'),(3,'Praha'), (4,'Paris'), (5,'Roma')])
+    cityOrigin = SelectField('City of Origin', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'),(4,'Paris'), (5,'Roma')])
+    cityDestination = SelectField('City of Destination', choices=[(0,'Barcelona'),(1,'London'),(2,'Amsterdam'), (4,'Paris'), (5,'Roma')])
 
     departureDate = DateField ('Departure date', format='%d-%m-%Y')
     returnDate = DateField ('Return date', format='%d-%m-%Y')
@@ -126,9 +125,11 @@ def solution():
         maxPriceField = request.form['maxPrice']
         numberOfStarsField = request.form['numberOfStars']
         activities = request.form['activities']
-
-        activitiesField = activities.split(', ')
-
+        activitiesField= []
+        if "," in activities:
+            activitiesField = activities.split(', ')
+        else:
+            activitiesField.append(activities)
         #Llamamos a message dialogador pasandole los parametros
         #Esto de devuelve un resultado
         #Dicho resultado lo pones en el formato debido (Por ahora esta hardcodeado)
@@ -136,7 +137,7 @@ def solution():
         g = message_dialogador(cityOriginField, cityDestinationField, 
                                 departureDateField,returnDateField, maxPriceField, 
                                 numberOfStarsField, activitiesField) 
-        if g is None:
+        if g.value(subject= ACL.status, predicate= ACL.status_code) == '500':
             return "Paquete no encontrando, intenta de nuevo cambiando datas o numeros de estrella"
 
         hlis = Graph()
@@ -217,24 +218,24 @@ def solution():
         for d in dlis:
             did.append(d)
         did.sort()
-
         for d in did:
             data = g.value(subject= d, predicate= myns_atr.formato)
             
             manana = g.value(subject= d, predicate= myns_atr.manana)
+            if manana != None:
+                listaux = [
+                    {
+                            'tipo': g.value(subject = manana, predicate = myns_atr.tipo),
+                            'momento':  "manana",
+                            'nombre' : g.value(subject = manana, predicate = myns_atr.nombre),
+                            'direccion':  g.value(subject = manana, predicate = myns_atr.direccion),
+                            'rating':  g.value(subject = manana, predicate = myns_atr.rating),
+                            'googleUrl': g.value(subject = manana, predicate = myns_atr.googleUrl),
+                            'website': g.value(subject = manana, predicate = myns_atr.website),
+                            'tel_int': g.value(subject = manana, predicate = myns_atr.tel_int)
+                    }
+                    ]
 
-            listaux = [
-                {
-                        'tipo': g.value(subject = manana, predicate = myns_atr.tipo),
-                        'momento':  "manana",
-                        'nombre' : g.value(subject = manana, predicate = myns_atr.nombre),
-                        'direccion':  g.value(subject = manana, predicate = myns_atr.direccion),
-                        'rating':  g.value(subject = manana, predicate = myns_atr.rating),
-                        'googleUrl': g.value(subject = manana, predicate = myns_atr.googleUrl),
-                        'website': g.value(subject = manana, predicate = myns_atr.website),
-                        'tel_int': g.value(subject = manana, predicate = myns_atr.tel_int)
-                }
-            ]
             comida = g.value(subject= d, predicate= myns_atr.comida)
             aux = {
                         'tipo': g.value(subject = comida, predicate = myns_atr.tipo),
@@ -249,19 +250,19 @@ def solution():
 
             listaux.append(aux)
             tarde  = g.value(subject= d, predicate= myns_atr.tarde)
+            if tarde != None:
+                aux = {
+                            'tipo': g.value(subject = tarde, predicate = myns_atr.tipo),
+                            'momento':  "tarde",
+                            'nombre' : g.value(subject = tarde, predicate = myns_atr.nombre),
+                            'direccion':  g.value(subject = tarde, predicate = myns_atr.direccion),
+                            'rating':  g.value(subject = tarde, predicate = myns_atr.rating),
+                            'googleUrl': g.value(subject = tarde, predicate = myns_atr.googleUrl),
+                            'website': g.value(subject = tarde, predicate = myns_atr.website),
+                            'tel_int': g.value(subject = tarde, predicate = myns_atr.tel_int)
+                    }
 
-            aux = {
-                        'tipo': g.value(subject = tarde, predicate = myns_atr.tipo),
-                        'momento':  "tarde",
-                        'nombre' : g.value(subject = tarde, predicate = myns_atr.nombre),
-                        'direccion':  g.value(subject = tarde, predicate = myns_atr.direccion),
-                        'rating':  g.value(subject = tarde, predicate = myns_atr.rating),
-                        'googleUrl': g.value(subject = tarde, predicate = myns_atr.googleUrl),
-                        'website': g.value(subject = tarde, predicate = myns_atr.website),
-                        'tel_int': g.value(subject = tarde, predicate = myns_atr.tel_int)
-                }
-
-            listaux.append(aux)
+                listaux.append(aux)
             cena = g.value(subject= d, predicate= myns_atr.cena)
             aux = {
                         'tipo': g.value(subject = cena, predicate = myns_atr.tipo),
@@ -276,18 +277,19 @@ def solution():
 
             listaux.append(aux)
             noche = g.value(subject= d, predicate= myns_atr.noche)
-            aux = {
-                        'tipo': g.value(subject = noche, predicate = myns_atr.tipo),
-                        'momento':  "noche",
-                        'nombre' : g.value(subject = noche, predicate = myns_atr.nombre),
-                        'direccion':  g.value(subject = noche, predicate = myns_atr.direccion),
-                        'rating':  g.value(subject = noche, predicate = myns_atr.rating),
-                        'googleUrl': g.value(subject = noche, predicate = myns_atr.googleUrl),
-                        'website': g.value(subject = noche, predicate = myns_atr.website),
-                        'tel_int': g.value(subject = noche, predicate = myns_atr.tel_int)
-                }
+            if noche != None:
+                aux = {
+                            'tipo': g.value(subject = noche, predicate = myns_atr.tipo),
+                            'momento':  "noche",
+                            'nombre' : g.value(subject = noche, predicate = myns_atr.nombre),
+                            'direccion':  g.value(subject = noche, predicate = myns_atr.direccion),
+                            'rating':  g.value(subject = noche, predicate = myns_atr.rating),
+                            'googleUrl': g.value(subject = noche, predicate = myns_atr.googleUrl),
+                            'website': g.value(subject = noche, predicate = myns_atr.website),
+                            'tel_int': g.value(subject = noche, predicate = myns_atr.tel_int)
+                    }
 
-            listaux.append(aux) 
+                listaux.append(aux) 
             diaentera = {
                     'data': data,
                     'moment' : listaux
@@ -341,56 +343,6 @@ def comunicacion():
     Las acciones se mandan siempre con un Request
     Prodriamos resolver las busquedas usando una performativa de Query-ref
     """
-    #global dsgraph
-    #global mss_cnt
-
-    #logger.info('Peticion de informacion recibida')
-
-    ## Extraemos el mensaje y creamos un grafo con el
-    #message = request.args['content']
-    #gm = Graph()
-    #gm.parse(data=message)
-
-    #msgdic = get_message_properties(gm)
-
-    ## Comprobamos que sea un mensaje FIPA ACL
-    #if msgdic is None:
-        ## Si no es, respondemos que no hemos entendido el mensaje
-        #gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
-    #else:
-        ## Obtenemos la performativa
-        #perf = msgdic['performative']
-
-        #if perf != ACL.request:
-            ## Si no es un request, respondemos que no hemos entendido el mensaje
-            #gr = build_message(Graph(), ACL['not-understood'], sender=InfoAgent.uri, msgcnt=mss_cnt)
-        #else:
-            ## Extraemos el objeto del contenido que ha de ser una accion de la ontologia de acciones del agente
-            ## de registro
-
-            ## Averiguamos el tipo de la accion
-            #if 'content' in msgdic:
-                #content = msgdic['content']
-                #accion = gm.value(subject=content, predicate=RDF.type)
-
-            ## Aqui realizariamos lo que pide la accion
-            ## Por ahora simplemente retornamos un Inform-done
-            #gr = build_message(Graph(),
-                #ACL['inform-done'],
-                #sender=InfoAgent.uri,
-                #msgcnt=mss_cnt,
-                #receiver=msgdic['sender'], )
-    #mss_cnt += 1
-
-    #logger.info('Respondemos a la peticion')
-
-    # gr = build_message(gmess, perf=ACL.request,
-    #                   sender=AgentePlanificador.uri,
-    #                   receiver=AgenteBuscador.uri,
-    #                   content=bus_obj,
-    #                   msgcnt=mss_cnt),
-    #     AgenteBuscador.address)
-
 
     res_obj= agn['Planificador-responde']
     gr = Graph()
@@ -478,6 +430,7 @@ def message_dialogador(cityOrigin = "Barcelona",
     #for a in activities
     i = 0
     for a in actividades:
+        if a is not None:
                 i+= 1
                 actv = "actividad" + str(i)
                 gmess.add((peticion, myns_atr.actividad, myns_act.actv))

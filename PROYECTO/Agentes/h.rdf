@@ -4,362 +4,399 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="http://my.namespace.org/hoteles/">
-    <myns_atr:cuesta>1178.96</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Silken Gran Hotel Havana gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Casa Calvet y de Teatro Tívoli. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>08008</myns_atr:codigoPostal>
-    <myns_atr:nombre>Rialto</myns_atr:nombre>
-    <myns_atr:adresa>Carrer de Mallorca,1-23</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Majestic Hotel &amp;amp; Spa Barcelona gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Centro comercial Bulevard Rosa y Museo Egipcio de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>759.32</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0228999</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6255594</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.115137</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">672</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">382</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Bergara 8</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Moderno BCN</myns_atr:nombre>
-    <myns_atr:nombre>Grand Hotel Central</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Executive Room - Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1178</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">941</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Acta Antibes</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Caledonian estarás en pleno corazón de Barcelona, a pocos pasos de Plaça Universitat y de Universidad de Barcelona. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>BCN Urban del Comte</myns_atr:nombre>
-    <myns_atr:cuesta>1115.92</myns_atr:cuesta>
-    <myns_atr:adresa>La Rambla 19</myns_atr:adresa>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:rating>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">439</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1479.50</myns_atr:cuesta>
-    <myns_atr:cuesta>1674.49</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6793139</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación doble - Oferta no reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Soho Hotel estarás en pleno corazón de Barcelona, a pocos pasos de Plaça Universitat y de Casa Golferichs. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Passatge Gutenberg, 7</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">741</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en The Mirror Barcelona estarás en pleno corazón de Barcelona, a pocos pasos de Hospital Clínica y de Casa Batlló. Este hotel de 4,5 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Grand Hotel Central gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Plaza del Rey y Museo Frederic Marés. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Gran Via de Les Corts Catalanes, 647</myns_atr:adresa>
-    <myns_atr:nombre>Barcelo Raval</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.62898606</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Design Room - Non refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>2650.00</myns_atr:cuesta>
-    <myns_atr:adresa>Hospital, 26</myns_atr:adresa>
-    <myns_atr:cuesta>1096.50</myns_atr:cuesta>
-    <myns_atr:adresa>Carrer del Rossello 205</myns_atr:adresa>
-    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
-    <myns_atr:adresa>Carrer dels Escudellers, 19</myns_atr:adresa>
-    <myns_atr:adresa>La Rambla, La 78-80</myns_atr:adresa>
-    <myns_atr:cuesta>1208.72</myns_atr:cuesta>
-    <myns_atr:adresa>Rambla del Raval, 17-21</myns_atr:adresa>
-    <myns_atr:adresa>C/Conde Borrell, 208</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7080029</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación básica, balcón</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1249.28</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.264608</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Balmes gozarás de una ubicación céntrica en Barcelona, a pocos minutos de Fundació Antoni Tàpies y Casa Batlló. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Standard Room - Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7626128</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1121</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Ayre Hotel Caspe</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1509</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>08029</myns_atr:codigoPostal>
-    <myns_atr:cuesta>2970.00</myns_atr:cuesta>
-    <myns_atr:cuesta>757.54</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Barcelona reservando en Ayre Hotel Rosellon, a pocos pasos de Sagrada Familia y cerca de Casa Batlló. Este hotel de</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Rialto gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Plaza de Sant Jaume y Palacio de la Generalitat de Catalunya. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Arc la Rambla</myns_atr:nombre>
-    <myns_atr:cuesta>2750.00</myns_atr:cuesta>
-    <myns_atr:cuesta>1575.20</myns_atr:cuesta>
-    <myns_atr:adresa>C/ Rosellón 390</myns_atr:adresa>
-    <myns_atr:cuesta>1470.50</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">386</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>08015</myns_atr:codigoPostal>
-    <myns_atr:adresa>Passeig de Gràcia, 132</myns_atr:adresa>
-    <myns_atr:adresa>Via Laietana 30</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">582</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>936.02</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Double or Twin Room - Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Carrer de Casp 103-109</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2110553</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">235</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación económica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5069269</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1245.28</myns_atr:cuesta>
-    <myns_atr:nombre>Majestic Hotel &amp;amp; Spa Barcelona</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Standard Double or Twin Room - Non refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9049206</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.8792405</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Zenit Conde De Borrell</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.76840836</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Arc la Rambla gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Teatro Principal y Centro de Arte Santa Mónica. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0187817</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en BCN Urban Gran Ducat, en Barcelona (El Ensanche), estarás a pocos minutos de Teatro Tívoli y Palacio de la Música Catalana. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:nombre>BCN Urban Gran Ronda</myns_atr:nombre>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">589</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>910.71</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Olivia Plaza Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Plaza de Cataluña y de Palacio de la Música Catalana. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Carrer de Santalo, 8</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hesperia Ramblas gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Teatro Romea y Las Ramblas. Este hotel para familias se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">703</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
-    <myns_atr:nombre>Ayre Hotel Rosellon</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0835029</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Deluxe Room - Breakfast Included</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">761</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Gran Via de Les Corts Catalanes, 574</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2980238</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1819063</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Barcelona Universal gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Teatro Victoria y Teatre Tantarantana. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Oriente Atiram Hotel</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9389685</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">502</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Plaza Cataluña 19</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8101018</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">229</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>3420.00</myns_atr:cuesta>
-    <myns_atr:nombre>TRYP Barcelona Apolo Hotel</myns_atr:nombre>
-    <myns_atr:cuesta>1135.20</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Regina</myns_atr:nombre>
-    <myns_atr:cuesta>1055.97</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel SERHS Rivoli Rambla gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Necrópolis romana y de Palacio de la Virreina. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:nombre>The Mirror Barcelona</myns_atr:nombre>
-    <myns_atr:cuesta>1143.04</myns_atr:cuesta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</myns_atr:rating>
-    <myns_atr:codigoPostal>08001</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1071.89</myns_atr:cuesta>
-    <myns_atr:cuesta>1325.94</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">762</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Nouvel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Necrópolis romana y Plaza de Cataluña. Este hotel para familias se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>08004</myns_atr:codigoPostal>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Barcelona House gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Teatro Principal y Plaza Real. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Standard Double Room - Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>NH Barcelona Eixample</myns_atr:nombre>
-    <myns_atr:adresa>Bergara 2-4</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6217182</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en NH Barcelona Eixample, en Barcelona (El Ensanche), estarás a pocos minutos de Hospital Clínica y Casa Batlló. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
-    <myns_atr:codigoPostal>08011</myns_atr:codigoPostal>
-    <myns_atr:nombre>Silken Gran Hotel Havana</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Colon Barcelona</myns_atr:nombre>
-    <myns_atr:adresa>Aragó, 323-325</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación básica doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">397</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Room Mate Pau gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Plaza de Cataluña y de Palacio de la Música Catalana. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en BCN Urban del Comte, en Barcelona (El Ensanche), estarás a pocos minutos de Casa Golferichs y Casa Batlló. Este hotel se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">759</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">682</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1515</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>864.95</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar - Reserva anticipada, no reembolsable-20%</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Barcelo Raval gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Rambla del Raval y Cafè-Teatre Llantiol. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1541.62</myns_atr:cuesta>
-    <myns_atr:codigoPostal>08036</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1860.00</myns_atr:cuesta>
-    <myns_atr:nombre>Internacional Ramblas Cool Atiram Hotel</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40193555</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1531</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Ayre Hotel Gran Via, en Barcelona (Sants-Montjuïc), estarás a pocos minutos de Plaza de España y de Fuente mágica de Montjuïc. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Caledonian</myns_atr:nombre>
-    <myns_atr:codigoPostal>08009</myns_atr:codigoPostal>
-    <myns_atr:adresa>Avenida Catedral, 7</myns_atr:adresa>
-    <myns_atr:adresa>Avenida Del Paralelo 57 59</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">623</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>989.98</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Catalonia Catedral Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Catedral de Barcelona y de Las Ramblas. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1258.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Barceló Sants, en Barcelona (Sants-Montjuïc), estarás a pocos minutos de Parque de la España Industrial y Casa Batlló. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1101</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.34751347</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1035.76</myns_atr:cuesta>
-    <myns_atr:adresa>Corcega 255</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Sant Pere Mes Baix, 62</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">825</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Granados 83 estarás en pleno corazón de Barcelona, a pocos pasos de Hospital Clínica y de Casa Batlló. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación básica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1591</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Ayre Hotel Gran Via</myns_atr:nombre>
-    <myns_atr:nombre>Room Mate Emma</myns_atr:nombre>
-    <myns_atr:adresa>Carrer de Fontanella, 7</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Acta Antibes estarás en pleno corazón de Barcelona, a pocos pasos de Plaza de toros Monumental y de Sagrada Familia. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Nouvel</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Granados 83</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Zenit Barcelona estarás en pleno corazón de Barcelona, a pocos pasos de Francesc Macia Plaza y de Casa Batlló. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9881556</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Laietana, 49</myns_atr:adresa>
-    <myns_atr:cuesta>1960.00</myns_atr:cuesta>
-    <myns_atr:nombre>Pulitzer</myns_atr:nombre>
-    <myns_atr:codigoPostal>08002</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2445</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1276.20</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">927</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38908416</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel SERHS Rivoli Rambla</myns_atr:nombre>
-    <myns_atr:cuesta>1112.00</myns_atr:cuesta>
-    <myns_atr:nombre>Musik Boutique Hotel</myns_atr:nombre>
-    <myns_atr:codigoPostal>08013</myns_atr:codigoPostal>
-    <myns_atr:cuesta>918.00</myns_atr:cuesta>
-    <myns_atr:cuesta>1445.00</myns_atr:cuesta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En TRYP Barcelona Apolo Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Teatro Victoria y de Sant Pau del Camp. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Duc 15</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel EuroPark estarás en pleno corazón de Barcelona, a pocos pasos de Palacio Montaner y de Casa Batlló. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5176885</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Calle Diputación, 394</myns_atr:adresa>
-    <myns_atr:cuesta>1800.00</myns_atr:cuesta>
-    <myns_atr:nombre>Room Mate Pau</myns_atr:nombre>
-    <myns_atr:cuesta>834.68</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Expo Hotel Barcelona, en Barcelona (Sants-Montjuïc), estarás a pocos minutos de Parque de la España Industrial y Parque de Joan Miró.</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1243</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Expo Hotel Barcelona</myns_atr:nombre>
-    <myns_atr:cuesta>1972.85</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1163</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Ronda de Sant Pere, 15</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">942</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Carrer de Ferran, 40-42</myns_atr:adresa>
-    <myns_atr:cuesta>2879.46</myns_atr:cuesta>
-    <myns_atr:adresa>La Rambla 128</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2382</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Cl. Mallorca, 216</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Oriente Atiram Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Gran Teatro del Liceo y Plaza Real. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En chic &amp;amp; basic Ramblas gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Centro de Arte Santa Mónica y Museo Marítimo. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:adresa>La Ramblas, 45</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">745</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Olivia Plaza Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Pulitzer, en Barcelona (El Ensanche), estarás a pocos minutos de Plaza de Cataluña y Centro de Cultura Contemporánea de Barcelona. Este</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1061.96</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.3391397</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Musik Boutique Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Mercat de Santa Caterina y de Palacio de la Música Catalana.</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel 1898</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.27811298</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1064.04</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">360</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>08007</myns_atr:codigoPostal>
-    <myns_atr:descripcionDeHabitacion>Habitación con 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1644</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.345771</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1113</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel 1898 gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Palacio de la Virreina y Necrópolis romana. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Gran Via De Les Corts Catalanes 543-545</myns_atr:adresa>
-    <myns_atr:adresa>Gran Via de les Corts Catalanes, 605</myns_atr:adresa>
-    <myns_atr:nombre>chic &amp;amp; basic Ramblas</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0607104</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1941</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>923.97</myns_atr:cuesta>
-    <myns_atr:adresa>Enrique Granados 83</myns_atr:adresa>
-    <myns_atr:nombre>Avenida Palace</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar - Reserva anticipada, no reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5848526</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>992.82</myns_atr:cuesta>
-    <myns_atr:cuesta>1427.77</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5414489</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.42525113</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación Confort - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal>08025</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.086842366</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Ohla Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Palacio de la Música Catalana y de Museo Diocesano de Barcelona. Este</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>08014</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Colon Barcelona, en Barcelona (Ciutat Vella), estarás a pocos minutos de Museo Diocesano de Barcelona y Palacio de la Música</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Calle dels Arcs 10</myns_atr:adresa>
-    <myns_atr:codigoPostal>08021</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2992</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Internacional Ramblas Cool Atiram Hotel gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Las Ramblas y Gran Teatro del Liceo. Este</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hesperia Ramblas</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación Confort</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Del Paral.lel, Del 76-78</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6791533</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1602.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Quentin Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Teatro DeLaMar y Melkweg. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Radisson Blu Hotel, Amsterdam</myns_atr:nombre>
     <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
-    <myns_atr:adresa>Santa Anna 18-20</myns_atr:adresa>
-    <myns_atr:nombre>NH Barcelona Centro</myns_atr:nombre>
-    <myns_atr:adresa>Paris 203</myns_atr:adresa>
-    <myns_atr:nombre>Catalonia Catedral Hotel</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Zenit Barcelona</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Barcelona Centro gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Necrópolis romana y de Palacio de la Música Catalana. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.6761467</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1903255</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Royal Ramblas</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Zenit Conde De Borrell, en Barcelona (El Ensanche), estarás a pocos pasos de Hospital Clínica y a unos minutos de Plaza de Cataluña. Este</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6675166</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1115.84</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Barcelona (Ciutat Vella), a pocos minutos de Museo de Arte Contemporáneo de Barcelona y Plaça Universitat se sitúa BCN Urban Gran Ronda. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Carrer de la Diputacio, 142-148</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Royal Ramblas gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Necrópolis romana y de Plaza de Cataluña. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Avenida Palace, en Barcelona (El Ensanche), estarás a pocos minutos de Fundació Francisco Godia y Casa Batlló. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Ronda De Sant Antoni, 49</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Room Mate Emma estarás en pleno corazón de Barcelona, a pocos pasos de Hospital Clínica y de Fundació Suñol. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Barcelona House</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar con 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1028.52</myns_atr:cuesta>
-    <myns_atr:adresa>Passeig De Gracia, 68</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">391</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1430</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Ohla Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Ayre Hotel Caspe estarás en pleno corazón de Barcelona, a pocos pasos de Plaza de toros Monumental y de Sagrada Familia. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:rating>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.54929763</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">661</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Olivia Balmes Hotel estarás en pleno corazón de Barcelona, a pocos pasos de Fundació Suñol y de Casa Milà. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">916</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>08010</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7849756</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1219.05</myns_atr:cuesta>
-    <myns_atr:codigoPostal>08003</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Casa Fuster Hotel, en Barcelona (Gràcia), estarás a pocos minutos de Palacio del Barón de Quadras y de Casa Milà. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Casa Fuster Hotel</myns_atr:nombre>
-    <myns_atr:nombre>Astoria</myns_atr:nombre>
-    <myns_atr:nombre>Olivia Balmes Hotel</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">620</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.8792298</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>1012 RE</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>1054 EX</myns_atr:codigoPostal>
+    <myns_atr:nombre>Hotel Avenue</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.247189</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Damrak 50</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">515</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Prins Hendrikkade 59-72</myns_atr:adresa>
+    <myns_atr:adresa>Rusland 17</myns_atr:adresa>
+    <myns_atr:codigoPostal>1012 RD</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36493436</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1015.00</myns_atr:cuesta>
+    <myns_atr:adresa>Amstelstraat 17</myns_atr:adresa>
+    <myns_atr:cuesta>1103.00</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40041834</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1132045</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Vossiusstraat 52-53</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Holland Casino y Teatro DeLaMar. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales, con vistas</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación básica doble, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>NH Amsterdam Grand Hotel Krasnapolsky</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:rating>
+    <myns_atr:nombre>Bilderberg Hotel Jan Luyken</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Crowne Plaza Amsterdam City Centre estarás en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y de Iglesia de San Nicolás.</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Rembrandtplein Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Zuiderkerk y Museo Casa de Rembrandt. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1011 AM</myns_atr:codigoPostal>
+    <myns_atr:adresa>Roemer Visscherstraat 10</myns_atr:adresa>
+    <myns_atr:codigoPostal>1012 PV</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Roemer, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Holland Casino y de Leidseplein. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">637</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1017 AE</myns_atr:codigoPostal>
+    <myns_atr:nombre>Park Plaza Victoria Amsterdam</myns_atr:nombre>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1013</myns_atr:codigoPostal>
+    <myns_atr:adresa>Rembrandtplein 19</myns_atr:adresa>
+    <myns_atr:codigoPostal>1011 HR</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Stadhouderskade 25</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7815363</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>WestCord City Centre Hotel Amsterdam</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7771667</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1304</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
+    <myns_atr:nombre>Hotel CC</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en DoubleTree by Hilton Hotel Amsterdam Centraal Station, a pocos minutos de Plaza Nieuwmarkt</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble económica, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1602.40</myns_atr:cuesta>
+    <myns_atr:cuesta>1311.55</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1012 SC</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación doble, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación básica, 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">344</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Barbizon Palace gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Biblioteca Pública. Este</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Room Mate Aitana, en Ámsterdam (Jordaan), podrás llegar fácilmente a Noorderkerk y a Nieuwe Kerk. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Prinsengracht 315-331</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Avenue gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel para familias se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1550.70</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1071 XL</myns_atr:codigoPostal>
+    <myns_atr:nombre>Crowne Plaza Amsterdam City Centre</myns_atr:nombre>
+    <myns_atr:cuesta>1548.95</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1073.19</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1077 HN</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1318.10</myns_atr:cuesta>
+    <myns_atr:cuesta>1210.48</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio grande</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>Prins Hendrikkade 123</myns_atr:adresa>
+    <myns_atr:codigoPostal>1017 ZP</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.37593535</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1962</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
+    <myns_atr:descripcionDeHabitacion>Art Room</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Caransa gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza de Rembrandt y Museo Willet-Holthuysen. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.83484066</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel The Exchange gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9947529</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>art&amp;apos;otel amsterdam</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38792858</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Jan Luijkenstraat 58</myns_atr:adresa>
+    <myns_atr:codigoPostal>1017 DA</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1122</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Renaissance Amsterdam Hotel está en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y Iglesia de San Nicolás. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1439</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hampshire Hotel - Eden Amsterdam</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.41446158</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">482</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1016 GZ</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>1011 AK</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Sofitel Legend The Grand Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Monumento Nacional y Museo Madame Tussauds. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1012 LP</myns_atr:codigoPostal>
+    <myns_atr:nombre>Mercure Hotel Amsterdam Centre Canal District</myns_atr:nombre>
+    <myns_atr:nombre>Amsterdam Marriott Hotel</myns_atr:nombre>
+    <myns_atr:nombre>NH Amsterdam Museum Quarter</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;NH Amsterdam Museum Quarter está en pleno corazón de Ámsterdam, a pocos pasos de Mercado de Albert Cuyp y Plaza de los Museos. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación de lujo</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>1012 RC</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1405.05</myns_atr:cuesta>
+    <myns_atr:cuesta>713.72</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Grand Hotel Krasnapolsky gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Monumento Nacional y Plaza Dam. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>758.25</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Sir Albert Hotel Amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Mercado de Albert Cuyp y de Heineken Experience. Este</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Sir Albert Hotel Amsterdam</myns_atr:nombre>
+    <myns_atr:codigoPostal>1012 VX</myns_atr:codigoPostal>
+    <myns_atr:adresa>Albert Cuypstraat 2-6</myns_atr:adresa>
+    <myns_atr:adresa>Prins Hendrikkade 108</myns_atr:adresa>
+    <myns_atr:cuesta>1100.03</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Okura Amsterdam, en Ámsterdam (De Pijp), podrás llegar fácilmente a Mercado de Albert Cuyp y a Heineken Experience. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Pulitzer Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Westerkerk y Casa de Ana Frank. Este hotel de 5 estrellas se encuentra muy</myns_atr:descriptionCorta>
+    <myns_atr:ciudad>Amsterdam</myns_atr:ciudad>
+    <myns_atr:nombre>Swissôtel Amsterdam</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Trianon Hotel, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Sala Concertgebouw y de Museo Stedelijk.  Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Moevenpick Hotel Amsterdam City Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Teatro Bimhuis y Muziekgebouw aan &amp;apos;t IJ. Este</myns_atr:descriptionCorta>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:rating>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5022467</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
+    <myns_atr:adresa>Oudezijds Voorburgwal 197</myns_atr:adresa>
+    <myns_atr:codigoPostal>1071 CS</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Bilderberg Hotel Jan Luyken gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Museo del Diamante de Ámsterdam y P.C. Hooftstraat. Este</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.457506</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>1012 CK</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>1012 TM</myns_atr:codigoPostal>
+    <myns_atr:nombre>Moevenpick Hotel Amsterdam City Centre</myns_atr:nombre>
+    <myns_atr:adresa>Groenburgwal 27</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6428732</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40472746</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Vijzelstraat 4</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en WestCord Fashion Hotel Amsterdam, en Ámsterdam (Ámsterdam oeste), estarás a pocos minutos de World Fashion Centre y Vondelpark. Este</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1071 ZD</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Park Hotel Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Sala Paradiso y P.C. Hooftstraat. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1239.19</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">558</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.49939448</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Radisson Blu Hotel, Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Zuiderkerk y de Museo Allard Pierson. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9600455</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH City Centre Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Begijnhof y Iglesia Reformada Inglesa. Este hotel para</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Piet Hein está en pleno corazón de Ámsterdam, a pocos pasos de Museo Stedelijk y P.C. Hooftstraat. Este hotel de ambiente romántico se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>742.54</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1172733</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación superior (3 stars)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
+    <myns_atr:codigoPostal>1012 JS</myns_atr:codigoPostal>
+    <myns_atr:cuesta>998.49</myns_atr:cuesta>
+    <myns_atr:nombre>NH Amsterdam Barbizon Palace</myns_atr:nombre>
+    <myns_atr:codigoPostal>1012 LG</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1872.68</myns_atr:cuesta>
+    <myns_atr:cuesta>973.59</myns_atr:cuesta>
+    <myns_atr:cuesta>687.18</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6657716</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
+    <myns_atr:nombre>NH Carlton Amsterdam</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2038713</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">632</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1686</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1018 DH</myns_atr:codigoPostal>
+    <myns_atr:adresa>Noorderstraat 46</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">505</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Amsterdam Marriott Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Holland Casino y Stadsschouwburg. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Nieuwezijds Voorburgwal 50</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Notting Hill</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación ejecutiva</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1708</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1874.40</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Amsterdam - De Roode Leeuw gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza Dam y Monumento Nacional. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1017 CT</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales - Estancias de 3 noches, % de descuento</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>Nieuwezijds Voorburgwal 5</myns_atr:adresa>
+    <myns_atr:adresa>Marnixstraat 372-374</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Amsterdam Mansion</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">503</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1881</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>1017 TV</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1188.75</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>Beethovenstraat 43</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2213</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Damrak 96</myns_atr:adresa>
+    <myns_atr:cuesta>1063.00</myns_atr:cuesta>
+    <myns_atr:cuesta>1303.00</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1012 JE</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>1012 LK</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">531</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1012 EX</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1646</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Delta Hotel City Center gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1019 BR</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0969713</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel The Exchange</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">785</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>NH City Centre Amsterdam</myns_atr:nombre>
+    <myns_atr:cuesta>956.70</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4801929</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>703.98</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en art&amp;apos;otel amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Beurs van Berlage. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Amstel 144</myns_atr:adresa>
+    <myns_atr:nombre>Rembrandtplein Hotel</myns_atr:nombre>
+    <myns_atr:adresa>Dam 9</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">499</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hampshire Hotel - Amsterdam American</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3073765</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4121411</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Amsterdam Mansion estarás en pleno corazón de Ámsterdam, a pocos pasos de Biblioteca Pública y de Barrio Chino de Ámsterdam. Este</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación Confort, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Double Room, 1 Queen Bed - Summer Sale!</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>IJDok 6</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2104</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>971.85</myns_atr:cuesta>
+    <myns_atr:cuesta>1208.68</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1712</myns_atr:tripAdvisorReviewCount>
     <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Moderno BCN gozarás de una ubicación céntrica en Barcelona, a pocos pasos de Las Ramblas y Gran Teatro del Liceo. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1311.20</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.32801226</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1258.40</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel EuroPark</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.501804</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1926.10</myns_atr:cuesta>
-    <myns_atr:nombre>Balmes</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.55640763</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Hospital 11</myns_atr:adresa>
-    <myns_atr:adresa>Plaza Dels Paisos Catalans S/n</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">679</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Barcelona Universal</myns_atr:nombre>
-    <myns_atr:adresa>La Rambla, 109; (entrance on the street</myns_atr:adresa>
-    <myns_atr:nombre>Soho Hotel</myns_atr:nombre>
-    <myns_atr:adresa>La Rambla, 117</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.886572</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4379524</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, vistas a la ciudad</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1523.69</myns_atr:cuesta>
+    <myns_atr:cuesta>1250.20</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación económica, 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Hotel de Paris</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">961</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1083.00</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Roemer</myns_atr:nombre>
+    <myns_atr:adresa>Oosterdoksstraat 4</myns_atr:adresa>
+    <myns_atr:adresa>Leidsekade 89</myns_atr:adresa>
+    <myns_atr:adresa>Stadhouderskade 12</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hampshire Hotel - Lancaster Amsterdam, en Ámsterdam (Plantage - Oostelijk Havengebied), estarás a pocos minutos de Museo de la</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en INK Hotel Amsterdam by MGallery estarás en pleno corazón de Ámsterdam, a pocos pasos de Nieuwe Kerk y de Beurs van Berlage. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar con 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>1017 KE</myns_atr:codigoPostal>
+    <myns_atr:nombre>Dikker And Thijs Fenice Hotel</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Suite junior, 1 cama de matrimonio grande</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en Park Plaza Vondelpark, a pocos minutos de Vondelpark y Sala Concertgebouw. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Warmoesstraat 42</myns_atr:adresa>
+    <myns_atr:adresa>Koninginneweg 34-36</myns_atr:adresa>
+    <myns_atr:adresa>Hobbemakade 50</myns_atr:adresa>
+    <myns_atr:adresa>Nieuwezijds Kolk 19</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Inntel Hotels Amsterdam Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Nieuwe Kerk. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1054 ES</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">506</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17465226</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1630726</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>812.99</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">544</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hampshire Hotel - Lancaster Amsterdam</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.917201</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Anna Van Den Vondelstraat 6</myns_atr:adresa>
+    <myns_atr:cuesta>1134.72</myns_atr:cuesta>
+    <myns_atr:nombre>Park Plaza Vondelpark</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Notting Hill está en pleno corazón de Ámsterdam, a pocos pasos de De Duif y Parque Sarphatipark. Este hotel de 4 estrellas se encuentra muy cerca</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Room Mate Aitana</myns_atr:nombre>
+    <myns_atr:nombre>NH Amsterdam Centre</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>956.99</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel CC gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Oude Kerk y Beurs van Berlage. Este hotel se encuentra cerca de Iglesia de</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1075.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en WestCord City Centre Hotel Amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y de Nieuwe Kerk. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1080.00</myns_atr:cuesta>
+    <myns_atr:adresa>Kattengat 1</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1027339</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3043</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Eden Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Stopera y Museo Willet-Holthuysen. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.31219912</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>WestCord Fashion Hotel Amsterdam</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2094</myns_atr:tripAdvisorReviewCount>
     <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1055</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">874</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">713</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Carrer de Balmes, 117</myns_atr:adresa>
-    <myns_atr:adresa>Gran Via de les Corts Catalanes 322-324</myns_atr:adresa>
-    <myns_atr:nombre>Barceló Sants</myns_atr:nombre>
-    <myns_atr:adresa>Carrer de Valencia 105-107</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Regina está en pleno corazón de Barcelona, a pocos pasos de Plaza de Cataluña y Centro de Cultura Contemporánea de Barcelona. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3642151</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>BCN Urban Gran Ducat</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.562169</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Standard Double or Twin Room - Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4622133</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8485788</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1236675</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Barcelona reservando en Astoria, a pocos minutos de Casa Milà y Palacio Montaner. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Plantage Middenlaan 48</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1815</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9489099</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
+    <myns_atr:adresa>Ferdinand Bolstraat 333</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Okura Amsterdam</myns_atr:nombre>
+    <myns_atr:cuesta>968.01</myns_atr:cuesta>
+    <myns_atr:nombre>Renaissance Amsterdam Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Swissôtel Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza Dam y Monumento Nacional. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel de Filosoof</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 2 camas individuales, baño privado</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2177</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58832926</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">940</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1072 CT</myns_atr:codigoPostal>
+    <myns_atr:adresa>Damrak 42-43</myns_atr:adresa>
+    <myns_atr:adresa>Spuistraat 288-292</myns_atr:adresa>
+    <myns_atr:cuesta>927.01</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0203632</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1578.40</myns_atr:cuesta>
+    <myns_atr:adresa>Prins Hendrikkade 33</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17818226</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hampshire Hotel - Rembrandt Square Amsterdam</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación Confort, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5645989</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Prinsengracht 444</myns_atr:adresa>
+    <myns_atr:codigoPostal>1054 GZ</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3915</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Carlton Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Mercado de las flores y Munttoren. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>DoubleTree by Hilton Hotel Amsterdam Centraal Station</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.856073</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Pulitzer Amsterdam</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>1058 GC</myns_atr:codigoPostal>
+    <myns_atr:nombre>NH Amsterdam Caransa</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">542</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>INK Hotel Amsterdam by MGallery</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en Hampshire Hotel Beethoven, a pocos minutos de Museo virtual Zuidas y Sala Concertgebouw.</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1011 DK</myns_atr:codigoPostal>
+    <myns_atr:adresa>Hendrikje Stoffelsstraat 1</myns_atr:adresa>
+    <myns_atr:adresa>Stadhouderskade 7</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Rembrandt Square Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Museo Willet-Holthuysen y Stopera. Este</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Piet Heinkade 11</myns_atr:adresa>
+    <myns_atr:codigoPostal>1012 SZ</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1406.32</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1601</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">327</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1012 AD</myns_atr:codigoPostal>
+    <myns_atr:cuesta>494.90</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1016 XX</myns_atr:codigoPostal>
+    <myns_atr:adresa>Leidsekade 97</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Piet Hein</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3464543</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Delta Hotel City Center</myns_atr:nombre>
+    <myns_atr:cuesta>1273.00</myns_atr:cuesta>
+    <myns_atr:adresa>Westeinde 26</myns_atr:adresa>
+    <myns_atr:cuesta>1186.40</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7909137</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2856</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1017 PN</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.60473347</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30391097</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30417126</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3947412</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>1071 AK</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1181.70</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Inntel Hotels Amsterdam Centre</myns_atr:nombre>
+    <myns_atr:cuesta>4448.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">911</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1455</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>3 J.W. Brouwersstraat</myns_atr:adresa>
+    <myns_atr:adresa>Nieuwezijds Voorburgwal 67</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8147445</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Sofitel Legend The Grand Amsterdam</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Suite, 1 habitación</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1291</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>1072 LH</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel de Filosoof, en Ámsterdam (Oud-West), estarás a pocos minutos de Vondelpark y Museo Stedelijk. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1171.57</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7414691</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>1075 CZ</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Hampshire Hotel Beethoven</myns_atr:nombre>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
+    <myns_atr:codigoPostal>1017 HK</myns_atr:codigoPostal>
+    <myns_atr:adresa>Nieuwezijds Voorburgwal 33</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación Premium</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2767828</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.41015</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Quentin Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Mercure Hotel Amsterdam Centre Canal District estarás en pleno corazón de Ámsterdam, a pocos pasos de De Duif y de Heineken Experience.</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Damrak 1-5</myns_atr:adresa>
+    <myns_atr:adresa>Damrak 93-94</myns_atr:adresa>
+    <myns_atr:nombre>Grand Hotel Amrâth Amsterdam</myns_atr:nombre>
+    <myns_atr:cuesta>1005.45</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">298</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Trianon Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Amsterdam American gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Stadsschouwburg y Teatro DeLaMar. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.13331719</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Superior Room, 1 Double Bed, Non Smoking - Advance Purchase Non Refundable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>763.96</myns_atr:cuesta>
+    <myns_atr:codigoPostal>1071 LH</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:tripAdvisorRating>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Park Plaza Victoria Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Beurs van Berlage. Este</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel de Paris, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Melkweg y de Leidseplein. Este hotel para familias se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36848432</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Dikker And Thijs Fenice Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Leidseplein y Stadsschouwburg. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>1012 LL</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30548108</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1128.03</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1374</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Amsterdam - De Roode Leeuw</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Grand Hotel Amrâth Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Biblioteca Pública y Iglesia de San Nicolás. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Park Hotel Amsterdam</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.90933144</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.320552</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1313.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2532</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1571</myns_atr:tripAdvisorReviewCount>
   </rdf:Description>
 </rdf:RDF>

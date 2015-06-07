@@ -181,7 +181,8 @@ def comunicacion():
             actividadesInt = gm.triples((None, myns_atr.tipo, None))
 
             for s,p, o in actividadesInt:
-                actividades.append(o)
+                if o != None:
+                    actividades.append(o)
 
             activity= gm.value(subject= peticion, predicate= myns_atr.activities)
             print "activity: "
@@ -242,10 +243,11 @@ def comunicacion():
             busqueda = myns_pet.busqueda
             i = 0
             for a in actividades:
-                i+= 1
-                actv = "actividad" + str(i)
-                gmess.add((busqueda, myns_par.actividad, myns_act.actv))
-                gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
+                if a != None:
+                    i+= 1
+                    actv = "actividad" + str(i)
+                    gmess.add((busqueda, myns_par.actividad, myns_act.actv))
+                    gmess.add((myns_act.actv, myns_atr.tipo, Literal(a)))
             
             i+= 1
             actv = "actividad" + str(i)
