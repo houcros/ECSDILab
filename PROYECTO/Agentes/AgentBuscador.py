@@ -92,11 +92,7 @@ AgenteBuscador = Agent('AgentBuscador',
                   'http://%s:%d/comm' % (hostname, port),
                   'http://%s:%d/Stop' % (hostname, port))
 
-# Directory agent address
-DirectoryAgent = Agent('DirectoryAgent',
-                       agn.Directory,
-                       'http://%s:%d/Register' % (dhostname, dport),
-                       'http://%s:%d/Stop' % (dhostname, dport))
+
 
 # Datos del Agente
 AgentePlanificador = Agent('AgentePlanificador',
@@ -110,44 +106,6 @@ dsgraph = Graph()
 # Cola de comunicacion entre procesos
 cola1 = Queue()
 
-
-# def register_message():
-#     """
-#     Envia un mensaje de registro al servicio de registro
-#     usando una performativa Request y una accion Register del
-#     servicio de directorio
-
-#     :param gmess:
-#     :return:
-#     """
-
-#     logger.info('Nos registramos')
-
-#     global mss_cnt
-
-#     gmess = Graph()
-
-#     # Construimos el mensaje de registro
-#     gmess.bind('foaf', FOAF)
-#     gmess.bind('dso', DSO)
-#     reg_obj = agn[InfoAgent.name + '-Register']
-#     gmess.add((reg_obj, RDF.type, DSO.Register))
-#     gmess.add((reg_obj, DSO.Uri, InfoAgent.uri))
-#     gmess.add((reg_obj, FOAF.Name, Literal(InfoAgent.name)))
-#     gmess.add((reg_obj, DSO.Address, Literal(InfoAgent.address)))
-#     gmess.add((reg_obj, DSO.AgentType, DSO.HotelsAgent))
-
-#     # Lo metemos en un envoltorio FIPA-ACL y lo enviamos
-#     gr = send_message(
-#         build_message(gmess, perf=ACL.request,
-#                       sender=InfoAgent.uri,
-#                       receiver=DirectoryAgent.uri,
-#                       content=reg_obj,
-#                       msgcnt=mss_cnt),
-#         DirectoryAgent.address)
-#     mss_cnt += 1
-
-#     return gr
 
 
 @app.route("/iface", methods=['GET', 'POST'])
@@ -289,6 +247,7 @@ def comunicacion():
 
     propertyCategor=gm.value(subject= busqueda, predicate= myns_par.propertyCategory)
 
+    
     print "INFO AgentBuscador => Looking for hotels (in AgentHotel)..."
     ghoteles = buscar_hoteles(destinationCity = destinationCit,
                                 destinationCountry = destinationCountry,
@@ -595,7 +554,6 @@ if __name__ == '__main__':
     #buscar_actividades()
     # Ponemos en marcha el servidor
     #buscar_vuelos()
-    #buscar_hoteles()
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

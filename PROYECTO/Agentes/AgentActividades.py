@@ -34,7 +34,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
     location= destinationCity+", "+destinationCountry
     gr = Graph()
 
-    b = True
+    b = False
     
     print location
 
@@ -85,8 +85,10 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
             # Otra llamada a la API para los otros datos
             place.get_details()
-            
-            gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
+            if place.rating = None :
+                gr.add((plc_obj, myns_atr.rating, Literal(0)))
+            else :
+                gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
             gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
             gr.add((plc_obj, myns_atr.Descripcion, Literal(place.details)))
             

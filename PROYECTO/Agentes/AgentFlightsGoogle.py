@@ -103,7 +103,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   minutes = (seconds % 3600) // 60
   seconds = seconds % 60
   b = (minutes < CACHE_TIME_CONST)
-  b = False
+  b = True
   if b == False:
     print "AgentFlightsGoogle => We make a new service request; cant rely on cache"
     r = requests.post(QPX_END_POINT, params={'key': QPX_API_KEY}, data=json.dumps(payload), headers=headers)
@@ -156,7 +156,6 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         # Identificador unico para cada roundtrip
         i+= 1
 
-        print i  
         rndtrip_obj = myns_rndtrp[trip['id']]
         # Precio del roundtrip
         gresp.add((rndtrip_obj, myns_atr.esUn, myns.viaje))

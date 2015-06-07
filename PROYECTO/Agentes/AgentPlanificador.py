@@ -406,14 +406,21 @@ def comunicacion():
             print len(night)
             gday = gactividad.query("""
                         PREFIX myns_atr: <http://my.namespace.org/atributos/>
-                        SELECT DISTINCT ?a ?ratin
+                        SELECT DISTINCT ?a ?ratin ?tip
                         WHERE{
                             ?a myns_atr:rating ?ratin .
+                            ?a myns_atr:tipo ?tip
+                            FILTER
+                                (?tip != "night_club" && 
+                                 ?tip != "bar" &&
+                                 ?tip != "casino" &&
+                                 ?tip != "restaurant"
+                                 )
                         }
                         ORDER BY DESC(?ratin)
                 """)
             daylist = []
-            for g, r in gday:
+            for g, r, t in gday:
                 daylist.append(g)
 
             ########################################################### 
@@ -437,36 +444,36 @@ def comunicacion():
                 grep.add((grfdata, myns_atr.formato, Literal(auxd)))
                 if len(daylist) != 0:
                     # manana
-                    grep.add((grfdata, myns_data.manana, daylist[cday%len(daylist)]))
-
+                    grep.add((grfdata, myns_atr.manana, daylist[cday%len(daylist)]))
+                    print "actividad anadido: " + gactividad.value(subject = daylist[cday%len(daylist)], predicate = myns_atr.nombre)
 
                     grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
                     
                     cday += 1;
 
 
-                    grep.add((grfdata, myns_data.tarde, daylist[cday%len(daylist)]))
+                    grep.add((grfdata, myns_atr.tarde, daylist[cday%len(daylist)]))
 
                     grep += gactividad.triples((daylist[cday%len(daylist)], None, None))
                     
                     cday += 1;
 
                 # comida
-                grep.add((grfdata, myns_data.comida, restaurant[cres%len(restaurant)]))
+                grep.add((grfdata, myns_atr.comida, restaurant[cres%len(restaurant)]))
 
                 grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
                 
                 cres += 1;       
                 # cena
 
-                grep.add((grfdata, myns_data.cena, restaurant[cres%len(restaurant)]))
+                grep.add((grfdata, myns_atr.cena, restaurant[cres%len(restaurant)]))
 
                 grep += gactividad.triples((restaurant[cres%len(restaurant)], None, None))
                 
                 cres += 1;       
                 # noche
                 if len(night) != 0:
-                    grep.add((grfdata, myns_data.noche, night[cnight%len(night)]))
+                    grep.add((grfdata, myns_atr.noche, night[cnight%len(night)]))
 
                     grep += gactividad.triples((night[cnight%len(night)], None, None))
                     

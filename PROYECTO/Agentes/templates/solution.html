@@ -36,21 +36,24 @@
 
 		<h3 align="center"> ACTIVIDADES </h3>
 			{% for day in listActivities %}
-                        {% for moment in day %}
+						<p> Day: {{ day.data }} </p>
+                        {% for moment in day.moment %}
                         <div>
                                 <p> 	
-									<p> Day: {{ moment.data }} </p>
+                                		Momento: {{moment.momento}} <br>
                                 		Tipo : {{moment.tipo}} <br>
-                                        Nombre: {{moment.precio}} <br>
-                                        Momento: {{moment.direccion}} <br>
-                                        Direccion: {{moment.telefono}} <br>
+                                        Nombre: {{moment.nombre}} <br>
+                                        Direccion: {{moment.direccion}} <br>
                                         Rating: {{moment.rating}} <br>
                                         Google URL: {{moment.googleUrl}} <br>
                                         Pagina Web: {{moment.website}} <br>
                                         Telefono: {{moment.tel_int}} <br>
                                 </p>
+                                <br>
                         </div>
                         {% endfor %}
+                        <br>
                 {% endfor %}
 	</body>
+
 </html>

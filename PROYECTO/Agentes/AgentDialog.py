@@ -119,8 +119,8 @@ form = MyForm()
 @app.route('/solution', methods=['POST'])
 def solution():
     if not form.validate():
-        cityOriginField = Cities[int(request.form['cityDestination'])]
-        cityDestinationField = Cities[int(request.form['cityOrigin'])]
+        cityOriginField = Cities[int(request.form['cityOrigin'])]
+        cityDestinationField = Cities[int(request.form['cityDestination'])]
         returnDateField = str(request.form['returnDate'])
         departureDateField = str(request.form['departureDate'])
         maxPriceField = request.form['maxPrice']
@@ -136,6 +136,9 @@ def solution():
         g = message_dialogador(cityOriginField, cityDestinationField, 
                                 departureDateField,returnDateField, maxPriceField, 
                                 numberOfStarsField, activitiesField) 
+        if g is None:
+            return "Paquete no encontrando, intenta de nuevo cambiando datas o numeros de estrella"
+
         hlis = Graph()
         hlis = g.subjects(predicate=myns_atr.esUn, object=myns.hotel)
         hotelid = ''
@@ -207,99 +210,94 @@ def solution():
                 'ciudadLlega': g.value(subject= idback, predicate= myns_atr.ciudad_llega)
             }
         ]
+        listActivities=[]
+        dlis = Graph()
+        dlis = g.subjects(predicate=myns_atr.esUn, object=myns.dia)
+        did = []
+        for d in dlis:
+            did.append(d)
+        did.sort()
 
+        for d in did:
+            data = g.value(subject= d, predicate= myns_atr.formato)
+            
+            manana = g.value(subject= d, predicate= myns_atr.manana)
 
-        listActivities = [
-            [  
-
+            listaux = [
                 {
-                    'data':'2015-08-15',
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
+                        'tipo': g.value(subject = manana, predicate = myns_atr.tipo),
+                        'momento':  "manana",
+                        'nombre' : g.value(subject = manana, predicate = myns_atr.nombre),
+                        'direccion':  g.value(subject = manana, predicate = myns_atr.direccion),
+                        'rating':  g.value(subject = manana, predicate = myns_atr.rating),
+                        'googleUrl': g.value(subject = manana, predicate = myns_atr.googleUrl),
+                        'website': g.value(subject = manana, predicate = myns_atr.website),
+                        'tel_int': g.value(subject = manana, predicate = myns_atr.tel_int)
                 }
-               
-            ],
-            [  
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                },
-                {
-                    'tipo': 'Museo',
-                    'momento': 'tarde',
-                    'direccion': 'Calle de los Jefes',
-                    'telefono': 8593859,
-                    'rating': 10,
-                    'precio': 50
- 
-                }  
             ]
-        ]
-        
+            comida = g.value(subject= d, predicate= myns_atr.comida)
+            aux = {
+                        'tipo': g.value(subject = comida, predicate = myns_atr.tipo),
+                        'momento':  "comida",
+                        'nombre' : g.value(subject = comida, predicate = myns_atr.nombre),
+                        'direccion':  g.value(subject = comida, predicate = myns_atr.direccion),
+                        'rating':  g.value(subject = comida, predicate = myns_atr.rating),
+                        'googleUrl': g.value(subject = comida, predicate = myns_atr.googleUrl),
+                        'website': g.value(subject = comida, predicate = myns_atr.website),
+                        'tel_int': g.value(subject = comida, predicate = myns_atr.tel_int)
+                }
+
+            listaux.append(aux)
+            tarde  = g.value(subject= d, predicate= myns_atr.tarde)
+
+            aux = {
+                        'tipo': g.value(subject = tarde, predicate = myns_atr.tipo),
+                        'momento':  "tarde",
+                        'nombre' : g.value(subject = tarde, predicate = myns_atr.nombre),
+                        'direccion':  g.value(subject = tarde, predicate = myns_atr.direccion),
+                        'rating':  g.value(subject = tarde, predicate = myns_atr.rating),
+                        'googleUrl': g.value(subject = tarde, predicate = myns_atr.googleUrl),
+                        'website': g.value(subject = tarde, predicate = myns_atr.website),
+                        'tel_int': g.value(subject = tarde, predicate = myns_atr.tel_int)
+                }
+
+            listaux.append(aux)
+            cena = g.value(subject= d, predicate= myns_atr.cena)
+            aux = {
+                        'tipo': g.value(subject = cena, predicate = myns_atr.tipo),
+                        'momento':  "cena",
+                        'nombre' : g.value(subject = cena, predicate = myns_atr.nombre),
+                        'direccion':  g.value(subject = cena, predicate = myns_atr.direccion),
+                        'rating':  g.value(subject = cena, predicate = myns_atr.rating),
+                        'googleUrl': g.value(subject = cena, predicate = myns_atr.googleUrl),
+                        'website': g.value(subject = cena, predicate = myns_atr.website),
+                        'tel_int': g.value(subject = cena, predicate = myns_atr.tel_int)
+                }
+
+            listaux.append(aux)
+            noche = g.value(subject= d, predicate= myns_atr.noche)
+            aux = {
+                        'tipo': g.value(subject = noche, predicate = myns_atr.tipo),
+                        'momento':  "noche",
+                        'nombre' : g.value(subject = noche, predicate = myns_atr.nombre),
+                        'direccion':  g.value(subject = noche, predicate = myns_atr.direccion),
+                        'rating':  g.value(subject = noche, predicate = myns_atr.rating),
+                        'googleUrl': g.value(subject = noche, predicate = myns_atr.googleUrl),
+                        'website': g.value(subject = noche, predicate = myns_atr.website),
+                        'tel_int': g.value(subject = noche, predicate = myns_atr.tel_int)
+                }
+
+            listaux.append(aux) 
+            diaentera = {
+                    'data': data,
+                    'moment' : listaux
+            }
+            listActivities.append(diaentera)
+
+
+
+
+                                
         return render_template('solution.html',airportData=airportData, precioTotalVuelos = precioTotalVuelos, listActivities=listActivities,hotelData=hotelData)
         #Renderizamos la template pasandole los datos
 
@@ -515,6 +513,4 @@ if __name__ == '__main__':
     #message_dialogador()
     app.run(host=hostname, port=port)
 
-    # Esperamos a que acaben los behaviors
-    #ab1.join()
     logger.info('The End')

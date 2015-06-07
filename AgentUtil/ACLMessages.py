@@ -63,7 +63,6 @@ def send_message(gmess, address):
     # Procesa la respuesta y la retorna como resultado como grafo
     gr = Graph()
     gr.parse(data=r.text)
-
     return gr
 
 
