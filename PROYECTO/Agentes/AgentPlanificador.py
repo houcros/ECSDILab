@@ -94,7 +94,6 @@ def comunicacion():
     message = request.args['content']
     print "Mensaje extraído\n"
     # VERBOSE
-    print message
     print "\n\n"
     gm = Graph()
     gm.parse(data=message)
@@ -130,8 +129,6 @@ def comunicacion():
             peticion = myns_pet["Dialogador-pide-paquete"]
             parametros = gm.triples((peticion, None, None))
             # VERBOSE
-            print "Parametros: "
-            print parametros
             
             actv = myns_pet.actividad
 

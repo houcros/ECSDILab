@@ -70,7 +70,7 @@ sig = md5.new(EAN_KEY + EAN_SECRET + timestamp).hexdigest()
 #requestTime=datetime.datetime.fromtimestamp(0)
 def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain", 
   searchRadius=5, arrivalDate="2015-8-20", departureDate="2015-8-30", 
-  numberOfAdults=1, numberOfChildren=0, propertyCategory=3, cache = True):
+  numberOfAdults=1, numberOfChildren=0, propertyCategory=1, cache = True):
   #Values: 1: hotel 2: suite 3: resort 4: vacation rental/condo 5: bed & breakfast 6: all-inclusive
   print destinationCity
   print destinationCountry
@@ -100,7 +100,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
   if b == False:
     print "AgentHotel => We make a new service request; cant rely on cache"
     geolocator = Nominatim()
-    location = geolocator.geocode(destinationCity + ", " + destinationCountry)
+    location = geolocator.geocode(destinationCity + ", " + destinationCountry,timeout=10)
     print ((location.latitude, location.longitude))
   
     r = requests.get(EAN_END_POINT,
@@ -151,7 +151,7 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
     	 # 	', tripAdvisorRating: ' + '{:.1f}'.format(hot['tripAdvisorRating']),
     	 # 	' tripAdvisorReviewCount: ' + '{:.0f}'.format(hot['tripAdvisorReviewCount'])
     	 # 	)
-        hotel = hot["hotelId"]
+        hotel = hot['hotelId']
         hot_obj = myns_hot[hotel]
         gresp.add((hot_obj, myns_atr.esUn, myns.hotel))
         gresp.add((hot_obj, myns_atr.ciudad, Literal(hot['city'])))

@@ -1,447 +1,205 @@
 {
     "status": "OK", 
-    "next_page_token": "CvQB8AAAAEUkI7JBqzlQTX5BkCmuhrCUWSrfGhiPklTOP0R9UZGHH4V93TfviTdnpq6BpyMDy8BBKgugWXAnJWkDT3XHThtRHiRh3-hN80PIhwSYksnGAgiNVgaXQzR2CMgjYtLQHyR-3PHiWkJDJUa4b0ecteybLql0Ha8pEKBm3rf47Rqe59OxhFVeLO_hlDD10qzTBcesZxqwH9FElxD0wHQql7DDkEjyrxXPBDrOlJyE9B-VYB3nMge9Sy2HDzZw6zRsBX89i5YHvPz-1cbKlNA19zvprM1NwZHuUsYYHUjR9uofPaWZJodk-Zjbi8rgP-vXUxIQRXmD0pj8Y_THBdQ02eMjsRoU9e3GFneGBwgRYRjvrdJzZy_pCvM", 
+    "next_page_token": "CoQC9AAAANc9s-6zp64vSmXUDE7l8EFq2qmgaRyiFPj9QMfMezME8HcHGTX2PgvB_32HSNUycowEUU327y--xd1JE2z-bFFaCqB-ObC_-bjmahlVWYDnAvF4b5TxaXVB7eGLPZONbkiR6zMLV0zEgaoNyEOdeNOREJ2m6e9AJY8XHPjDphVTyEDLjK5vwqyMIcCq50FKBGbv5XLnuhrznBJk7a67DYm5LxLaW9WVNwdLBbnBMK8n2RGpz05dCTXboK7LchfWbbylaLiUIIQn9lqmJm-ugzSBM21J7ooDvMiyeC5Xj7hGdPvfvMqI2ula4bJ-_XQ1wyMGXfX8n9Z8pzZUB6jmCSsSEAJJwtD-ooZfONoLHuWaaXsaFO4IVmdA7xeaVoU3rnJ0Jd7_-MUK", 
     "html_attributions": [], 
     "results": [
         {
-            "rating": 4.2, 
-            "name": "Picasso Museum", 
-            "reference": "CnRhAAAAUUNTwdaScLJq5-x0OeBQC2gxjqBpZGrzWLfu1nR8lVJQYtS4yTv5ykxv1tNcNfu3qk34VmOuMGSzaEaN4i9RHAbnosBssvmID1FjsrB9rT3vsHmP6JPFzFR2w1k_UKVW0JcMpJXM4eexFxqOKOALrxIQTUH3ZB44w3VkIL_vtJEbLBoUBCHGiYlwwHNYNap8xRsb0WjGlVU", 
+            "rating": 3.8, 
+            "name": "Ariston Hotel", 
+            "reference": "CmRgAAAAnAqrpWMZuJiOFQQfgeeByGrUOvLOLkyan-h9Upxjy-WpWx4_ipjg14hyNY2E3xA4TltSLX_Zr-L6d8xVQdlz5lUyDE2e2-eGyQnLg4yBkbB4kkYeyn4dQ2dJg2boSVDrEhAeTvxg7IM8PmULF1SKthn4GhQhybSyUM3wfGdGMak019jc7UOY5g", 
             "geometry": {
                 "location": {
-                    "lat": 41.385216, 
-                    "lng": 2.180893
+                    "lat": 41.898905, 
+                    "lng": 12.501205
                 }
             }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJa-K8mf6ipBIRY8wAB3EeASc", 
-            "vicinity": "Carrer Montcada, 15-23, Barcelona", 
+            "place_id": "ChIJgd0zh6NhLxMRDXp7KxDK9VA", 
+            "vicinity": "Via Filippo Turati, 16, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAAzT1C59AOMyYhjg2rkTOPid9zAYMbrX2ewCG2ny2ueq52jm2cUBJ820KCUEGsmpyyRYi5pGth91FPpSdsCxAToPwEAWruuyftT5kW5tmyC6Sf31w_KV7pUZEKf14Rn1xcaAA2VuYZCBgEY-5LeGBiNBIQZcLdLsId2xrpoj_LcvC-HBoUdpRPDuBMosNdOlGgN-HcWN5kUak", 
-                    "width": 1400, 
-                    "html_attributions": [], 
-                    "height": 1226
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "533a300d37619e07f1b1c7d22d8342e53293bdc0", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.5, 
-            "name": "G\u00fcell Palace", 
-            "reference": "CnRhAAAAJ_t6Ley2AM_6mqQgrvT1PjlCTEfgG3qaNkcxEoGIQBm8ZnOGBXYfY_UIDqKkv1KKvfVZppddx-1zZvqiTM4Ogj_Utrok_e9jwvH7cOYqE-_OYqMYNIaFplxx_LH4vAcbMyw_YOf9nuttGDpeO6XjFhIQsCZuN8CN8iXCc5uYWf8hlhoU7kQtmq-OeM07WuSpxaJ3G-AGdoA", 
-            "geometry": {
-                "location": {
-                    "lat": 41.378885, 
-                    "lng": 2.17424
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJ3fHTIFiipBIRpKXCn_E_oJY", 
-            "vicinity": "Carrer Nou de la Rambla, 3-5, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRnAAAABpIxHM-20JTwPL0gl-seWYkGE0btYapPYOrpskzM-3O-QgJ6bek2N5cWzDxQGV12eqAHjzhzt8o4alW7yZ-rqbsaZcNoWremazDrDX6Uq8-yKXKFhm5K0bUnU64nyYgyuBOigBhex9O93TZIqbENvhIQcAyBzXdAzRmOsRpKIXv61RoU1uAWI6mxasnSa7ecivpxpf3DRsI", 
+                    "photo_reference": "CnRnAAAAVOQWAnWiOYLTBZsEJ4C37ps49mRsEnRHMuxZX9mMg3m8ueh2O_WgmbhBerwEFnWLCSCSp_X-8g8R_yBhZAazizl3fqmE3z15KaGDgREZjfujrBmjnDM0sYJWtm3DSMaNiy5gyX0R1h_ym9RNchyEzRIQlHSW6KWK961oa124OroogxoUa1C48_Wis_Tsp-GuLsqyMQqbJTE", 
                     "width": 800, 
                     "html_attributions": [], 
-                    "height": 600
+                    "height": 532
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "93115703c9cecc5443248f1dd7d4ce0eb6c0bbf9", 
+            "id": "377e4435025adc194be8a1005437b05f105bbba5", 
             "types": [
-                "museum", 
+                "night_club", 
+                "gym", 
+                "bar", 
+                "lodging", 
+                "health", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 3.6, 
-            "name": "Poble Espanyol", 
-            "reference": "CnRiAAAAOXchiDn3VNlUH9wFwoqnwzaXQrZUMtpFDzz7Lj4guawgN4xEvDY4tVM61HQxfxthyfmiEoTPT_jjZJXfBXDIgK00kznswfPSmv67dYTgh1nD5Hc-DdObRqmO45a6G7Y2vkMSXhKpEWKyokHd8wi_yxIQgn6gW5HjTsIIE1y9kCqnPRoUOmh1B9VFa52SYoEtb7Q04_rLNDA", 
-            "geometry": {
-                "location": {
-                    "lat": 41.368808, 
-                    "lng": 2.148273
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJJ2JbaneipBIRpVQ6RTJSwLA", 
-            "vicinity": "Av Francesc Ferrer i Guardia, 13, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CoQBeQAAALLqa-8B6BUAA3pGvUpmXmnBis3X776DlNomwxeQWhVAmzhRfaqbxRAVJP4jQnuPw8vC5-N0Q1V4ZDC2foRyTNRGUa1i6O7vCZwuDHUVwYFGqxv8PO8szH3CR27Nv_4EgRZbLlp_PrVFGEL8LN_ER0-JEDCHZxjHoFmCIQ5sWItgEhCVtu3wUfrz4OjU7i_3MSLeGhQ2WZVidBVGUedrKC5nwZADPx0csg", 
-                    "width": 599, 
-                    "html_attributions": [], 
-                    "height": 599
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "19f77d727e1ce0d73d8003174675b86c1468d85a", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.5, 
-            "name": "CosmoCaixa Barcelona", 
-            "reference": "CnRnAAAAIOqN-3zm8H3jf6tY_vyhY8L5tw-Fgz-dD_MWFhMUttU-mmZSKw6jogCeCzIOnmVNwYzZrtc-F_3nIr-DD0YQ_2owv9ZvZsZP15pxHiDh8fX_CQW2YoeL1GZMLpFgrx3s--XTFOmotnmKwe8vuApwuxIQbgFzGytsJtiXaDNIT6YDHBoUxCCHkXhOmL9uyvKXZJdTs6LUWIY", 
-            "geometry": {
-                "location": {
-                    "lat": 41.412972, 
-                    "lng": 2.131551
-                }
-            }, 
-            "place_id": "ChIJzdmhJBqYpBIR83dP63GAFSA", 
-            "vicinity": "Carrer d' Isaac Newton, 26, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRqAAAAXrAFD3BNSzMbNaFbD69QbOVXypViG__hF_gkT0QxqW-FpqAvdGsbKQSfSr_DxvokIsTMLbxqM3D65-8FzSzak_bzRVvrFAAAJpbATKVqFZBKSwvhCiQ1AGlddyHgBLDZSaqROclzNEGL-6HBdtPt_RIQ0b6O9lhSqdq9u0CffEcXvBoUgx7IoYqlacQFP_ItTzOCyDQltnc", 
-                    "width": 2048, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 1340
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "d597b5fdc95b0186fea621b8ebbb84eae5a06b5f", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 3.9, 
-            "name": "Barcelona Museum of Contemporary Art", 
-            "reference": "CoQBeAAAACVoOFQukZ87Ld-wK3EfyhK7x5FTms9MJZp7OCbRtWLhDE5PpfzlXNZpx8spp5J4u8wa2rZr0e4nbEC5Hkf9nDZ6FfhZn-Ey2tLDT_jA6745rLNEafBYT9ZIMgZO5jjIa5DVKycS6r7X3EPv4OXQOBfGIpMCh488ZVyvcv2hTnDfEhBHuDETWeYKZ9MkhDevEcjGGhRqIcrelmlnf154qnKZuBJMxUKhZA", 
-            "geometry": {
-                "location": {
-                    "lat": 41.383191, 
-                    "lng": 2.166867
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJ0V6MrPWipBIRKnssXv0o_Y4", 
-            "vicinity": "Pla\u00e7a dels \u00c0ngels, 1, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CpQBigAAAO1C40fPCA31-O_XbRM3b29xYqjXAb9KVlPzqpvE0AD3KChqTr6P8EUQXy2BZ6F7F-85GNPrHq80Hjmnaq2VvuAL-AdBVKiC3aRrLKvQOzn3GQ2jquFKU0b4dvhcAnqKWli9Q3b8i7EjtYi6qhTfHDFQLq8thXm4hQVlqx2zcDMKd9sGJsCgXxf5V7LAARdPjhIQbiBQPSRvMeOaA170RhUU5RoUzBFumno7RcKCN1T88v7mb8e-PTQ", 
-                    "width": 2048, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 1362
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "524c3cda116139e8c094657b9e2f3830a30f8b65", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.3, 
-            "name": "Joan Mir\u00f3 Foundation", 
-            "reference": "CnRpAAAA8wlxPrx41Zp1-B6Q09W0f9Hgi_fVZlUlqYgc0wrcjffNCVuIOrEqmcLMEhE5EDUzj2iMXKpNW8d_rCXOIu-c7b3cnB1V1eTvL1j7bsrSIaP8wzdT6LhE6UctrVSBoznRB_EUMEW8piIj8U5wjuq9qBIQ7LJQ9TuKYM0EV1EfBxc47hoUC03gcxJtX0DtrJgfH45Y8eubsns", 
-            "geometry": {
-                "location": {
-                    "lat": 41.36863, 
-                    "lng": 2.159851
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJLcelLmmipBIRqmlJrcEfypY", 
-            "vicinity": "Parc de Montju\u00efc, s/n, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CsQBvgAAAJHPypNZAjb7PKHWs13eRZYojNwIeLDhlyUKDq27li3PWoOWEhmsztR-_hGJBaCRPaJUXHbgBKrvxIje5ZbltPrn7rXdWHy1LwFJZ9yzE69LJCV2TvLaY4Sd9zlPU2f4_Xkh8vEnH6I4Sovfl2ae20TDV282VjCQJPC5OB1spYVzn-sTla8CQHmulzGr0F-gyYxDHCN7bVpn6DHh17lxg8M63J0qYSEBZxc9h2nhz7CfJO8SekrBU82zhvhoa47mVBIQJadwtwLq-5Nvc7O0UUFrsxoUT-c2pevygFxZxgj08d27-rTaDx0", 
-                    "width": 2048, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 1329
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "a928942e30c1979da20ff22d417be23c74c78a21", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
             "rating": 4, 
-            "name": "Maritime Museum", 
-            "reference": "CnRiAAAAMeDjkXzDOjdHiZrQ9NsGizjCQ46d0qLB5CXPTmmBQhFU0oQf5Zv4ZBV4KXQ4LTNAeaatF__tSdS3I6-1s6iLxZqwWeno4gkGCj8zp-4va-AyEMlAQ1f4SaPKHyl-IWvoDaTavr_StaW2RFJgGC4UMBIQD0S285DXQWHkQbQts_SdXxoU6cOp7bqeDhU5r5lJO1kFGQnVtQM", 
+            "name": "Boscolo Exedra Roma", 
+            "reference": "CnRmAAAAH53pOldgpopi0Op_GmDPNS5n4aW3tHIWX4DXmerhVuRrlt4332MTkPYLFklY9dSHx4mGoH6Q9_sL-vWl4lHGKxkCG17gIfvuGIg53jzY9TRm94BmsaDZW9G9IVWwTuCNSbmD5y1Lvbrk-ysPf3mAkhIQL26boIeIsYmfLrxVJSIFtBoUPyiT1W2FC_YW3ryCdoGid-U5WsQ", 
             "geometry": {
                 "location": {
-                    "lat": 41.37519, 
-                    "lng": 2.1758
+                    "lat": 41.901954, 
+                    "lng": 12.496
                 }
             }, 
             "opening_hours": {
                 "weekday_text": [], 
                 "open_now": true
             }, 
-            "place_id": "ChIJH7ml4lmipBIRk_Q7O0rZ2xs", 
-            "vicinity": "Avinguda de les Drassanes, s/n, Barcelona", 
+            "place_id": "ChIJlXtiEKZhLxMRklV5HYf7P0M", 
+            "vicinity": "Piazza della Repubblica, 47, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CuQB3QAAADHHCaNxnHGblRF9xjRGjJawW2UgQXoK5ynR8iFrK8LI2uHVO8Fpxea8XIadFkCjU617w0eN6XVCMYpEhFH-ZweCMlJQ2miwdS3RDJqQqAU0W2fh9cv7BxZb6m-rolHQPpXQoN9YfVhpn-6q_6Qn3v7IWA4qeexUOhuFrMUnA3vaNwc3_lnpqz399n8B0sms8gUoftdGkpNwUQLRzsIPBCmR5VzMuk4hLxsDW2NzSQLx8d5w_F3kJCUcpHFesLccxWLVkO4brdaNpU3TZo3D6TlF9KBDqw22zhAQXTTaWKkNEhBqCEp7o_I-LocXdQ1j7TEsGhQ09b150Y1mDzYucGnp0lKkv9ruYA", 
-                    "width": 2048, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 1158
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "a54c676d501a96f88c0c572f4879ae00e8dde60f", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.5, 
-            "name": "Museu Nacional d'Art de Catalunya", 
-            "reference": "CoQBdQAAAKBQrmyhu79lvL46NYiFrTz39lFHVRQrsQuC4sx_A5Op9HWIWVqGaOxl39_QMC4cOYWYWSiww8w4M5HDhzn_9QCpQ6qqrc2OUu2ydBrMfNpnmzi-gyGLRJ8cj279JC_tq6EOytjgkqpO6jjmC4wWoXPHeN5OvKN6HwSJ8BFXNVngEhBHL61uGLYcT_EnMoGvUKhiGhTOysP6QczsEzEQKMptMfkZPtTESA", 
-            "geometry": {
-                "location": {
-                    "lat": 41.36844, 
-                    "lng": 2.15357
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJMU59xHGipBIRkdwlcgUWAYY", 
-            "vicinity": "Palau Nacional, Parc de Montju\u00efc, s/n, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRqAAAAD99LUwA5Iz5uonOZn9t2TlRtknM1f_VFFbPzh1QS6tgoBgCeIAqgSIKTMvmHSBB5opyCnIu9NV0L6biibLE6JvDI7OynO8Xjxjzmbqz0x6F_CmpatCHIcjzE9EhVhfkFL7n5K-K0VujLqctWwwYI8BIQppV07OfwrSh8-0Lge7rTvxoUJopprWmhTn8cjs0FxvkuH9VIAyA", 
-                    "width": 400, 
+                    "photo_reference": "CnRoAAAA4Vgs9YW9KioVXysoA9lo6xuXgI2oOKilMYSQOA8lyxrPzjtJQxHuOtde5JBi5Y-1UTd2JRcBBjqhFK_EZ04AtK2eEG5cGrT_m6Kb64J13oEieFT2fF8pyQ2XL_3e9MYAZG6yB3WYjj2PkHHfpQbKjRIQtzOfqeuZ5oFEITA7GWoCQhoU1RAPAlMF3UfqQRBAbYTm__XmWqc", 
+                    "width": 426, 
                     "html_attributions": [], 
-                    "height": 400
+                    "height": 426
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "de87ec1d47ae6b372996bdaa5341534f62e6c2cb", 
+            "id": "32879eefa5588d313d4bccd4186970a9a09ae545", 
             "types": [
-                "museum", 
+                "night_club", 
+                "bar", 
+                "restaurant", 
+                "lodging", 
+                "food", 
+                "spa", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.3, 
-            "name": "Montju\u00efc Castle", 
-            "reference": "CnRjAAAAqm1zpMFJj5TkakeGfxeR0N5TTqbmZRcJNtqJasLT44-MuMF221McFu2I3srm6y7p16XHSVa4ImGAop9-u1WYaBpuvgsdKhr77QulACWdmeJtHIibtuikFI6pW6nU9s2wXmbVI9tZ1YsSC9rZ2TrupRIQeyOoTQUXC5dFBXNuFOJB6BoU4myH-D9MnbTaQP4JMDmpusGnM_o", 
-            "geometry": {
-                "location": {
-                    "lat": 41.362959, 
-                    "lng": 2.165064
-                }
-            }, 
-            "place_id": "ChIJN7FiCkGipBIR1PJn6ohejww", 
-            "vicinity": "Ctra. de Montju\u00efc, 66, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRoAAAAC04TuC5Ms0kMifTG_xFxzFdIR9eOzrnM88Fm-HY4JKI1Ha3ZkGd9Alqbkd1NOsbRuSCF6fMG7aRsXZS0PPltim64orsJS-5eIrSMNcRhmBjaXWEgNKu9VO2sH8fpvivBnhkMNdrjqu0yFYqO2-IhyRIQMjiHclVkGp20h1AnAYcs7BoURq72t4PxCM3mV4rgS6B_b6E945A", 
-                    "width": 1296, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 972
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "bc2167f91ac574cb4cbc8df7ba833a96667c38b0", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 3.5, 
-            "name": "Museu De La Xocolata", 
-            "reference": "CnRnAAAAPSYXVfh7maJVYbmSgcfamTAA_jOAgfkoA9Qz8s9QN2TlBbVqKjbuhjKNSUMS0fE7yqkqn29h6mOLY1T1tXKPQxZURuhGQQ01piK9lhdSO1znVOeLSRl82erXhZbf8uo3WE1-pVqGoJNalqmSkGI80RIQ59QCFSl9AUrS_TbsefIa0xoU0Kg3qXOLVEEx8sN6D1ojxGQkiPY", 
-            "geometry": {
-                "location": {
-                    "lat": 41.387255, 
-                    "lng": 2.181682
-                }
-            }, 
-            "place_id": "ChIJC6CEtf2ipBIRkFQaF95uL1Q", 
-            "vicinity": "Calle Comer\u00e7, 36, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRnAAAANijPBovX5u-VSB2RzctbchqHiRE_XJ49ore86pSojqTCBuG2LrTx2eePP3ECphPlzVMUP4GbywUVqHHiXhZWgZulEVMZw8ZpaZSBWhAhG-pjMwPG7_iJSz6BG3iZbCPtdEH55nkvDRD1S0eZMj4D5hIQBWdQVEmg7KQGnbOKb3HkGhoU0fXXcQU5y_WmX__6xcZU-_K4XwQ", 
-                    "width": 2844, 
-                    "html_attributions": [], 
-                    "height": 1600
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "d3ee859e13ada2af88a058b3efd97b4b6a5d41f7", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
             "rating": 4, 
-            "name": "Casa Amatller", 
-            "reference": "CmRgAAAAuZ-GS2RW2W_2_rDjN9FDD3dxGzFi6LtA_uyCMK5GvE-73cz-MpG0YAsEKL5Mh0dg-KTDcLVc-VJKMJUY3J153-RxYNklpJTY7hbcP7LW3t85dGRq2OdVjmg0hvp_gzDJEhD1ykETLBm7MtmypbOKIpdBGhT0prfEYX_70a1w29zycazGPua5yw", 
+            "name": "Hilton Garden Inn Rome Airport", 
+            "reference": "CoQBcgAAAPtPvg7dj3iUSgU-Pfk8_-OH8kBScF30Fj2U3HAHtx6vMhqI7JULCXL9KfaS7dkCFWVu9ycJNyqBJ2LzUYFOWtIMihaDrwgcx__4PU6T336G_lckCfoFEXTRr8IcPAGeKson3PytDERguXcNPWuHe13rPZbxGFT4e8nBGWCjt0cSEhA0Nm3Qoq-7Z9l2WPZbF1uTGhS8djTsO336gDWRHiDDbcRjKGKjEA", 
             "geometry": {
                 "location": {
-                    "lat": 41.39157, 
-                    "lng": 2.165103
+                    "lat": 41.80009, 
+                    "lng": 12.273202
                 }
             }, 
             "opening_hours": {
                 "weekday_text": [], 
                 "open_now": true
             }, 
-            "place_id": "ChIJdTx2T-2ipBIRQM8Gwarzfik", 
-            "vicinity": "Passeig de Gr\u00e0cia, 41, Barcelona", 
+            "place_id": "ChIJScN8ELnwJRMRThCRHHB3D64", 
+            "vicinity": "Via Vittorio Bragadin, 2, Fiumicino", 
             "photos": [
                 {
-                    "photo_reference": "CoQBfAAAAOdI1wV9_vfBApC25HPPywg7Wd-RwDOrrANAwReKKGfnpaNXpav5sfRpo8fb0fUj0eb8FzavhoIxpsIv-j_ZiqowNFUIu64mQgHa7lCSWstUCy_IEHNhjyiBUNsrqQTT-kOoFCVK1-TAOEXni3Hw9Qnj1vIhPedCS6WqyKMEJMAUEhCQ6T0x6pu21acJsmbJUQGKGhQQyphDE1WVUZ9v5VLXDT1llJTk7Q", 
-                    "width": 1167, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 2695
+                    "photo_reference": "CpQBiQAAAPso5OI0FADPMyjJrFqrq8fxSLBq8T-fYEIh_tUxt7MQgn7urZO7qkWvFKwrZiP9iqCmwVDF7wh4yi-nwCU1VtAMMubA2WNAZQ3Ilz_K__vipfwSKra2OTDS5NK5yFnAX8fj6W8iRx4r5uU_h_3frqgpv-KtGuWBvpXItEXCqBakquVJPXaULnV_5DEgUS9hqRIQfiHUJjBBKcPS8QcGGRnrzRoUJWww9FNM9A00WHES9Mo8r7doJrU", 
+                    "width": 1000, 
+                    "html_attributions": [], 
+                    "height": 664
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "fbd509231955e3ec66c27235fcfdc95ce1edb2c2", 
+            "id": "c618948e5bdce86659d4151ad037d217d2ec9c74", 
             "types": [
-                "museum", 
+                "night_club", 
+                "bar", 
+                "restaurant", 
+                "lodging", 
+                "food", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
-            "rating": 3.6, 
-            "name": "Museo de Cera", 
-            "reference": "CnRhAAAAB0HiA0ZZo_IVF4oM2cmIhxq_k9ROJTJKvvhJG-e9aJDulqyG93l3xSSGvWSR3O3jdECHYgZLsvuGlnNaSPazA20xr6jWrc3-fxuHdu5UJsEIYS353NlBtFo1AG4kT9AF_dTWjO51eIZJDojD8jYKTBIQ8tJbdbx8BnLasIBLNXxQeBoUAUQL8KNpt2rLhKPGDn-5wQs9Dnw", 
+            "rating": 4.2, 
+            "name": "Circolo degli Artisti", 
+            "reference": "CnRpAAAA1yRR_UOOZpyeMa4F6Xp30ZN3UsWZ_UzQ21C2XNBrtTLU1RWrnlG0z63i6FBy1iEHdGA4DLBa5aAWEj8fkXu3OTqJ-LBvwMEglQzjGQAoRrNtaaDtKRpakilOJQ5kgQHZn_pvtVuCOrRNkpU8rjqmERIQheq6hQsxmSfoi0aW3sWUThoUm6YphvYe68EtH3Eu4a8DdEg0iW4", 
             "geometry": {
                 "location": {
-                    "lat": 41.377432, 
-                    "lng": 2.177378
+                    "lat": 41.887317, 
+                    "lng": 12.52384
+                }
+            }, 
+            "place_id": "ChIJCejtdYxhLxMRBXbZnYnJVNE", 
+            "vicinity": "Via Casilina Vecchia, 42, Roma", 
+            "scope": "GOOGLE", 
+            "id": "a356c4c60ed5cf604d8026075ffd9ff6e557c941", 
+            "types": [
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 2.9, 
+            "name": "Gilda", 
+            "reference": "CmRZAAAANkIpGxMaXWodZj92614kXrqnjOGLQyCy9CmZcd76khdPZzdCa7lSBF3aTl0hK6-RXtFV3F5KBGDMgifbsRJFv4d4YF0Fm_Miz0DCkHyChWz8OHJ8WElaxdDo5GC2b_zOEhAbKbwtYs6ZBErWkcHpUmthGhS525p5N8DY36-44kMYhOQCVbbX5Q", 
+            "geometry": {
+                "location": {
+                    "lat": 41.9036, 
+                    "lng": 12.482751
                 }
             }, 
             "opening_hours": {
                 "weekday_text": [], 
                 "open_now": true
             }, 
-            "place_id": "ChIJSXLa41aipBIR8O0eAyi4epg", 
-            "vicinity": "Passatge de la Banca, 7, Barcelona", 
+            "place_id": "ChIJd_FOolRgLxMR8f7bUvf0sLg", 
+            "vicinity": "Via Mario D\u00e8 Fiori, 97, Roma", 
+            "scope": "GOOGLE", 
+            "id": "5cffdb985115fc778c98c634153b9e1f9751378a", 
+            "types": [
+                "bar", 
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 4.1, 
+            "name": "Akab", 
+            "reference": "CmRYAAAAxvTF2UIC5TK8Sn-GoH8Rux-oBcBQNvIeivtluwRHxc37Zt0yT6gzA8NzigMxUu8yMNNn53tZLp6EcgZpwOA0sFmPHiDLYYTqTxBtNNW8lBSECq9gFgZ5lirwJojfx7J1EhAN2FAZY7eHExrDNSKT1cMEGhTar7csLTAJEJMZ37iIPfJKk22Xxw", 
+            "geometry": {
+                "location": {
+                    "lat": 41.875397, 
+                    "lng": 12.476409
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJL5qkxy5gLxMRvcQecjjt0ps", 
+            "vicinity": "Via di Monte Testaccio, 69, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CoQBfgAAAL4Uv--1ODnFp5AnzdZiWJbzqc69JAV3JlDQR-ccVqotT5ZHvNh9oaVSDkBccP-1o05PppSKEB3J7K0cuenp2uKi6JVFcKAZxAJjos51HTBI6FAu8WxI9CX0u-PgC33dOeB_q7K4MUWXyRw8SU4Wx4fT0wSLoLKMkq1OS6c-7Gm-EhCSOAUh3CflLOWxtJwfODfNGhSD6plpmhA2YmrKQduZXCO1Nd9XMQ", 
-                    "width": 3904, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 5844
+                    "photo_reference": "CnRnAAAANUnMelGO4qESLjTG_LCIEJjn2WJkcEAg0CG99hZkPc-1c120YvOFupG-zTLWHVRU2yQKxWUOpKWyx6XAvNpwrUFgOPrZtSJZfILQPH27jlQy-3ivAOtbIAcWrHehiGP84Ty0-h-s_Zt1y4b7I8gPuBIQHAxKmmwn7TTCxR-mMFaa5hoUDFsok0s_yox-KG870HhIeqfF0GA", 
+                    "width": 960, 
+                    "html_attributions": [], 
+                    "height": 960
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "8fb363bee6dc3331ad241f4b347cfdf205a44641", 
+            "id": "53ec42cdb5542ef119cf372a99c7b38d2d5232d3", 
             "types": [
-                "museum", 
+                "night_club", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
-            "rating": 3.6, 
-            "name": "Museu Egipci de Barcelona", 
-            "reference": "CnRtAAAA-jZ-t-AqJ0cYsKWMiPeE0dHRFRRkUPYMRL6niGN_k8lvIJ7WznIDFUcXyjhlbc4ziGfmomoIAQ67-uhFCqrUmHkfbaK2lNN3JBBqfvoNyD-qQ3A-Ce1hDlFOEH9Q__DwmiUk_Kok9PQ39wVf1EyZ_BIQgVlPvvJX_J4upfGlPhbJrBoUHFHyPfybTXDuXVGJShE_dSZuLds", 
+            "rating": 4, 
+            "name": "Ice Club", 
+            "reference": "CmRbAAAACry5EfQxoHEr4w0az7S1qxkSzEVz5wtd81cJ3AeLIVHULPgj6GZA-u6rhLC7kffUwAtHDhkqPDWhm3xkMpay-CG58G9wyHzqHB7_0PMMc0YgR6O4_P6pHb_wQouyV-s8EhBmxkPtG454V2MImokukGhwGhQ-lwSQfugLv5_jUynhenucx7gVxw", 
             "geometry": {
                 "location": {
-                    "lat": 41.393631, 
-                    "lng": 2.164699
+                    "lat": 41.894046, 
+                    "lng": 12.488701
                 }
             }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJkeeo1OyipBIR---OHUceofI", 
-            "vicinity": "Calle Valencia, 284, Barcelona", 
+            "place_id": "ChIJXdzO3LNhLxMRiZvzFcA3EXo", 
+            "vicinity": "Via della Madonna dei Monti, 18-19, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CnRqAAAA-SQ5q4p1rxCXKbuU7oqAMeEOCbKbGxWvQXfbj9Bnrrwmy7YUF42tz62rSzWUbAFSDqi4YMECjCIF7Ke6VDjskuiSCrZTNL8dw-2BgJ9N1BNWu-wpD-6bZ2FLBlCc4Sf7ZFuV_XpIlsssztT7JBgMMBIQBotZYWHZxcafySjXqwLPfxoUjDAmxNbhOrQeq8oQUc0c-TqkRUc", 
-                    "width": 1536, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 2048
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "a8297ebf8b81adcb579c3285644f7cfd7bff7201", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 3.7, 
-            "name": "Fundaci\u00f3 Antoni T\u00e0pies", 
-            "reference": "CnRrAAAAOlM0-diatSEjwvXl0ZNjoVatlPpxTo6y9mZ7JUebdEBqNHnqporA3b9e3m36eaKJrMdcvs4x_zBqCZeylSbhfUfoArvlKJDCtRAcQKsGwW80NsaDW8qBzPsj8XFB0w8d0_V09eFFxJCAZIWp-2rRFxIQdlWLX4b3u_-lFmf9QBZFrxoUvy2lHpmdTvU-cOrWITz51AyL4pI", 
-            "geometry": {
-                "location": {
-                    "lat": 41.391547, 
-                    "lng": 2.163795
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJ5XvzpJKipBIRrTCSZXbotTo", 
-            "vicinity": "Carrer d'Arag\u00f3, 255, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CoQBeAAAAIeCj0rhm6LMcQ8BKyepEqqHXlokM9aNaMwjl8IJzVHMOp14lKpZC9tPsWUX2-gw-RA-X8lOlmQZosnD_uuZEmXBqpGC-LyIbunmtTPimqirA2vdEjvhCGkaXPWGBKPOA_kYRDxI1lfdzMCIIR0taIDZCe-hpLO45k1BOTK4vUByEhDe9gxveLY1hn2ULYvbRkbHGhR4OzQCV9Em0yAQEd4wO4ahd4yAaA", 
+                    "photo_reference": "CoQBcQAAAEtRlpn_4nXY4Yo_yfFwoN6cJsRfFY2h_ZrqdiIeYXsG0pjaKJcgF5N_Lbiicc2TUn34A-oUTul5RWJnQiGlTKfEGRUc3e8ex-j5Wkkmkor7p2i0Bef1DL-y4hKFTk2Qk2UZszfMK1QO2MrmEWcQf49t7bfilM9Zj30EnU-kquBdEhDHbb9wDHxnML0FO-SgvqznGhQjhAO2ckkNe-KKynNfdWYsCj71lg", 
                     "width": 2048, 
                     "html_attributions": [
                         "From a Google User"
@@ -450,208 +208,384 @@
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "66e280d4e599aa2063b4d28c5cd0c8e3aa4014b6", 
+            "id": "6b2c4222ff6308e976a802288e31cf2eba3da62f", 
             "types": [
-                "museum", 
+                "night_club", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
-            "rating": 4.1, 
-            "name": "Arts Santa M\u00f2nica", 
-            "reference": "CnRmAAAAhvFvqMVhrBrCaZtJrPVizUyPjDSRUqVmQjkfPbjAKRSBw8fVsaDcyc9Zag87xNbx_cD6XYTUxX4ifn9FfG-9snZqhVA1osbHWhSNeqqAHDNiV5u94M7fil9obhVxn3nn6YzUMkC9w-07U8ui1XePGRIQ1q1ONe_ThNz1lBEUsT78PBoUyG9UM5GTdUrkhM0L9odW3FYw6Ss", 
+            "rating": 4, 
+            "name": "La Maison", 
+            "reference": "CmRcAAAAAEEl-WwdMFxi8b7gR6zWLRR9NmVadU3pT4wNslo56iJDf7U5ivUtLoHHmnTV22la_7UotJu7i8QXtStEVd22D8uBQwa8Y1IBK2tftrkmlvCSXh-qv2MYJyo1MJoxDw2QEhDSdAgEn8Unnm5m9rApf7x7GhRxB7l7_jqFuSF2XstqidjPEQD4PA", 
             "geometry": {
                 "location": {
-                    "lat": 41.377194, 
-                    "lng": 2.175674
+                    "lat": 41.898389, 
+                    "lng": 12.471978
                 }
             }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJZTiFwleipBIRj8RWjPOrnLk", 
-            "vicinity": "Les Rambles, 7, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRnAAAAnAYwrVTJRvxBVB9VxAcRS7T0RTDusBtldi8dRR3NwIRFiKElThtTG_iU2BEuJCseMLokorPlwXmxzfmEIxUjKM42EzC5EnO0IUtXibEWqyrDLiNdwW2zvPPAL_iBOGfbLfZQzH_ggqZqxVrxY_CiSxIQVoN70APy9h0X_4Zdk0XHTRoUiuckEFPNymiFQZ0QLk6KNYr0SmE", 
-                    "width": 2048, 
-                    "html_attributions": [], 
-                    "height": 1366
-                }
-            ], 
+            "place_id": "ChIJ1a1FXEVgLxMRJ6LzcLEGB2o", 
+            "vicinity": "Vicolo dei Granari, 3, Roma", 
             "scope": "GOOGLE", 
-            "id": "31f9ce6a9cb36e8941e430532d004036aa941753", 
+            "id": "c6533aec6ef6d988bc02be18e3efb3ae34065fd3", 
             "types": [
-                "museum", 
+                "night_club", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
-            "rating": 4.2, 
-            "name": "Museu Frederic Mar\u00e8s", 
-            "reference": "CnRpAAAAft4UWuG4lYGxGJHcNqvH16c4O5PR-L0vXnu_N0ioZJMiNIEpFPsZ6PjB1w-5-xwIgJgGpNspWFMKpdfFThrRmrw2QeCs2CeyVzrI3NhWiGkMyBCzANLZfbO2z_6JCQ12qicZf09NGgzTiaWjhspBMxIQUvzviD5d9-GdQTYKj_7yehoUJEVcfobLI2vgYQw1l7botYiwiMk", 
+            "rating": 3.7, 
+            "name": "Piper Club", 
+            "reference": "CmRdAAAAJRSnIETxJhNYxnV8fx9w7Wa2pD1AK-Fd8eyWnETXxc1zlo6eCcnQUTRz8QL0rNXnDQmyw3etF57EcZzGNWIfEvK3JIqQVaGjLirlsGdxucwIupvIRIdT_3B0tMauDuwbEhA6M65yRAxuSuklCAEYnLJcGhR88i0ia_YJBFXJ3i37mRqPCpjrnw", 
             "geometry": {
                 "location": {
-                    "lat": 41.38445, 
-                    "lng": 2.176555
+                    "lat": 41.918928, 
+                    "lng": 12.50103
                 }
             }, 
             "opening_hours": {
                 "weekday_text": [], 
                 "open_now": false
             }, 
-            "place_id": "ChIJDQeJ-PiipBIRRKhLu4wgf-U", 
-            "vicinity": "Pla\u00e7a de Santiu, 5-6, Barcelona", 
+            "place_id": "ChIJ7bH41xNhLxMRrrZnkThUkGk", 
+            "vicinity": "Via Tagliamento, 9, Roma", 
+            "scope": "GOOGLE", 
+            "id": "38cba37cad0c7dfb34deb66a33cf250485c754dc", 
+            "types": [
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 4.1, 
+            "name": "Leon's Place", 
+            "reference": "CmRgAAAAwbUvjFdwwGtV5gzq_vSWoAkA8iF3LSHVRyo7QX6qz2gApTgL4ldMbrDUYzcV6vhhe_ug-OfySWFMKRRluGFVDmztq8XcXv_NLgbOLZZcFPQQCSc7PvO4pfF-AVygXsuVEhBP6xrhQGYwmndCFAhSRddMGhSZ26xYbdFEWLkORALzNoWiR1SAWw", 
+            "geometry": {
+                "location": {
+                    "lat": 41.908122, 
+                    "lng": 12.499562
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJewo4-KhhLxMRoS-TBw-zZ8I", 
+            "vicinity": "Via XX Settembre, 90/94, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CnRuAAAAfGVn7xcCzjuNyHPV_Q113s-qMkNOCEZN5EFi_br3ZS7P6eLVzxfiRj7qfUBZxcuehL56xpo8JeBU1E9L7h--VgUjOxA1CzrFVWJGb44iKLzMd4gIK5C7WCr6EJ9gV0J1WXPPWA32Q2VCJ4XOCVvyXRIQ4xUfmYnSiycc9gsKzQbDyBoUNkER7iWMXoOOhPBGDHIx9SSUHAE", 
-                    "width": 640, 
+                    "photo_reference": "CnRnAAAA77ZhG1zbXZCKNjfNJT-U1nP7b2_QmLPrRs7vTiW3bRJibk9OfPB5oNw8sytf6pqjvxtzSgqbbqA4okN4BdfzkCZc6dZSJ7g3jcyn64jvIuMdIMZT3AzKR2jyMTTXUzFqRgNxpiget4tBEh_tKdY3KxIQqRhhrz-aVpeItZb_wEbTYRoUMTd5ufUCw76M1HTcLF5Y732mIyQ", 
+                    "width": 2000, 
+                    "html_attributions": [], 
+                    "height": 1396
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "6b096df75a9a210d7dce51312b2c929cd57a1318", 
+            "types": [
+                "night_club", 
+                "bar", 
+                "lodging", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 4.2, 
+            "name": "Goa Club", 
+            "reference": "CmRcAAAAXfii_a_aLW29GEh6KGgkZwSYskeiTkoYNky0jiUWEnVfSlLGHLWi6omIilM5-ZmwQT9yJPRDrq1MD1FWQhftdgdrI8A0tLkNp7k8Rrj2M28eT57A_dogMhi0syXdGsO-EhCb0Z2jK2eCjNXcigDULesVGhSg0QVJt4B7KvFwkf39zI-nTODsrA", 
+            "geometry": {
+                "location": {
+                    "lat": 41.86453, 
+                    "lng": 12.481198
+                }
+            }, 
+            "place_id": "ChIJE02U1IaKJRMRQzykxygQRpo", 
+            "vicinity": "Via Giuseppe Libetta, 13, Roma", 
+            "scope": "GOOGLE", 
+            "id": "4c27660a9b6b7e2f8db11562e40c10042cc38c81", 
+            "types": [
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 4, 
+            "name": "Lanificio", 
+            "reference": "CmRcAAAAOqlwgABNSc4hE8LnajjOAuDhET0ZPepbUqGMWIMId9LhaWKeNpnfAC-UNRN6EyXti-wf6u8uyK_4-rb4PBzhYs1Ap8L8551Usi45tcUKVd6N7ZjDVs6TdfpgcrrOscsLEhADbT8jtcp_MleuX3--GnZ0GhTViSpqr8Q1Ime3EI3mrGbn4Q503w", 
+            "geometry": {
+                "location": {
+                    "lat": 41.926001, 
+                    "lng": 12.539108
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJJZswd-ZjLxMRPREunlwXmTU", 
+            "vicinity": "Via di Pietralata, 159/159/a, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CoQBdwAAAPbkMy_ldhI4R0p8ZyTaTDcqa04598J6rtnaPZt3rEybDfRcggXOqD8u1DytEFoeJe1Ta32E_WqbVT5g1u_I4WnneNzBsOwNXTpLcdeUn9w3EEhZJjzaeGdjLrV96yUZ4AwpH8g9fq2OrYPdeVh_2tFSXdyxVLWVzV_wgqJBjiumEhCWzAM-3cubNvwIb_-dsmVrGhTaPsfmqZwwEbFur5YpvEhachA_XQ", 
+                    "width": 250, 
+                    "html_attributions": [], 
+                    "height": 250
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "17048331e049c54bd683e63344b172e109805b77", 
+            "types": [
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 3.9, 
+            "name": "Art Cafe", 
+            "reference": "CmRbAAAA3C7ffYLFcmwUmRr4XpLhMzB4r2uHqtD6_7JAXeV3mlxfs13glQT-7J-rfxAr_vSGF0VR1EGjeLCUfq0sVJ_eYGTQCWjXorTksFENKWl0_8Ji4E7XgnEyccFkwMD66u6AEhAkJ6i55jClYEgYt8gqLuRPGhTRXlM4dr_WbeBnSARGvx_mURH5ew", 
+            "geometry": {
+                "location": {
+                    "lat": 41.91086, 
+                    "lng": 12.487489
+                }
+            }, 
+            "place_id": "ChIJW2zyDQFhLxMRUKyZg8yBGio", 
+            "vicinity": "Viale Galoppatoio, 33, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CnRlAAAAuEns2OQAjfkHHPSEJD6vKiT4cbW2TcvldbR1CcQHUkacPzeRLAZExSwyeSc3-7ouAZ2OLYo3N3DzdQUs-fMZah6kuZS6iq7ECT5KGKDl-EpzkqsinxDu3duu7BNkyYIMLXQU-PZYwtoWoqrbHFrqahIQ-YQF_IRkBfM2d62C8BrPzxoUVdaZuBAQjWschre8KRmsCe7fRXU", 
+                    "width": 50, 
+                    "html_attributions": [], 
+                    "height": 50
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "44c4f5b5f7bbfecdd4abcdc59ccffe04e5e78abd", 
+            "types": [
+                "night_club", 
+                "bar", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 3.9, 
+            "name": "Alexanderplatz", 
+            "reference": "CnRhAAAASU3or5YBun4FUFYhw5T5jnvoxX5OyxIBy5vyWvFufQDvZEvkYdBKT3YiCGoRtGIpwNpttjg-N-M57DzlpCH7f0RXbgjH1nEoMPWAD0OFUWA6C1I5KcPcDTV-eFzJSxRy78DE2-c65cmkxfV8NWW_6RIQE1sVWPt-Bi9Jc-ENOn72txoUp9qEsXmUxcTPuZay5ZQWN-DhvVI", 
+            "geometry": {
+                "location": {
+                    "lat": 41.909107, 
+                    "lng": 12.453644
+                }
+            }, 
+            "place_id": "ChIJ-7lESWJgLxMRj1ULFctezUY", 
+            "vicinity": "Via Ostia, 9, Roma", 
+            "scope": "GOOGLE", 
+            "id": "3589e33762a5d7a91adf5bd26dd528180a0f3739", 
+            "types": [
+                "night_club", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 3.5, 
+            "name": "Stazione Birra", 
+            "reference": "CnRhAAAAZmLGqN4oVlwLatXq4ZtrjKZfX6rgvBrCQBgMglM5i4k9K3kMUWU7C32wJJgalTLsHqejJ9jKgj4MKhNXlOC8G0uuHYH33iC3ONuyRaJIhSr-euLJEFZ8spejoZhnVrPIFW7aFPEzjv2h5qSjBdWAyBIQThK6hK7Z4xAwbOjr3tIHcRoUEAqC3_6jDyqHTmMTEWjMrym1ICo", 
+            "geometry": {
+                "location": {
+                    "lat": 41.805564, 
+                    "lng": 12.623496
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJPxYMaiiGJRMRMbRBvvVP1hk", 
+            "vicinity": "Via Placanica, 172, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAqm4YBSqsBAvoNAQba6_zK8GNb2EIbxfm_lKRzKYCAAI6cKbE9BKx52AR7DHRD2kWhCYIQBuhAwup1kvlZcuxy10IE6sE0i_2rq0dN9dGLfDzKewMwYKmzrbt7n6bcv5wNKGtqRqjFuKToS-KAIiVlxIQKK73T5u75_MMGyGnGv-TrBoUN8ecxyqOIOE9q2ZxPj_7smXK7CM", 
+                    "width": 1280, 
+                    "html_attributions": [], 
+                    "height": 998
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "3dc331c9722b4a6c3c686565154c1b5071350513", 
+            "types": [
+                "night_club", 
+                "bar", 
+                "restaurant", 
+                "food", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "name": "Heaven", 
+            "reference": "CmRZAAAAtiE5-QFC8cdGCCGAyX_gf5x52tz4dkuPgC7x_7XuJvr8YqhzjItx0gIH6P_R9GStsPTWxuiwfsWVwyXek2G_s831S3kSAtCTXetUbtjTEaevgq4QEFVQOqEkeg_i0oEFEhAsMU3iWKgi_Y66HNBYaFUsGhTqrlQ28ueTtoXkM2-9D60JyWjtag", 
+            "geometry": {
+                "location": {
+                    "lat": 41.876055, 
+                    "lng": 12.485565
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJu_aT4NJhLxMR5ZxaI950JEU", 
+            "vicinity": "Viale di Porta Ardeatina, 119, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAbQ8v0_HKB3FDNd08_w6A62AukA1mIKF18PxaR3upSP8J_FyLR4umsepm3yoZWjIUggtDs3W880Wnf4HOewy9s_amB-_3gvT1nE81sS7SG4scOWWDed9UPWpQcXfyw00x-BJFq0KfpwXZrzZJVkAWBBIQVhxxgKnyx2JB7M3TkdHV5hoUx363kHxuOTo0VhZZLbG0fx3kz-E", 
+                    "width": 370, 
+                    "html_attributions": [], 
+                    "height": 350
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "3f52295ff3dea2e0d36148c4f72f59f701efe948", 
+            "types": [
+                "restaurant", 
+                "night_club", 
+                "food", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "rating": 3.9, 
+            "name": "Black Out Rock Club", 
+            "reference": "CnRnAAAAQfM1iMtlWNSPReDNGegBgLDApdzfE7iIdrB14Blr6J45LDPWN-3hUb8FvTHpEYYY__tF9hg-9xl1doStzWA0yxdGaTIoCRMOLUn9ZZzi0PVEWLYy1VWImlpE_UJysM7Vso0-SOE2g-PITm_953QdERIQJcgE-PIj_7PL9OLJGEde_hoUdNzZLSLFIL9wFjgu6f6WCYo7eC0", 
+            "geometry": {
+                "location": {
+                    "lat": 41.876972, 
+                    "lng": 12.553547
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJazv4SGtiLxMRaa1sTLxnHNk", 
+            "vicinity": "Via Casilina, 713, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CpQBhQAAAFgx6xNB5oVZf5QI89ViGeIBEJXgQU9Fv1f_jonAOTuGUJlprK-DBPg4Up0696MW99R9mBn2xuc8o8VHuErJBaInS251MVPunxU7mluNdqmpbqBmqXRhjtGuFaL3irfEgy3ATd0vxrpj6NhUzThiI13a7_z4GvKwv3AWaOYAdXyY0TljL35pEgxvKx3Rk1u4mhIQQBcVXbp5AEzPzRxYYZf1DxoUxN06_v2EHqk54HML-C1CyMs5_dU", 
+                    "width": 602, 
+                    "html_attributions": [], 
+                    "height": 600
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "5a8ea8c0bc421ac1fa2433676bbbf3fa278ff2e4", 
+            "types": [
+                "night_club", 
+                "bar", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 4.2, 
+            "name": "Init", 
+            "reference": "CmRXAAAAmMJ4__7PlZrdDxcILHAGXdwwMb6Q4PFGgt6QEj9ApRDyQlsbbgUKFT7x6uYnAg1wsL-MigKcswJCxfk1b694EwjQk9x_JzFQNP0En_Md9RUHmR6E87ZaWCFUNovVZOGHEhDaBNa72X8lUf33tw-Nx-ivGhQtz4TVPDyoA29J_bHb085PX-RRvQ", 
+            "geometry": {
+                "location": {
+                    "lat": 41.886598, 
+                    "lng": 12.52491
+                }
+            }, 
+            "place_id": "ChIJvT67NothLxMRplylHpG0gjI", 
+            "vicinity": "Via della Stazione Tuscolana, 133, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CnRpAAAAX43o714tGt13Z2dYUP58qm9fifTlLF7QeMBdnCKN06SU6Oxq1H72-oMt0ke6rOVtVa9d3b4AQ_W_l8tZFFx4sDapmCaxsOOaMQAT7kvQdQ2K46FBk23yjql8dg1DU_9INi3lcVVA48zr46W5O0IdTBIQoj4wA62WSuPFR0YjNTBoURoUALDD_AXpykxapn9LzFO17H3QVw0", 
+                    "width": 1632, 
                     "html_attributions": [
                         "From a Google User"
                     ], 
-                    "height": 480
+                    "height": 1224
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "7115aab55498800df12733950be5dfedbaee40b5", 
+            "id": "67e804a049a74227a501adfa07000a415532f1e6", 
             "types": [
-                "museum", 
+                "night_club", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }, 
         {
-            "rating": 3.8, 
-            "name": "Archaeology Museum of Catalonia", 
-            "reference": "CoQBcgAAAAnc8RtSjGsSs0Pw_14dHRq67sdeLbpaL8m7VfnUTdPWojEbpqWAyzIzhJQgqSpCsQFKAcjeNwF-WHCqPNkk9ELsjgJdaFLTBpDq_PK-R3PrFvaJdlECHJySmpwMkkKDwDdo7yDAcAPXGsEQl_P91HxRAzwkAcrfZd736KmvXIAJEhBnmeBVRKkfdqjyDs78kBF3GhS9hU2f0vSf-LOtddx9kdCZB72BDA", 
+            "name": "Alien", 
+            "reference": "CmRYAAAAd_GDkmoiBzExkbNRPwtaNjAwt9gfdVKLqZjTRp5HOpuvfJge88wF6z1yBImFftxpUDukMIhzfSJUbBW2aQRNPiUK4T9L1OHasz1E0avAoaKMzHQJuf2msKh3pIrEFPAlEhBS2Z_GNF7n4nB84fMMg_s6GhQB9nq5mDQSNY9XtMxVOe3rU83JFQ", 
             "geometry": {
                 "location": {
-                    "lat": 41.369744, 
-                    "lng": 2.157668
+                    "lat": 41.912041, 
+                    "lng": 12.498604
                 }
             }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJr-_dbm-ipBIRglWvPSN40mc", 
-            "vicinity": "Passeig de Santa Madrona, 39 - 41, Barcelona", 
+            "place_id": "ChIJ22S32w5hLxMR_AjDRtgdSwg", 
+            "vicinity": "Via Velletri, 13, Roma", 
             "photos": [
                 {
-                    "photo_reference": "CnRnAAAA8oJKCb5-KAcNr5lSqrLZZ2jnqIYVRWMSAkG4QZtQta-6_eQL1Jc6Ro-1FpbUo2Dyvu3x9dfdr4VTjjJ6jemqlIQ5xhi7RQOgk28qj9wrU1iGoKlWisH6SwHfWM-OBf3PcC-waaCKdL9d7y7IfSJxSBIQZmzRWUN9-W8J0MX6nIXhRxoUzWZ5QP5kJJmDazG3FFK4LcEpQds", 
-                    "width": 270, 
-                    "html_attributions": [], 
-                    "height": 180
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "46eb2f0c8a0ae03ff56476a42344c49ff786c93a", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.5, 
-            "name": "Museu d'Hist\u00f2ria de Barcelona (MUHBA)", 
-            "reference": "CoQBeQAAAEBtm3-bKSPxW3WlPhPOA10uMn9dkLC_sbFntCl-GltBIIf2Qdo-lCCiKea3OICTkwy4teNBQ55T5FKDlDoZRuBMh8Ik-P2PQEjcqgMOljsUY6eIv6YS4PPDeewRlvG4W05YabQCD03EJI1YyNB0yR3uxJ7L4fhvOBP8koMaHS2nEhASTLqwjug7QEwIE1ageRgMGhQILWlrsU8khEacbcHZNlU6hz7efQ", 
-            "geometry": {
-                "location": {
-                    "lat": 41.383991, 
-                    "lng": 2.177612
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJc0WMe_GipBIRJiU_pUq_bRc", 
-            "vicinity": "Pla\u00e7a del Rei, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRoAAAApje2RbJ6UhF96q3k3Lyg2qAkqB7SK8tPXyepvrqi6_awe3zlsbIcQidWeE3ctBxUOJNOnHMbiEMTUAdo7emELvGPj6LsHqZ8Gj0HxOaFmln1V_J1L1hcTlaJGcCmZv3WVa4nNIqzBBMwb7xy3jBPThIQpQgRotCMfads_7R7n7hHgRoUnqDiWKGVZK-s1ZcEjc7ldp9HFUY", 
-                    "width": 816, 
-                    "html_attributions": [
-                        "From a Google User"
-                    ], 
-                    "height": 459
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "f902d76019351720bc4a496de3780310889e0fc6", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.4, 
-            "name": "Fundaci\u00f3 Francisco Godia", 
-            "reference": "CnRtAAAA7P9Mxn2ngwrbW6Ou6BpsBynBuYAIVL_vvr4vQHTUSH76SOVWRtEzOV3LFH6ykYBiwEsegqmKCTYiDtCp1-aqKdxCdelVl7GDYPlU2WFh9SsbYGZizhUs3P6eljpNrBQ1HbKAZgE_tPJxLeAoqlX5MhIQKNU8_G-2VvSlvVst095NFBoU4BREKHfJhzIZt1Q-l768wbOySBk", 
-            "geometry": {
-                "location": {
-                    "lat": 41.388828, 
-                    "lng": 2.165139
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJsez4z_KipBIRr023D7mKjpc", 
-            "vicinity": "Carrer de la Diputaci\u00f3, 250, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRnAAAAEcvJtmPYFtn0eYVGwchfMltW5hVYyzj01vkzJkiyGQkMJfVdXw-BOK6uStUc6Ri8VY8CeROFon0mNE6uaMGnZkWpLlPV46mQ_4rz3ZQeBy3KvQAc08dWqNjt_bubDmAWhsJi84NB4PvM1kDqApHo5xIQQq9npmFl8JDpjWcVm92--RoUN4YYaBIjC-c_SRCv9dmd1GDXXHQ", 
-                    "width": 1805, 
-                    "html_attributions": [], 
-                    "height": 1198
-                }
-            ], 
-            "scope": "GOOGLE", 
-            "id": "3eb3e6540b53db872ad89778ce6b94dad7c43b43", 
-            "types": [
-                "museum", 
-                "establishment"
-            ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
-        }, 
-        {
-            "rating": 4.4, 
-            "name": "Museu Europeu d'Art Modern", 
-            "reference": "CnRtAAAAhPHatmBjva2ReADdMh-HK8rrfGluC8kS0omvZeeaVhHfkmY1otzQvQ2bWDtr_ilpmCX20JKRyw3Gc8bWJB8dR3f5mEK1IBzfAUE21_zgr0VmDeDF5L3KQbvCSsNo-2KAXYouPQUEAOmsX_t0N9BFIhIQiiiaWbLIDWsqRez-sztwyRoU6BKyH-yVelt0iMTo-B6k4MmmbXg", 
-            "geometry": {
-                "location": {
-                    "lat": 41.385045, 
-                    "lng": 2.180379
-                }
-            }, 
-            "opening_hours": {
-                "weekday_text": [], 
-                "open_now": true
-            }, 
-            "place_id": "ChIJveK7vP6ipBIRiegu-jsxGX8", 
-            "vicinity": "Carrer de la Barra de Ferro, 5, Barcelona", 
-            "photos": [
-                {
-                    "photo_reference": "CnRnAAAAIOAIdHhNqfGRoGEyRlIXmPEtGKt3F5jf5zX5hrqexraghFMctrlgkLx3z-Cbbm6Nz7tWNuoudnWa7L0p4Dmu5AkCUwLpEnCrHjeg9LAGwMk83u6an6QDG6eFF9sYG1aBevv2s2L8NFaNg923bPvDsRIQwkTbWifrrcvp5GWh4fmF8BoUF8cFSS_Ez1jal_cwwbzfRr_nX0c", 
+                    "photo_reference": "CnRjAAAA6cPfM8PUf7mBEIfK0gMWc96DuLTZcd_4Skl5rqssmpWDjY5HjukZfaJQFpoNeptxx21RIMofvf6ITpJVhSWQjXBn0yLjS7FARYwuDpPYDdWPLjT5CwCW4a2SMVl6tvS9lbh9HCTahYzoLtzzTGxWsRIQEDFfY1BnwVVNqxHeobiShhoUeSlqdDrqEuehXavX9gH0L1eFBBE", 
                     "width": 800, 
-                    "html_attributions": [], 
-                    "height": 533
+                    "html_attributions": [
+                        "From a Google User"
+                    ], 
+                    "height": 600
                 }
             ], 
             "scope": "GOOGLE", 
-            "id": "a4f9c0203ab13a23fa9586b9bb96561320138d8c", 
+            "id": "7857dd406b04dc56274eb1ef783ac669e4f25e08", 
             "types": [
-                "museum", 
+                "night_club", 
                 "establishment"
             ], 
-            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png"
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
+        }, 
+        {
+            "rating": 3.4, 
+            "name": "Skybar", 
+            "reference": "CmRZAAAAd67POvmoT5ddrqUIbYdpLwhukXWSvBbzP0flmP7RWpWDQBawoA6ezLsdAPNav3MeeAdCmtiaGhlHgTfcaue3DWJ2gZdFYH9O6MPM7R1g-shSSqW-o9sVskfgBBGG3IduEhAmkkeZUNYgRplZdF21Lw-CGhT1FbwwSijWXjJjJGK5lhNfaXv7sw", 
+            "geometry": {
+                "location": {
+                    "lat": 41.834741, 
+                    "lng": 12.470287
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJq90hKuthLxMRzsZ41T1reUE", 
+            "vicinity": "Via civilt\u00e0 del lavoro, 52, Roma", 
+            "photos": [
+                {
+                    "photo_reference": "CnRnAAAAXnrcMZRsee9QZZ5OzulFSyZ-IoExagWKovEGMPqXWLqzyOIY_QF28-4PnDK5jpOPecrV7rSEw-vOXpxoBiiPFuzy8ag_9IqGGKCZ638DBG7gNFDAaQZq90SfrWT484q9Ng3_3jxz1nh4HxX5_SbDSBIQofG8LwO6JSgQElypLHvy4hoUvg5xqAu9dhhHzFIyljoPOAUHyoY", 
+                    "width": 262, 
+                    "html_attributions": [], 
+                    "height": 192
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "9d267b446f753f75476e925e4a771ecd7dd9ae9a", 
+            "types": [
+                "night_club", 
+                "bar", 
+                "establishment"
+            ], 
+            "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png"
         }
     ]
 }

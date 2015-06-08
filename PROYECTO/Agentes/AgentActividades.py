@@ -30,16 +30,17 @@ myns_lug = Namespace("http://my.namespace.org/lugares/")
 
 LOG_TAG = "DEBUG: AgenteActividades => "
 
-def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", radius=20000, types=[]):
+def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", radius=20000, types=["museum"], cache = True):
     location= destinationCity+", "+destinationCountry
     gr = Graph()
 
-    b = False
+    b = cache
     
     print location
 
-    if b == True:
-        print "INFO AgenteActividades => Recibo peticion de actividades.\n"
+    if b == False:
+        print "INFO AgenteActividades => Recibo peticion de actividades."
+        print "AgenteActividades => We make a new service request; cant rely on cache"
         google_places = GooglePlaces(GOOGLEAPI_KEY)
 
         # You may prefer to use the text_search API, instead.
@@ -90,7 +91,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
                 gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
             gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
             gr.add((plc_obj, myns_atr.Descripcion, Literal(place.details)))
-            
+            gr.add((plc_obj, myns_atr.paisciudad, Literal(location)))
             gr.add((plc_obj, myns_atr.googleUrl, Literal(place.url)))
             gr.add((plc_obj, myns_atr.website, Literal(place.website)))
 
@@ -102,10 +103,22 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             #print place.local_phone_number
         guax = Graph()
         guax.parse('a.rdf' ,format='xml')
-        gr += guax
-        gr.serialize('a.rdf')
+        guax += gr
+        guax.serialize('a.rdf')
     else: 
-        gr.parse('a.rdf' ,format='xml')
+        gaux = Graph()
+        print "AgenteActividades => We read from cache"
+        gaux.parse('a.rdf' ,format='xml')
+        gaux.triples((None, myns_atr.paisciudad, Literal(location)))
+
+        lisy = []
+        for a,b,c in gaux:
+            if gaux.value(subject= a, predicate= myns_atr.tipo) == Literal(types[0]):
+                lisy.append(a)
+        for a in lisy:
+            gr += gaux.triples((a, None, None))
+
+
     print "retornar repuesta"
     return gr
 

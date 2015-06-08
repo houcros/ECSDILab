@@ -39,7 +39,8 @@ from AgentUtil.APIKeys import GOOGLEAPI_KEY
 lastRequestFlightsTimestamp = datetime.datetime.fromtimestamp(0)
 lastRequestHotelsTimestamp = datetime.datetime.fromtimestamp(0)
 hotelconsult = {}
-
+flightconsult= {}
+activityconsult = []
 # Definimos los parametros de la linea de comandos
 parser = argparse.ArgumentParser()
 parser.add_argument('--open', help="Define si el servidor esta abierto al exterior o no", action='store_true',
@@ -149,7 +150,10 @@ def comunicacion():
     global dsgraph
     global mss_cnt
     global hotelconsult
+    global flightconsult
+    global activityconsult
     global lastRequestHotelsTimestamp
+    global lastRequestFlightsTimestamp
     #logger.info('Peticion de informacion recibida')
     print 'INFO AgentBuscador=> Peticion de informacion recibida\n'
 
@@ -223,8 +227,11 @@ def comunicacion():
     for s,p, o in actividadesInt:
         print o
         if o != None:
-            gactividades += buscar_actividades(destinationCity=destinationCit, 
-                destinationCountry= destinationCountry, types= [o])
+            ba = True
+            if [destinationCountry,destinationCit, o] not in activityconsult:
+                ba = False
+                activityconsult.append([destinationCountry,destinationCit, o])
+            gactividades += buscar_actividades(destinationCity=destinationCit, destinationCountry= destinationCountry, types= [o], cache = ba)
 
     print "INFO AgentBuscador => Activities found"
     #VERBOSE
@@ -247,8 +254,9 @@ def comunicacion():
 
     b = True
     if lastRequestHotelsTimestamp == datetime.datetime.fromtimestamp(0) or requestTime - lastRequestHotelsTimestamp >= datetime.timedelta(minutes=15):
-        if (destinationCit, departureDat, returnDat, propertyCategor) != hotelconsult:
-            b = False
+        b = False
+    if (destinationCit, departureDat, returnDat, propertyCategor) != hotelconsult:
+        b = False       
     if b == False :
         lastRequestHotelsTimestamp = requestTime
         hotelconsult = (destinationCit, departureDat, returnDat, propertyCategor)
@@ -267,13 +275,22 @@ def comunicacion():
 
     print "INFO AgentBuscador => Looking for flights (in AgentFlightsGoogle)..."
     maxPric=gm.value(subject= busqueda, predicate= myns_par.maxPrice)
+    bf = True
+    if lastRequestFlightsTimestamp == datetime.datetime.fromtimestamp(0) or requestTime - lastRequestFlightsTimestamp >= datetime.timedelta(minutes=5):
+        bf = False
+    if (originVuelo, destinationVuelo, departureDat, returnDat, maxPric) != flightconsult:
+        bf = False
+    if bf == False :
+        lastRequestFlightsTimestamp = requestTime
+        flightconsult = (originVuelo, destinationVuelo, departureDat, returnDat, maxPric)
+
 
     gvuelos = Graph()
     gvuelos = buscar_vuelos(origin=originVuelo, 
                             destination=destinationVuelo,
                             departureDate= departureDat, 
                             returnDate=returnDat,
-                            maxPrice=maxPric)
+                            maxPrice=maxPric, cache= bf)
 
     # Juntamos los tres grafos en una respuesta
     grespuesta = Graph()
@@ -473,96 +490,7 @@ def buscar_transportes():
 if __name__ == '__main__':
 
 
-    #buscar_vuelos() #Funciona
-    #buscar_transportes() #Funciona pero con vuelos, con transportes peta
 
-    # Ponemos en marcha los behaviors
-    #ab1 = Process(target=agentbehavior1, args=(cola1,))
-    #ab1.start()
-    
-    ###########################################################################
-    #                           TEST BUSCAR VUELOS
-    ###########################################################################
-    # print "Busco vuelos"
-    
-    # #gvuelos = buscar_vuelos()
-    # depD = datetime.strptime("2015-08-20", '%Y-%m-%d')
-    # retD = datetime.strptime("2015-08-30", '%Y-%m-%d')
-    # depDStr = depD.strftime("%Y-%m-%d")
-    # retDStr = retD.strftime("%Y-%m-%d")
-    # print depDStr
-    # print retDStr
-
-    # gvuelos = buscar_vuelos(requestTime = lastRequestFlightsTimestamp)
-    # lastRequestFlightsTimestamp = datetime.datetime.now()
-    
-    # print "GRAFO DE RESPUESTA"
-    # for s, p, o in gvuelos:
-    #     print 's: ' + s
-    #     print 'p: ' + p
-    #     print 'o: ' + o
-    #     print '\n'
-    ###########################################################################
-
-    ###########################################################################
-    #                           TEST BUSCAR HOTELES
-    ###########################################################################
-    # print "Busco hoteles"
-    
-    # # ghoteles = buscar_hoteles()
-
-    # arrD = datetime.strptime("08/20/2015", '%m/%d/%Y')
-    # depD = datetime.strptime("08/30/2015", '%m/%d/%Y')
-    # arrDStr = arrD.strftime("%m/%d/%Y")
-    # depDStr = depD.strftime("%m/%d/%Y")
-    # print arrDStr
-    # print depDStr
-
-    #ghoteles = buscar_hoteles(requestTime = lastRequestFlightsTimestamp)
-    #lastRequestFlightsTimestamp = datetime.datetime.now()
-    
-    # print "GRAFO DE RESPUESTA"
-    # for s, p, o in ghoteles:
-    #     print 's: ' + s
-    #     print 'p: ' + p
-    #     print 'o: ' + o
-    #     print '\n'
-    ###########################################################################
-
-    ###########################################################################
-    #                           TEST BUSCAR ACTIVIDADES
-    # ###########################################################################
-    # print "Busco actividades"
-    
-    # gactividades = buscar_actividades()
-    
-    # print "GRAFO DE RESPUESTA"
-    # for s, p, o in gactividades:
-    #     print 's: ' + s
-    #     print 'p: ' + p
-    #     print 'o: ' + o
-    #     print '\n'
-    ###########################################################################
-
-    ###########################################################################
-    #                           TEST RESPUESTA
-    ###########################################################################
-    # print "Genero grafo de respuesta"
-    
-    # grespuesta = Graph()
-    # grespuesta = gvuelos + ghoteles + gactividades
-    
-    # print "GRAFO DE RESPUESTA"
-    # for s, p, o in grespuesta:
-    #     print 's: ' + s
-    #     print 'p: ' + p
-    #     print 'o: ' + o
-    #     print '\n'
-    ###########################################################################
-    #buscar_actividades()
-    # Ponemos en marcha el servidor
-    #buscar_vuelos()
-    
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

@@ -4,399 +4,347 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="http://my.namespace.org/hoteles/">
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Quentin Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Teatro DeLaMar y Melkweg. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Radisson Blu Hotel, Amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
-    <myns_atr:codigoPostal>1012 RE</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal>1054 EX</myns_atr:codigoPostal>
-    <myns_atr:nombre>Hotel Avenue</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.247189</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Damrak 50</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">515</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Prins Hendrikkade 59-72</myns_atr:adresa>
-    <myns_atr:adresa>Rusland 17</myns_atr:adresa>
-    <myns_atr:codigoPostal>1012 RD</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36493436</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1015.00</myns_atr:cuesta>
-    <myns_atr:adresa>Amstelstraat 17</myns_atr:adresa>
-    <myns_atr:cuesta>1103.00</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40041834</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1132045</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Vossiusstraat 52-53</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Holland Casino y Teatro DeLaMar. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales, con vistas</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación básica doble, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>NH Amsterdam Grand Hotel Krasnapolsky</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:rating>
-    <myns_atr:nombre>Bilderberg Hotel Jan Luyken</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Crowne Plaza Amsterdam City Centre estarás en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y de Iglesia de San Nicolás.</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Rembrandtplein Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Zuiderkerk y Museo Casa de Rembrandt. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1011 AM</myns_atr:codigoPostal>
-    <myns_atr:adresa>Roemer Visscherstraat 10</myns_atr:adresa>
-    <myns_atr:codigoPostal>1012 PV</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Roemer, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Holland Casino y de Leidseplein. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">637</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1017 AE</myns_atr:codigoPostal>
-    <myns_atr:nombre>Park Plaza Victoria Amsterdam</myns_atr:nombre>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1013</myns_atr:codigoPostal>
-    <myns_atr:adresa>Rembrandtplein 19</myns_atr:adresa>
-    <myns_atr:codigoPostal>1011 HR</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Stadhouderskade 25</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7815363</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>WestCord City Centre Hotel Amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7771667</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1304</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Rasella 142</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación económica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">334</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">908</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.53472435</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Venetia Palace Hotel</myns_atr:nombre>
+    <myns_atr:nombre>Hotel Repubblica</myns_atr:nombre>
+    <myns_atr:cuesta>1476.01</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel dei Borgia</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">862</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">214</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Palazzo Montemartini gozarás de una ubicación céntrica en Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Via Cicerone 55</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Trevi gozarás de una ubicación céntrica en Roma, a pocos pasos de Fontana di Trevi y de Palacio del Quirinal. Este hotel de ambiente romántico</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Flavia estarás en pleno corazón de Roma, a pocos pasos de Iglesia de Santa María de la Victoria y de Basílica de Santa Maria degli</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Lirico</myns_atr:nombre>
+    <myns_atr:cuesta>1157.01</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.857388</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Flavia</myns_atr:nombre>
+    <myns_atr:adresa>Piazza di Porta Maggiore 25</myns_atr:adresa>
+    <myns_atr:adresa>Via Gregoriana 56</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">623</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8395876</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1235.06</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación triple</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>640.08</myns_atr:cuesta>
     <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
-    <myns_atr:nombre>Hotel CC</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en DoubleTree by Hilton Hotel Amsterdam Centraal Station, a pocos minutos de Plaza Nieuwmarkt</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble económica, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1602.40</myns_atr:cuesta>
-    <myns_atr:cuesta>1311.55</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1012 SC</myns_atr:codigoPostal>
-    <myns_atr:descripcionDeHabitacion>Habitación doble, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación básica, 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">344</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Barbizon Palace gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Biblioteca Pública. Este</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Room Mate Aitana, en Ámsterdam (Jordaan), podrás llegar fácilmente a Noorderkerk y a Nieuwe Kerk. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Prinsengracht 315-331</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Avenue gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel para familias se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1550.70</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1071 XL</myns_atr:codigoPostal>
-    <myns_atr:nombre>Crowne Plaza Amsterdam City Centre</myns_atr:nombre>
-    <myns_atr:cuesta>1548.95</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1073.19</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1077 HN</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1318.10</myns_atr:cuesta>
-    <myns_atr:cuesta>1210.48</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio grande</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Prins Hendrikkade 123</myns_atr:adresa>
-    <myns_atr:codigoPostal>1017 ZP</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.37593535</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1962</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
-    <myns_atr:descripcionDeHabitacion>Art Room</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Caransa gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza de Rembrandt y Museo Willet-Holthuysen. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.83484066</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel The Exchange gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9947529</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>art&amp;apos;otel amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38792858</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Jan Luijkenstraat 58</myns_atr:adresa>
-    <myns_atr:codigoPostal>1017 DA</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1122</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Renaissance Amsterdam Hotel está en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y Iglesia de San Nicolás. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1439</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hampshire Hotel - Eden Amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.41446158</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">482</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1016 GZ</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal>1011 AK</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Sofitel Legend The Grand Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Monumento Nacional y Museo Madame Tussauds. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1012 LP</myns_atr:codigoPostal>
-    <myns_atr:nombre>Mercure Hotel Amsterdam Centre Canal District</myns_atr:nombre>
-    <myns_atr:nombre>Amsterdam Marriott Hotel</myns_atr:nombre>
-    <myns_atr:nombre>NH Amsterdam Museum Quarter</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;NH Amsterdam Museum Quarter está en pleno corazón de Ámsterdam, a pocos pasos de Mercado de Albert Cuyp y Plaza de los Museos. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación de lujo</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal>1012 RC</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1405.05</myns_atr:cuesta>
-    <myns_atr:cuesta>713.72</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Amsterdam Grand Hotel Krasnapolsky gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Monumento Nacional y Plaza Dam. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>758.25</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Sir Albert Hotel Amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Mercado de Albert Cuyp y de Heineken Experience. Este</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Sir Albert Hotel Amsterdam</myns_atr:nombre>
-    <myns_atr:codigoPostal>1012 VX</myns_atr:codigoPostal>
-    <myns_atr:adresa>Albert Cuypstraat 2-6</myns_atr:adresa>
-    <myns_atr:adresa>Prins Hendrikkade 108</myns_atr:adresa>
-    <myns_atr:cuesta>1100.03</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Okura Amsterdam, en Ámsterdam (De Pijp), podrás llegar fácilmente a Mercado de Albert Cuyp y a Heineken Experience. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Pulitzer Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Westerkerk y Casa de Ana Frank. Este hotel de 5 estrellas se encuentra muy</myns_atr:descriptionCorta>
-    <myns_atr:ciudad>Amsterdam</myns_atr:ciudad>
-    <myns_atr:nombre>Swissôtel Amsterdam</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Trianon Hotel, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Sala Concertgebouw y de Museo Stedelijk.  Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Moevenpick Hotel Amsterdam City Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Teatro Bimhuis y Muziekgebouw aan &amp;apos;t IJ. Este</myns_atr:descriptionCorta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:rating>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5022467</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Verona-Rome</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble clásica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación clásica - No reembolsable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>721.91</myns_atr:cuesta>
+    <myns_atr:cuesta>1241.43</myns_atr:cuesta>
+    <myns_atr:cuesta>1678.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Starhotels Metropole gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Massimo alle Terme y Teatro de la Ópera de Roma. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">495</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">710</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Flavia 96</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2038492</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Palazzo Cardinal Cesi gozarás de una ubicación céntrica en Roma, a pocos minutos de Plaza de San Pedro y Basílica de San Pedro.  Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Via Di Santa Maria Maggiore 154</myns_atr:adresa>
     <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
-    <myns_atr:adresa>Oudezijds Voorburgwal 197</myns_atr:adresa>
-    <myns_atr:codigoPostal>1071 CS</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Bilderberg Hotel Jan Luyken gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Museo del Diamante de Ámsterdam y P.C. Hooftstraat. Este</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.457506</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:codigoPostal>1012 CK</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal>1012 TM</myns_atr:codigoPostal>
-    <myns_atr:nombre>Moevenpick Hotel Amsterdam City Centre</myns_atr:nombre>
-    <myns_atr:adresa>Groenburgwal 27</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6428732</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40472746</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Vijzelstraat 4</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en WestCord Fashion Hotel Amsterdam, en Ámsterdam (Ámsterdam oeste), estarás a pocos minutos de World Fashion Centre y Vondelpark. Este</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1071 ZD</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Park Hotel Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Sala Paradiso y P.C. Hooftstraat. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1239.19</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">558</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.49939448</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Radisson Blu Hotel, Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Zuiderkerk y de Museo Allard Pierson. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9600455</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH City Centre Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Begijnhof y Iglesia Reformada Inglesa. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Piet Hein está en pleno corazón de Ámsterdam, a pocos pasos de Museo Stedelijk y P.C. Hooftstraat. Este hotel de ambiente romántico se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>742.54</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1172733</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación superior (3 stars)</myns_atr:descripcionDeHabitacion>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
-    <myns_atr:codigoPostal>1012 JS</myns_atr:codigoPostal>
-    <myns_atr:cuesta>998.49</myns_atr:cuesta>
-    <myns_atr:nombre>NH Amsterdam Barbizon Palace</myns_atr:nombre>
-    <myns_atr:codigoPostal>1012 LG</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1872.68</myns_atr:cuesta>
-    <myns_atr:cuesta>973.59</myns_atr:cuesta>
-    <myns_atr:cuesta>687.18</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6657716</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
-    <myns_atr:nombre>NH Carlton Amsterdam</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2038713</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">632</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1686</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1018 DH</myns_atr:codigoPostal>
-    <myns_atr:adresa>Noorderstraat 46</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">505</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Amsterdam Marriott Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Holland Casino y Stadsschouwburg. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Nieuwezijds Voorburgwal 50</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Notting Hill</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación ejecutiva</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1708</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1874.40</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Amsterdam - De Roode Leeuw gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza Dam y Monumento Nacional. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1017 CT</myns_atr:codigoPostal>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales - Estancias de 3 noches, % de descuento</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Nieuwezijds Voorburgwal 5</myns_atr:adresa>
-    <myns_atr:adresa>Marnixstraat 372-374</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Amsterdam Mansion</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">503</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1881</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal>1017 TV</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1188.75</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Beethovenstraat 43</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2213</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Damrak 96</myns_atr:adresa>
-    <myns_atr:cuesta>1063.00</myns_atr:cuesta>
-    <myns_atr:cuesta>1303.00</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1012 JE</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal>1012 LK</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">531</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1012 EX</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1646</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Delta Hotel City Center gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Oude Kerk. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1019 BR</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0969713</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel The Exchange</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">785</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>NH City Centre Amsterdam</myns_atr:nombre>
-    <myns_atr:cuesta>956.70</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4801929</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>703.98</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en art&amp;apos;otel amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Beurs van Berlage. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Amstel 144</myns_atr:adresa>
-    <myns_atr:nombre>Rembrandtplein Hotel</myns_atr:nombre>
-    <myns_atr:adresa>Dam 9</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">499</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hampshire Hotel - Amsterdam American</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3073765</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4121411</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Amsterdam Mansion estarás en pleno corazón de Ámsterdam, a pocos pasos de Biblioteca Pública y de Barrio Chino de Ámsterdam. Este</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación Confort, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Double Room, 1 Queen Bed - Summer Sale!</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>IJDok 6</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2104</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>971.85</myns_atr:cuesta>
-    <myns_atr:cuesta>1208.68</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1712</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
-    <myns_atr:cuesta>1523.69</myns_atr:cuesta>
-    <myns_atr:cuesta>1250.20</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación económica, 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Hotel de Paris</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">961</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1083.00</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Roemer</myns_atr:nombre>
-    <myns_atr:adresa>Oosterdoksstraat 4</myns_atr:adresa>
-    <myns_atr:adresa>Leidsekade 89</myns_atr:adresa>
-    <myns_atr:adresa>Stadhouderskade 12</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hampshire Hotel - Lancaster Amsterdam, en Ámsterdam (Plantage - Oostelijk Havengebied), estarás a pocos minutos de Museo de la</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en INK Hotel Amsterdam by MGallery estarás en pleno corazón de Ámsterdam, a pocos pasos de Nieuwe Kerk y de Beurs van Berlage. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar con 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal>1017 KE</myns_atr:codigoPostal>
-    <myns_atr:nombre>Dikker And Thijs Fenice Hotel</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Suite junior, 1 cama de matrimonio grande</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en Park Plaza Vondelpark, a pocos minutos de Vondelpark y Sala Concertgebouw. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Warmoesstraat 42</myns_atr:adresa>
-    <myns_atr:adresa>Koninginneweg 34-36</myns_atr:adresa>
-    <myns_atr:adresa>Hobbemakade 50</myns_atr:adresa>
-    <myns_atr:adresa>Nieuwezijds Kolk 19</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Inntel Hotels Amsterdam Centre gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Beurs van Berlage y de Nieuwe Kerk. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1054 ES</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">506</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17465226</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1630726</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>812.99</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">544</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hampshire Hotel - Lancaster Amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.917201</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Anna Van Den Vondelstraat 6</myns_atr:adresa>
-    <myns_atr:cuesta>1134.72</myns_atr:cuesta>
-    <myns_atr:nombre>Park Plaza Vondelpark</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Notting Hill está en pleno corazón de Ámsterdam, a pocos pasos de De Duif y Parque Sarphatipark. Este hotel de 4 estrellas se encuentra muy cerca</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Room Mate Aitana</myns_atr:nombre>
-    <myns_atr:nombre>NH Amsterdam Centre</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>956.99</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel CC gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Oude Kerk y Beurs van Berlage. Este hotel se encuentra cerca de Iglesia de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1075.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en WestCord City Centre Hotel Amsterdam estarás en pleno corazón de Ámsterdam, a pocos pasos de Beurs van Berlage y de Nieuwe Kerk. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1080.00</myns_atr:cuesta>
-    <myns_atr:adresa>Kattengat 1</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1027339</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3043</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Eden Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Stopera y Museo Willet-Holthuysen. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.31219912</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>WestCord Fashion Hotel Amsterdam</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2094</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1055</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Plantage Middenlaan 48</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1815</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9489099</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
-    <myns_atr:adresa>Ferdinand Bolstraat 333</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Okura Amsterdam</myns_atr:nombre>
-    <myns_atr:cuesta>968.01</myns_atr:cuesta>
-    <myns_atr:nombre>Renaissance Amsterdam Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Swissôtel Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Plaza Dam y Monumento Nacional. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel de Filosoof</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 2 camas individuales, baño privado</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2177</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58832926</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">940</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1072 CT</myns_atr:codigoPostal>
-    <myns_atr:adresa>Damrak 42-43</myns_atr:adresa>
-    <myns_atr:adresa>Spuistraat 288-292</myns_atr:adresa>
-    <myns_atr:cuesta>927.01</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0203632</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1578.40</myns_atr:cuesta>
-    <myns_atr:adresa>Prins Hendrikkade 33</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17818226</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hampshire Hotel - Rembrandt Square Amsterdam</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación Confort, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5645989</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Prinsengracht 444</myns_atr:adresa>
-    <myns_atr:codigoPostal>1054 GZ</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3915</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En NH Carlton Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Mercado de las flores y Munttoren. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>DoubleTree by Hilton Hotel Amsterdam Centraal Station</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.856073</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Pulitzer Amsterdam</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">330</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Trevi Collection</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4504205</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0827203</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1060</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Hiberia gozarás de una ubicación céntrica en Roma, a pocos pasos de Mercado de Trajano y de Foro Romano. Este hotel se encuentra cerca de Plaza</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">993</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Brescia 5</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Portamaggiore</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">582</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">479</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Giglio dell&amp;apos;Opera</myns_atr:nombre>
+    <myns_atr:cuesta>2103.79</myns_atr:cuesta>
+    <myns_atr:cuesta>761.56</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:ciudad>Rome</myns_atr:ciudad>
+    <myns_atr:nombre>Atlante Star Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Roma (Vaticano), a pocos minutos de Iglesia Valdense y Palacio de Justicia se sitúa Hotel Cicerone.  Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Andreotti</myns_atr:nombre>
+    <myns_atr:nombre>Traiano Hotel</myns_atr:nombre>
+    <myns_atr:cuesta>1630.56</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5177277</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>556.32</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.34738725</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.625644</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Quattro Novembre 154</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2745194</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via del Viminale, 31</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1398</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Venetia Palace Hotel está en pleno corazón de Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel de 4 estrellas se encuentra cerca</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2807214</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1480532</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Cosmopolita</myns_atr:nombre>
+    <myns_atr:codigoPostal>00193</myns_atr:codigoPostal>
+    <myns_atr:cuesta>559.74</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.94341373</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1586115</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Commodore, en Roma (Centro histórico de Roma), estarás a pocos minutos de Basílica de Santa María la Mayor y de Teatro de la Ópera</myns_atr:descriptionCorta>
     <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal>1058 GC</myns_atr:codigoPostal>
-    <myns_atr:nombre>NH Amsterdam Caransa</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">542</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>INK Hotel Amsterdam by MGallery</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Ámsterdam reservando en Hampshire Hotel Beethoven, a pocos minutos de Museo virtual Zuidas y Sala Concertgebouw.</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1011 DK</myns_atr:codigoPostal>
-    <myns_atr:adresa>Hendrikje Stoffelsstraat 1</myns_atr:adresa>
-    <myns_atr:adresa>Stadhouderskade 7</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Rembrandt Square Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Museo Willet-Holthuysen y Stopera. Este</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Piet Heinkade 11</myns_atr:adresa>
-    <myns_atr:codigoPostal>1012 SZ</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1406.32</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1601</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">327</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1012 AD</myns_atr:codigoPostal>
-    <myns_atr:cuesta>494.90</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1016 XX</myns_atr:codigoPostal>
-    <myns_atr:adresa>Leidsekade 97</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Piet Hein</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3464543</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Delta Hotel City Center</myns_atr:nombre>
-    <myns_atr:cuesta>1273.00</myns_atr:cuesta>
-    <myns_atr:adresa>Westeinde 26</myns_atr:adresa>
-    <myns_atr:cuesta>1186.40</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7909137</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2856</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1017 PN</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.60473347</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30391097</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30417126</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3947412</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:codigoPostal>1071 AK</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1181.70</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">438</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5732822</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1739745</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Delle Nazioni, en Roma (Centro histórico de Roma), estarás a pocos minutos de Fontana di Trevi y de Escalinata de la Plaza de</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Andreotti está en pleno corazón de Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel para familias se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación Grand (Deluxe)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4556246</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Massimo D&amp;apos;Azeglio, en Roma (Centro histórico de Roma), estarás a pocos minutos de Palacio Massimo alle Terme y de Teatro de la</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Via di Pallacorda, 2</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Verona-Rome, en Roma (Monti), estarás a pocos minutos de Basílica de Santa María la Mayor y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.201645</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Emilia 22-24</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Miami</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Cosmopolita gozarás de una ubicación céntrica en Roma, a pocos pasos de Galería Colonna y Foro de Trajano. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Hiberia</myns_atr:nombre>
+    <myns_atr:adresa>Via Cavour 213</myns_atr:adresa>
+    <myns_atr:adresa>Via Santa Eufemia, 5</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9526559</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Palestro 13</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0755626</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Grand Hotel Palatino gozarás de una ubicación céntrica en Roma, a pocos pasos de Basílica de San Pietro in Vincoli y Iglesia de Santa Maria dei Monti.</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>862.12</myns_atr:cuesta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.71032155</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Cavour 18</myns_atr:adresa>
+    <myns_atr:codigoPostal>00185</myns_atr:codigoPostal>
+    <myns_atr:cuesta>2064.00</myns_atr:cuesta>
+    <myns_atr:cuesta>1440.00</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8308092</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.925279</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Massimo D&amp;apos;Azeglio</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación clásica, en edificio anexo</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Brasile está en pleno corazón de Roma, a pocos pasos de Porta Pia y Piazza Fiume. Este hotel para familias se encuentra cerca de Foro Romano y</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">399</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Corona, en Roma (Repubblica), estarás a pocos minutos de Teatro de la Ópera de Roma y de Basílica de Santa María la Mayor. Este</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Romanico Palace</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
     <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Inntel Hotels Amsterdam Centre</myns_atr:nombre>
-    <myns_atr:cuesta>4448.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">911</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1455</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>3 J.W. Brouwersstraat</myns_atr:adresa>
-    <myns_atr:adresa>Nieuwezijds Voorburgwal 67</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8147445</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Sofitel Legend The Grand Amsterdam</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Suite, 1 habitación</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1291</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>1072 LH</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel de Filosoof, en Ámsterdam (Oud-West), estarás a pocos minutos de Vondelpark y Museo Stedelijk. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1171.57</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7414691</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:codigoPostal>1075 CZ</myns_atr:codigoPostal>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Hampshire Hotel Beethoven</myns_atr:nombre>
+    <myns_atr:cuesta>1085.94</myns_atr:cuesta>
+    <myns_atr:adresa>Via Cicerone 39</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4059546</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Grand Hotel Palatino</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble económica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>Via Vittorio Veneto 70</myns_atr:adresa>
+    <myns_atr:cuesta>2018.38</myns_atr:cuesta>
+    <myns_atr:cuesta>1665.99</myns_atr:cuesta>
+    <myns_atr:cuesta>1422.00</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble, en edificio anexo</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Grand Hotel Palace está en pleno corazón de Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Plaza Barberini. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Via Leonina 14</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8913507</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Grifo</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1439807</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel La Residenza</myns_atr:nombre>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1015</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
+    <myns_atr:adresa>Via Cavour 23</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Duca d&amp;apos;Alba</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">991</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">454</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Harmony Roma</myns_atr:nombre>
+    <myns_atr:codigoPostal>00187</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1170.44</myns_atr:cuesta>
+    <myns_atr:adresa>Via Castelfidardo 55</myns_atr:adresa>
+    <myns_atr:cuesta>1324.72</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">411</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1397.08</myns_atr:cuesta>
+    <myns_atr:cuesta>571.52</myns_atr:cuesta>
+    <myns_atr:nombre>Starhotels Metropole</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.169358</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Ariston está en pleno corazón de Roma, a pocos pasos de Plaza de Santa María la Mayor y Basílica de Santa María la Mayor. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">293</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">792</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7914147</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>00186</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1767.90</myns_atr:cuesta>
+    <myns_atr:cuesta>1571.35</myns_atr:cuesta>
+    <myns_atr:cuesta>956.17</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">833</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Adriano</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel d&amp;apos;Inghilterra gozarás de una ubicación céntrica en Roma, a pocos pasos de Caffé Greco y Casa de Keats-Shelley. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Fontana gozarás de una ubicación céntrica en Roma, a pocos pasos de Fontana di Trevi y de Galería Alberto Sordi. Este hotel de ambiente</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel d&amp;apos;Inghilterra</myns_atr:nombre>
+    <myns_atr:nombre>Hotel Fiume</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">209</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Giovanni Vitelleschi 34</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Delle Vittorie</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1272926</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Romanico Palace está en pleno corazón de Roma, a pocos pasos de Iglesia de Santa María de la Victoria y Piazza Fiume. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1055.69</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">246</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Atlante Star Hotel estarás en pleno corazón de Roma, a pocos pasos de Auditorium Conciliazione y de Castillo de Sant&amp;apos;Angelo.  Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Atlante Garden Hotel, en Roma (Vaticano), estarás a pocos minutos de Auditorium Conciliazione y de Castillo de Sant&amp;apos;Angelo. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">660</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Aleph Hotel Rome</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Harmony Roma, en Roma (Centro histórico de Roma), estarás a pocos minutos de Porta Pia y Piazza Fiume.  Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1642388</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>898.74</myns_atr:cuesta>
+    <myns_atr:cuesta>1100.80</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Grifo gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia de Santa Maria dei Monti y de Foro Romano. Este hotel para familias se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">364</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>via Boncompagni, 37</myns_atr:adresa>
+    <myns_atr:cuesta>1153.99</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Medici</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7415289</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Portamaggiore, en Roma (Esquilino), estarás a pocos minutos de Teatro Ambra Jovinelli y Porta Maggiore. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Grand Hotel Palace</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">896</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Della Stazione Di San Pietro 14</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar (Plus)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Kolbe Hotel Rome</myns_atr:nombre>
+    <myns_atr:nombre>Hotel De Petris</myns_atr:nombre>
+    <myns_atr:codigoPostal>00198</myns_atr:codigoPostal>
+    <myns_atr:adresa>Via Palestro 87</myns_atr:adresa>
+    <myns_atr:cuesta>3515.60</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.39745367</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Crescenzio 78</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2296538</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via di San Basilio 15</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Repubblica gozarás de una ubicación céntrica en Roma, a pocos pasos de Teatro de la Ópera de Roma y Plaza de la República. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>2058.19</myns_atr:cuesta>
+    <myns_atr:adresa>Via Quattro Fontane 149 A</myns_atr:adresa>
     <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
-    <myns_atr:codigoPostal>1017 HK</myns_atr:codigoPostal>
-    <myns_atr:adresa>Nieuwezijds Voorburgwal 33</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación Premium</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2767828</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.41015</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Quentin Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Mercure Hotel Amsterdam Centre Canal District estarás en pleno corazón de Ámsterdam, a pocos pasos de De Duif y de Heineken Experience.</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Damrak 1-5</myns_atr:adresa>
-    <myns_atr:adresa>Damrak 93-94</myns_atr:adresa>
-    <myns_atr:nombre>Grand Hotel Amrâth Amsterdam</myns_atr:nombre>
-    <myns_atr:cuesta>1005.45</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">298</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Trianon Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hampshire Hotel - Amsterdam American gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Stadsschouwburg y Teatro DeLaMar. Este hotel de</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.13331719</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Superior Room, 1 Double Bed, Non Smoking - Advance Purchase Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>763.96</myns_atr:cuesta>
-    <myns_atr:codigoPostal>1071 LH</myns_atr:codigoPostal>
+    <myns_atr:nombre>Hotel Commodore</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2320834</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5062325</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Torino 1</myns_atr:adresa>
+    <myns_atr:nombre>Isa Design Hotel</myns_atr:nombre>
+    <myns_atr:adresa>Via Nazionale 251 A</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.77618134</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
+    <myns_atr:cuesta>1546.40</myns_atr:cuesta>
+    <myns_atr:adresa>Via Poli 7</myns_atr:adresa>
+    <myns_atr:adresa>Via Napoli 3</myns_atr:adresa>
+    <myns_atr:adresa>Via Aurora 29</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Berg Luxury Hotel está en pleno corazón de Roma, a pocos pasos de Teatro Sistina y Plaza Barberini. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1321.11</myns_atr:cuesta>
+    <myns_atr:nombre>Atlante Garden Hotel</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">595</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via XXIV Maggio, 8</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4681647</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Piazza Di Trevi 96</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Cicerone</myns_atr:nombre>
+    <myns_atr:adresa>Via Flavia 40</myns_atr:adresa>
+    <myns_atr:adresa>Via di San Teodoro 48</myns_atr:adresa>
+    <myns_atr:cuesta>1434.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">870</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Giglio dell&amp;apos;Opera gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Massimo alle Terme y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>00184</myns_atr:codigoPostal>
+    <myns_atr:adresa>Via Palermo 20</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Cambridge</myns_atr:nombre>
+    <myns_atr:nombre>Hotel Fontana</myns_atr:nombre>
+    <myns_atr:adresa>Via Principe Amedeo No 14</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Kolbe Hotel Rome gozarás de una ubicación céntrica en Roma, a pocos minutos de Lupercale y Foro Romano. Este hotel de 4 estrellas se encuentra cerca</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Quattro Fontane gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Barberini y Plaza Barberini. Este hotel se encuentra cerca</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>794.26</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6459469</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0020518</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Medici estarás en pleno corazón de Roma, a pocos pasos de Porta Pia y de Piazza Fiume. Este hotel se encuentra cerca de Foro Romano y</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Bettoja Atlantico Hotel</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>00165</myns_atr:codigoPostal>
+    <myns_atr:nombre>Starhotels Michelangelo</myns_atr:nombre>
+    <myns_atr:nombre>Hotel Quattro Fontane</myns_atr:nombre>
+    <myns_atr:cuesta>544.00</myns_atr:cuesta>
+    <myns_atr:codigoPostal>00195</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2867966</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1618524</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5822843</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>2330.71</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Duca d&amp;apos;Alba gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia de Santa Maria dei Monti y Basílica de San Pietro in Vincoli.</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel dei Borgia gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio de Exposiciones y de Teatro de la Ópera de Roma. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Delle Nazioni</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Cambridge está en pleno corazón de Roma, a pocos pasos de Biblioteca Central Nacional de Roma y Policlínico de Roma Umberto I. Este hotel para</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Starhotels Michelangelo, en Roma (Vaticano), estarás a pocos minutos de Congregación para la Doctrina de la Fe y Basílica de San Pedro. </myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Condotti</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2698293</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>2062.96</myns_atr:cuesta>
+    <myns_atr:adresa>Via Principe Amedeo 3</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>Via Marghera 47 A</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Isa Design Hotel gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia Valdense y de Palacio de Justicia. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">294</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Bocca Di Leone 14</myns_atr:adresa>
+    <myns_atr:adresa>Via Conciliazione 51</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación con 1 cama doble o 2 individuales, en edificio anexo</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Brasile</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble (Small)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">371</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Col Di Lana 24</myns_atr:adresa>
+    <myns_atr:adresa>Vicolo del Babuccio 20-21</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">933</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hotel Corona</myns_atr:nombre>
+    <myns_atr:nombre>Ariston</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Trevi Collection gozarás de una ubicación céntrica en Roma, a pocos pasos de Teatro Sistina y de Plaza Barberini. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Palazzo Montemartini</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">426</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>Via Mario Dè Fiori 37</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3407215</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38598222</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Fiume, en Roma (Via Veneto), estarás a pocos minutos de Museo de Arte Contemporáneo de Roma y Piazza Fiume. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Delle Vittorie, en Roma (Vaticano), estarás a pocos minutos de Estudios centrales de la RAI y Basílica de San Pedro. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2158394</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>Via Turati Filippo 16</myns_atr:adresa>
+    <myns_atr:nombre>Berg Luxury Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Bettoja Atlantico Hotel estarás en pleno corazón de Roma, a pocos pasos de Palacio Massimo alle Terme y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">383</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal></myns_atr:codigoPostal>
+    <myns_atr:adresa>Via Del Boschetto 144</myns_atr:adresa>
     <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:tripAdvisorRating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Park Plaza Victoria Amsterdam gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Iglesia de San Nicolás y de Beurs van Berlage. Este</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel de Paris, en Ámsterdam (Barrio de los museos), estarás a pocos minutos de Melkweg y de Leidseplein. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36848432</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Dikker And Thijs Fenice Hotel gozarás de una ubicación céntrica en Ámsterdam, a pocos pasos de Leidseplein y Stadsschouwburg. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>1012 LL</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.30548108</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1128.03</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1374</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Amsterdam - De Roode Leeuw</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Grand Hotel Amrâth Amsterdam está en pleno corazón de Ámsterdam, a pocos pasos de Biblioteca Pública y Iglesia de San Nicolás. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Park Hotel Amsterdam</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.90933144</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.320552</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1313.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2532</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1571</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Suite junior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">635</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4364752</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1053.65</myns_atr:cuesta>
+    <myns_atr:cuesta>1502.32</myns_atr:cuesta>
+    <myns_atr:nombre>Palazzo Cardinal Cesi</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel De Petris gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Barberini y Plaza Barberini. Este hotel se encuentra cerca de Foro</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1113.50</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">707</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>largo giovanni montemartini, 20</myns_atr:adresa>
+    <myns_atr:cuesta>1832.06</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8901969</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1492.48</myns_atr:cuesta>
+    <myns_atr:cuesta>1290.01</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4404149</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel La Residenza está en pleno corazón de Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Teatro Sistina. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Condotti gozarás de una ubicación céntrica en Roma, a pocos pasos de Plaza de España y Caffé Greco. Este hotel para familias se encuentra cerca</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1264.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Roma reservando en Hotel Miami, a pocos pasos de Teatro de la Ópera de Roma y cerca de Fontana di Trevi. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Aleph Hotel Rome gozarás de una ubicación céntrica en Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Plaza Barberini. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Lirico, en Roma (Repubblica), estarás a pocos minutos de Teatro de la Ópera de Roma y de Basílica de Santa María la Mayor. Este</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.337885</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Trevi</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">337</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación con 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación con 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>2320.50</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Adriano gozarás de una ubicación céntrica en Roma, a pocos pasos de Plaza del Parlamento y Palazzo Borghese. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>2351.54</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Traiano Hotel gozarás de una ubicación céntrica en Roma, a pocos pasos de Mercado de Trajano y Foro de Trajano. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Via Nazionale 230</myns_atr:adresa>
+    <myns_atr:cuesta>3565.00</myns_atr:cuesta>
+    <myns_atr:cuesta>755.92</myns_atr:cuesta>
   </rdf:Description>
 </rdf:RDF>
