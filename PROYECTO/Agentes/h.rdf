@@ -4,362 +4,403 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="http://my.namespace.org/hoteles/">
-    <myns_atr:nombre>Mercure Paris Montmartre Sacré Coeur</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1060</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Holiday Inn Paris Notre Dame</myns_atr:nombre>
-    <myns_atr:adresa>102 Avenue De Villiers</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Libertel Austerlitz Jardin des Plantes, en París (Barrio Latino - Panteón), estarás a pocos minutos de Galería de paleontología y</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Ampere</myns_atr:nombre>
-    <myns_atr:nombre>Libertel Austerlitz Jardin des Plantes</myns_atr:nombre>
-    <myns_atr:cuesta>2017.05</myns_atr:cuesta>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</myns_atr:rating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Madison Hôtel gozarás de una ubicación céntrica en París, a pocos pasos de Abadía de Saint-Germain-des-Pres y Les Deux Magots. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">260</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">388</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1291.95</myns_atr:cuesta>
-    <myns_atr:cuesta>772.69</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Des Arts Paris Montmartre</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0872006</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Mercure Paris Notre Dame Saint Germain des Prés</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1516</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Westminster Opera estarás en pleno corazón de París, a pocos pasos de Ópera de París y de Olympia de París. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:adresa>1 Rue Parrot</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Le Mareuil está en pleno corazón de París, a pocos pasos de Place de la Republique y Bataclan. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>722.40</myns_atr:cuesta>
-    <myns_atr:adresa>13 Rue De La Paix</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación doble superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9280738</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>610.00</myns_atr:cuesta>
-    <myns_atr:adresa>38 Rue De L Echiquier</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">267</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.438827</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Privilege, Habitación doble, vistas a la ciudad</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2552364</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Holiday Inn Paris Notre Dame, en París (Saint-Germain-des-Prés - Luxembourg), estarás a pocos minutos de Pont Saint-Michel y Catedral de</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Pavillon Opéra gozarás de una ubicación céntrica en París, a pocos pasos de Grand Rex Cinema y de Porte Saint-Denis. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1108.45</myns_atr:cuesta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75007</myns_atr:codigoPostal>
-    <myns_atr:cuesta>2191.35</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel De Notre Dame gozarás de una ubicación céntrica en París, a pocos minutos de Pont de l&amp;apos;Archevêché y Catedral de Notre-Dame. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1250.34</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">376</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2230488</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Millennium Hotel Paris Opéra</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Gare du Nord - Gare de L&amp;apos;Est), a pocos minutos de Porte Saint-Martin y Place de la Republique se sitúa Hotel Aida Marais Printania. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9372108</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En La Maison Favart gozarás de una ubicación céntrica en París, a pocos pasos de Opera Comique y de Hotel Drouot. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75017</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">325</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0924528</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
-    <myns_atr:cuesta>741.99</myns_atr:cuesta>
-    <myns_atr:cuesta>980.00</myns_atr:cuesta>
-    <myns_atr:cuesta>1047.17</myns_atr:cuesta>
-    <myns_atr:cuesta>929.66</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Comfort, One Double Bed - Early Booking</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación doble superior - Early booking</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>La Maison Champs Elysées</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Mercure Paris Notre Dame Saint Germain des Prés gozarás de una ubicación céntrica en París, a pocos pasos de Musée National du Moyen Age y de Catedral</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Amarys Simart</myns_atr:nombre>
-    <myns_atr:nombre>Villa Luxembourg</myns_atr:nombre>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75018</myns_atr:codigoPostal>
-    <myns_atr:nombre>Artus Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Artus Hotel gozarás de una ubicación céntrica en París, a pocos pasos de Palais Abbatial y Museo de Eugène Delacroix. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Novotel Paris Les Halles</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación superior con 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">236</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Scribe Paris managed by Sofitel gozarás de una ubicación céntrica en París, a pocos pasos de Edward VII Theater y Olympia de París. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Grand Hotel des Gobelins estarás en pleno corazón de París, a pocos pasos de Jardin des Plantes y de Catedral de Notre-Dame. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>571.90</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9396064</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Villa Luxembourg está en pleno corazón de París, a pocos pasos de Place Vavin y Fundación Cartier de Arte Contemporáneo. Este hotel de ambiente romántico</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1186597</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación de lujo (Club Sofitel)</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8549746</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Banke estarás en pleno corazón de París, a pocos pasos de Galeries Lafayette y de Théâtre Mogador. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>840.80</myns_atr:cuesta>
-    <myns_atr:cuesta>1600.62</myns_atr:cuesta>
-    <myns_atr:adresa>18 avenue de Suffren</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7132826</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>143 Boulevard Saint-Germain</myns_atr:adresa>
-    <myns_atr:adresa>7 Rue Simart</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1114552</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Aida Opéra gozarás de una ubicación céntrica en París, a pocos pasos de Folies Bergère y de Museo de la Francmasonería de París. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>11 Rue Victor Massé</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Novotel Paris Les Halles gozarás de una ubicación céntrica en París, a pocos pasos de Centro comercial Forum des Halles y de Theatre du Chatelet. Este</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2062893</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>19 Rue Du Chateau D Eau</myns_atr:adresa>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75004</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
-    <myns_atr:adresa>11 Rue Richer</myns_atr:adresa>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
-    <myns_atr:adresa>4 Rue Danton</myns_atr:adresa>
-    <myns_atr:cuesta>1849.00</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Moderne St Germain</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">288</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2309</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75012</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5831187</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel De Notre Dame</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.346519</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6297714</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>833.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">318</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1402.33</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9163132</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">390</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">238</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">397</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Moderne St Germain, en París (Barrio Latino - Panteón), estarás a pocos minutos de Musée National du Moyen Age y de Panthéon. Este</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Mercure Paris Montmartre Sacré Coeur gozarás de una ubicación céntrica en París, a pocos pasos de Moulin Rouge y de Cafe des 2 Moulins. Este hotel de</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hôtel Pont Royal estarás en pleno corazón de París, a pocos pasos de Museo de Orsay y de Pont Royal. Este hotel de 5 estrellas se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Viator Paris estarás en pleno corazón de París, a pocos pasos de Pont d&amp;apos;Austerlitz y de Catedral de Notre-Dame. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>576.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Golden Tulip Opera De Noailles estarás en pleno corazón de París, a pocos pasos de Opera Comique y de Ópera de París. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2446</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5473661</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1444</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>61 Rue Brancion</myns_atr:adresa>
-    <myns_atr:adresa>34 Rue De Buci</myns_atr:adresa>
-    <myns_atr:nombre>Pullman Paris Montparnasse</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Villa Beaumarchais estarás en pleno corazón de París, a pocos pasos de Place des Vosges y de Museo Picasso. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Home Moderne estarás en pleno corazón de París, a pocos pasos de Parque Georges Brassens y de Torre Eiffel. Este hotel se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Original Paris</myns_atr:nombre>
-    <myns_atr:nombre>Hôtel Pont Royal</myns_atr:nombre>
-    <myns_atr:cuesta>884.65</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">738</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>384.30</myns_atr:cuesta>
-    <myns_atr:nombre>Best Western Premier Louvre Saint Honore</myns_atr:nombre>
-    <myns_atr:adresa>5 Rue Tholoze</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Le Petit Paris estarás en pleno corazón de París, a pocos pasos de Panthéon y de Jardines de Luxemburgo. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>51-57 rue de Courcelles</myns_atr:adresa>
-    <myns_atr:cuesta>2708.05</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">484</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7869397</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación Premium, vistas al jardín</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0218325</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Ampere gozarás de una ubicación céntrica en París, a poca distancia de Espace Champerret y Arco del Triunfo. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>121 Boulevard Du Montparnasse</myns_atr:adresa>
-    <myns_atr:adresa>20 Rue La Fayette</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Millennium Hotel Paris Opéra, en París (Ópera - Galerías Lafayette), estarás a pocos minutos de Opera Comique y de Galeries Lafayette.</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Best Western Ducs De Bourgogne</myns_atr:nombre>
-    <myns_atr:adresa>8 Rue Jean Goujon</myns_atr:adresa>
-    <myns_atr:cuesta>1266.44</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Saint Georges Lafayette estarás en pleno corazón de París, a pocos pasos de Teatro La Bruyère y de Museo de la vida romántica. Este</myns_atr:descriptionCorta>
-    <myns_atr:adresa>15 Rue De Montyon</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Montalembert</myns_atr:nombre>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75008</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Grand Hotel Nouvel Opera, en París (Bastilla - République), podrás llegar fácilmente a Ópera de la Bastilla y a Catedral de Notre-Dame.</myns_atr:descriptionCorta>
-    <myns_atr:adresa>57 Boulevard Saint Marcel</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2800066</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1082.38</myns_atr:cuesta>
-    <myns_atr:adresa>68 Boulevard De Clichy</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2288153</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.347895</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1644.76</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">803</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Best Western Premier Louvre Saint Honore gozarás de una ubicación céntrica en París, a pocos minutos de Iglesia de Saint Germain l&amp;apos;Auxerrois y Museo</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9159664</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75015</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1390.00</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Banke</myns_atr:nombre>
-    <myns_atr:nombre>Hôtel Hor</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
-    <myns_atr:nombre>Pullman Paris Tour Eiffel</myns_atr:nombre>
-    <myns_atr:adresa>4 Rue Salomon De Caus</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación de diseño - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Pullman Paris Tour Eiffel está en pleno corazón de París, a pocos pasos de Torre Eiffel y Champ de Mars. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Little Palace Hotel estarás en pleno corazón de París, a pocos pasos de Porte Saint-Martin y de Museo de Artes y Oficios. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar con 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1197.00</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación Club, 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75003</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1241.02</myns_atr:cuesta>
-    <myns_atr:nombre>Madison Hôtel</myns_atr:nombre>
-    <myns_atr:adresa>7 Rue Montalembert</myns_atr:adresa>
-    <myns_atr:nombre>Villa Beaumarchais</myns_atr:nombre>
-    <myns_atr:nombre>Grand Hotel Nouvel Opera</myns_atr:nombre>
-    <myns_atr:adresa>5 Rue Des Arquebusiers</myns_atr:adresa>
-    <myns_atr:cuesta>1364.01</myns_atr:cuesta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75013</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">812</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1267.07</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">339</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2600875</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1966.50</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar, accesible para personas con discapacidad, planta baja</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.9669156</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0629745</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Saint Georges Lafayette</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1328</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">707</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>993.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Pullman Paris Montparnasse gozarás de una ubicación céntrica en París, a pocos pasos de Place de Catalogne y de Bobino. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Best Western Hotel Ronceray Opera</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Westminster Opera</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.433131</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8006595</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:rating>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7065143</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1459.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
-    <myns_atr:cuesta>1496.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">584</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>5 Rue Marivaux</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">634</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>141 Rue Saint Honore</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Madeleine Plaza gozarás de una ubicación céntrica en París, a pocos pasos de Pinacotheque de Paris y Plaza de la Madeleine. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">776</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación Premium, vistas al patio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>3 Rue de Montalembert</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1018</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hôtel Madeleine Plaza</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación doble clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Lenox Montparnasse Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En La Maison Champs Elysées gozarás de una ubicación céntrica en París, a pocos pasos de Palais de la Decouverte y Grand Palais. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:adresa>20 Rue Du Sommerard</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hôtel Axel Opéra Paris, en París (Ópera - Galerías Lafayette), estarás a pocos minutos de Passage Verdeau y Teatro Le Palace. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2902474</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>8 Boulevard Beaumarchais</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel de Vendome gozarás de una ubicación céntrica en París, a pocos pasos de Place Vendôme y de Iglesia Saint-Roch. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hôtel Aida Opéra</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0722737</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2333457</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.87158346</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.61051357</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Eugène en Ville</myns_atr:nombre>
-    <myns_atr:cuesta>541.80</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3446048</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">684</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>214 rue Saint Jacques</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5895717</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en L&amp;apos;Hotel du Collectionneur Arc de Triomphe, en París (Champs Elysèes), estarás a pocos minutos de Museo Jacquemart-André y de Parc</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Grand Hotel des Gobelins</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5743353</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Golden Tulip Opera De Noailles</myns_atr:nombre>
-    <myns_atr:cuesta>1308.00</myns_atr:cuesta>
-    <myns_atr:nombre>Viator Paris</myns_atr:nombre>
-    <myns_atr:adresa>12 Boulevard de l&amp;apos;Hopital</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación superior - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Hotel Le Mareuil</myns_atr:nombre>
-    <myns_atr:adresa>15 Rue Delambre</myns_atr:adresa>
-    <myns_atr:nombre>Hotel de Vendome</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9918857</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Lenox Montparnasse Hotel estarás en pleno corazón de París, a pocos pasos de Place Vavin y de Bobino. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75011</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75002</myns_atr:codigoPostal>
-    <myns_atr:cuesta>878.05</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.429312</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Le Chat Noir Design Hotel, en París (Montmartre - Sacré-Coeur), estarás a pocos minutos de Cafe des 2 Moulins y de Moulin Rouge. Este</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Saint Honoré room - Non refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1778</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>La Maison Favart</myns_atr:nombre>
-    <myns_atr:adresa>33 Place De La Madeleine</myns_atr:adresa>
-    <myns_atr:nombre>Home Moderne</myns_atr:nombre>
-    <myns_atr:nombre>Hôtel Scribe Paris managed by Sofitel</myns_atr:nombre>
-    <myns_atr:adresa>12 Boulevard Haussmann</myns_atr:adresa>
-    <myns_atr:nombre>Hôtel Axel Opéra Paris</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.71684307</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Superior King Room</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Best Western Ducs De Bourgogne estarás en pleno corazón de París, a pocos pasos de Iglesia de Saint Germain l&amp;apos;Auxerrois y de Centro</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>2085.00</myns_atr:cuesta>
-    <myns_atr:adresa>31, rue des Ecoles</myns_atr:adresa>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75010</myns_atr:codigoPostal>
-    <myns_atr:adresa>6 Rue Buffault</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.951893</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Hor gozarás de una ubicación céntrica en París, a poca distancia de Plaza Coronel Fabien y Museo del Louvre. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Aida Marais Printania</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación doble Confort</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>19 Rue Du Pont Neuf</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Double Room - Advance Purchase Non Refundable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
-    <myns_atr:cuesta>1204.18</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8286851</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">909</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">599</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Torre Eiffel - Museo de Orsay), a pocos minutos de Museo de Orsay y Pont Royal se sitúa Hotel Montalembert. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel France Louvre está en pleno corazón de París, a pocos pasos de Hôtel de Ville y Centro comercial Bazar de l&amp;apos;Hotel de Ville. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">322</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>980.02</myns_atr:cuesta>
-    <myns_atr:cuesta>890.40</myns_atr:cuesta>
-    <myns_atr:nombre>L&amp;apos;Hotel du Collectionneur Arc de Triomphe</myns_atr:nombre>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75005</myns_atr:codigoPostal>
-    <myns_atr:nombre>Hôtel Pavillon Opéra</myns_atr:nombre>
-    <myns_atr:adresa>1 Rue Scribe</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>2136.00</myns_atr:cuesta>
-    <myns_atr:cuesta>701.06</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Ópera - Galerías Lafayette), a pocos minutos de Museo Grévin y Teatro Le Palace se sitúa Best Western Hotel Ronceray Opera. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8512666</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Original Paris gozarás de una ubicación céntrica en París, a pocos pasos de Columna de Julio y Place de la Bastille. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7469268</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>51 Rue De Malte</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">630</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>783.00</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación clásica, vistas al jardín</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1700.05</myns_atr:cuesta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75009</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">581</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>9 Rue De La Michodiere</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Eugène en Ville gozarás de una ubicación céntrica en París, a pocos pasos de Museo de la Francmasonería de París y de Passage Verdeau. Este</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>796.03</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">924</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Atmospheres estarás en pleno corazón de París, a pocos pasos de Panthéon y de Musée National du Moyen Age. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:adresa>19 Rue Maitre Albert</myns_atr:adresa>
-    <myns_atr:adresa>1-3 Rue Caulaincourt</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Amarys Simart estarás en pleno corazón de París, en una ubicación conveniente para llegar a Basílica del Sagrado Corazón o a Museo</myns_atr:descriptionCorta>
-    <myns_atr:adresa>19 Rue Commandant Rene Mouchotte</myns_atr:adresa>
-    <myns_atr:cuesta>2006.00</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Le Petit Paris</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.8452764</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>724.99</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel France Louvre</myns_atr:nombre>
-    <myns_atr:adresa>152 Avenue Ledru Rollin</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8212808</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>160 rue Lafayette</myns_atr:adresa>
-    <myns_atr:adresa>8 Place Marguerite De Navarre</myns_atr:adresa>
-    <myns_atr:nombre>Le Chat Noir Design Hotel</myns_atr:nombre>
-    <myns_atr:nombre>Little Palace Hotel</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5330873</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>40 Rue De Rivoli</myns_atr:adresa>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75014</myns_atr:codigoPostal>
-    <myns_atr:cuesta>2268.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0239366</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>1 Place Vendôme</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Des Arts Paris Montmartre gozarás de una ubicación céntrica en París, a pocos pasos de Cafe des 2 Moulins y de Calle Des Abbessees. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1162.40</myns_atr:cuesta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75001</myns_atr:codigoPostal>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75006</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2184</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>4369.47</myns_atr:cuesta>
+    <myns_atr:adresa>44 Grosvenor Square</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1729</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>324 Gray&amp;apos;s Inn Road</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1447854</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1099</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.895382</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>W1K 2HP</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>EC1M 6DS</myns_atr:codigoPostal>
+    <myns_atr:nombre>The Bloomsbury Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Marylebone Hotel gozarás de una ubicación céntrica en Londres, a pocos pasos de Sala de recitales Wigmore Hall y de Grandes almacenes Selfridges.</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1863.66</myns_atr:cuesta>
+    <myns_atr:nombre>Park Plaza Riverbank London</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>W1K 4HR</myns_atr:codigoPostal>
+    <myns_atr:cuesta>3612.31</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior (Premium)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Courthouse Hotel</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9361379</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1016</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5870246</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3453149</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.81583995</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1286.51</myns_atr:cuesta>
+    <myns_atr:adresa>47 Welbeck Street</myns_atr:adresa>
+    <myns_atr:cuesta>1238.63</myns_atr:cuesta>
+    <myns_atr:cuesta>2407.87</myns_atr:cuesta>
+    <myns_atr:adresa>92 Southampton Row</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Park Plaza Riverbank London, en Londres (South Bank), estarás a pocos minutos de Museo Tate Britain y Puente de Lambeth. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior (Plus)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>8 Northumberland Ave</myns_atr:adresa>
+    <myns_atr:cuesta>3534.46</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4595037</myns_atr:distanciaRepectoAlCentro>
     <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio y sofá cama</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>33 Rue Des Ecoles</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29698312</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Atmospheres</myns_atr:nombre>
+    <myns_atr:cuesta>1569.37</myns_atr:cuesta>
+    <myns_atr:codigoPostal>W1B 2QS</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.12398466</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Corinthia Hotel London</myns_atr:nombre>
+    <myns_atr:nombre>Tune Hotel Liverpool Street, London</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Phoenix Hotel, en Londres (Paddington), estarás a pocos minutos de Centro comercial Whiteleys y Royal Albert Hall. Este hotel para</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Millennium Gloucester Hotel London Kensington</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Millennium Bailey&amp;apos;s Hotel London Kensington estarás en pleno corazón de Londres, a pocos pasos de Museo de Historia Natural de Londres y de</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama de matrimonio grande, vistas a la ciudad</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Park Plaza Westminster Bridge London gozarás de una ubicación céntrica en Londres, a pocos pasos de Acuario de Londres y Museo Florence Nightingale.</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación ejecutiva, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1306219</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5289494</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1955.61</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Tune Hotel - Westminster, London, en Londres (South Bank), estarás a pocos minutos de Museo Florence Nightingale y de Acuario de Londres.</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>5426.12</myns_atr:cuesta>
+    <myns_atr:cuesta>1760.48</myns_atr:cuesta>
+    <myns_atr:nombre>The Kensington Close Hotel</myns_atr:nombre>
+    <myns_atr:adresa>Scarsdale Place</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1517</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2241056</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5338206</myns_atr:distanciaRepectoAlCentro>
     <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1670</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1307</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Copthorne Tara Hotel London Kensington estarás en pleno corazón de Londres, a pocos pasos de Kensington Roof Gardens y de Royal Albert</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1887.65</myns_atr:cuesta>
+    <myns_atr:nombre>The Strand Palace</myns_atr:nombre>
+    <myns_atr:codigoPostal>WC2R 0EU</myns_atr:codigoPostal>
+    <myns_atr:nombre>Club Quarters, Trafalgar Square</myns_atr:nombre>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
+    <myns_atr:nombre>St Martins Lane</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1091</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Tune Hotel Kings Cross, London estarás en pleno corazón de Londres, a pocos pasos de Biblioteca Británica y de King&amp;apos;s College London. Este</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Rosewood London está en pleno corazón de Londres, a pocos pasos de Bloomsbury Square y London School of Economics and Political Science. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En St Martins Lane gozarás de una ubicación céntrica en Londres, a pocos pasos de Coliseum Theatre y Noel Coward Theatre. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.23494798</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Londres (Kings Cross St. Pancras), ibis London Euston St Pancras se sitúa a pocos minutos de University College Hospital y a poca distancia de</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Tune Hotel Liverpool Street, London estarás en pleno corazón de Londres, a pocos pasos de Mercado Old Spitalfields y de Torre de Londres.</myns_atr:descriptionCorta>
+    <myns_atr:adresa>12 Peter&amp;apos;s Lane Cowcross St</myns_atr:adresa>
+    <myns_atr:codigoPostal>W1H 5BJ</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3035561</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>E1 6BX</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>W8 5SP</myns_atr:codigoPostal>
+    <myns_atr:nombre>The Ritz London</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1268</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>2533.54</myns_atr:cuesta>
+    <myns_atr:adresa>Wrights Lane</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9653373</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.254184</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>45 St Martin&amp;apos;s Lane</myns_atr:adresa>
+    <myns_atr:nombre>One Aldwych</myns_atr:nombre>
+    <myns_atr:adresa>30 Rathbone Street</myns_atr:adresa>
+    <myns_atr:codigoPostal>WC2R 0JJ</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Melia White House Hotel está en pleno corazón de Londres, a pocos pasos de Crescent Gardens y Park Square Garden. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Courthouse Hotel gozarás de una ubicación céntrica en Londres, a pocos pasos de London Palladium Theatre y de Oxford Circus. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>WC2N 4HX</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>3236.71</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Queens Park Hotel estarás en pleno corazón de Londres, a pocos pasos de Centro comercial Whiteleys y de Royal Albert Hall. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4638284</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3678</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>W8 4PT</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7596491</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación Club</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>The Marylebone Hotel</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1155</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
+    <myns_atr:adresa>Lancaster Terrace</myns_atr:adresa>
+    <myns_atr:nombre>Lancaster London</myns_atr:nombre>
+    <myns_atr:adresa>3 Kingdom Street, Sheldon Square</myns_atr:adresa>
+    <myns_atr:cuesta>5049.14</myns_atr:cuesta>
+    <myns_atr:adresa>19-21 Great Marlborough Street</myns_atr:adresa>
+    <myns_atr:nombre>Phoenix Hotel</myns_atr:nombre>
+    <myns_atr:codigoPostal>SW1Y 4AN</myns_atr:codigoPostal>
+    <myns_atr:adresa>372 The Strand</myns_atr:adresa>
+    <myns_atr:adresa>41-47 Praed Street</myns_atr:adresa>
+    <myns_atr:adresa>4-18 Harrington Gardens</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1232226</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3537926</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación doble, vistas al jardín</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>48 Queensborough Terrace</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.347875</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>ibis London Euston St Pancras</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2703</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>16-22 Great Russell Street</myns_atr:adresa>
+    <myns_atr:adresa>5 Curzon Street</myns_atr:adresa>
+    <myns_atr:cuesta>990.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En ME London gozarás de una ubicación céntrica en Londres, a pocos pasos de King&amp;apos;s College London y Lyceum Theatre. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1563</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>11 Thurloe Place</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Washington Mayfair Hotel estarás en pleno corazón de Londres, a pocos pasos de Berkeley Square y de Spencer House. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1586.21</myns_atr:cuesta>
+    <myns_atr:nombre>Novotel London Paddington</myns_atr:nombre>
+    <myns_atr:nombre>The Regency Hotel</myns_atr:nombre>
+    <myns_atr:cuesta>2030.82</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Londres (Mayfair), a pocos minutos de Spencer House y Real Academia de las Artes se sitúa The Ritz London. Este hotel de 5 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>SW1A 2BD</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Sanderson está en pleno corazón de Londres, a pocos pasos de Oxford Circus y London Palladium Theatre. Este hotel de 5 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2957</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>66 Great Queen Street</myns_atr:adresa>
+    <myns_atr:codigoPostal>W1K 7TN</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>W1F 7HL</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8044</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Novotel London Waterloo</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:ciudad>London</myns_atr:ciudad>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1764</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.57853496</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación doble Club</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1202.79</myns_atr:cuesta>
+    <myns_atr:adresa>336-337 The Strand</myns_atr:adresa>
+    <myns_atr:codigoPostal>NW1 3UP</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1707.41</myns_atr:cuesta>
+    <myns_atr:codigoPostal>WC1X 8BU</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">597</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Tune Hotel - Paddington gozarás de una ubicación céntrica en Londres, a poca distancia de Rincón del orador de Hyde Park y Grandes almacenes</myns_atr:descriptionCorta>
+    <myns_atr:adresa>Regents Park</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Park Plaza Victoria London estarás en pleno corazón de Londres, a pocos pasos de Teatro Apollo Victoria y de Catedral de Westminster. Este</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2432</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>WC2B 4BZ</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2740</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1964.82</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7820816</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Corinthia Hotel London gozarás de una ubicación céntrica en Londres, a pocos pasos de Benjamin Franklin House y de Trafalgar Square. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Park Plaza Westminster Bridge London</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En DoubleTree by Hilton London West End gozarás de una ubicación céntrica en Londres, a pocos pasos de Bloomsbury Square y de Russell Square. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">657</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>SW1E 6AF</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Russell gozarás de una ubicación céntrica en Londres, a pocos pasos de Russell Square y de Biblioteca London Senate House Library. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Claridge&amp;apos;s</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.3294773</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>3998.19</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Kingsway Hall Hotel está en pleno corazón de Londres, a pocos pasos de London School of Economics and Political Science y Royal Opera House. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>W2 4BH</myns_atr:codigoPostal>
+    <myns_atr:cuesta>2756.89</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2522</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1015</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>The Savoy, A Fairmont Managed Hotel</myns_atr:nombre>
+    <myns_atr:cuesta>965.52</myns_atr:cuesta>
+    <myns_atr:nombre>Tune Hotel Kings Cross, London</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2454822</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Durrants Hotel, en Londres (Marylebone), estarás a pocos minutos de Wallace Collection y Grandes almacenes Selfridges. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Tune Hotel - Paddington</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1021</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Sanderson</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Hab. superior doble/2 indiv.</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación ejecutiva</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>2112.18</myns_atr:cuesta>
+    <myns_atr:nombre>St. Ermins Hotel, Autograph Collection</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0237631</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>W2 3SJ</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.236342</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>W2 6BD</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
+    <myns_atr:codigoPostal>W1S 4BP</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>WC1B 3NN</myns_atr:codigoPostal>
+    <myns_atr:cuesta>2570.26</myns_atr:cuesta>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3901461</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Lancaster London gozarás de una ubicación céntrica en Londres, a poca distancia de Kensington Gardens y Royal Albert Hall. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:adresa>2-24 Kensington High Street</myns_atr:adresa>
+    <myns_atr:adresa>45-51 Buckingham Gate</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación superior - Oferta: 3ª noche gratis*</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>W2 1NR</myns_atr:codigoPostal>
+    <myns_atr:adresa>150 Piccadilly</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>2810.08</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.34756622</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7249079</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación doble (Studio)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">621</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">413</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En St. James&amp;apos; Court, A Taj Hotel, London gozarás de una ubicación céntrica en Londres, a pocos minutos de Parque de St. James y Palacio de Buckingham.</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">368</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>113 Lambeth Road</myns_atr:adresa>
+    <myns_atr:adresa>Whitehall Place</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.3664374</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>SW7 4QH</myns_atr:codigoPostal>
+    <myns_atr:adresa>50 Berners Street</myns_atr:adresa>
+    <myns_atr:cuesta>1863.14</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Novotel London Waterloo gozarás de una ubicación céntrica en Londres, a pocos pasos de Palacio de Lambeth y de Puente de Lambeth. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Saint Georges Hotel está en pleno corazón de Londres, a pocos pasos de Oxford Circus y Sala de recitales Wigmore Hall. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1059</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4038</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>118 - 120 Westminster Bridge Road</myns_atr:adresa>
+    <myns_atr:cuesta>2206.75</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio grande, mirando al patio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9957596</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en One Aldwych estarás en pleno corazón de Londres, a pocos pasos de Lyceum Theatre y de King&amp;apos;s College London. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>2284.68</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1907</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Rembrandt gozarás de una ubicación céntrica en Londres, a pocos pasos de Victoria and Albert Museum y Oratorio de Brompton. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1258.78</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Royal Garden Hotel está en pleno corazón de Londres, a pocos pasos de Kensington Roof Gardens y Kensington Palace. Este hotel de 5 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Tune Hotel - Westminster, London</myns_atr:nombre>
+    <myns_atr:nombre>St. James&amp;apos; Court, A Taj Hotel, London</myns_atr:nombre>
+    <myns_atr:cuesta>1783.61</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Russell</myns_atr:nombre>
+    <myns_atr:cuesta>2774.22</myns_atr:cuesta>
+    <myns_atr:codigoPostal>W8 5SR</myns_atr:codigoPostal>
+    <myns_atr:adresa>6 Waterloo Place</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1854</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>WC1B 5BE</myns_atr:codigoPostal>
+    <myns_atr:adresa>Strand</myns_atr:adresa>
+    <myns_atr:cuesta>1006.34</myns_atr:cuesta>
+    <myns_atr:cuesta>1781.50</myns_atr:cuesta>
+    <myns_atr:nombre>Washington Mayfair Hotel</myns_atr:nombre>
+    <myns_atr:nombre>Rosewood London</myns_atr:nombre>
+    <myns_atr:nombre>Millennium Bailey&amp;apos;s Hotel London Kensington</myns_atr:nombre>
+    <myns_atr:cuesta>3027.17</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble ejecutiva</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>1 Aldwych</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1113209</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Queens Park Hotel</myns_atr:nombre>
+    <myns_atr:codigoPostal>SE1 7TJ</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Suite, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>SW7 5AG</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.334925</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>33 Albemarle Street</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3685</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en St. Ermins Hotel, Autograph Collection estarás en pleno corazón de Londres, a pocos pasos de Catedral de Westminster y de Centro de</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
+    <myns_atr:nombre>Kingsway Hall Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Novotel London Paddington gozarás de una ubicación céntrica en Londres, a poca distancia de Centro comercial Whiteleys y Grandes almacenes Selfridges.</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1655.98</myns_atr:cuesta>
+    <myns_atr:nombre>Sofitel London St James</myns_atr:nombre>
+    <myns_atr:adresa>1-8 Kensington Gardens Square</myns_atr:adresa>
+    <myns_atr:adresa>140 Gloucester Road</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5693965</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>ME London</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Millennium Gloucester Hotel London Kensington, en Londres (Kensington), estarás a pocos minutos de Museo de Historia Natural de Londres y</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>3308.69</myns_atr:cuesta>
+    <myns_atr:adresa>81 Kensington Gardens Square</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en The Kensington Close Hotel estarás en pleno corazón de Londres, a pocos pasos de Kensington Roof Gardens y de Royal Albert Hall.  Este</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2460</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Millennium Hotel London Mayfair</myns_atr:nombre>
+    <myns_atr:cuesta>942.40</myns_atr:cuesta>
+    <myns_atr:codigoPostal>WC2N 5BY</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal>W2 4DJ</myns_atr:codigoPostal>
+    <myns_atr:adresa>Caxton Street 2</myns_atr:adresa>
+    <myns_atr:cuesta>1935.17</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3016</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.083781</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Rathbone Hotel está en pleno corazón de Londres, a pocos pasos de Bedford Square y Torre BT. Este hotel de 4 estrellas se encuentra cerca de lugares de</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar (Aldwych Room)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Durrants Hotel</myns_atr:nombre>
+    <myns_atr:adresa>Langham Place, Regent Street</myns_atr:adresa>
+    <myns_atr:adresa>18 Albert Embankment</myns_atr:adresa>
+    <myns_atr:codigoPostal>SE1 7UT</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2714453</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>3 Cardington Street</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama de matrimonio grande</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1064.81</myns_atr:cuesta>
+    <myns_atr:codigoPostal>WC2R 1HA</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2777</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Claridge&amp;apos;s, en Londres (Mayfair), estarás a pocos minutos de Grosvenor Square y Grandes almacenes Selfridges. Este hotel de 5 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>SW7 2RS</myns_atr:codigoPostal>
+    <myns_atr:adresa>1-8 Russell Square</myns_atr:adresa>
+    <myns_atr:nombre>Melia White House Hotel</myns_atr:nombre>
+    <myns_atr:adresa>Brook Street</myns_atr:adresa>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:tripAdvisorRating>
+    <myns_atr:adresa>200 Westminster Bridge Road</myns_atr:adresa>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:rating>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1586</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1373.26</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Savoy, A Fairmont Managed Hotel gozarás de una ubicación céntrica en Londres, a pocos pasos de Lyceum Theatre y Victoria Embankment Gardens. Este</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Copthorne Tara Hotel London Kensington</myns_atr:nombre>
+    <myns_atr:cuesta>2991.85</myns_atr:cuesta>
+    <myns_atr:adresa>100 Queens Gate</myns_atr:adresa>
+    <myns_atr:codigoPostal>SW1V 1EQ</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1253</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.61238956</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Rathbone Hotel</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0256667</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Royal Garden Hotel</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9818601</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>2141.93</myns_atr:cuesta>
+    <myns_atr:cuesta>1956.91</myns_atr:cuesta>
+    <myns_atr:codigoPostal>SW1H 0QW</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1199.45</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0341587</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1287</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Rookery Hotel gozarás de una ubicación céntrica en Londres, a pocos pasos de Mercado de Smithfield y de Iglesia de St. Etheldreda. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar, 1 cama doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>SE1 7RW</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Club Quarters, Trafalgar Square gozarás de una ubicación céntrica en Londres, a pocos pasos de Benjamin Franklin House y Charing Cross. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5227449</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>WC2B 5BX</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Londres reservando en London House Hotel, a pocos pasos de Centro comercial Whiteleys y cerca de Royal Albert Hall.</myns_atr:descriptionCorta>
+    <myns_atr:nombre>The Rembrandt</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Londres (Mayfair), a pocos minutos de Real Academia de las Artes y Berkeley Square se sitúa Rocco Forte Brown&amp;apos;s Hotel. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Bloomsbury Hotel gozarás de una ubicación céntrica en Londres, a pocos pasos de Museo Británico y Bedford Square. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación, camas gemelas - Oferta de verano</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>SW7 4LH</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1483</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Grosvenor House, A JW Marriott Hotel está en pleno corazón de Londres, a pocos pasos de Grosvenor Square y Rincón del orador de Hyde Park. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:adresa>86-90 Park Lane</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación ejecutiva, 1 cama de matrimonio grande, baño privado, planta ejecutiva</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>239 Vauxhall Bridge Road</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7970287</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>The Rookery Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Millennium Hotel London Mayfair gozarás de una ubicación céntrica en Londres, a pocos pasos de Grosvenor Square y de Grandes almacenes Selfridges.</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal>SE1 7LS</myns_atr:codigoPostal>
+    <myns_atr:nombre>Grosvenor House, A JW Marriott Hotel</myns_atr:nombre>
     <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>10 Boulevard Montmartre</myns_atr:adresa>
-    <myns_atr:ciudad>Paris</myns_atr:ciudad>
+    <myns_atr:codigoPostal>W1T 3NG</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Sofitel London St James, en Londres (Mayfair), estarás a pocos minutos de Her Majesty&amp;apos;s Theatre y Trafalgar Square. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal>WC1B 4BH</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1725</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1541</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1659</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>WC1V 7EN</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">743</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1326.11</myns_atr:cuesta>
+    <myns_atr:nombre>Rocco Forte Brown&amp;apos;s Hotel</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2652497</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>13-15 Folgate Street</myns_atr:adresa>
+    <myns_atr:codigoPostal>W1J 5HE</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en The Regency Hotel, en Londres (Kensington), estarás a pocos minutos de Museo de Historia Natural de Londres y Royal Albert Hall.  Este</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Saint Georges Hotel</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7032586</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Park Plaza Victoria London</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama de matrimonio grande, mirando al jardín</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>2279.03</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal>W1J 9BR</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0739154</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>NW1 2LW</myns_atr:codigoPostal>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
+    <myns_atr:codigoPostal>W2 2TY</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación doble clásica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.388936</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal>W1T 1LB</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En The Strand Palace gozarás de una ubicación céntrica en Londres, a pocos pasos de Lyceum Theatre y London Transport Museum. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:nombre>London House Hotel</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1035</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1183</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1459.29</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.675058</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio grande (Aura)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">898</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1696768</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>2521.40</myns_atr:cuesta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
+    <myns_atr:codigoPostal>W1G 8DN</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4774</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación Deluxe, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>DoubleTree by Hilton London West End</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">325</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>252 High Holborn</myns_atr:adresa>
+    <myns_atr:adresa>26-32 George Street</myns_atr:adresa>
   </rdf:Description>
 </rdf:RDF>

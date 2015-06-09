@@ -44,9 +44,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
         google_places = GooglePlaces(GOOGLEAPI_KEY)
 
         # You may prefer to use the text_search API, instead.
-        query_result = google_places.nearby_search(
-            location=location,
-            radius=radius, types=types)
+        query_result = google_places.nearby_search(location=location, radius=radius, types=types)
         
 
         out_file = open("a.json","w")
@@ -85,10 +83,10 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             gr.add((plc_obj, myns_atr.localizacion, Literal(place.geo_location)))
             # Otra llamada a la API para los otros datos
             place.get_details()
-            if place.rating == None :
-                gr.add((plc_obj, myns_atr.rating, Literal(0)))
-            else :
+            if place.rating:
                 gr.add((plc_obj, myns_atr.rating, Literal(place.rating)))
+            else :
+                gr.add((plc_obj, myns_atr.rating, Literal(0)))
             gr.add((plc_obj, myns_atr.direccion, Literal(place.formatted_address)))
             gr.add((plc_obj, myns_atr.Descripcion, Literal(place.details)))
             gr.add((plc_obj, myns_atr.paisciudad, Literal(location)))
@@ -112,7 +110,7 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
         store.open((endpoint, endpoint))
         default_graph = URIRef('http://example.org/default-graph')
         ng = Graph(store, identifier=default_graph)
-        gr += ng
+
         ng = ng.update(u'INSERT DATA { %s }' % gr.serialize(format='nt'))
 
 
