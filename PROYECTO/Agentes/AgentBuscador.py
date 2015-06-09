@@ -488,9 +488,7 @@ def buscar_transportes():
         print row    
 
 if __name__ == '__main__':
-
-
-
+    
     app.run(host=hostname, port=port)
 
     # Esperamos a que acaben los behaviors

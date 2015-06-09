@@ -18,9 +18,9 @@ import json
 import pprint
 from googleplaces import GooglePlaces
 from flask import Flask, request
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, URIRef
 from AgentUtil.APIKeys import GOOGLEAPI_KEY
-
+from rdflib.plugins.stores import sparqlstore
 # Nuestros namespaces que usaremos luego
 myns = Namespace("http://my.namespace.org/")
 myns_pet = Namespace("http://my.namespace.org/peticiones/")
@@ -101,14 +101,40 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
             # Por si queremos mas detalles en el futuro
             #pprint.pprint(place.details)  # A dict matching the JSON response from Google.
             #print place.local_phone_number
+
         guax = Graph()
         guax.parse('a.rdf' ,format='xml')
         guax += gr
         guax.serialize('a.rdf')
+
+        endpoint = 'http://localhost:5820/actividad/query'
+        store = sparqlstore.SPARQLUpdateStore()
+        store.open((endpoint, endpoint))
+        default_graph = URIRef('http://example.org/default-graph')
+        ng = Graph(store, identifier=default_graph)
+        gr += ng
+        ng = ng.update(u'INSERT DATA { %s }' % gr.serialize(format='nt'))
+
+
     else: 
-        gaux = Graph()
+        gaux2 = Graph()
         print "AgenteActividades => We read from cache"
-        gaux.parse('a.rdf' ,format='xml')
+        gaux2.parse('a.rdf' ,format='xml')
+        gaux2.triples((None, myns_atr.paisciudad, Literal(location)))
+
+        lisy = []
+        for a,b,c in gaux2:
+            if gaux2.value(subject= a, predicate= myns_atr.tipo) == Literal(types[0]):
+                lisy.append(a)
+        for a in lisy:
+            gr += gaux2.triples((a, None, None))
+
+        endpoint = 'http://localhost:5820/actividad/query'
+        store = sparqlstore.SPARQLUpdateStore()
+        store.open((endpoint, endpoint))
+        default_graph = URIRef('http://example.org/default-graph')
+        ng = Graph(store, identifier=default_graph)
+        gaux = ng
         gaux.triples((None, myns_atr.paisciudad, Literal(location)))
 
         lisy = []
@@ -117,7 +143,6 @@ def buscar_actividades(destinationCity="Barcelona", destinationCountry="Spain", 
                 lisy.append(a)
         for a in lisy:
             gr += gaux.triples((a, None, None))
-
 
     print "retornar repuesta"
     return gr

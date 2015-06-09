@@ -4,347 +4,362 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="http://my.namespace.org/hoteles/">
-    <myns_atr:adresa>Via Rasella 142</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación económica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">334</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">908</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.53472435</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Venetia Palace Hotel</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Repubblica</myns_atr:nombre>
-    <myns_atr:cuesta>1476.01</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel dei Borgia</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">862</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">214</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Palazzo Montemartini gozarás de una ubicación céntrica en Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Via Cicerone 55</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Trevi gozarás de una ubicación céntrica en Roma, a pocos pasos de Fontana di Trevi y de Palacio del Quirinal. Este hotel de ambiente romántico</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Flavia estarás en pleno corazón de Roma, a pocos pasos de Iglesia de Santa María de la Victoria y de Basílica de Santa Maria degli</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Lirico</myns_atr:nombre>
-    <myns_atr:cuesta>1157.01</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.857388</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Flavia</myns_atr:nombre>
-    <myns_atr:adresa>Piazza di Porta Maggiore 25</myns_atr:adresa>
-    <myns_atr:adresa>Via Gregoriana 56</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">623</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8395876</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1235.06</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación triple</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>640.08</myns_atr:cuesta>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
-    <myns_atr:nombre>Hotel Verona-Rome</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación doble clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación clásica - No reembolsable</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>721.91</myns_atr:cuesta>
-    <myns_atr:cuesta>1241.43</myns_atr:cuesta>
-    <myns_atr:cuesta>1678.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Starhotels Metropole gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Massimo alle Terme y Teatro de la Ópera de Roma. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">495</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">710</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Flavia 96</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2038492</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Palazzo Cardinal Cesi gozarás de una ubicación céntrica en Roma, a pocos minutos de Plaza de San Pedro y Basílica de San Pedro.  Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Via Di Santa Maria Maggiore 154</myns_atr:adresa>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">330</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Trevi Collection</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4504205</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0827203</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Mercure Paris Montmartre Sacré Coeur</myns_atr:nombre>
     <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1060</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Hiberia gozarás de una ubicación céntrica en Roma, a pocos pasos de Mercado de Trajano y de Foro Romano. Este hotel se encuentra cerca de Plaza</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">993</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Brescia 5</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Portamaggiore</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">582</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">479</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Giglio dell&amp;apos;Opera</myns_atr:nombre>
-    <myns_atr:cuesta>2103.79</myns_atr:cuesta>
-    <myns_atr:cuesta>761.56</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
-    <myns_atr:ciudad>Rome</myns_atr:ciudad>
-    <myns_atr:nombre>Atlante Star Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Roma (Vaticano), a pocos minutos de Iglesia Valdense y Palacio de Justicia se sitúa Hotel Cicerone.  Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Andreotti</myns_atr:nombre>
-    <myns_atr:nombre>Traiano Hotel</myns_atr:nombre>
-    <myns_atr:cuesta>1630.56</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5177277</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>556.32</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.34738725</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.625644</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Quattro Novembre 154</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2745194</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via del Viminale, 31</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1398</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Venetia Palace Hotel está en pleno corazón de Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel de 4 estrellas se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2807214</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1480532</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Cosmopolita</myns_atr:nombre>
-    <myns_atr:codigoPostal>00193</myns_atr:codigoPostal>
-    <myns_atr:cuesta>559.74</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.94341373</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1586115</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Commodore, en Roma (Centro histórico de Roma), estarás a pocos minutos de Basílica de Santa María la Mayor y de Teatro de la Ópera</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">438</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5732822</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1739745</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Delle Nazioni, en Roma (Centro histórico de Roma), estarás a pocos minutos de Fontana di Trevi y de Escalinata de la Plaza de</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Andreotti está en pleno corazón de Roma, a pocos pasos de Termas de Diocleciano y Aula Ottagona. Este hotel para familias se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación Grand (Deluxe)</myns_atr:descripcionDeHabitacion>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4556246</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Massimo D&amp;apos;Azeglio, en Roma (Centro histórico de Roma), estarás a pocos minutos de Palacio Massimo alle Terme y de Teatro de la</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Via di Pallacorda, 2</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Verona-Rome, en Roma (Monti), estarás a pocos minutos de Basílica de Santa María la Mayor y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.201645</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Emilia 22-24</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Miami</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Cosmopolita gozarás de una ubicación céntrica en Roma, a pocos pasos de Galería Colonna y Foro de Trajano. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Hiberia</myns_atr:nombre>
-    <myns_atr:adresa>Via Cavour 213</myns_atr:adresa>
-    <myns_atr:adresa>Via Santa Eufemia, 5</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9526559</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Palestro 13</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0755626</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Grand Hotel Palatino gozarás de una ubicación céntrica en Roma, a pocos pasos de Basílica de San Pietro in Vincoli y Iglesia de Santa Maria dei Monti.</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>862.12</myns_atr:cuesta>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.71032155</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Cavour 18</myns_atr:adresa>
-    <myns_atr:codigoPostal>00185</myns_atr:codigoPostal>
-    <myns_atr:cuesta>2064.00</myns_atr:cuesta>
-    <myns_atr:cuesta>1440.00</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8308092</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.925279</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Massimo D&amp;apos;Azeglio</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación clásica, en edificio anexo</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Brasile está en pleno corazón de Roma, a pocos pasos de Porta Pia y Piazza Fiume. Este hotel para familias se encuentra cerca de Foro Romano y</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">399</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Corona, en Roma (Repubblica), estarás a pocos minutos de Teatro de la Ópera de Roma y de Basílica de Santa María la Mayor. Este</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Romanico Palace</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
-    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1085.94</myns_atr:cuesta>
-    <myns_atr:adresa>Via Cicerone 39</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4059546</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Grand Hotel Palatino</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación doble económica</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Via Vittorio Veneto 70</myns_atr:adresa>
-    <myns_atr:cuesta>2018.38</myns_atr:cuesta>
-    <myns_atr:cuesta>1665.99</myns_atr:cuesta>
-    <myns_atr:cuesta>1422.00</myns_atr:cuesta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble, en edificio anexo</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Grand Hotel Palace está en pleno corazón de Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Plaza Barberini. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Via Leonina 14</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8913507</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Grifo</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1439807</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel La Residenza</myns_atr:nombre>
-    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1015</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
-    <myns_atr:adresa>Via Cavour 23</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Duca d&amp;apos;Alba</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">991</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">454</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Harmony Roma</myns_atr:nombre>
-    <myns_atr:codigoPostal>00187</myns_atr:codigoPostal>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1170.44</myns_atr:cuesta>
-    <myns_atr:adresa>Via Castelfidardo 55</myns_atr:adresa>
-    <myns_atr:cuesta>1324.72</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">411</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:cuesta>1397.08</myns_atr:cuesta>
-    <myns_atr:cuesta>571.52</myns_atr:cuesta>
-    <myns_atr:nombre>Starhotels Metropole</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.169358</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Ariston está en pleno corazón de Roma, a pocos pasos de Plaza de Santa María la Mayor y Basílica de Santa María la Mayor. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">293</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">792</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7914147</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:codigoPostal>00186</myns_atr:codigoPostal>
-    <myns_atr:cuesta>1767.90</myns_atr:cuesta>
-    <myns_atr:cuesta>1571.35</myns_atr:cuesta>
-    <myns_atr:cuesta>956.17</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">833</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Adriano</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel d&amp;apos;Inghilterra gozarás de una ubicación céntrica en Roma, a pocos pasos de Caffé Greco y Casa de Keats-Shelley. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</myns_atr:codigoPostal>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Fontana gozarás de una ubicación céntrica en Roma, a pocos pasos de Fontana di Trevi y de Galería Alberto Sordi. Este hotel de ambiente</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel d&amp;apos;Inghilterra</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Fiume</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">209</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Giovanni Vitelleschi 34</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Delle Vittorie</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1272926</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Romanico Palace está en pleno corazón de Roma, a pocos pasos de Iglesia de Santa María de la Victoria y Piazza Fiume. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1055.69</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">246</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Atlante Star Hotel estarás en pleno corazón de Roma, a pocos pasos de Auditorium Conciliazione y de Castillo de Sant&amp;apos;Angelo.  Este hotel de</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Atlante Garden Hotel, en Roma (Vaticano), estarás a pocos minutos de Auditorium Conciliazione y de Castillo de Sant&amp;apos;Angelo. Este hotel de</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">660</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Aleph Hotel Rome</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Harmony Roma, en Roma (Centro histórico de Roma), estarás a pocos minutos de Porta Pia y Piazza Fiume.  Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1642388</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>898.74</myns_atr:cuesta>
-    <myns_atr:cuesta>1100.80</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Grifo gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia de Santa Maria dei Monti y de Foro Romano. Este hotel para familias se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">364</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>via Boncompagni, 37</myns_atr:adresa>
-    <myns_atr:cuesta>1153.99</myns_atr:cuesta>
-    <myns_atr:nombre>Hotel Medici</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7415289</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Portamaggiore, en Roma (Esquilino), estarás a pocos minutos de Teatro Ambra Jovinelli y Porta Maggiore. Este hotel se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Grand Hotel Palace</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">896</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Della Stazione Di San Pietro 14</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación doble estándar (Plus)</myns_atr:descripcionDeHabitacion>
-    <myns_atr:nombre>Kolbe Hotel Rome</myns_atr:nombre>
-    <myns_atr:nombre>Hotel De Petris</myns_atr:nombre>
-    <myns_atr:codigoPostal>00198</myns_atr:codigoPostal>
-    <myns_atr:adresa>Via Palestro 87</myns_atr:adresa>
-    <myns_atr:cuesta>3515.60</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.39745367</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Crescenzio 78</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2296538</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via di San Basilio 15</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Repubblica gozarás de una ubicación céntrica en Roma, a pocos pasos de Teatro de la Ópera de Roma y Plaza de la República. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>2058.19</myns_atr:cuesta>
-    <myns_atr:adresa>Via Quattro Fontane 149 A</myns_atr:adresa>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
-    <myns_atr:nombre>Hotel Commodore</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2320834</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5062325</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Torino 1</myns_atr:adresa>
-    <myns_atr:nombre>Isa Design Hotel</myns_atr:nombre>
-    <myns_atr:adresa>Via Nazionale 251 A</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.77618134</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
-    <myns_atr:cuesta>1546.40</myns_atr:cuesta>
-    <myns_atr:adresa>Via Poli 7</myns_atr:adresa>
-    <myns_atr:adresa>Via Napoli 3</myns_atr:adresa>
-    <myns_atr:adresa>Via Aurora 29</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Berg Luxury Hotel está en pleno corazón de Roma, a pocos pasos de Teatro Sistina y Plaza Barberini. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1321.11</myns_atr:cuesta>
-    <myns_atr:nombre>Atlante Garden Hotel</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">595</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via XXIV Maggio, 8</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4681647</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Piazza Di Trevi 96</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Cicerone</myns_atr:nombre>
-    <myns_atr:adresa>Via Flavia 40</myns_atr:adresa>
-    <myns_atr:adresa>Via di San Teodoro 48</myns_atr:adresa>
-    <myns_atr:cuesta>1434.00</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">870</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Giglio dell&amp;apos;Opera gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Massimo alle Terme y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
-    <myns_atr:codigoPostal>00184</myns_atr:codigoPostal>
-    <myns_atr:adresa>Via Palermo 20</myns_atr:adresa>
-    <myns_atr:nombre>Hotel Cambridge</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Fontana</myns_atr:nombre>
-    <myns_atr:adresa>Via Principe Amedeo No 14</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Kolbe Hotel Rome gozarás de una ubicación céntrica en Roma, a pocos minutos de Lupercale y Foro Romano. Este hotel de 4 estrellas se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Quattro Fontane gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Barberini y Plaza Barberini. Este hotel se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>794.26</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6459469</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0020518</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Medici estarás en pleno corazón de Roma, a pocos pasos de Porta Pia y de Piazza Fiume. Este hotel se encuentra cerca de Foro Romano y</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Bettoja Atlantico Hotel</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal>00165</myns_atr:codigoPostal>
-    <myns_atr:nombre>Starhotels Michelangelo</myns_atr:nombre>
-    <myns_atr:nombre>Hotel Quattro Fontane</myns_atr:nombre>
-    <myns_atr:cuesta>544.00</myns_atr:cuesta>
-    <myns_atr:codigoPostal>00195</myns_atr:codigoPostal>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2867966</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1618524</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5822843</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>2330.71</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Duca d&amp;apos;Alba gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia de Santa Maria dei Monti y Basílica de San Pietro in Vincoli.</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel dei Borgia gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio de Exposiciones y de Teatro de la Ópera de Roma. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Delle Nazioni</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Cambridge está en pleno corazón de Roma, a pocos pasos de Biblioteca Central Nacional de Roma y Policlínico de Roma Umberto I. Este hotel para</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Starhotels Michelangelo, en Roma (Vaticano), estarás a pocos minutos de Congregación para la Doctrina de la Fe y Basílica de San Pedro. </myns_atr:descriptionCorta>
-    <myns_atr:nombre>Hotel Condotti</myns_atr:nombre>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2698293</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>2062.96</myns_atr:cuesta>
-    <myns_atr:adresa>Via Principe Amedeo 3</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación doble superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
-    <myns_atr:adresa>Via Marghera 47 A</myns_atr:adresa>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Isa Design Hotel gozarás de una ubicación céntrica en Roma, a pocos pasos de Iglesia Valdense y de Palacio de Justicia. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">294</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Bocca Di Leone 14</myns_atr:adresa>
-    <myns_atr:adresa>Via Conciliazione 51</myns_atr:adresa>
-    <myns_atr:descripcionDeHabitacion>Habitación con 1 cama doble o 2 individuales, en edificio anexo</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Brasile</myns_atr:nombre>
-    <myns_atr:descripcionDeHabitacion>Habitación doble (Small)</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">371</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Col Di Lana 24</myns_atr:adresa>
-    <myns_atr:adresa>Vicolo del Babuccio 20-21</myns_atr:adresa>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">933</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:nombre>Hotel Corona</myns_atr:nombre>
-    <myns_atr:nombre>Ariston</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Trevi Collection gozarás de una ubicación céntrica en Roma, a pocos pasos de Teatro Sistina y de Plaza Barberini. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:nombre>Palazzo Montemartini</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">426</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>Via Mario Dè Fiori 37</myns_atr:adresa>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3407215</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38598222</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Fiume, en Roma (Via Veneto), estarás a pocos minutos de Museo de Arte Contemporáneo de Roma y Piazza Fiume. Este hotel de 4</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Delle Vittorie, en Roma (Vaticano), estarás a pocos minutos de Estudios centrales de la RAI y Basílica de San Pedro. Este hotel se</myns_atr:descriptionCorta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2158394</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:adresa>Via Turati Filippo 16</myns_atr:adresa>
-    <myns_atr:nombre>Berg Luxury Hotel</myns_atr:nombre>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Bettoja Atlantico Hotel estarás en pleno corazón de Roma, a pocos pasos de Palacio Massimo alle Terme y de Teatro de la Ópera de Roma. Este</myns_atr:descriptionCorta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">383</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:codigoPostal></myns_atr:codigoPostal>
-    <myns_atr:adresa>Via Del Boschetto 144</myns_atr:adresa>
-    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:tripAdvisorRating>
-    <myns_atr:descripcionDeHabitacion>Suite junior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">635</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4364752</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1053.65</myns_atr:cuesta>
-    <myns_atr:cuesta>1502.32</myns_atr:cuesta>
-    <myns_atr:nombre>Palazzo Cardinal Cesi</myns_atr:nombre>
-    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel De Petris gozarás de una ubicación céntrica en Roma, a pocos pasos de Palacio Barberini y Plaza Barberini. Este hotel se encuentra cerca de Foro</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>1113.50</myns_atr:cuesta>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">707</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:adresa>largo giovanni montemartini, 20</myns_atr:adresa>
-    <myns_atr:cuesta>1832.06</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8901969</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:cuesta>1492.48</myns_atr:cuesta>
-    <myns_atr:cuesta>1290.01</myns_atr:cuesta>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4404149</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel La Residenza está en pleno corazón de Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Teatro Sistina. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Condotti gozarás de una ubicación céntrica en Roma, a pocos pasos de Plaza de España y Caffé Greco. Este hotel para familias se encuentra cerca</myns_atr:descriptionCorta>
-    <myns_atr:descripcionDeHabitacion>Habitación doble superior</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>1264.00</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Disfruta de una ubicación céntrica en Roma reservando en Hotel Miami, a pocos pasos de Teatro de la Ópera de Roma y cerca de Fontana di Trevi. Este hotel</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Aleph Hotel Rome gozarás de una ubicación céntrica en Roma, a pocos pasos de Galería Nacional de Arte Antiguo y Plaza Barberini. Este hotel de 5</myns_atr:descriptionCorta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Lirico, en Roma (Repubblica), estarás a pocos minutos de Teatro de la Ópera de Roma y de Basílica de Santa María la Mayor. Este</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Holiday Inn Paris Notre Dame</myns_atr:nombre>
+    <myns_atr:adresa>102 Avenue De Villiers</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Libertel Austerlitz Jardin des Plantes, en París (Barrio Latino - Panteón), estarás a pocos minutos de Galería de paleontología y</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Ampere</myns_atr:nombre>
+    <myns_atr:nombre>Libertel Austerlitz Jardin des Plantes</myns_atr:nombre>
+    <myns_atr:cuesta>2017.05</myns_atr:cuesta>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</myns_atr:rating>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Madison Hôtel gozarás de una ubicación céntrica en París, a pocos pasos de Abadía de Saint-Germain-des-Pres y Les Deux Magots. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">260</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">388</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1291.95</myns_atr:cuesta>
+    <myns_atr:cuesta>772.69</myns_atr:cuesta>
     <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.337885</myns_atr:distanciaRepectoAlCentro>
-    <myns_atr:nombre>Hotel Trevi</myns_atr:nombre>
-    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">337</myns_atr:tripAdvisorReviewCount>
-    <myns_atr:descripcionDeHabitacion>Habitación con 1 cama doble o 2 individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:descripcionDeHabitacion>Habitación con 2 camas individuales</myns_atr:descripcionDeHabitacion>
-    <myns_atr:cuesta>2320.50</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Adriano gozarás de una ubicación céntrica en Roma, a pocos pasos de Plaza del Parlamento y Palazzo Borghese. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
-    <myns_atr:cuesta>2351.54</myns_atr:cuesta>
-    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Traiano Hotel gozarás de una ubicación céntrica en Roma, a pocos pasos de Mercado de Trajano y Foro de Trajano. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
-    <myns_atr:adresa>Via Nazionale 230</myns_atr:adresa>
-    <myns_atr:cuesta>3565.00</myns_atr:cuesta>
-    <myns_atr:cuesta>755.92</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Des Arts Paris Montmartre</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0872006</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Mercure Paris Notre Dame Saint Germain des Prés</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1516</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Westminster Opera estarás en pleno corazón de París, a pocos pasos de Ópera de París y de Olympia de París. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:adresa>1 Rue Parrot</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel Le Mareuil está en pleno corazón de París, a pocos pasos de Place de la Republique y Bataclan. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>722.40</myns_atr:cuesta>
+    <myns_atr:adresa>13 Rue De La Paix</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9280738</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>610.00</myns_atr:cuesta>
+    <myns_atr:adresa>38 Rue De L Echiquier</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">267</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.438827</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Privilege, Habitación doble, vistas a la ciudad</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro_unidad>KM</myns_atr:distanciaRepectoAlCentro_unidad>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar doble</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2552364</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Holiday Inn Paris Notre Dame, en París (Saint-Germain-des-Prés - Luxembourg), estarás a pocos minutos de Pont Saint-Michel y Catedral de</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Pavillon Opéra gozarás de una ubicación céntrica en París, a pocos pasos de Grand Rex Cinema y de Porte Saint-Denis. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1108.45</myns_atr:cuesta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75007</myns_atr:codigoPostal>
+    <myns_atr:cuesta>2191.35</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel De Notre Dame gozarás de una ubicación céntrica en París, a pocos minutos de Pont de l&amp;apos;Archevêché y Catedral de Notre-Dame. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1250.34</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">376</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2230488</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Millennium Hotel Paris Opéra</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Gare du Nord - Gare de L&amp;apos;Est), a pocos minutos de Porte Saint-Martin y Place de la Republique se sitúa Hotel Aida Marais Printania. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9372108</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En La Maison Favart gozarás de una ubicación céntrica en París, a pocos pasos de Opera Comique y de Hotel Drouot. Este hotel de 4 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75017</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">325</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0924528</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:rating>
+    <myns_atr:cuesta>741.99</myns_atr:cuesta>
+    <myns_atr:cuesta>980.00</myns_atr:cuesta>
+    <myns_atr:cuesta>1047.17</myns_atr:cuesta>
+    <myns_atr:cuesta>929.66</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Comfort, One Double Bed - Early Booking</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación doble superior - Early booking</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>La Maison Champs Elysées</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Mercure Paris Notre Dame Saint Germain des Prés gozarás de una ubicación céntrica en París, a pocos pasos de Musée National du Moyen Age y de Catedral</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Amarys Simart</myns_atr:nombre>
+    <myns_atr:nombre>Villa Luxembourg</myns_atr:nombre>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75018</myns_atr:codigoPostal>
+    <myns_atr:nombre>Artus Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Artus Hotel gozarás de una ubicación céntrica en París, a pocos pasos de Palais Abbatial y Museo de Eugène Delacroix. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Novotel Paris Les Halles</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación superior con 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">236</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Scribe Paris managed by Sofitel gozarás de una ubicación céntrica en París, a pocos pasos de Edward VII Theater y Olympia de París. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Grand Hotel des Gobelins estarás en pleno corazón de París, a pocos pasos de Jardin des Plantes y de Catedral de Notre-Dame. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>571.90</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9396064</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Villa Luxembourg está en pleno corazón de París, a pocos pasos de Place Vavin y Fundación Cartier de Arte Contemporáneo. Este hotel de ambiente romántico</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.1186597</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación de lujo (Club Sofitel)</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8549746</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Banke estarás en pleno corazón de París, a pocos pasos de Galeries Lafayette y de Théâtre Mogador. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>840.80</myns_atr:cuesta>
+    <myns_atr:cuesta>1600.62</myns_atr:cuesta>
+    <myns_atr:adresa>18 avenue de Suffren</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7132826</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>143 Boulevard Saint-Germain</myns_atr:adresa>
+    <myns_atr:adresa>7 Rue Simart</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1114552</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Aida Opéra gozarás de una ubicación céntrica en París, a pocos pasos de Folies Bergère y de Museo de la Francmasonería de París. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:adresa>11 Rue Victor Massé</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Novotel Paris Les Halles gozarás de una ubicación céntrica en París, a pocos pasos de Centro comercial Forum des Halles y de Theatre du Chatelet. Este</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2062893</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>19 Rue Du Chateau D Eau</myns_atr:adresa>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75004</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</myns_atr:tripAdvisorRating>
+    <myns_atr:adresa>11 Rue Richer</myns_atr:adresa>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</myns_atr:tripAdvisorRating>
+    <myns_atr:adresa>4 Rue Danton</myns_atr:adresa>
+    <myns_atr:cuesta>1849.00</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Moderne St Germain</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">288</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2309</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75012</myns_atr:codigoPostal>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5831187</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel De Notre Dame</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.346519</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6297714</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>833.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">318</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1402.33</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9163132</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">390</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">238</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">397</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hotel Moderne St Germain, en París (Barrio Latino - Panteón), estarás a pocos minutos de Musée National du Moyen Age y de Panthéon. Este</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Mercure Paris Montmartre Sacré Coeur gozarás de una ubicación céntrica en París, a pocos pasos de Moulin Rouge y de Cafe des 2 Moulins. Este hotel de</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:rating>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hôtel Pont Royal estarás en pleno corazón de París, a pocos pasos de Museo de Orsay y de Pont Royal. Este hotel de 5 estrellas se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Viator Paris estarás en pleno corazón de París, a pocos pasos de Pont d&amp;apos;Austerlitz y de Catedral de Notre-Dame. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>576.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Golden Tulip Opera De Noailles estarás en pleno corazón de París, a pocos pasos de Opera Comique y de Ópera de París. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2446</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5473661</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1444</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>61 Rue Brancion</myns_atr:adresa>
+    <myns_atr:adresa>34 Rue De Buci</myns_atr:adresa>
+    <myns_atr:nombre>Pullman Paris Montparnasse</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Villa Beaumarchais estarás en pleno corazón de París, a pocos pasos de Place des Vosges y de Museo Picasso. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Home Moderne estarás en pleno corazón de París, a pocos pasos de Parque Georges Brassens y de Torre Eiffel. Este hotel se encuentra cerca</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Original Paris</myns_atr:nombre>
+    <myns_atr:nombre>Hôtel Pont Royal</myns_atr:nombre>
+    <myns_atr:cuesta>884.65</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">738</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>384.30</myns_atr:cuesta>
+    <myns_atr:nombre>Best Western Premier Louvre Saint Honore</myns_atr:nombre>
+    <myns_atr:adresa>5 Rue Tholoze</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Le Petit Paris estarás en pleno corazón de París, a pocos pasos de Panthéon y de Jardines de Luxemburgo. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:adresa>51-57 rue de Courcelles</myns_atr:adresa>
+    <myns_atr:cuesta>2708.05</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">484</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.7869397</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación Premium, vistas al jardín</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0218325</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Ampere gozarás de una ubicación céntrica en París, a poca distancia de Espace Champerret y Arco del Triunfo. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:adresa>121 Boulevard Du Montparnasse</myns_atr:adresa>
+    <myns_atr:adresa>20 Rue La Fayette</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Millennium Hotel Paris Opéra, en París (Ópera - Galerías Lafayette), estarás a pocos minutos de Opera Comique y de Galeries Lafayette.</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Best Western Ducs De Bourgogne</myns_atr:nombre>
+    <myns_atr:adresa>8 Rue Jean Goujon</myns_atr:adresa>
+    <myns_atr:cuesta>1266.44</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Saint Georges Lafayette estarás en pleno corazón de París, a pocos pasos de Teatro La Bruyère y de Museo de la vida romántica. Este</myns_atr:descriptionCorta>
+    <myns_atr:adresa>15 Rue De Montyon</myns_atr:adresa>
+    <myns_atr:nombre>Hotel Montalembert</myns_atr:nombre>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75008</myns_atr:codigoPostal>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Grand Hotel Nouvel Opera, en París (Bastilla - République), podrás llegar fácilmente a Ópera de la Bastilla y a Catedral de Notre-Dame.</myns_atr:descriptionCorta>
+    <myns_atr:adresa>57 Boulevard Saint Marcel</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2800066</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1082.38</myns_atr:cuesta>
+    <myns_atr:adresa>68 Boulevard De Clichy</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2288153</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.347895</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1644.76</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">803</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Best Western Premier Louvre Saint Honore gozarás de una ubicación céntrica en París, a pocos minutos de Iglesia de Saint Germain l&amp;apos;Auxerrois y Museo</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9159664</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75015</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1390.00</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Banke</myns_atr:nombre>
+    <myns_atr:nombre>Hôtel Hor</myns_atr:nombre>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</myns_atr:rating>
+    <myns_atr:nombre>Pullman Paris Tour Eiffel</myns_atr:nombre>
+    <myns_atr:adresa>4 Rue Salomon De Caus</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación de diseño - No reembolsable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Pullman Paris Tour Eiffel está en pleno corazón de París, a pocos pasos de Torre Eiffel y Champ de Mars. Este hotel de 4 estrellas se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Little Palace Hotel estarás en pleno corazón de París, a pocos pasos de Porte Saint-Martin y de Museo de Artes y Oficios. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar con 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1197.00</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación Club, 2 camas individuales</myns_atr:descripcionDeHabitacion>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75003</myns_atr:codigoPostal>
+    <myns_atr:cuesta>1241.02</myns_atr:cuesta>
+    <myns_atr:nombre>Madison Hôtel</myns_atr:nombre>
+    <myns_atr:adresa>7 Rue Montalembert</myns_atr:adresa>
+    <myns_atr:nombre>Villa Beaumarchais</myns_atr:nombre>
+    <myns_atr:nombre>Grand Hotel Nouvel Opera</myns_atr:nombre>
+    <myns_atr:adresa>5 Rue Des Arquebusiers</myns_atr:adresa>
+    <myns_atr:cuesta>1364.01</myns_atr:cuesta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75013</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">812</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>1267.07</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">339</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2600875</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1966.50</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar, accesible para personas con discapacidad, planta baja</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.9669156</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Habitación superior</myns_atr:descripcionDeHabitacion>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0629745</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Saint Georges Lafayette</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1328</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">707</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>993.00</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Pullman Paris Montparnasse gozarás de una ubicación céntrica en París, a pocos pasos de Place de Catalogne y de Bobino. Este hotel de 4 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Best Western Hotel Ronceray Opera</myns_atr:nombre>
+    <myns_atr:nombre>Hotel Westminster Opera</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.433131</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8006595</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:esUn rdf:resource="http://my.namespace.org/hotel"/>
+    <myns_atr:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</myns_atr:rating>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7065143</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>1459.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</myns_atr:tripAdvisorRating>
+    <myns_atr:cuesta>1496.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">584</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>5 Rue Marivaux</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">634</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>141 Rue Saint Honore</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Madeleine Plaza gozarás de una ubicación céntrica en París, a pocos pasos de Pinacotheque de Paris y Plaza de la Madeleine. Este hotel de 4</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">776</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación Premium, vistas al patio</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>3 Rue de Montalembert</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1018</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>Hôtel Madeleine Plaza</myns_atr:nombre>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descripcionDeHabitacion>Habitación doble clásica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Lenox Montparnasse Hotel</myns_atr:nombre>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En La Maison Champs Elysées gozarás de una ubicación céntrica en París, a pocos pasos de Palais de la Decouverte y Grand Palais. Este hotel de 5</myns_atr:descriptionCorta>
+    <myns_atr:adresa>20 Rue Du Sommerard</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Hôtel Axel Opéra Paris, en París (Ópera - Galerías Lafayette), estarás a pocos minutos de Passage Verdeau y Teatro Le Palace. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.2902474</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>8 Boulevard Beaumarchais</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel de Vendome gozarás de una ubicación céntrica en París, a pocos pasos de Place Vendôme y de Iglesia Saint-Roch. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hôtel Aida Opéra</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0722737</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2333457</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.87158346</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.61051357</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Eugène en Ville</myns_atr:nombre>
+    <myns_atr:cuesta>541.80</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.3446048</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">684</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>214 rue Saint Jacques</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5895717</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en L&amp;apos;Hotel du Collectionneur Arc de Triomphe, en París (Champs Elysèes), estarás a pocos minutos de Museo Jacquemart-André y de Parc</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Grand Hotel des Gobelins</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5743353</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Golden Tulip Opera De Noailles</myns_atr:nombre>
+    <myns_atr:cuesta>1308.00</myns_atr:cuesta>
+    <myns_atr:nombre>Viator Paris</myns_atr:nombre>
+    <myns_atr:adresa>12 Boulevard de l&amp;apos;Hopital</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación superior - No reembolsable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:nombre>Hotel Le Mareuil</myns_atr:nombre>
+    <myns_atr:adresa>15 Rue Delambre</myns_atr:adresa>
+    <myns_atr:nombre>Hotel de Vendome</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.9918857</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Lenox Montparnasse Hotel estarás en pleno corazón de París, a pocos pasos de Place Vavin y de Bobino. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</myns_atr:tripAdvisorRating>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75011</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75002</myns_atr:codigoPostal>
+    <myns_atr:cuesta>878.05</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.429312</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Si te alojas en Le Chat Noir Design Hotel, en París (Montmartre - Sacré-Coeur), estarás a pocos minutos de Cafe des 2 Moulins y de Moulin Rouge. Este</myns_atr:descriptionCorta>
+    <myns_atr:descripcionDeHabitacion>Saint Honoré room - Non refundable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1778</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:nombre>La Maison Favart</myns_atr:nombre>
+    <myns_atr:adresa>33 Place De La Madeleine</myns_atr:adresa>
+    <myns_atr:nombre>Home Moderne</myns_atr:nombre>
+    <myns_atr:nombre>Hôtel Scribe Paris managed by Sofitel</myns_atr:nombre>
+    <myns_atr:adresa>12 Boulevard Haussmann</myns_atr:adresa>
+    <myns_atr:nombre>Hôtel Axel Opéra Paris</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.71684307</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descripcionDeHabitacion>Superior King Room</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Best Western Ducs De Bourgogne estarás en pleno corazón de París, a pocos pasos de Iglesia de Saint Germain l&amp;apos;Auxerrois y de Centro</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>2085.00</myns_atr:cuesta>
+    <myns_atr:adresa>31, rue des Ecoles</myns_atr:adresa>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75010</myns_atr:codigoPostal>
+    <myns_atr:adresa>6 Rue Buffault</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.951893</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hôtel Hor gozarás de una ubicación céntrica en París, a poca distancia de Plaza Coronel Fabien y Museo del Louvre. Este hotel se encuentra cerca de</myns_atr:descriptionCorta>
+    <myns_atr:nombre>Hotel Aida Marais Printania</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación doble Confort</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>19 Rue Du Pont Neuf</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Double Room - Advance Purchase Non Refundable</myns_atr:descripcionDeHabitacion>
+    <myns_atr:tripAdvisorRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</myns_atr:tripAdvisorRating>
+    <myns_atr:cuesta>1204.18</myns_atr:cuesta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8286851</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">909</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">599</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Torre Eiffel - Museo de Orsay), a pocos minutos de Museo de Orsay y Pont Royal se sitúa Hotel Montalembert. Este hotel de 5 estrellas se</myns_atr:descriptionCorta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Hotel France Louvre está en pleno corazón de París, a pocos pasos de Hôtel de Ville y Centro comercial Bazar de l&amp;apos;Hotel de Ville. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">322</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>980.02</myns_atr:cuesta>
+    <myns_atr:cuesta>890.40</myns_atr:cuesta>
+    <myns_atr:nombre>L&amp;apos;Hotel du Collectionneur Arc de Triomphe</myns_atr:nombre>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75005</myns_atr:codigoPostal>
+    <myns_atr:nombre>Hôtel Pavillon Opéra</myns_atr:nombre>
+    <myns_atr:adresa>1 Rue Scribe</myns_atr:adresa>
+    <myns_atr:descripcionDeHabitacion>Habitación doble estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>2136.00</myns_atr:cuesta>
+    <myns_atr:cuesta>701.06</myns_atr:cuesta>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En París (Ópera - Galerías Lafayette), a pocos minutos de Museo Grévin y Teatro Le Palace se sitúa Best Western Hotel Ronceray Opera. Este hotel se</myns_atr:descriptionCorta>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8512666</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Original Paris gozarás de una ubicación céntrica en París, a pocos pasos de Columna de Julio y Place de la Bastille. Este hotel de 4 estrellas</myns_atr:descriptionCorta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7469268</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>51 Rue De Malte</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">630</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:cuesta>783.00</myns_atr:cuesta>
+    <myns_atr:descripcionDeHabitacion>Habitación clásica, vistas al jardín</myns_atr:descripcionDeHabitacion>
+    <myns_atr:cuesta>1700.05</myns_atr:cuesta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75009</myns_atr:codigoPostal>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">581</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:adresa>9 Rue De La Michodiere</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Eugène en Ville gozarás de una ubicación céntrica en París, a pocos pasos de Museo de la Francmasonería de París y de Passage Verdeau. Este</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>796.03</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">924</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Atmospheres estarás en pleno corazón de París, a pocos pasos de Panthéon y de Musée National du Moyen Age. Este hotel se encuentra</myns_atr:descriptionCorta>
+    <myns_atr:adresa>19 Rue Maitre Albert</myns_atr:adresa>
+    <myns_atr:adresa>1-3 Rue Caulaincourt</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;Alojándote en Hotel Amarys Simart estarás en pleno corazón de París, en una ubicación conveniente para llegar a Basílica del Sagrado Corazón o a Museo</myns_atr:descriptionCorta>
+    <myns_atr:adresa>19 Rue Commandant Rene Mouchotte</myns_atr:adresa>
+    <myns_atr:cuesta>2006.00</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel Le Petit Paris</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.8452764</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:cuesta>724.99</myns_atr:cuesta>
+    <myns_atr:nombre>Hotel France Louvre</myns_atr:nombre>
+    <myns_atr:adresa>152 Avenue Ledru Rollin</myns_atr:adresa>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8212808</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>160 rue Lafayette</myns_atr:adresa>
+    <myns_atr:adresa>8 Place Marguerite De Navarre</myns_atr:adresa>
+    <myns_atr:nombre>Le Chat Noir Design Hotel</myns_atr:nombre>
+    <myns_atr:nombre>Little Palace Hotel</myns_atr:nombre>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5330873</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>40 Rue De Rivoli</myns_atr:adresa>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75014</myns_atr:codigoPostal>
+    <myns_atr:cuesta>2268.00</myns_atr:cuesta>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0239366</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:adresa>1 Place Vendôme</myns_atr:adresa>
+    <myns_atr:descriptionCorta>&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ubicación del establecimiento&amp;lt;/b&amp;gt; &amp;lt;br /&amp;gt;En Hotel Des Arts Paris Montmartre gozarás de una ubicación céntrica en París, a pocos pasos de Cafe des 2 Moulins y de Calle Des Abbessees. Este hotel</myns_atr:descriptionCorta>
+    <myns_atr:cuesta>1162.40</myns_atr:cuesta>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75001</myns_atr:codigoPostal>
+    <myns_atr:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75006</myns_atr:codigoPostal>
+    <myns_atr:descripcionDeHabitacion>Habitación superior, 1 cama de matrimonio y sofá cama</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>33 Rue Des Ecoles</myns_atr:adresa>
+    <myns_atr:tripAdvisorReviewCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</myns_atr:tripAdvisorReviewCount>
+    <myns_atr:distanciaRepectoAlCentro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29698312</myns_atr:distanciaRepectoAlCentro>
+    <myns_atr:nombre>Hotel Atmospheres</myns_atr:nombre>
+    <myns_atr:descripcionDeHabitacion>Habitación estándar</myns_atr:descripcionDeHabitacion>
+    <myns_atr:descripcionDeHabitacion>Habitación clásica</myns_atr:descripcionDeHabitacion>
+    <myns_atr:adresa>10 Boulevard Montmartre</myns_atr:adresa>
+    <myns_atr:ciudad>Paris</myns_atr:ciudad>
   </rdf:Description>
 </rdf:RDF>

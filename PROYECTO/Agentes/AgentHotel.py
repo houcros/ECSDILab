@@ -27,8 +27,9 @@ from AgentUtil.APIKeys import EAN_DEV_CID, EAN_KEY, EAN_SECRET
 
 from AgentUtil.Agent import Agent
 import socket
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, URIRef
 import datetime
+from rdflib.plugins.stores import sparqlstore
 
 # Nuestros namespaces que usaremos luego
 agn = Namespace("http://www.agentes.org#")
@@ -166,10 +167,25 @@ def buscar_hoteles(destinationCity="Barcelona", destinationCountry="Spain",
         gresp.add((hot_obj, myns_atr.rating, Literal(hot['hotelRating'])))
         gresp.add((hot_obj, myns_atr.tripAdvisorRating, Literal(hot['tripAdvisorRating'])))
         gresp.add((hot_obj, myns_atr.tripAdvisorReviewCount, Literal(hot['tripAdvisorReviewCount'])))
-        gresp.serialize('h.rdf')
+      
+      endpoint = 'http://localhost:5820/hotel/query'
+      store = sparqlstore.SPARQLUpdateStore()
+      store.open((endpoint, endpoint))
+      default_graph = URIRef('http://example.org/default-graph')
+      ng = Graph(store, identifier=default_graph)
+      ng = ng.update(u'INSERT DATA { %s }' % gresp.serialize(format='nt'))
+      gresp.serialize('h.rdf')
+
   else: 
     print "AgentHotel => We read from cache"
-    gresp.parse('h.rdf' ,format='xml')
+
+    endpoint = 'http://localhost:5820/hotel/query'
+    store = sparqlstore.SPARQLUpdateStore()
+    store.open((endpoint, endpoint))
+    default_graph = URIRef('http://example.org/default-graph')
+    ng = Graph(store, identifier=default_graph)
+    gresp = ng
+    #gresp.parse('h.rdf' ,format='xml')
   print "retornar repuesta"
   return gresp
 

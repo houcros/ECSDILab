@@ -26,9 +26,9 @@ from geopy.geocoders import Nominatim
 from AgentUtil.APIKeys import QPX_API_KEY
 
 from flask import Flask, request
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, URIRef
 import datetime
-
+from rdflib.plugins.stores import sparqlstore
 CACHE_TIME_CONST = 1
 # Nuestros namespaces que usaremos luego
 myns = Namespace("http://my.namespace.org/")
@@ -156,7 +156,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         # Identificador unico para cada roundtrip
         i+= 1
 
-        rndtrip_obj = myns_rndtrp[trip['id']]
+        rndtrip_obj = myns_rndtrp[unicode(trip['id'])]
         # Precio del roundtrip
         gresp.add((rndtrip_obj, myns_atr.esUn, myns.viaje))
         gresp.add((rndtrip_obj, myns_atr.cuesta, Literal(trip['saleTotal'])))
@@ -164,7 +164,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
 
         # DATOS IDA
         # Id unico para la ida del roundtrip
-        idGo = trip['slice'][0]['segment'][0]['flight']['number'] + " " + trip['slice'][0]['segment'][0]['flight']['carrier']
+        idGo = trip['slice'][0]['segment'][0]['flight']['number'] +trip['slice'][0]['segment'][0]['flight']['carrier']
         vlo_obj_go = myns_vlo[idGo]
         # El roundtrip tiene esta ida
         gresp.add((rndtrip_obj, myns_atr.ida, vlo_obj_go))
@@ -214,7 +214,7 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
 
         # DATOS VUELTA
         # Id unico para la vuelta del roundtrip
-        idBack = trip['slice'][1]['segment'][0]['flight']['number'] + " " + trip['slice'][1]['segment'][0]['flight']['carrier']
+        idBack = trip['slice'][1]['segment'][0]['flight']['number'] +trip['slice'][1]['segment'][0]['flight']['carrier']
         vlo_obj_back = myns_vlo[idBack]
         # El roundtrip tiene esta vuelta
         gresp.add((rndtrip_obj, myns_atr.vuelta, vlo_obj_back))
@@ -259,6 +259,12 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
         gresp.add((vlo_obj_back, myns_atr.ciudad_sale, Literal(ciudadBackSale)))
         gresp.add((vlo_obj_back, myns_atr.ciudad_llega, Literal(ciudadBackLlega)))
     
+    endpoint = 'http://localhost:5820/flight/query'
+    store = sparqlstore.SPARQLUpdateStore()
+    store.open((endpoint, endpoint))
+    default_graph = URIRef('http://example.org/default-graph')
+    ng = Graph(store, identifier=default_graph)
+    ng = ng.update(u'INSERT DATA { %s }' % gresp.serialize(format='nt'))
     gresp.serialize('f.rdf')
   else:
     print "AgentFlightsGoogle => We read from cache"
@@ -268,7 +274,13 @@ def buscar_vuelos(adultCount=1, childCount=0, origin="BCN", destination="ROM",
   #   print 'p: ' + p
   #   print 'o: ' + o
   #   print '\n'
-    gresp.parse('f.rdf' ,format='xml')
+    endpoint = 'http://localhost:5820/flight/query'
+    store = sparqlstore.SPARQLUpdateStore()
+    store.open((endpoint, endpoint))
+    default_graph = URIRef('http://example.org/default-graph')
+    ng = Graph(store, identifier=default_graph)
+    gresp = ng
+    #gresp.parse('f.rdf' ,format='xml')
 
   print "repuesta"
   return gresp
